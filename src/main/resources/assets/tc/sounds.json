@@ -180,5 +180,8 @@
   "Class230Horn": {"category": "master", "sounds" :  [{"name": "Class230Horn", "stream": true}]},
   "Class321ShortHorn": {"category": "master", "sounds" :  [{"name": "Class321ShortHorn", "stream": true}]},
   "Class387Horn": {"category": "master", "sounds" :  [{"name": "Class387Horn", "stream": true}]},
-  "Mk4DVTHorn": {"category": "master", "sounds" :  [{"name": "Mk4DVTHorn", "stream": true}]}
+  "Mk4DVTHorn": {"category": "master", "sounds" :  [{"name": "Mk4DVTHorn", "stream": true}]},
+  "Class88Horn": {"category": "master", "sounds" :  [{"name": "Class88Horn", "stream": true}]},
+  "Class68Thrash": {"category": "master", "sounds" :  [{"name": "Class68Thrash", "stream": true}]},
+  "Class20Thrash": {"category": "master", "sounds" :  [{"name": "Class20Thrash", "stream": true}]}
 }

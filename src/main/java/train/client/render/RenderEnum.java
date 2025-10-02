@@ -1444,6 +1444,9 @@ public enum RenderEnum implements TrainRenderRecord {
     M8DNF1Middlelong(EntityPassengerM8DNF1MiddleLong.class, new ModelM8DNF1Middle1(), "m8d_nf1_", true, new float[]{0F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     M8DNF1Middleshort(EntityPassengerM8DNF1MiddleShort.class, new ModelM8DNF1Middle2(), "m8d_nf1_", true, new float[]{0F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     M8DNF1Tail(EntityPassengerM8DNF1Tail.class, new ModelM8DNF1End(), "m8d_nf1_", true, new float[]{-0.65F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    //TCCE-MLP
+    Class68(EntityLocoDieselClass68.class, new ModelClass68(), "Class_68_", true, new float[]{-2.13F, 0.06F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    Class88(EntityElectricClass88.class, new ModelClass88(), "Class_88_", true, new float[]{-2.13F, 0.06F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;

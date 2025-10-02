@@ -17,7 +17,7 @@ public enum EnumSounds implements TrainSoundRecord {
     locoSteamPannier(EntityLocoSteamPannier.class, "steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamC41(EntityLocoSteamC41.class, "american_steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamBR_Black_5(EntityLocoSteamBR_Black_5.class, "StanierHooter", 1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
-    locoSteamBR_Britannia_Class(EntityLocoSteamBR_Britannia_Class.class, "BritanniaWhistle", 1F, "BritanniaMediumChuff", 0.4F, 20, "steam_run", 0.4F, 20, true),
+    locoSteamBR_Britannia_Class(EntityLocoSteamBR_Britannia_Class.class, "BritanniaWhistle", 1F, "BritanniaMediumChuff", 0.38F, 54, "steam_run", 0.4F, 20, true),
     locoSteamRWType3(EntityLocoSteamRWType3.class, "RW_type_3", 1.2F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamRWType2(EntityLocoSteamRWType2.class, "type_2", 1.4F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamGWR42xx(EntityLocoSteamGWR42xx.class, "steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
@@ -170,6 +170,9 @@ public enum EnumSounds implements TrainSoundRecord {
     Bagnall(EntityLocoDieselBagnall.class, "v60_horn", 1f, "chme3_idle", 0.8f, 10, "chme3_idle", 0.5f, 20, false),
     Class205(EntityLocoDieselClass205loco.class, "eu07_horn", 1F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
     M8DNF1Loco(EntityElectricM8DNF1Loco.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
+    //TCCE-MLP Stuff
+    Class68(EntityLocoDieselClass68.class, "Class88Horn", 1F, "Class68Thrash", 0.7F, 40, "Class68Thrash", 0.35F, 40, false),
+    Class88(EntityElectricClass88.class, "Class88Horn", 1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 50, false),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),
