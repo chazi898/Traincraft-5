@@ -594,6 +594,8 @@ public class EnumTrains {
 				TrainRecord.makeEntry("Class88", "Class88", EntityElectricClass88.class, ItemIDs.minecartClass88.item, "electric", 5400, 161, 0, 60, 0, 100, 0.75, 0.7, 1000, new String[]{"Blue", "Cyan", "Magenta", "Purple"}, 18, -4.25, "Pack: B.I.P."),
 				TrainRecord.makeEntry("LessCoWagon", "LessCoWagon", EntityFreightLessCoWagon.class, ItemIDs.minecartLessCoWagon.item, "freight", 2.3, new String[]{"Blue", "Cyan", "Grey", "LightBlue", "Orange", "Red", "Yellow", "Brown"}, 18, 54, "Cargo: any  B.I.P"),
 				TrainRecord.makeEntry("BR_MK3_Sleeper", "BR_MK3_Sleeper", EntityPassengerBR_MK3_Sleeper.class, ItemIDs.minecartBR_MK3_Sleeper.item, "passenger", 0, 0, 3, 0, 0, 0, 0, 0, 0, new String[]{"Blue", "Brown", "Cyan", "Green", "Pink", "Red", "White"}, 0, 0, "Pack: B.I.P."),
+				TrainRecord.makeEntry("B80D_A", "B80D_A", EntityElectricB80D_A.class, ItemIDs.minecartB80D_A.item, "electric", 410, 80, 0, 60, 0, 100, 0.7, 0.8, 1000, new String[]{"Grey", "Red"}, 18, -2.4, "Made by Kranker"),
+				TrainRecord.makeEntry("B80D_B", "B80D_B", EntityPassengerB80D_B.class, ItemIDs.minecartB80D_B.item, "passenger", 0, 0, 3, 0, 0, 0, 0, 0, 0, new String[]{"Grey", "Red"}, 0, -2.25, "Pack: Metro In Motion"),
 		};
 	}
 
