@@ -807,6 +807,8 @@ item.tc:minecartM8DNF1Middleshort.name=M8D NF1 Middle (short)
 item.tc:minecartM8DNF1Tail.name=M8D NF1 Tail
 item.tc:minecartClass68.name=Class 68
 item.tc:minecartClass88.name=Class 88
+item.tc:minecartLessCoWagon.name=Less Co Wagon
+item.tc:minecartBR_MK3_Sleeper.name=BR Mk3 Sleeper
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1485,6 +1487,8 @@ entity.tc.M8DNF1Middleshort.name=M8D NF1 Middle (short)
 entity.tc.M8DNF1Tail.name=M8D NF1 Tail
 entity.tc.Class68.name=Class 68
 entity.tc.Class88.name=Class 88
+entity.tc.LessCoWagon.name=Less Co Wagon
+entity.tc.BR_MK3_Sleeper.name=BR Mk3 Sleeper
 
 description.villager.profession.tc.station_chief=Station Master
 

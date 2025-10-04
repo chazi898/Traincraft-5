@@ -743,6 +743,8 @@ public enum ItemIDs {
 	minecartM8DNF1Tail("ItemRollingStock", "m8d_nf1_tail_icon", 2),
 	minecartClass68("ItemRollingStock", "Class_68_Icon", 5),
 	minecartClass88("ItemRollingStock", "Class_88_Icon", 5),
+	minecartLessCoWagon("ItemRollingStock", "Less_Co_Wagon_Icon", 2),
+	minecartBR_MK3_Sleeper("ItemRollingStock", "Mk3_Sleeper_Icon", 2),
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),
 

@@ -171,7 +171,7 @@ public enum EnumSounds implements TrainSoundRecord {
     Class205(EntityLocoDieselClass205loco.class, "eu07_horn", 1F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
     M8DNF1Loco(EntityElectricM8DNF1Loco.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
     //TCCE-MLP Stuff
-    Class68(EntityLocoDieselClass68.class, "Class88Horn", 1F, "Class68Thrash", 0.7F, 40, "Class68Thrash", 0.35F, 40, false),
+    Class68(EntityLocoDieselClass68.class, "Class88Horn", 1F, "Class68Thrash", 0.7F, 40, "Class68Thrash", 0.3F, 40, false),
     Class88(EntityElectricClass88.class, "Class88Horn", 1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 50, false),
 
     //American Stuff
