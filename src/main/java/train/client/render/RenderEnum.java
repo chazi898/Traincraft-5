@@ -1449,8 +1449,8 @@ public enum RenderEnum implements TrainRenderRecord {
     Class88(EntityElectricClass88.class, new ModelClass88(), "Class_88_", true, new float[]{-2.13F, 0.06F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     LessCoWagon(EntityFreightLessCoWagon.class, new ModelLessCoWagon(), "Less_Co2_", true, new float[]{0.0F, 0.05F, 0.0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     BR_MK3_Sleeper(EntityPassengerBR_MK3_Sleeper.class, new ModelBR_Mk3_Sleeper(), "BR_Mk3_Sleeper_", true, new float[]{0.15F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
-    B80D_A(EntityElectricB80D_A.class, new ModelB80D_A(), "B80D_", true, new float[]{-1.17F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
-    B80D_B(EntityPassengerB80D_B.class, new ModelB80D_B(), "B80D_", true, new float[]{-1.17F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    B80D_A(EntityElectricB80D_A.class, new ModelB80D_A(), "B80D_", true, new float[]{-1.17F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    B80D_B(EntityPassengerB80D_B.class, new ModelB80D_B(), "B80D_", true, new float[]{-1.17F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;
