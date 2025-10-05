@@ -747,6 +747,8 @@ public enum ItemIDs {
 	minecartBR_MK3_Sleeper("ItemRollingStock", "Mk3_Sleeper_Icon", 2),
 	minecartB80D_A("ItemRollingStock", "B80D_A_icon",2),
 	minecartB80D_B("ItemRollingStock", "B80D_B_icon",1),
+	minecartCstockEngine("ItemRollingStock", "LU_C_Stock_Icon",4),
+	minecartCstockPassenger("ItemRollingStock", "LU_C_Stock_Passenger_Icon",1),
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),
 

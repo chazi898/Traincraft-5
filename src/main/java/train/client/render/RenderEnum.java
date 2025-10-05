@@ -770,11 +770,11 @@ public enum RenderEnum implements TrainRenderRecord {
     }, 2, true),
     locoMRcompound(EntitylocoSteamMRCompound.class, new ModelMidlandcompound(), "LMS_4p_", true, new float[]{-1.55f, 0.15f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 2, new ArrayList<double[]>() {
         {
-            add(new double[]{3.5D, 1.5D, 0D});
+            add(new double[]{2.67D, 1.4D, 0D});
         }
     }, "explode", new ArrayList<double[]>() {
         {
-            add(new double[]{3.5D, 0.05D, 0.65D});
+            add(new double[]{3.5D, -0.05D, 0.65D});
         }
     }, 2, true),
 
@@ -1451,6 +1451,8 @@ public enum RenderEnum implements TrainRenderRecord {
     BR_MK3_Sleeper(EntityPassengerBR_MK3_Sleeper.class, new ModelBR_Mk3_Sleeper(), "BR_Mk3_Sleeper_", true, new float[]{0.15F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     B80D_A(EntityElectricB80D_A.class, new ModelB80D_A(), "B80D_", true, new float[]{-1.17F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     B80D_B(EntityPassengerB80D_B.class, new ModelB80D_B(), "B80D_", true, new float[]{-1.17F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    CstockEngine(EntityElectricCstockEngine.class, new ModelCstockEngine(), "C_stock_", true, new float[]{-1.0F, 0.16F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    CstockPassenger(EntityCstockPassenger.class, new ModelCstockPassenger(), "C_stock_", true, new float[]{0F, 0.16F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;

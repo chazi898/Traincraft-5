@@ -166,13 +166,14 @@ public enum EnumSounds implements TrainSoundRecord {
     Class142Front(EntityLocoDieselClass142.class, "british_two_tone", 1f, "chme3_idle", 0.75f, 10, "chme3_idle", 0.5f, 20, false),
     Class143Front(EntityLocoDieselClass143.class, "british_two_tone", 1f, "FM_38D_6_Notch8", 0.6f, 10, "chme3_idle", 0.5f, 20, false),
     Jacknail(EntitylocoSteamJacknail.class, "american_steam_horn", 1.5f, "steam_run", 0.6f, 25, "adler_run", 0.5f, 17, true),
-    MRcompound(EntitylocoSteamMRCompound.class, "steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
+    MRcompound(EntitylocoSteamMRCompound.class, "CompoundWhistle", 0.8F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     Bagnall(EntityLocoDieselBagnall.class, "v60_horn", 1f, "chme3_idle", 0.8f, 10, "chme3_idle", 0.5f, 20, false),
     Class205(EntityLocoDieselClass205loco.class, "eu07_horn", 1F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
     M8DNF1Loco(EntityElectricM8DNF1Loco.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
     //TCCE-MLP Stuff
     Class68(EntityLocoDieselClass68.class, "Class88Horn", 1F, "Class68Thrash", 0.7F, 40, "Class68Thrash", 0.3F, 40, false),
     Class88(EntityElectricClass88.class, "Class88Horn", 1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 50, false),
+    ElectricCStockEngine(EntityElectricCstockEngine.class, "dstock_whistle", 0.8F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),

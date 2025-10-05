@@ -809,8 +809,11 @@ item.tc:minecartClass68.name=Class 68
 item.tc:minecartClass88.name=Class 88
 item.tc:minecartLessCoWagon.name=Less Co Wagon
 item.tc:minecartBR_MK3_Sleeper.name=BR Mk3 Sleeper
+item.tc:minecartBR_MK3_Sleeper.name=BR Mk3 Sleeper
 item.tc:minecartB80D_A.name=B80D A segment
 item.tc:minecartB80D_B.name=B80D B segment
+item.tc:minecartCstockEngine.name=London C Stock Engine
+item.tc:minecartCstockPassenger.name=London C Stock Passenger
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1493,6 +1496,8 @@ entity.tc.LessCoWagon.name=Less Co Wagon
 entity.tc.BR_MK3_Sleeper.name=BR Mk3 Sleeper
 entity.tc.B80D_A.name=B80D A segment
 entity.tc.B80D_B.name=B80D B segment
+entity.tc.CStockEngine.name=London C Stock Engine
+entity.tc.CStockPassenger.name=London C Stock Passenger Car
 
 description.villager.profession.tc.station_chief=Station Master
 
