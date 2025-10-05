@@ -39,8 +39,8 @@ public class EntityLocoSteamGWR72xx extends SteamTrain {
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
-        double distance = 1.1;
-        double yOffset = 0.35;
+        double distance = 0.5;
+        double yOffset = 0;
         float rotationCos1 = (float) Math.cos(Math.toRadians(this.renderYaw + 90));
         float rotationSin1 = (float) Math.sin(Math.toRadians((this.renderYaw + 90)));
         if(side.isServer()){
@@ -151,7 +151,7 @@ public class EntityLocoSteamGWR72xx extends SteamTrain {
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return 0.82F;
+        return 0.7F;
     }
 
 

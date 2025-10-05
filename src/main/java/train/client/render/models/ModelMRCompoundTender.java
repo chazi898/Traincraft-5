@@ -1812,7 +1812,7 @@ public class  ModelMRCompoundTender extends ModelConverter //Same as Filename
 		bodyModel[428].setRotationPoint(19.51F, -9.5F, -9F);
 
 		bodyModel[429].addShapeBox(0F, 0F, 0F, 0, 12, 60, 0F,0F, 0F, -40F, 0F, 0F, -40F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -8.2F, -40F, 0F, -8.2F, -40F, 0F, -8.2F, 0F, 0F, -8.2F, 0F); // Box 1364
-		bodyModel[429].setRotationPoint(21.01F, 0.700000000000003F, -50F);
+		bodyModel[429].setRotationPoint(20.01F, 0.700000000000003F, -50F);
 
 		bodyModel[430].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F); // Box 430
 		bodyModel[430].setRotationPoint(5.75F, -15.5F, -9F);

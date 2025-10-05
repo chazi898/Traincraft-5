@@ -1,12 +1,3 @@
-//This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2022 Minecraft-SMP.de
-// This file is for Flan's Flying Mod Version 4.0.x+
-
-// Model:
-// Model Creator:
-// Created on: 06.07.2022 - 13:19:08
-// Last changed on: 06.07.2022 - 13:19:08
-
 package train.client.render.models; //Path where the model is located
 
 
@@ -2234,7 +2225,7 @@ public class  ModelMidlandcompound extends ModelConverter //Same as Filename
 		bodyModel[691] = new ModelRendererTurbo(this, 113, 177, textureX, textureY); // Box 729
 		bodyModel[692] = new ModelRendererTurbo(this, 1, 185, textureX, textureY); // Box 730
 		bodyModel[693] = new ModelRendererTurbo(this, 177, 193, textureX, textureY); // Box 731
-		bodyModel[694] = new ModelRendererTurbo(this, 241, 193, textureX, textureY); // Box 732
+		bodyModel[694] = new ModelRendererTurbo(this, 241, 192, textureX, textureY); // Box 732
 		bodyModel[695] = new ModelRendererTurbo(this, 473, 169, textureX, textureY); // Box 733
 		bodyModel[696] = new ModelRendererTurbo(this, 377, 177, textureX, textureY); // Box 734
 		bodyModel[697] = new ModelRendererTurbo(this, 65, 185, textureX, textureY); // Box 735
