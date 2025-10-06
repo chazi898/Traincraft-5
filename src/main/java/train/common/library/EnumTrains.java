@@ -11,7 +11,7 @@ public class EnumTrains {
 	 */
 	public static TrainRecord[] trains() {
 		return new TrainRecord[]{
-				TrainRecord.makeEntry("passengerCartBlue", "Passenger Blue", EntityPassengerBlue.class, ItemIDs.minecartPassengerBlue.item, "passenger", 0, 0, 1, 0, 0, 0, 0, 0, 0, new String[]{"Blue", "Red", "Green", "White", "Black", "Cyan", "Orange", "Grey", "LightGrey", "Brown", "Pink", "Purple", "Lime", "Magenta", "LightBlue", "Yellow", "Skin17", "Skin19"}, 18, 0),
+				TrainRecord.makeEntry("passengerCartBlue", "Passenger Blue", EntityPassengerBlue.class, ItemIDs.minecartPassengerBlue.item, "passenger", 0, 0, 1, 0, 0, 0, 0, 0, 0, new String[]{"Blue", "Red", "Green", "White", "Black", "Cyan", "Orange", "Grey", "LightGrey", "Brown", "Pink", "Purple", "Lime", "Magenta", "LightBlue", "Yellow", "Skin17", "Skin19", "Skin20", "Skin21"}, 18, 0),
 				TrainRecord.makeEntry("passengerCartBlackSmall", "Passenger Small Black", EntityPassenger2.class, ItemIDs.minecartPassenger2.item, "passenger", 0, 0, 0.5, 0, 0, 0, 0, 0, 0, null, 18, 0),
 				TrainRecord.makeEntry("passengerLongGreen", "Passenger Green Long", EntityPassenger5.class, ItemIDs.minecartPassenger5.item, "passenger", 0, 0, 1, 0, 0, 0, 0, 0, 0, new String[]{"Green", "Yellow"}, 18, 0),
 				TrainRecord.makeEntry("passengerShortGreen", "Passenger Short Green", EntityPassenger7.class, ItemIDs.minecartPassenger7.item, "passenger", 0, 0, 1, 0, 0, 0, 0, 0, 0, null, 18, 0),
@@ -171,8 +171,9 @@ public class EnumTrains {
 				TrainRecord.makeEntry("tender_C41", "Tender C41", EntityTender_C41.class, ItemIDs.minecartTenderC41.item, "tender", 0, 0, 1.5, 0, 0, 0, 0, 0, 16000, null, 18, 0, "Water capacity: 16000mb"),
 				TrainRecord.makeEntry("tender_Southern1102", "Tender Southern1102", EntityTender_Southern1102.class, ItemIDs.minecartTenderSouthern1102.item, "tender", 0, 0, 1.5, 0, 0, 0, 0, 0, 16000, null, 18, 0, "Water capacity: 16000mb"),
 				TrainRecord.makeEntry("tender_MILW", "Tender MILW", EntityTenderMILW.class, ItemIDs.minecartMILWTender.item, "tender", 0, 0, 1.5, 0, 0, 0, 0, 0, 16000, null, 18, 0, "Water capacity: 16000mb"),
-				TrainRecord.makeEntry("tender_BR_Black_5", "Tender_BR_Black_5", EntityTenderBR_Black_5.class, ItemIDs.minecartBR_Black_5_Tender.item, "tender", 0, 0, 0.6, 0, 0, 0, 0, 0, 16000, new String[]{"Blue", "Cyan", "Green", "Grey", "LightGrey", "Red", "White", "Magenta", "Yellow", "Purple"}, 18, 0, "Water capacity: 16000mb B.I.P."),
-				TrainRecord.makeEntry("tender_BR1", "Tender_BR1", EntityTenderBR1.class, ItemIDs.minecartBR1Tender.item, "tender", 0, 0, 0.6, 0, 0, 0, 0, 0, 16000, new String[]{"Green", "Black", "Blue", "Grey", "LightGrey", "Orange", "Yellow", "Cyan", "Lime"}, 18, 0, "Water capacity: 16000mb B.I.P."),
+				TrainRecord.makeEntry("tender_BR_Black_5", "Tender_BR_Black_5", EntityTenderBR_Black_5.class, ItemIDs.minecartBR_Black_5_Tender.item, "tender", 0, 0, 2, 0, 0, 0, 0, 0, 16000, new String[]{"Blue", "Cyan", "Green", "Grey", "LightGrey", "Red", "White", "Magenta", "Yellow", "Purple"}, 18, 0, "Water capacity: 16000mb B.I.P."),
+				TrainRecord.makeEntry("tender_BR1", "Tender_BR1", EntityTenderBR1.class, ItemIDs.minecartBR1Tender.item, "tender", 0, 0, 2, 0, 0, 0, 0, 0, 16000, new String[]{"Green", "Black", "Blue", "Grey", "LightGrey", "Orange", "Yellow", "Cyan", "Lime"}, 18, 0, "Water capacity: 16000mb B.I.P."),
+				TrainRecord.makeEntry("tenderChurchward3500Gal", "TenderChurchward3500Gal", EntityTenderChurchward3500Gal.class, ItemIDs.minecartChurchward3500GalTender.item, "tender", 0, 0, 2, 0, 0, 0, 0, 0, 16000, new String[]{"Green", "Black", "Blue", "Brown", "Grey", "LightBlue", "LightGrey", "Lime", "Magenta", "Orange", "Pink", "Purple", "White", "Yellow"}, 18, 0, "Water capacity: 16000mb B.I.P."),
 				TrainRecord.makeEntry("tender_RW_Type_2", "Tender_RW_Type_2", EntityTenderRWType2.class, ItemIDs.minecartRWType2Tender.item, "tender", 0, 0, 0.6, 0, 0, 0, 0, 0, 10000, new String[]{"Black", "Brown", "Green", "Grey", "LightGrey", "Red", "Purple", "Pink"}, 18, 0, "Water capacity: 10000mb B.I.P."),
 				TrainRecord.makeEntry("ShuntingTenderUK", "ShuntingTenderUK", EntityTenderShuntingTenderUK.class, ItemIDs.minecartShuntingTenderUK.item, "tender", 0, 0, 0.8, 0, 0, 0, 0, 0, 1000, new String[]{"Black", "Grey", "Red"}, 18, 0, "Pack: B.I.P."),
 				/** Diesel */
@@ -598,6 +599,7 @@ public class EnumTrains {
 				TrainRecord.makeEntry("B80D_B", "B80D_B", EntityPassengerB80D_B.class, ItemIDs.minecartB80D_B.item, "passenger", 0, 0, 3, 0, 0, 0, 0, 0, 0, new String[]{"Grey", "Red"}, 0, -2.25, "Pack: Metro In Motion"),
 				TrainRecord.makeEntry("CstockEngine", "CStockEngine", EntityElectricCstockEngine.class, ItemIDs.minecartCstockEngine.item, "electric", 600, 81, 0, 10, 0, 100, 0.7, 0.8, 1000, new String[]{"Blue", "Grey"}, 18, -2, "Pack: Metro In Motion"),
 				TrainRecord.makeEntry("CstockPassenger", "CStockPassenger", EntityCstockPassenger.class, ItemIDs.minecartCstockPassenger.item, "passenger", 0, 0, 2.5, 0, 0, 0, 0, 0, 0, new String[]{"Blue", "Grey"}, 0, 0, "Pack: Metro In Motion"),
+				TrainRecord.makeEntry("GWRMogul", "GWRMogul", EntityLocoSteamGWRMogul.class, ItemIDs.minecartGWRMogul.item, "steam", 950, 121, 3, 10, 10, 100, 0.7, 0.7, 8000, new String[]{"Green", "Black", "Brown", "Grey", "LightBlue", "Lime", "Magenta", "Orange", "Red", "Yellow"}, 18, -3.05f, "Pack: B.I.P."),
 
 		};
 	}

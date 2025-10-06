@@ -379,7 +379,7 @@ public enum RenderEnum implements TrainRenderRecord {
     }, 2, true),
 
 
-    locoGWR_42xx(EntityLocoSteamGWR42xx.class, new ModelGWR4252xx(), "GWR_425272_", true, new float[]{-1.25f, 0.17f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
+    locoGWR_42xx(EntityLocoSteamGWR42xx.class, new ModelGWR4252xx(), "GWR_425272_", true, new float[]{-1.26f, 0.17f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
         {
             add(new double[]{2.7D, 1.3D, 0D});
         }
@@ -411,7 +411,7 @@ public enum RenderEnum implements TrainRenderRecord {
 
     locoBR_Britannia_Class(EntityLocoSteamBR_Britannia_Class.class, new ModelBR_Britannia_Class(), "BR_Britannia_", true, new float[]{-2.3f, -0.05f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
         {
-            add(new double[]{3.78D, 1.4D, 0D});
+            add(new double[]{3.74D, 1.4D, 0D});
         }
     }, "explode", new ArrayList<double[]>() {
         {
@@ -777,11 +777,21 @@ public enum RenderEnum implements TrainRenderRecord {
             add(new double[]{3.5D, -0.05D, 0.65D});
         }
     }, 2, true),
+    locoGWRMogul(EntityLocoSteamGWRMogul.class, new ModelGWRMogul(), "GWR_Mogul_", true, new float[]{-1.25f, 0f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
+        {
+            add(new double[]{2.62D, 1.35D, 0D});
+        }
+    }, "explode", new ArrayList<double[]>() {
+        {
+            add(new double[]{2.92D, -0.05D, 0.65D});
+        }
+    }, 2, true),
 
     locoSteamA4Tender(EntityTenderA4.class, new ModelTenderA4(), "tenderA4_UK_", true, new float[]{-0.2F, 0.2F, 0.0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     LocoMRcompoundTender(EntityTenderMRCompound.class, new ModelMRCompoundTender(), "LMS_4p_", true, new float[]{0f, 0.15f, 0}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
     LocoBR_Black_5_Tender(EntityTenderBR_Black_5.class, new ModelBR_Black_5_Tender(), "BR_Black_5_Tender_", true, new float[]{-0.05f, 0f, 0f,}, new float[]{0F, 180f, 180F}, null, "", 0, null, "", null, 0, false),
     LocoBR1_Tender(EntityTenderBR1.class, new ModelBR1_Tender(), "BR1_Tender_", true, new float[]{0f, -0.01f, 0f,}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    LocoChurchward3500GalTender(EntityTenderChurchward3500Gal.class, new ModelChurchward3500GalTender(), "Churchward_3500_Gal_", true, new float[]{0.05f, 0f, 0f,}, new float[]{0F, 180f, 180F}, null, "", 0, null, "", null, 0, false),
     LocoRW_Type_2_Tender(EntityTenderRWType2.class, new ModelRW_Type_2_Tender(), "Type_2_", true, new float[]{0f, 0.16f, 0f,}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     PropagandaUS(EntityPropagandaUS.class, new ModelPropagandaCar(), "propaganda_US_", true, new float[]{1.1F, 0.2F, -0.1F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     PropagandaJapan(EntityPropagandaJapan.class, new ModelPropagandaCar(), "propaganda_Japan_", true, new float[]{1.1F, 0.2F, -0.1F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),

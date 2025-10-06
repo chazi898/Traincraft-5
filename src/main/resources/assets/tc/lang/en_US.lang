@@ -814,6 +814,8 @@ item.tc:minecartB80D_A.name=B80D A segment
 item.tc:minecartB80D_B.name=B80D B segment
 item.tc:minecartCstockEngine.name=London C Stock Engine
 item.tc:minecartCstockPassenger.name=London C Stock Passenger
+item.tc:minecartGWRMogul.name=GWR Mogul
+item.tc:minecartChurchward3500GalTender.name=Churchward 3500 Gal Tender
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1498,6 +1500,8 @@ entity.tc.B80D_A.name=B80D A segment
 entity.tc.B80D_B.name=B80D B segment
 entity.tc.CStockEngine.name=London C Stock Engine
 entity.tc.CStockPassenger.name=London C Stock Passenger Car
+entity.tc.GWRMogul.name=GWR Mogul
+entity.tc.TenderChurchward3500Gal.name=Churchward 3500 Gal Tender
 
 description.villager.profession.tc.station_chief=Station Master
 

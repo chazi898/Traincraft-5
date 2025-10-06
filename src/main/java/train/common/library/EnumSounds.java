@@ -174,6 +174,7 @@ public enum EnumSounds implements TrainSoundRecord {
     Class68(EntityLocoDieselClass68.class, "Class88Horn", 1F, "Class68Thrash", 0.7F, 40, "Class68Thrash", 0.3F, 40, false),
     Class88(EntityElectricClass88.class, "Class88Horn", 1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 50, false),
     ElectricCStockEngine(EntityElectricCstockEngine.class, "dstock_whistle", 0.8F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
+    GWRMogul(EntityLocoSteamGWRMogul.class, "GWRWhistle", 1F, "steam_run", 0.35F, 20, "steam_run", 0.4F, 20, true),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),

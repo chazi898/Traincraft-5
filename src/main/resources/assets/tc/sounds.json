@@ -184,5 +184,6 @@
   "Class88Horn": {"category": "master", "sounds" :  [{"name": "Class88Horn", "stream": true}]},
   "Class68Thrash": {"category": "master", "sounds" :  [{"name": "Class68Thrash", "stream": true}]},
   "Class20Thrash": {"category": "master", "sounds" :  [{"name": "Class20Thrash", "stream": true}]},
-  "CompoundWhistle": {"category": "master", "sounds" :  [{"name": "CompoundWhistle", "stream": true}]}
+  "CompoundWhistle": {"category": "master", "sounds" :  [{"name": "CompoundWhistle", "stream": true}]},
+  "GWRWhistle": {"category": "master", "sounds" :  [{"name": "GWRWhistle", "stream": true}]}
 }
