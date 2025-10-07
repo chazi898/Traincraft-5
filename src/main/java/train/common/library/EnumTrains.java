@@ -600,6 +600,9 @@ public class EnumTrains {
 				TrainRecord.makeEntry("CstockEngine", "CStockEngine", EntityElectricCstockEngine.class, ItemIDs.minecartCstockEngine.item, "electric", 600, 81, 0, 10, 0, 100, 0.7, 0.8, 1000, new String[]{"Blue", "Grey"}, 18, -2, "Pack: Metro In Motion"),
 				TrainRecord.makeEntry("CstockPassenger", "CStockPassenger", EntityCstockPassenger.class, ItemIDs.minecartCstockPassenger.item, "passenger", 0, 0, 2.5, 0, 0, 0, 0, 0, 0, new String[]{"Blue", "Grey"}, 0, 0, "Pack: Metro In Motion"),
 				TrainRecord.makeEntry("GWRMogul", "GWRMogul", EntityLocoSteamGWRMogul.class, ItemIDs.minecartGWRMogul.item, "steam", 950, 121, 3, 10, 10, 100, 0.7, 0.7, 8000, new String[]{"Green", "Black", "Brown", "Grey", "LightBlue", "Lime", "Magenta", "Orange", "Red", "Yellow"}, 18, -3.05f, "Pack: B.I.P."),
+				TrainRecord.makeEntry("4WheeledCoach", "4WheeledCoach", EntityPassenger4WheeledCoach.class, ItemIDs.minecart4WheeledCoach.item, "passenger", 0, 0, 2.2, 0, 0, 0, 0, 0, 0, new String[]{"Orange", "Blue", "Brown", "Green", "LightBlue", "Red"}, 0, 0, "Pack: B.I.P."),
+				TrainRecord.makeEntry("Hornby060E2", "Hornby060E2", EntityLocoSteamHornby060E2.class, ItemIDs.minecartHornby060E2.item, "steam", 550, 121, 3, 10, 10, 100, 0.7, 0.7, 8000, new String[]{"Black", "Blue", "Brown", "White"}, 18, -2.35f, "Pack: B.I.P."),
+				TrainRecord.makeEntry("Hornby040E2", "Hornby040E2", EntityLocoSteamHornby040E2.class, ItemIDs.minecartHornby040E2.item, "steam", 540, 121, 2.8, 10, 10, 100, 0.7, 0.7, 8000, new String[]{"Blue", "Black", "Grey", "Red", "Magenta", "Green", "Yellow", "LightBlue", "Pink"}, 18, -2.35f, "Pack: B.I.P."),
 
 		};
 	}

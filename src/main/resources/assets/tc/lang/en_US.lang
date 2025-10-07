@@ -816,6 +816,9 @@ item.tc:minecartCstockEngine.name=London C Stock Engine
 item.tc:minecartCstockPassenger.name=London C Stock Passenger
 item.tc:minecartGWRMogul.name=GWR Mogul
 item.tc:minecartChurchward3500GalTender.name=Churchward 3500 Gal Tender
+item.tc:minecart4WheeledCoach.name=4 Wheeled Coach
+item.tc:minecartHornby060E2.name=Hornby 0-6-0 E2
+item.tc:minecartHornby040E2.name=Hornby 0-4-0 E2
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1502,6 +1505,9 @@ entity.tc.CStockEngine.name=London C Stock Engine
 entity.tc.CStockPassenger.name=London C Stock Passenger Car
 entity.tc.GWRMogul.name=GWR Mogul
 entity.tc.TenderChurchward3500Gal.name=Churchward 3500 Gal Tender
+entity.tc.4WheeledCoach.name=4 Wheeled Coach
+entity.tc.Hornby060E2.name=Hornby 0-6-0 E2
+entity.tc.Hornby040E2.name=Hornby 0-4-0 E2
 
 description.villager.profession.tc.station_chief=Station Master
 

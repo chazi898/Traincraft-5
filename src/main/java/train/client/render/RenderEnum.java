@@ -786,6 +786,24 @@ public enum RenderEnum implements TrainRenderRecord {
             add(new double[]{2.92D, -0.05D, 0.65D});
         }
     }, 2, true),
+    locoHornby060E2(EntityLocoSteamHornby060E2.class, new ModelHornby060E2(), "0-6-0_E2_", true, new float[]{0.6f, 0.16f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
+        {
+            add(new double[]{2.22D, 1.69D, 0D});
+        }
+    }, "explode", new ArrayList<double[]>() {
+        {
+            add(new double[]{2.52D, -0.05D, 0.65D});
+        }
+    }, 2, true),
+    locoHornby040E2(EntityLocoSteamHornby040E2.class, new ModelHornby040E2(), "0-4-0_E2_", true, new float[]{0.6f, 0.16f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
+        {
+            add(new double[]{2.22D, 1.69D, 0D});
+        }
+    }, "explode", new ArrayList<double[]>() {
+        {
+            add(new double[]{2.52D, -0.05D, 0.65D});
+        }
+    }, 2, true),
 
     locoSteamA4Tender(EntityTenderA4.class, new ModelTenderA4(), "tenderA4_UK_", true, new float[]{-0.2F, 0.2F, 0.0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     LocoMRcompoundTender(EntityTenderMRCompound.class, new ModelMRCompoundTender(), "LMS_4p_", true, new float[]{0f, 0.15f, 0}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
@@ -1463,6 +1481,7 @@ public enum RenderEnum implements TrainRenderRecord {
     B80D_B(EntityPassengerB80D_B.class, new ModelB80D_B(), "B80D_", true, new float[]{-1.17F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     CstockEngine(EntityElectricCstockEngine.class, new ModelCstockEngine(), "C_stock_", true, new float[]{-1.0F, 0.16F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     CstockPassenger(EntityCstockPassenger.class, new ModelCstockPassenger(), "C_stock_", true, new float[]{0F, 0.16F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    Passenger4WheeledCoach(EntityPassenger4WheeledCoach.class, new Model4WheeledCoach(), "4_Wheeled_Coach_", true, new float[]{0F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;
