@@ -1482,6 +1482,7 @@ public enum RenderEnum implements TrainRenderRecord {
     CstockEngine(EntityElectricCstockEngine.class, new ModelCstockEngine(), "C_stock_", true, new float[]{-1.0F, 0.16F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     CstockPassenger(EntityCstockPassenger.class, new ModelCstockPassenger(), "C_stock_", true, new float[]{0F, 0.16F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     Passenger4WheeledCoach(EntityPassenger4WheeledCoach.class, new Model4WheeledCoach(), "4_Wheeled_Coach_", true, new float[]{0F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    EurofimaCoach(EntityPassengerEurofimaCoach.class, new ModelEurofimaCoach(), "Eurofima_", true, new float[]{0F, 0.06F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;

@@ -754,6 +754,7 @@ public enum ItemIDs {
 	minecart4WheeledCoach("ItemRollingStock", "4_Wheeled_Coach_Icon",1),
 	minecartHornby060E2("ItemRollingStock", "Hornby_060_E2_Icon",4),
 	minecartHornby040E2("ItemRollingStock", "Hornby_040_E2_Icon",4),
+	minecartEurofimaCoach("ItemRollingStock", "Eurofima_Coach_Icon",1),
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),
 

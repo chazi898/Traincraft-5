@@ -819,6 +819,7 @@ item.tc:minecartChurchward3500GalTender.name=Churchward 3500 Gal Tender
 item.tc:minecart4WheeledCoach.name=4 Wheeled Coach
 item.tc:minecartHornby060E2.name=Hornby 0-6-0 E2
 item.tc:minecartHornby040E2.name=Hornby 0-4-0 E2
+item.tc:minecartEurofimaCoach.name=Eurofima Coach
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -938,7 +939,9 @@ menu.item.uk=United Kingdom
 menu.item.us=United States
 menu.item.cz=Czech Republic
 menu.item.de=Germany
+menu.item.fr=France
 menu.item.es=Spain
+menu.item.eu=EU
 
 
 train.owner.name=You are not the owner!
@@ -1508,6 +1511,7 @@ entity.tc.TenderChurchward3500Gal.name=Churchward 3500 Gal Tender
 entity.tc.4WheeledCoach.name=4 Wheeled Coach
 entity.tc.Hornby060E2.name=Hornby 0-6-0 E2
 entity.tc.Hornby040E2.name=Hornby 0-4-0 E2
+entity.tc.EurofimaCoach.name=Eurofima Coach
 
 description.villager.profession.tc.station_chief=Station Master
 
