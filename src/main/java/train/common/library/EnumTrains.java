@@ -604,6 +604,7 @@ public class EnumTrains {
 				TrainRecord.makeEntry("Hornby060E2", "Hornby060E2", EntityLocoSteamHornby060E2.class, ItemIDs.minecartHornby060E2.item, "steam", 550, 121, 3, 10, 10, 100, 0.7, 0.7, 8000, new String[]{"Black", "Blue", "Brown", "White"}, 18, -2.35f, "Pack: B.I.P."),
 				TrainRecord.makeEntry("Hornby040E2", "Hornby040E2", EntityLocoSteamHornby040E2.class, ItemIDs.minecartHornby040E2.item, "steam", 540, 121, 2.8, 10, 10, 100, 0.7, 0.7, 8000, new String[]{"Blue", "Black", "Grey", "Red", "Magenta", "Green", "Yellow", "LightBlue", "Pink"}, 18, -2.35f, "Pack: B.I.P."),
 				TrainRecord.makeEntry("EurofimaCoach", "EurofimaCoach", EntityPassengerEurofimaCoach.class, ItemIDs.minecartEurofimaCoach.item, "passenger", 0, 0, 4, 0, 0, 0, 0, 0, 0, new String[]{"Orange", "White", "Pink", "LightBlue", "Blue", "Brown", "LightGrey", "Grey", "Red", "Black", "Cyan"}, 0, 0, "Pack: B.I.P."),
+				TrainRecord.makeEntry("SNCF_BB15000", "SNCF_BB15000", EntityElectricSNCF_BB15000.class, ItemIDs.minecartSNCF_BB15000.item, "electric", 5930, 180, 0, 60, 0, 100, 0.75, 0.7, 1000, new String[]{"Orange", "Blue"}, 18, -4.02, "Pack: B.I.P."),
 
 		};
 	}
