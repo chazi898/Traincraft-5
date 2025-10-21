@@ -177,7 +177,7 @@ public enum EnumSounds implements TrainSoundRecord {
     GWRMogul(EntityLocoSteamGWRMogul.class, "GWRWhistle", 1F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
     Hornby060E2(EntityLocoSteamHornby060E2.class, "steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
     Hornby040E2(EntityLocoSteamHornby040E2.class, "steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
-    SNCF_BB15000(EntityElectricSNCF_BB15000.class, "BB15000Horn", 1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 50, false),
+    SNCF_BB15000(EntityElectricSNCF_BB15000.class, "BB15000Horn", 1.1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 50, false),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),
