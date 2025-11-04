@@ -78,6 +78,6 @@ public class EntityCabooseBRBrakeVan extends EntityRollingStock implements IPass
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return 1.9F;
+        return 1.85F;
     }
 }

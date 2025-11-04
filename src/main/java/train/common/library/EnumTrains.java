@@ -531,7 +531,7 @@ public class EnumTrains {
 				TrainRecord.makeEntry("Class117", "Class117", EntityLocoDieselClass117.class, ItemIDs.minecartClass117.item, "diesel", 500, 120, 0, 10, 0, 100, 0.7, 0.9, 8000, new String[]{"Red", "LightBlue", "Lime", "Green", "Grey", "Blue", "Cyan", "White"}, 18, -4.1, "Pack: B.I.P."),
 				TrainRecord.makeEntry("Class117Middle", "Class117Middle", EntityPassengerClass117Middle.class, ItemIDs.minecartClass117Middle.item, "passenger", 0, 0, 0.8, 0, 0, 0, 0, 0, 0, new String[]{"Red", "LightBlue", "Lime", "Green", "Grey", "Blue", "Cyan", "White"}, 0, 0, "Pack: B.I.P."),
 				TrainRecord.makeEntry("TipperUK", "TipperUK", EntityFreightTipperUK.class, ItemIDs.minecartTipperUK.item, "freight", 1.5, new String[]{"Grey", "Red", "Brown", "Black"}, 18, 36, "Pack: B.I.P."),
-				TrainRecord.makeEntry("BRBrakeVan", "BRBrakeVan", EntityCabooseBRBrakeVan.class, ItemIDs.minecartBRBrakeVan.item, "passenger", 1.5, new String[]{"Grey", "Blue", "Brown", "Yellow", "Red", "LightBlue", "LightGrey", "Pink"}, 18, 36, "Pack: B.I.P."),
+				TrainRecord.makeEntry("BRBrakeVan", "BRBrakeVan", EntityCabooseBRBrakeVan.class, ItemIDs.minecartBRBrakeVan.item, "passenger", 1.5, new String[]{"Grey", "Blue", "Brown", "Yellow", "Red", "LightBlue", "LightGrey", "Pink", "Purple", "Green", "White", "Cyan", "Magenta", "Lime", "Orange", "Brown", "Skin17", "Skin18", "Skin19", "Skin20", "Skin21", "Skin22", "Skin23", "Skin24", "Skin25", "Skin26", "Skin27", "Skin28"}, 18, 36, "Pack: B.I.P."),
 
 				/** TCCE 7 */
 				TrainRecord.makeEntry("DuewagT4ER", "DuewagT4ER", EntityElectricDuewagT4ER.class, ItemIDs.minecartDuewagT4ER.item, "electric", 200, 70, 0, 20, 0, 100, 0.7, 0.8, 1000, new String[]{"Grey", "Red", "Yellow", "Green","Blue"}, 18, -2, "Pack: Trams In Motion"),

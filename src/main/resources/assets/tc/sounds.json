@@ -174,6 +174,8 @@
   "StanierHooter": {"category": "master", "sounds" :  [{"name": "StanierHooter", "stream": true}]},
   "Class90Idle": {"category": "master", "sounds" :  [{"name": "Class90Idle", "stream": true}]},
   "Class868790Thrash": {"category": "master", "sounds" :  [{"name": "Class868790Thrash", "stream": true}]},
+  "Class150Horn": {"category": "master", "sounds" :  [{"name": "Class150Horn", "stream": true}]},
+  "Class156Horn": {"category": "master", "sounds" :  [{"name": "Class156Horn", "stream": true}]},
   "Class158Horn": {"category": "master", "sounds" :  [{"name": "Class158Horn", "stream": true}]},
   "Class47Horn": {"category": "master", "sounds" :  [{"name": "Class47Horn", "stream": true}]},
   "HSTHorn": {"category": "master", "sounds" :  [{"name": "HSTHorn", "stream": true}]},

@@ -93,7 +93,7 @@ public enum EnumSounds implements TrainSoundRecord {
     lococlass158(EntityLocoDieselClass158.class, "Class158Horn", 1.2F, "chme3_idle", 0.7F, 40, "chme3_idle", 0.6F, 40, false),
     lococlass153(EntityLocoDieselClass153.class, "british_two_tone", 0.8F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
     lococlass175(EntityLocoDieselClass175.class, "british_two_tone", 0.8F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
-    lococlass156(EntityLocoDieselClass156.class, "british_two_tone", 0.8F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
+    lococlass156(EntityLocoDieselClass156.class, "Class156Horn", 1.2F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
     locoClass47(EntityLocoDieselClass47.class, "Class47Horn", 1F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
     locoShunter(EntityLocoDieselShunter.class, "british_two_tone", 0.8F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
     locoV60_DB(EntityLocoDieselV60_DB.class, "v60_horn", 0.8F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
