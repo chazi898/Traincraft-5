@@ -1484,6 +1484,8 @@ public enum RenderEnum implements TrainRenderRecord {
     Passenger4WheeledCoach(EntityPassenger4WheeledCoach.class, new Model4WheeledCoach(), "4_Wheeled_Coach_", true, new float[]{0F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     EurofimaCoach(EntityPassengerEurofimaCoach.class, new ModelEurofimaCoach(), "Eurofima_", true, new float[]{0F, 0.06F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     SNCF_BB15000(EntityElectricSNCF_BB15000.class, new ModelSNCF_BB15000(), "BB15000_", true, new float[]{-2F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    MGTKLoco(EntityElectricMGTKLoco.class, new ModelMGT_K_Loco(), "MGT_K_", true, new float[]{-1.2F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    MGTKTail(EntityPassengerMGTKTail.class, new ModelMGT_K_Tail(), "MGT_K_", true, new float[]{-0.9F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;

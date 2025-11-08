@@ -821,6 +821,8 @@ item.tc:minecartHornby060E2.name=Hornby 0-6-0 E2
 item.tc:minecartHornby040E2.name=Hornby 0-4-0 E2
 item.tc:minecartEurofimaCoach.name=Eurofima Coach
 item.tc:minecartSNCF_BB15000.name=SNCF BB15000
+item.tc:minecartMGTKLoco.name=MGT K Loco
+item.tc:minecartMGTKTail.name=MGT K Tail
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1514,6 +1516,8 @@ entity.tc.Hornby060E2.name=Hornby 0-6-0 E2
 entity.tc.Hornby040E2.name=Hornby 0-4-0 E2
 entity.tc.EurofimaCoach.name=Eurofima Coach
 entity.tc.SNCF_BB15000.name=SNCF BB15000
+entity.tc.MGTKLoco.name=MGT K Loco
+entity.tc.MGTKTail.name=MGT K Tail
 
 description.villager.profession.tc.station_chief=Station Master
 

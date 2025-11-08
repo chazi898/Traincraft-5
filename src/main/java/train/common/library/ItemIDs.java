@@ -756,6 +756,8 @@ public enum ItemIDs {
 	minecartHornby040E2("ItemRollingStock", "Hornby_040_E2_Icon",4),
 	minecartEurofimaCoach("ItemRollingStock", "Eurofima_Coach_Icon",1),
 	minecartSNCF_BB15000("ItemRollingStock", "SNCF_BB15000_Icon", 5),
+	minecartMGTKLoco("ItemRollingStock", "MGT_K_Loco_icon", 2),
+	minecartMGTKTail("ItemRollingStock", "MGT_K_Tail_icon", 1),
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),
 
