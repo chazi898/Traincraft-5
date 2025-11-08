@@ -391,7 +391,7 @@ public enum RenderEnum implements TrainRenderRecord {
 
     locoGWR_72xx(EntityLocoSteamGWR72xx.class, new ModelGWR72xx(), "GWR_425272_", true, new float[]{-1.75f, 0.17f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
         {
-            add(new double[]{3.55D, 1.3D, 0D});
+            add(new double[]{3.45D, 1.3D, 0D});
         }
     }, "explode", new ArrayList<double[]>() {
         {
@@ -1363,7 +1363,7 @@ public enum RenderEnum implements TrainRenderRecord {
         {
         }
     }, "", null, 0, false),
-    freight5Plank(EntityFreight5Plank.class, new Model5Plank(), "5_plank_", true, new float[]{0f, 0.15f, 0f}, new float[]{0f, 180f, 180f}, null, "", 0, null, "", null, 0, false),
+    freight7Plank(EntityFreight7Plank.class, new Model7Plank(), "7_plank_", true, new float[]{0f, 0.17f, 0f}, new float[]{0f, 180f, 180f}, null, "", 0, null, "", null, 0, false),
     NMBS_HLE_18(EntityLocoElectricNMBS_HLE_18.class, new ModelNMBS_HLE_18(), "hle19_", true, new float[]{-1.5F, 0.05F, 0}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     BR_Mk_1_BSO(EntityPassengerBR_Mk1_BSO.class, new ModelBR_Mk1_BSO(), "BR_Mk1_BSO_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
     BR_Mk_1_TSO(EntityPassengerBR_Mk1_TSO.class, new ModelBR_Mk1_TSO(), "BR_Mk1_TSO_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),

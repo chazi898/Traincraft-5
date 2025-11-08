@@ -23,7 +23,7 @@ public class EntityFreight7Plank extends Freight implements IInventory {
     }
 
     public void initFreightGrain() {
-        numFreightSlots = 9;
+        numFreightSlots = 36;
         freightInventorySize = getInventoryRows()*9;
         cargoItems = new ItemStack[freightInventorySize];
     }
@@ -77,7 +77,7 @@ public class EntityFreight7Plank extends Freight implements IInventory {
     }
     @Override
     public String getInventoryName() {
-        return "7 Plank Car";
+        return "7 Plank Wagon";
     }
 
     @Override
@@ -98,7 +98,7 @@ public class EntityFreight7Plank extends Freight implements IInventory {
     }
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return 5F;
+        return 1.45F;
     }
 
     @Override
