@@ -671,7 +671,7 @@ public enum ItemIDs {
 	minecartWoodenTramCoach("ItemRollingStock", "Wooden_Tram_Coach_icon",1),
 	minecartMA100_Loco("ItemRollingStock", "MA100_Loco_icon",2),
 	minecartMA100_Tail("ItemRollingStock", "MA100_Tail_icon",1),
-	minecartExpressFreightVan("ItemRollingStock", "Express_Freight_Van_icon",1),
+	minecartRefrigeratedVan("ItemRollingStock", "Refrigerated_Van_Icon",1),
 	minecartWWCPClass062T("ItemRollingStock", "WWCP_Standard_0-6-2_Icon",2),
 	minecartBRBritanniaClass("ItemRollingStock", "BR_Britannia_Icon",5),
 	minecartBR1Tender("ItemRollingStock", "BR1_Tender_Icon", 1),

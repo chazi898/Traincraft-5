@@ -474,28 +474,28 @@ public class ModelGWR72xx extends ModelConverter //Same as Filename
 		bodyModel[444] = new ModelRendererTurbo(this, 409, 1, textureX, textureY); // Box 533
 		bodyModel[445] = new ModelRendererTurbo(this, 97, 137, textureX, textureY); // Box 103
 		bodyModel[446] = new ModelRendererTurbo(this, 89, 1, textureX, textureY); // Box 102
-		bodyModel[447] = new ModelRendererTurbo(this, 33, 145, textureX, textureY); // Lamp
+		bodyModel[447] = new ModelRendererTurbo(this, 33, 145, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[448] = new ModelRendererTurbo(this, 137, 1, textureX, textureY); // Box 541
 		bodyModel[449] = new ModelRendererTurbo(this, 337, 145, textureX, textureY); // Box 542
-		bodyModel[450] = new ModelRendererTurbo(this, 65, 145, textureX, textureY); // Lamp
+		bodyModel[450] = new ModelRendererTurbo(this, 65, 145, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[451] = new ModelRendererTurbo(this, 153, 1, textureX, textureY); // Box 544
 		bodyModel[452] = new ModelRendererTurbo(this, 409, 145, textureX, textureY); // Box 545
-		bodyModel[453] = new ModelRendererTurbo(this, 433, 145, textureX, textureY); // Lamp
+		bodyModel[453] = new ModelRendererTurbo(this, 433, 145, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[454] = new ModelRendererTurbo(this, 233, 1, textureX, textureY); // Box 547
 		bodyModel[455] = new ModelRendererTurbo(this, 441, 145, textureX, textureY); // Box 548
-		bodyModel[456] = new ModelRendererTurbo(this, 201, 153, textureX, textureY); // Lamp
+		bodyModel[456] = new ModelRendererTurbo(this, 201, 153, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[457] = new ModelRendererTurbo(this, 289, 1, textureX, textureY); // Box 550
 		bodyModel[458] = new ModelRendererTurbo(this, 209, 153, textureX, textureY); // Box 551
-		bodyModel[459] = new ModelRendererTurbo(this, 217, 153, textureX, textureY); // Lamp
+		bodyModel[459] = new ModelRendererTurbo(this, 217, 153, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[460] = new ModelRendererTurbo(this, 297, 153, textureX, textureY); // Box 553
 		bodyModel[461] = new ModelRendererTurbo(this, 321, 1, textureX, textureY); // Box 554
-		bodyModel[462] = new ModelRendererTurbo(this, 305, 153, textureX, textureY); // Lamp
-		bodyModel[463] = new ModelRendererTurbo(this, 313, 153, textureX, textureY); // Lamp
+		bodyModel[462] = new ModelRendererTurbo(this, 305, 153, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[463] = new ModelRendererTurbo(this, 313, 153, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[464] = new ModelRendererTurbo(this, 457, 153, textureX, textureY); // Box 557
 		bodyModel[465] = new ModelRendererTurbo(this, 337, 1, textureX, textureY); // Box 558
 		bodyModel[466] = new ModelRendererTurbo(this, 65, 161, textureX, textureY); // Box 553
 		bodyModel[467] = new ModelRendererTurbo(this, 33, 161, textureX, textureY); // Box 556
-		bodyModel[468] = new ModelRendererTurbo(this, 17, 255, textureX, textureY); // Lamp
+		bodyModel[468] = new ModelRendererTurbo(this, 17, 255, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[469] = new ModelRendererTurbo(this, 56, 307, textureX, textureY); // Box 561
 		bodyModel[470] = new ModelRendererTurbo(this, 441, 198, textureX, textureY); // Box 562
 		bodyModel[471] = new ModelRendererTurbo(this, 97, 161, textureX, textureY); // Dial
@@ -3699,7 +3699,7 @@ public class ModelGWR72xx extends ModelConverter //Same as Filename
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
 		for (int i = 0; i < 916; i++) {
-			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("lamp")) {
+			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);
 				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);

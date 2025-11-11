@@ -12,10 +12,10 @@ import train.common.Traincraft;
 import train.common.api.Freight;
 import train.common.library.GuiIDs;
 
-public class EntityFreightExpressFreightVan extends Freight implements IInventory {
+public class EntityFreightRefrigeratedVan extends Freight implements IInventory {
     public int freightInventorySize;
     public int numFreightSlots;
-    public EntityFreightExpressFreightVan(World world) {
+    public EntityFreightRefrigeratedVan(World world) {
         super(world);
         initFreightCart();
     }
@@ -26,7 +26,7 @@ public class EntityFreightExpressFreightVan extends Freight implements IInventor
         cargoItems = new ItemStack[freightInventorySize];
     }
 
-    public EntityFreightExpressFreightVan(World world, double d, double d1, double d2) {
+    public EntityFreightRefrigeratedVan(World world, double d, double d1, double d2) {
         this(world);
         setPosition(d, d1 + (double) yOffset, d2);
         motionX = 0.0D;
@@ -75,7 +75,7 @@ public class EntityFreightExpressFreightVan extends Freight implements IInventor
     }
     @Override
     public String getInventoryName() {
-        return "Express Freight Van";
+        return "Refrigerated Van";
     }
 
     @Override
@@ -94,7 +94,7 @@ public class EntityFreightExpressFreightVan extends Freight implements IInventor
     }
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return 1.9F;
+        return 1.825F;
     }
 
     @Override

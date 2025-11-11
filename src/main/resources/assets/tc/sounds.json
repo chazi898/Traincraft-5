@@ -190,5 +190,6 @@
   "GWRExpressWhistle": {"category": "master", "sounds" :  [{"name": "GWRExpressWhistle", "stream": true}]},
   "GWRStandardWhistle": {"category": "master", "sounds" :  [{"name": "GWRStandardWhistle", "stream": true}]},
   "GWRPannierWhistle": {"category": "master", "sounds" :  [{"name": "GWRPannierWhistle", "stream": true}]},
+  "ThompsonWhistle": {"category": "master", "sounds" :  [{"name": "ThompsonWhistle", "stream": true}]},
   "BB15000Horn": {"category": "master", "sounds" :  [{"name": "BB15000Horn", "stream": true}]}
 }
