@@ -337,7 +337,7 @@ public enum RenderEnum implements TrainRenderRecord {
         }
     }, 2, true),
 
-    locoBR_Black_5(EntityLocoSteamBR_Black_5.class, new ModelBR_Black_5(), "BR_Black_5_", true, new float[]{-1.75f, 0f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
+    locoBR_Black_5(EntityLocoSteamBR_Black_5.class, new ModelBR_Black_5(), "BR_Black_5_", true, new float[]{-1.7f, 0f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
         {
             add(new double[]{3.1D, 1.35D, 0D});
         }
