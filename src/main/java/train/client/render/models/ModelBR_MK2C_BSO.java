@@ -1,12 +1,11 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2023 Minecraft-SMP.de
+// Copyright (C) 2025 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: 
 // Model Creator: 
 // Created on: 04.02.2022 - 19:35:07
 // Last changed on: 04.02.2022 - 19:35:07
-
 
 package train.client.render.models; //Path where the model is located
 
@@ -20,7 +19,7 @@ public class ModelBR_MK2C_BSO extends ModelConverter //Same as Filename
 
 	public ModelBR_MK2C_BSO() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[281];
+		bodyModel = new ModelRendererTurbo[283];
 
 		initbodyModel_1();
 
@@ -313,6 +312,8 @@ public class ModelBR_MK2C_BSO extends ModelConverter //Same as Filename
 		bodyModel[278] = new ModelRendererTurbo(this, 265, 175, textureX, textureY); // Box 198
 		bodyModel[279] = new ModelRendererTurbo(this, 273, 175, textureX, textureY); // Box 198
 		bodyModel[280] = new ModelRendererTurbo(this, 281, 175, textureX, textureY); // Box 198
+		bodyModel[281] = new ModelRendererTurbo(this, 280, 150, textureX, textureY); // Box 1
+		bodyModel[282] = new ModelRendererTurbo(this, 280, 156, textureX, textureY); // Box 1
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 81, 1, 20, 0F,0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F); // Box 0
 		bodyModel[0].setRotationPoint(-48F, 0F, -10F);
@@ -1218,5 +1219,11 @@ public class ModelBR_MK2C_BSO extends ModelConverter //Same as Filename
 
 		bodyModel[280].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.4F, -0.5F, -0.4F, -0.4F, -0.5F, -0.4F, -0.4F, -0.5F, -0.4F, -0.4F, -0.5F, -0.4F, -0.2F, -0.2F, -0.2F, -0.2F, -0.2F, -0.2F, -0.2F, -0.2F, -0.2F, -0.2F, -0.2F, -0.2F); // Box 198
 		bodyModel[280].setRotationPoint(12F, -23F, -3F);
+
+		bodyModel[281].addShapeBox(0F, 0F, 0F, 69, 1, 1, 0F,0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, -0.89F, 0F, -0.8F, -0.89F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.89F, 0F, 0F, -0.89F); // Box 1
+		bodyModel[281].setRotationPoint(-42F, -8F, -11.01F);
+
+		bodyModel[282].addShapeBox(0F, 0F, 0F, 69, 1, 1, 0F,0F, -0.8F, -0.89F, 0F, -0.8F, -0.89F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, 0F, -0.89F, 0F, 0F, -0.89F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 1
+		bodyModel[282].setRotationPoint(-42F, -8F, 10.01F);
 	}
 }
