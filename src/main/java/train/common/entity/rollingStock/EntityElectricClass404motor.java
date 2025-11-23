@@ -12,15 +12,15 @@ import train.common.Traincraft;
 import train.common.api.ElectricTrain;
 import train.common.library.GuiIDs;
 
-public class EntityElectricClass162 extends ElectricTrain {
+public class EntityElectricClass404motor extends ElectricTrain {
     //public TiltingHandler tiltingHandler = new TiltingHandler(7);
 
-    public EntityElectricClass162(World world) {
+    public EntityElectricClass404motor(World world) {
         super(world);
 
     }
 
-    public EntityElectricClass162(World world, double d, double d1, double d2) {
+    public EntityElectricClass404motor(World world, double d, double d1, double d2) {
         this(world);
         setPosition(d, d1 + (double) yOffset, d2);
         motionX = 0.0D;

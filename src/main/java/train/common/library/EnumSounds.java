@@ -2,7 +2,6 @@ package train.common.library;
 
 import train.common.api.TrainSoundRecord;
 import train.common.entity.rollingStock.*;
-import train.common.library.Info;
 
 public enum EnumSounds implements TrainSoundRecord {
 
@@ -146,7 +145,7 @@ public enum EnumSounds implements TrainSoundRecord {
     Class442DTS(EntityElectricClass442DTS.class, "british_two_tone", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     asteri(EntityLocoSteamasteri.class, "asteri", 1F, "asteri", 0.2F, 212, "mg_idle", 0.6F, 50, false),
     FGV4300(EntityLocoElectricFGV4300.class, "4300_horn", 1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 40, false),
-    Class162Engine(EntityElectricClass162.class, "mg_horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
+    Class404motor(EntityElectricClass404motor.class, "mg_horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     Class34(EntityLocoDieselClass34.class, "british_two_tone", 0.8F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
     TW305(EntityLocoElectricTW305.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
     MetalTram(EntityLocoElectricMetalTram.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),

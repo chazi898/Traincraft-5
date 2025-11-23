@@ -7,14 +7,14 @@ import net.minecraft.world.World;
 import train.common.api.EntityRollingStock;
 import train.common.api.IPassenger;
 
-public class EntityPassengerClass162CoachB extends EntityRollingStock implements IPassenger {
+public class EntityPassengerClass404composite extends EntityRollingStock implements IPassenger {
     //public TiltingHandler tiltingHandler = new TiltingHandler(7);
 
-    public EntityPassengerClass162CoachB(World world) {
+    public EntityPassengerClass404composite(World world) {
         super(world);
     }
 
-    public EntityPassengerClass162CoachB(World world, double d, double d1, double d2){
+    public EntityPassengerClass404composite(World world, double d, double d1, double d2){
         this(world);
         setPosition(d, d1 + yOffset, d2);
         motionX = 0.0D;
