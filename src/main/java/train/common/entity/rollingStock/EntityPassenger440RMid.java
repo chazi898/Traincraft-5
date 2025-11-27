@@ -74,4 +74,9 @@ public class EntityPassenger440RMid extends EntityRollingStock implements IPasse
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 2.7F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "es";
+	}
 }

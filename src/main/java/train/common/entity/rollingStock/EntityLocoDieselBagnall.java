@@ -158,4 +158,9 @@ public class EntityLocoDieselBagnall extends DieselTrain {
         return canBeAdjusted;
     }
 
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
+
 }

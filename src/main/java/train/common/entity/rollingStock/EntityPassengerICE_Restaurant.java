@@ -86,4 +86,9 @@ public class EntityPassengerICE_Restaurant extends EntityRollingStock implements
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 3.1F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "de";
+	}
 }

@@ -117,4 +117,9 @@ public class EntityGWRBrakeVan extends AbstractWorkCart implements IInventory {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 3.4F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "uk";
+	}
 }

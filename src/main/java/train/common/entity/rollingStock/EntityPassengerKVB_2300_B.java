@@ -105,4 +105,9 @@ public class EntityPassengerKVB_2300_B extends EntityRollingStock implements IPa
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.75F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "de";
+    }
 }

@@ -103,4 +103,9 @@ public class EntityPassengerDB420Tail extends EntityRollingStock implements IPas
     public float getOptimalDistance(EntityMinecart cart) {
         return 0.965F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "de";
+    }
 }

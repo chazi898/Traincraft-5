@@ -73,4 +73,9 @@ public class EntityPassengerCQ310Passenger extends EntityRollingStock implements
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.25F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

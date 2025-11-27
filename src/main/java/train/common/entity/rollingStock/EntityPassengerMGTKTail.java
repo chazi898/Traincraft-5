@@ -106,4 +106,9 @@ public class EntityPassengerMGTKTail extends EntityRollingStock implements IPass
     public float getOptimalDistance(EntityMinecart cart) {
         return 1F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "de";
+    }
 }

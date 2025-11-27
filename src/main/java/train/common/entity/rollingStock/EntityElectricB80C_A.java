@@ -149,4 +149,8 @@ public class EntityElectricB80C_A extends ElectricTrain {
     public boolean isItemValidForSlot(int i, ItemStack itemstack) {
         return true;
     }
+    @Override
+    public String transportcountry() {
+        return "de";
+    }
 }

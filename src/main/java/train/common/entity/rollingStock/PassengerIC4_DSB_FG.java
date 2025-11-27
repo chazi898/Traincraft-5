@@ -74,4 +74,9 @@ public class PassengerIC4_DSB_FG extends EntityRollingStock implements IPassenge
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 3.65F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "dk";
+	}
 }

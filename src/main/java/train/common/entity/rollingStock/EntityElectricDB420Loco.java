@@ -145,4 +145,8 @@ public class EntityElectricDB420Loco extends ElectricTrain {
     public boolean isItemValidForSlot(int i, ItemStack itemstack) {
         return true;
     }
+    @Override
+    public String transportcountry() {
+        return "de";
+    }
 }

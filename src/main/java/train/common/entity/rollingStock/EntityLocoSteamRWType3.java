@@ -160,4 +160,9 @@ public class EntityLocoSteamRWType3 extends SteamTrain {
 
     @Override
     public boolean isItemValidForSlot(int i, ItemStack itemstack) { return true; }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

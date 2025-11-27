@@ -940,10 +940,15 @@ menu.item.=N/A
 menu.item.be=Belgium
 menu.item.uk=United Kingdom
 menu.item.us=United States
+menu.item.ja=Japan
 menu.item.cz=Czech Republic
 menu.item.de=Germany
 menu.item.fr=France
 menu.item.es=Spain
+menu.item.it=Italy
+menu.item.dk=Denmark
+menu.item.pl=Poland
+menu.item.ru=Russia
 menu.item.eu=EU
 
 

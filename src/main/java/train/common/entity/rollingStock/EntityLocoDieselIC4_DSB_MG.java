@@ -135,4 +135,9 @@ public class EntityLocoDieselIC4_DSB_MG extends DieselTrain {
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 		return true;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "dk";
+	}
 }

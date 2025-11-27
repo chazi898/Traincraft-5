@@ -80,4 +80,9 @@ public class EntityCabooseBRBrakeVan extends EntityRollingStock implements IPass
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.85F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

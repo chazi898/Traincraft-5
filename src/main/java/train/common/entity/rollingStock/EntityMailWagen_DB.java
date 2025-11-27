@@ -111,4 +111,9 @@ public class EntityMailWagen_DB extends AbstractWorkCart implements IInventory {
 	}
 
 	public void markDirty(){};
+
+	@Override
+	public String transportcountry() {
+		return "de";
+	}
 }

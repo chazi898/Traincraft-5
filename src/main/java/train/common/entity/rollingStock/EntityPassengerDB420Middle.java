@@ -73,4 +73,9 @@ public class EntityPassengerDB420Middle extends EntityRollingStock implements IP
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 2.0F; }
+
+    @Override
+    public String transportcountry() {
+        return "de";
+    }
 }

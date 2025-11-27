@@ -74,4 +74,9 @@ public class EntityPassengerRenfe450Coach extends EntityRollingStock implements 
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 2.5F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "es";
+	}
 }

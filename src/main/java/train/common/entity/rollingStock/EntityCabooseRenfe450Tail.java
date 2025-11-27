@@ -74,4 +74,9 @@ public class EntityCabooseRenfe450Tail extends EntityRollingStock implements IPa
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 2.6F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "es";
+	}
 }

@@ -100,4 +100,8 @@ public class EntityCattleVan extends EntityRollingStock implements IPassenger {
 		}
 	}
 
+	@Override
+	public String transportcountry() {
+		return "uk";
+	}
 }

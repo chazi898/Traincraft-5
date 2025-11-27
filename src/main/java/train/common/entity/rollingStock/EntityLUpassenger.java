@@ -74,4 +74,9 @@ public class EntityLUpassenger extends EntityRollingStock implements IPassenger 
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.05F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

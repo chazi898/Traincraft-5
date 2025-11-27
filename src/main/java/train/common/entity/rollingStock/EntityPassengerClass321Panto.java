@@ -76,4 +76,9 @@ public class EntityPassengerClass321Panto extends EntityRollingStock implements 
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.63F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

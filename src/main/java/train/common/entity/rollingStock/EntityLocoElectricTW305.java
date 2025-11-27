@@ -144,4 +144,8 @@ public class EntityLocoElectricTW305 extends ElectricTrain {
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 		return true;
 	}
+	@Override
+	public String transportcountry() {
+		return "de";
+	}
 }

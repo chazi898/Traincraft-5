@@ -134,4 +134,9 @@ public class EntityLocoDieselV60_DB extends DieselTrain {
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 		return true;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "de";
+	}
 }

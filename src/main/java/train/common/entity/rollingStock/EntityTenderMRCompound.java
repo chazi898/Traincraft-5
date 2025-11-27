@@ -117,7 +117,10 @@ public class EntityTenderMRCompound extends Tender implements IInventory  {
     }
 
     @Override
-    public boolean isItemValidForSlot(int i, ItemStack itemstack) {
-        return true;
+    public boolean isItemValidForSlot(int i, ItemStack itemstack) { return true; }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
     }
 }

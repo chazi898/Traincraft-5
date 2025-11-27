@@ -77,4 +77,9 @@ public class EntityPassengerM8DNF1MiddleShort extends EntityRollingStock impleme
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.0F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "de";
+    }
 }

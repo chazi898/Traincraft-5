@@ -156,5 +156,9 @@ public class EntityLocoDieselClass43 extends DieselTrain {
     public boolean canBeAdjusted(EntityMinecart cart) {
         return canBeAdjusted;
     }
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 
 }

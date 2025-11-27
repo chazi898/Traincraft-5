@@ -74,4 +74,9 @@ public class EntityCstockPassenger extends EntityRollingStock implements IPassen
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.84F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

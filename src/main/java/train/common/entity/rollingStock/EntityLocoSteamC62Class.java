@@ -139,4 +139,9 @@ public class EntityLocoSteamC62Class extends SteamTrain {
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 		return true;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "ja";
+	}
 }

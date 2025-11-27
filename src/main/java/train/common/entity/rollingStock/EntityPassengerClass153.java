@@ -73,4 +73,9 @@ public class EntityPassengerClass153 extends EntityRollingStock implements IPass
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.7F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

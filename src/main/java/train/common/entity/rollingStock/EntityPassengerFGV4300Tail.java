@@ -76,5 +76,10 @@ public class EntityPassengerFGV4300Tail extends EntityRollingStock implements IP
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.06F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "es";
+    }
 }
 

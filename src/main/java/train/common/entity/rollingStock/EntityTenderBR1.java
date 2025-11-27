@@ -120,4 +120,9 @@ public class EntityTenderBR1 extends Tender implements IInventory  {
     public boolean isItemValidForSlot(int i, ItemStack itemstack) {
         return true;
     }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

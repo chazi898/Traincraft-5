@@ -73,4 +73,9 @@ public class EntityPassengerCD010 extends EntityRollingStock implements IPasseng
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 2.15F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "cz";
+	}
 }

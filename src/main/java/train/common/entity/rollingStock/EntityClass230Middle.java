@@ -74,4 +74,9 @@ public class EntityClass230Middle extends EntityRollingStock implements IPasseng
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.2F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

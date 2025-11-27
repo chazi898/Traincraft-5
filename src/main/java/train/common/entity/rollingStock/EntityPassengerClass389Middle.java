@@ -76,4 +76,9 @@ public class EntityPassengerClass389Middle extends EntityRollingStock implements
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.98F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

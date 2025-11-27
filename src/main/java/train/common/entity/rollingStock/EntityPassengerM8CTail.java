@@ -105,4 +105,9 @@ public class EntityPassengerM8CTail extends EntityRollingStock implements IPasse
     public float getOptimalDistance(EntityMinecart cart) {
         return 0.95f;
     }
+
+    @Override
+    public String transportcountry() {
+        return "de";
+    }
 }

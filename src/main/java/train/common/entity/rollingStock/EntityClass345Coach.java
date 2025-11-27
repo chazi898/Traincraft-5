@@ -76,4 +76,9 @@ public class EntityClass345Coach extends EntityRollingStock implements IPassenge
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.45F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

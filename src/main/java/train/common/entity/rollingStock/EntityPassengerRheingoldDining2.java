@@ -115,4 +115,9 @@ public class EntityPassengerRheingoldDining2  extends AbstractWorkCart implement
 	}
 
 	public void markDirty(){}
+
+	@Override
+	public String transportcountry() {
+		return "de";
+	}
 }
