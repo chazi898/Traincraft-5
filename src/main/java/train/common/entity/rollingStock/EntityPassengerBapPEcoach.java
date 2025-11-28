@@ -74,4 +74,9 @@ public class EntityPassengerBapPEcoach extends EntityRollingStock implements IPa
     public float getOptimalDistance(EntityMinecart cart) {
         return 3.8F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

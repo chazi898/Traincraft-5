@@ -292,4 +292,8 @@ public class EntityBUnitEMDF3 extends LiquidTank implements IFluidHandler {
     public String getLiquidName() {
         return FluidRegistry.getFluid(this.dataWatcher.getWatchableObjectInt(4)) != null ? FluidRegistry.getFluid(this.dataWatcher.getWatchableObjectInt(4)).getName() : null;
     }
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

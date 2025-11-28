@@ -74,4 +74,9 @@ public class EntityPassengerPSBMCombine extends EntityRollingStock implements IP
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 4.0F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

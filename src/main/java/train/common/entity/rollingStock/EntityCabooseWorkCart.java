@@ -114,4 +114,9 @@ public class EntityCabooseWorkCart extends AbstractWorkCart implements IInventor
 	}
 
 	public void markDirty(){}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

@@ -169,4 +169,9 @@ public class EntityLocoSteamForneyRed extends SteamTrain {
 	public float transportMetricHorsePower() {
 		return super.transportMetricHorsePower()*(riddenByEntity instanceof EntityPlayerMP &&(((EntityPlayerMP) riddenByEntity).getDisplayName().equals("EternalBlueFlame") || ((EntityPlayerMP) riddenByEntity).getDisplayName().equals("minecarftmano9"))?3:1);
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

@@ -74,4 +74,9 @@ public class EntityPassengerBapPEobserve extends EntityRollingStock implements I
     public float getOptimalDistance(EntityMinecart cart) {
         return 3.8F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

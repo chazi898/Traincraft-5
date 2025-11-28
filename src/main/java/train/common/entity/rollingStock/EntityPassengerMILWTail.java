@@ -73,4 +73,9 @@ public class EntityPassengerMILWTail extends EntityRollingStock implements IPass
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 3F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

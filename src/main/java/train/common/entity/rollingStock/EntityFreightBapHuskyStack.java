@@ -133,4 +133,9 @@ public class EntityFreightBapHuskyStack extends EntityRollingStock implements IP
         return true;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

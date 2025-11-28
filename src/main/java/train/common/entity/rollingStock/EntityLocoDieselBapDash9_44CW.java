@@ -146,4 +146,9 @@ public class EntityLocoDieselBapDash9_44CW extends DieselTrain {
     public boolean canBeAdjusted(EntityMinecart cart) {
         return canBeAdjusted;
     }
+
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

@@ -163,4 +163,8 @@ public class EntityLocoDieselBapBeep extends DieselTrain {
         return true;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

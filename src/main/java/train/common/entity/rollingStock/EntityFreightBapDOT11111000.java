@@ -112,4 +112,8 @@ public class EntityFreightBapDOT11111000 extends LiquidTank {
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.9375F;
     }
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

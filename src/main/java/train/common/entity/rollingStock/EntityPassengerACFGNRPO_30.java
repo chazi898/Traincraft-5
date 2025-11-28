@@ -104,4 +104,9 @@ public class EntityPassengerACFGNRPO_30 extends Freight implements IInventory {
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 		return true;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

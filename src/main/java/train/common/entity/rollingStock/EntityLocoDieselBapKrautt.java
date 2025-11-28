@@ -160,4 +160,9 @@ public class EntityLocoDieselBapKrautt extends DieselTrain {
         return canBeAdjusted;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

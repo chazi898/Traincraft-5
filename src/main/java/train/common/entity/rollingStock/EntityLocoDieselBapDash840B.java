@@ -159,4 +159,9 @@ public class EntityLocoDieselBapDash840B extends DieselTrain {
         return canBeAdjusted;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

@@ -113,4 +113,9 @@ public class EntityTankWagonUS extends LiquidTank {
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.6F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

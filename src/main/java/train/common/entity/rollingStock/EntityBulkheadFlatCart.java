@@ -114,4 +114,9 @@ public class EntityBulkheadFlatCart extends Freight implements IInventory {
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.3F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

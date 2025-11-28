@@ -77,4 +77,9 @@ public class EntityStockCarDRWG extends EntityRollingStock implements IPassenger
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.65F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

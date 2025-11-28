@@ -114,4 +114,9 @@ public class EntityCabooseLoggingPRR extends AbstractWorkCart implements IInvent
 	}
 
 	public void markDirty(){}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

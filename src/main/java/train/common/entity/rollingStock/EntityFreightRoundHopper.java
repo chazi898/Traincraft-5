@@ -105,4 +105,9 @@ public class EntityFreightRoundHopper extends Freight implements IInventory {
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 		return true;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

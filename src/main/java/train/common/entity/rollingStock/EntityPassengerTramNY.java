@@ -74,4 +74,9 @@ public class EntityPassengerTramNY extends EntityRollingStock implements IPassen
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 2.2F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

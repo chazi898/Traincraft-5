@@ -103,4 +103,9 @@ public class EntityBoxCartPRR extends Freight implements IInventory {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 3.05F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

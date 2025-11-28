@@ -80,4 +80,9 @@ public class EntityCaboose3 extends EntityRollingStock implements IPassenger {
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.3F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

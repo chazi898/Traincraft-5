@@ -116,4 +116,9 @@ public class EntityFlatCartWoodUS extends Freight implements IInventory{
 			}
 		}
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

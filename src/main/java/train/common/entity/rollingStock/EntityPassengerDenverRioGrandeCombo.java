@@ -86,4 +86,9 @@ public class EntityPassengerDenverRioGrandeCombo extends EntityRollingStock impl
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 3.15F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

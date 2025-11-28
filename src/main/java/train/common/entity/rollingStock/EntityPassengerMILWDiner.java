@@ -86,4 +86,9 @@ public class EntityPassengerMILWDiner extends EntityRollingStock implements IPas
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 3.1F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

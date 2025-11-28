@@ -164,4 +164,9 @@ public class EntityLocoDieselGE44Ton extends DieselTrain {
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 		return true;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

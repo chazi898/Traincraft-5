@@ -99,4 +99,9 @@ public class EntityBoxCartUS extends Freight implements IInventory {
         return 1.65F;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

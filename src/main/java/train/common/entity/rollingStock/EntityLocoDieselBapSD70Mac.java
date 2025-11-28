@@ -158,4 +158,9 @@ public class EntityLocoDieselBapSD70Mac extends DieselTrain {
         return canBeAdjusted;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

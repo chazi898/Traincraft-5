@@ -158,4 +158,9 @@ public class EntityLocoDieselC415L extends DieselTrain {
         return canBeAdjusted;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

@@ -114,4 +114,9 @@ public class EntityCabooseLogging extends AbstractWorkCart implements IInventory
 	}
 
 	public void markDirty(){}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

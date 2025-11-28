@@ -162,4 +162,9 @@ public class EntityLocoDieselBapCF7round extends DieselTrain {
         return canBeAdjusted;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

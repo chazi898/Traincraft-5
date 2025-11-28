@@ -76,4 +76,9 @@ public class EntityCabooseBapDRGW extends EntityRollingStock implements IPasseng
     public float getOptimalDistance(EntityMinecart cart) {
         return 2.4F;
     }
+
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

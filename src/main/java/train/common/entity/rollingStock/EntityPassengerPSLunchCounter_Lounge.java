@@ -74,4 +74,9 @@ public class EntityPassengerPSLunchCounter_Lounge extends EntityRollingStock imp
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 4.0F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

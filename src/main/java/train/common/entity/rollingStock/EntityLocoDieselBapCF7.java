@@ -165,4 +165,9 @@ public class EntityLocoDieselBapCF7 extends DieselTrain {
         return canBeAdjusted;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

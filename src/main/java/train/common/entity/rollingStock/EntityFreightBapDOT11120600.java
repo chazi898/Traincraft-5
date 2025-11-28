@@ -112,4 +112,9 @@ public class EntityFreightBapDOT11120600 extends LiquidTank {
         return 2.125F;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

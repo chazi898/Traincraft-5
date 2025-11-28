@@ -112,4 +112,9 @@ public class EntityTankWagonThreeDome extends LiquidTank {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 2.7F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

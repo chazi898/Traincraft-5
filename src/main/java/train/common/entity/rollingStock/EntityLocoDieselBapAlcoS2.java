@@ -163,4 +163,8 @@ public class EntityLocoDieselBapAlcoS2 extends DieselTrain {
         return true;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
 }

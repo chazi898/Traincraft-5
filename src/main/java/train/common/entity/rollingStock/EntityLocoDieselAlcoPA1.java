@@ -160,4 +160,9 @@ public class EntityLocoDieselAlcoPA1 extends DieselTrain {
         return canBeAdjusted;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }

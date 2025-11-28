@@ -82,4 +82,9 @@ public class EntityFlatCart extends EntityRollingStock implements IPassenger {
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 1.4F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

@@ -74,4 +74,9 @@ public class EntityPassengerPSBM56SeatCoach extends EntityRollingStock implement
 	public float getOptimalDistance(EntityMinecart cart) {
 		return 4.0F;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

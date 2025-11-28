@@ -164,4 +164,9 @@ public class EntityLocoSteamUSATCUS extends SteamTrain {
 	public boolean isItemValidForSlot(int i, ItemStack itemstack) {
 		return true;
 	}
+
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

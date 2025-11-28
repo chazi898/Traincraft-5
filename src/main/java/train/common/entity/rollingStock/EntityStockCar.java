@@ -99,4 +99,8 @@ public class EntityStockCar extends EntityRollingStock implements IPassenger {
 		}
 	}
 
+	@Override
+	public String transportcountry() {
+		return "us";
+	}
 }

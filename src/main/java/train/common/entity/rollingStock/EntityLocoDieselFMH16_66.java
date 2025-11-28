@@ -157,4 +157,9 @@ public class EntityLocoDieselFMH16_66 extends DieselTrain {
         return canBeAdjusted;
     }
 
+    @Override
+    public String transportcountry() {
+        return "us";
+    }
+
 }
