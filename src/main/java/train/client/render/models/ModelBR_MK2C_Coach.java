@@ -11,6 +11,9 @@ package train.client.render.models; //Path where the model is located
 
 import fexcraft.tmt.slim.ModelConverter;
 import fexcraft.tmt.slim.ModelRendererTurbo;
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
+import org.lwjgl.opengl.GL11;
 
 public class ModelBR_MK2C_Coach extends ModelConverter //Same as Filename
 {
@@ -19,7 +22,7 @@ public class ModelBR_MK2C_Coach extends ModelConverter //Same as Filename
 
 	public ModelBR_MK2C_Coach() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[369];
+		bodyModel = new ModelRendererTurbo[371];
 
 		initbodyModel_1();
 
@@ -400,6 +403,8 @@ public class ModelBR_MK2C_Coach extends ModelConverter //Same as Filename
 		bodyModel[366] = new ModelRendererTurbo(this, 281, 175, textureX, textureY); // Box 198
 		bodyModel[367] = new ModelRendererTurbo(this, 280, 150, textureX, textureY); // Box 1
 		bodyModel[368] = new ModelRendererTurbo(this, 280, 156, textureX, textureY); // Box 1
+		bodyModel[369] = new ModelRendererTurbo(this, 283, 162, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[370] = new ModelRendererTurbo(this, 283, 168, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 81, 1, 20, 0F,0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F); // Box 0
 		bodyModel[0].setRotationPoint(-48F, 0F, -10F);
@@ -1583,5 +1588,27 @@ public class ModelBR_MK2C_Coach extends ModelConverter //Same as Filename
 
 		bodyModel[368].addShapeBox(0F, 0F, 0F, 69, 1, 1, 0F,0F, -0.8F, -0.89F, 0F, -0.8F, -0.89F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, 0F, -0.89F, 0F, 0F, -0.89F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 1
 		bodyModel[368].setRotationPoint(-42F, -8F, 10.01F);
+
+		bodyModel[369].addShapeBox(0F, 0F, 0F, 69, 1, 2, 0F,0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, -0.8F, -0.05F, 0F, -0.8F, -0.05F, 0F, -0.8F, 0.05F, 0F, -0.8F, 0.05F); // Lamp
+		bodyModel[369].setRotationPoint(-42F, -20.1F, -5F);
+
+		bodyModel[370].addShapeBox(0F, 0F, 0F, 69, 1, 2, 0F,0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, -0.8F, 0.05F, 0F, -0.8F, 0.05F, 0F, -0.8F, -0.05F, 0F, -0.8F, -0.05F); // Lamp
+		bodyModel[370].setRotationPoint(-42F, -20.1F, 3F);
+	}
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+
+		for (int i = 0; i < 371; i++) {
+			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
+				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
+				bodyModel[i].render(f5);
+				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
+			} else if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("cull")) {
+				GL11.glDisable(GL11.GL_CULL_FACE);
+				bodyModel[i].render(f5);
+				GL11.glEnable(GL11.GL_CULL_FACE);
+			} else {
+				bodyModel[i].render(f5);
+			}
+		}
 	}
 }

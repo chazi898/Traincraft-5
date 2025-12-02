@@ -42,7 +42,7 @@ public class EntityLocoSteamPannier extends SteamTrain {
 	public void updateRiderPosition() {
 		if(riddenByEntity==null){return;}
 
-		TraincraftUtil.updateRider(this, 0, 0.5);
+		TraincraftUtil.updateRider(this, 0, 0.45);
 	}
 
 	@Override
