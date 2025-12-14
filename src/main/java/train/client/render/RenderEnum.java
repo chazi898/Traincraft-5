@@ -808,7 +808,7 @@ public enum RenderEnum implements TrainRenderRecord {
     locoSteamA4Tender(EntityTenderA4.class, new ModelTenderA4(), "tenderA4_UK_", true, new float[]{-0.2F, 0.2F, 0.0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     LocoMRcompoundTender(EntityTenderMRCompound.class, new ModelMRCompoundTender(), "LMS_4p_", true, new float[]{0f, 0.15f, 0}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
     LocoBR_Black_5_Tender(EntityTenderBR_Black_5.class, new ModelBR_Black_5_Tender(), "BR_Black_5_Tender_", true, new float[]{-0.05f, 0f, 0f,}, new float[]{0F, 180f, 180F}, null, "", 0, null, "", null, 0, false),
-    LocoBR1_Tender(EntityTenderBR1.class, new ModelBR1_Tender(), "BR1_Tender_", true, new float[]{0f, -0.01f, 0f,}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    LocoBR1_Tender(EntityTenderBR1.class, new ModelBR1_Tender(), "BR1_Tender_", true, new float[]{0.02f, -0.01f, 0f,}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     LocoChurchward3500GalTender(EntityTenderChurchward3500Gal.class, new ModelChurchward3500GalTender(), "Churchward_3500_Gal_", true, new float[]{0.05f, 0f, 0f,}, new float[]{0F, 180f, 180F}, null, "", 0, null, "", null, 0, false),
     LocoRW_Type_2_Tender(EntityTenderRWType2.class, new ModelRW_Type_2_Tender(), "Type_2_", true, new float[]{0f, 0.16f, 0f,}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     PropagandaUS(EntityPropagandaUS.class, new ModelPropagandaCar(), "propaganda_US_", true, new float[]{1.1F, 0.2F, -0.1F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),

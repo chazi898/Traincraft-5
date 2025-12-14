@@ -770,9 +770,15 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
                         } else if (speed > 0.06D && speed < 0.2D && soundPosition == 0) {
                             worldObj.playSoundAtEntity(this, sound.getRunString(), sound.getRunVolume(), 0.4F);
                             soundPosition = sound.getRunSoundLength() / 2;
-                        } else if (speed > 0.2D && soundPosition == 0) {
+                        } else if (speed > 0.2D && speed < 0.34D && soundPosition == 0) {
                             worldObj.playSoundAtEntity(this, sound.getRunString(), sound.getRunVolume(), 0.5F);
                             soundPosition = sound.getRunSoundLength() / 3;
+                        } else if (speed > 0.34D && speed < 0.52D && soundPosition == 0) {
+                            worldObj.playSoundAtEntity(this, sound.getRunString(), sound.getRunVolume(), 0.52F);
+                            soundPosition = sound.getRunSoundLength() / 4;
+                        } else if (speed > 0.52D && soundPosition == 0) {
+                            worldObj.playSoundAtEntity(this, sound.getRunString(), sound.getRunVolume(), 0.54F);
+                            soundPosition = sound.getRunSoundLength() / 5;
                         }
                     } else {
                         if (speed > 0.01D && soundPosition == 0) {
