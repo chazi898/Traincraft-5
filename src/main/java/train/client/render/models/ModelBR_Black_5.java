@@ -885,7 +885,7 @@ public class ModelBR_Black_5 extends ModelConverter //Same as Filename
 		bodyModel[148].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,0.5F, -1.1F, 0F, -0.2F, -1.1F, 0F, -0.2F, -1.1F, -0.5F, 0.5F, -1.1F, -0.5F, 0.5F, 0.2F, 0F, -0.2F, 0.2F, 0F, -0.2F, 0.2F, -0.5F, 0.5F, 0.2F, -0.5F); // Box 95
 		bodyModel[148].setRotationPoint(34F, 1.5F, 8F);
 
-		bodyModel[149].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 133
+		bodyModel[149].addShapeBox(0F, 0F, 0F, 4, 1, 2, 0F,0F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F); // Box 133
 		bodyModel[149].setRotationPoint(34F, -0.5F, -1F);
 
 		bodyModel[150].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.7F, 0.3F, 0.2F, -0.7F, 0.3F, 0.2F, -0.7F, -0.7F, 0F, -0.7F, -0.7F, 0F, 0.3F, 0.3F, 0.2F, 0.3F, 0.3F, 0.2F, 0.3F, -0.7F, 0F, 0.3F, -0.7F); // Box 156

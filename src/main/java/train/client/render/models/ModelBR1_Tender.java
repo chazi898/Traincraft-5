@@ -541,7 +541,7 @@ public class ModelBR1_Tender extends ModelConverter //Same as Filename
 		bodyModel[121].addShapeBox(0F, 0F, 0F, 1, 13, 6, 0F,-0.35F, 0F, -0.2F, 0F, 0F, -0.2F, 0F, 0F, -0.2F, -0.35F, 0F, -0.2F, -0.35F, -0.5F, -0.2F, 0F, -0.5F, -0.2F, 0F, -0.5F, -0.2F, -0.35F, -0.5F, -0.2F); // Box 123
 		bodyModel[121].setRotationPoint(-19F, -19F, -3F);
 
-		bodyModel[122].addBox(0F, 0F, 0F, 3, 1, 2, 0F); // Box 128
+		bodyModel[122].addShapeBox(0F, 0F, 0F, 3, 1, 2, 0F,0.1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.1F, 0F, 0F, 0.1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.1F, 0F, 0F); // Box 128
 		bodyModel[122].setRotationPoint(-24.1F, -1F, -1F);
 
 		bodyModel[123].addShapeBox(0F, 0F, 0F, 1, 16, 1, 0F,-0.2F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, -0.8F, -0.2F, 0F, -0.8F, -0.2F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, -0.8F, -0.2F, 0F, -0.8F); // Box 72

@@ -1149,7 +1149,7 @@ public class ModelBR_Britannia_Class extends ModelConverter //Same as Filename
 		bodyModel[204].addShapeBox(0F, 0F, 0F, 18, 1, 5, 0F,0F, -0.2F, 0F, 0F, -0.2F, 0F, 0F, -0.9F, 0F, -1F, -0.9F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, 0F, 0F, 0F, -1F, 0F, 0F); // Box 139
 		bodyModel[204].setRotationPoint(32F, -23.5F, 0F);
 
-		bodyModel[205].addShapeBox(0F, 0F, 0F, 3, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 149
+		bodyModel[205].addShapeBox(0F, 0F, 0F, 3, 1, 2, 0F,0F, 0F, 0F, 0.1F, 0F, 0F, 0.1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.1F, 0F, 0F, 0.1F, 0F, 0F, 0F, 0F, 0F); // Box 149
 		bodyModel[205].setRotationPoint(45F, -1F, -1F);
 
 		bodyModel[206].addShapeBox(0F, 0F, 0F, 9, 1, 1, 0F,0F, -0.2F, -0.75F, 0F, -0.2F, -0.75F, 0F, -0.2F, 0.25F, 0F, -0.2F, 0.25F, 0F, -0.5F, -0.75F, 0F, -0.5F, -0.75F, 0F, -0.5F, 0.25F, 0F, -0.5F, 0.25F); // Box 18
