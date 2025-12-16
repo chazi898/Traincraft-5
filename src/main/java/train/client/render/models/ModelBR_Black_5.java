@@ -11,6 +11,9 @@ package train.client.render.models; //Path where the model is located
 
 import fexcraft.tmt.slim.ModelConverter;
 import fexcraft.tmt.slim.ModelRendererTurbo;
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
+import org.lwjgl.opengl.GL11;
 
 public class ModelBR_Black_5 extends ModelConverter //Same as Filename
 {
@@ -19,7 +22,7 @@ public class ModelBR_Black_5 extends ModelConverter //Same as Filename
 
 	public ModelBR_Black_5() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[406];
+		bodyModel = new ModelRendererTurbo[412];
 
 		initbodyModel_1();
 
@@ -437,6 +440,12 @@ public class ModelBR_Black_5 extends ModelConverter //Same as Filename
 		bodyModel[403] = new ModelRendererTurbo(this, 119, 234, textureX, textureY); // Box 59
 		bodyModel[404] = new ModelRendererTurbo(this, 142, 234, textureX, textureY); // Box 59
 		bodyModel[405] = new ModelRendererTurbo(this, 119, 234, textureX, textureY); // Box 59
+		bodyModel[406] = new ModelRendererTurbo(this, 200, 67, textureX, textureY); // Box 156
+		bodyModel[407] = new ModelRendererTurbo(this, 207, 67, textureX, textureY); // Box 156
+		bodyModel[408] = new ModelRendererTurbo(this, 195, 67, textureX, textureY); // Box 156
+		bodyModel[409] = new ModelRendererTurbo(this, 183, 67, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[410] = new ModelRendererTurbo(this, 190, 67, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[411] = new ModelRendererTurbo(this, 178, 67, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 17, 17, 0, 0F,0F, 0F, 0F, -11F, 0F, 0F, -11F, 0F, 0F, 0F, 0F, 0F, 0F, -11F, 0F, -11F, -11F, 0F, -11F, -11F, 0F, 0F, -11F, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-30F, 1F, -6F);
@@ -1661,5 +1670,39 @@ public class ModelBR_Black_5 extends ModelConverter //Same as Filename
 
 		bodyModel[405].addShapeBox(0F, 0F, 0F, 2, 1, 8, 0F,0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F); // Box 59
 		bodyModel[405].setRotationPoint(-22F, -4F, -4F);
+
+		bodyModel[406].addShapeBox(0F, 0F, 0F, 1, 3, 2, 0F,-0.1F, -0.7F, 0.1F, 0.2F, -0.7F, 0.1F, 0.2F, -0.7F, -0.9F, -0.1F, -0.7F, -0.9F, -0.1F, 0.3F, 0.1F, 0.2F, 0.3F, 0.1F, 0.2F, 0.3F, -0.9F, -0.1F, 0.3F, -0.9F); // Box 156
+		bodyModel[406].setRotationPoint(-28.53F, -15.5F, -0.5F);
+
+		bodyModel[407].addShapeBox(0F, 0F, 0F, 1, 3, 1, 0F,-0.1F, -1.3F, 0F, 0.2F, -1.3F, 0F, 0.2F, -0.7F, -0.2F, -0.1F, -0.7F, -0.2F, -0.1F, -0.3F, 0F, 0.2F, -0.3F, 0F, 0.2F, 0.3F, -0.2F, -0.1F, 0.3F, -0.2F); // Box 156
+		bodyModel[407].setRotationPoint(-28.53F, -15.5F, -1.4F);
+
+		bodyModel[408].addShapeBox(0F, 0F, 0F, 1, 3, 1, 0F,-0.1F, -0.7F, -0.2F, 0.2F, -0.7F, -0.2F, 0.2F, -1.3F, 0F, -0.1F, -1.3F, 0F, -0.1F, 0.3F, -0.2F, 0.2F, 0.3F, -0.2F, 0.2F, -0.3F, 0F, -0.1F, -0.3F, 0F); // Box 156
+		bodyModel[408].setRotationPoint(-28.53F, -15.5F, 0.4F);
+
+		bodyModel[409].addShapeBox(0F, 0F, 0F, 1, 3, 2, 0F,-1.1F, -0.77F, 0.1F, 0.2F, -0.77F, 0.1F, 0.2F, -0.77F, -0.9F, -1.1F, -0.77F, -0.9F, -1.1F, 0.23F, 0.1F, 0.2F, 0.23F, 0.1F, 0.2F, 0.23F, -0.9F, -1.1F, 0.23F, -0.9F); // Lamp
+		bodyModel[409].setRotationPoint(-29.57F, -15.5F, -0.5F);
+
+		bodyModel[410].addShapeBox(0F, 0F, 0F, 1, 3, 1, 0F,-1.1F, -1.35F, -0.05F, 0.2F, -1.35F, -0.05F, 0.2F, -0.77F, -0.2F, -1.1F, -0.77F, -0.2F, -1.1F, -0.35F, -0.05F, 0.2F, -0.35F, -0.05F, 0.2F, 0.23F, -0.2F, -1.1F, 0.23F, -0.2F); // Lamp
+		bodyModel[410].setRotationPoint(-29.57F, -15.5F, -1.4F);
+
+		bodyModel[411].addShapeBox(0F, 0F, 0F, 1, 3, 1, 0F,-1.1F, -0.77F, -0.2F, 0.2F, -0.77F, -0.2F, 0.2F, -1.35F, -0.05F, -1.1F, -1.35F, -0.05F, -1.1F, 0.23F, -0.2F, 0.2F, 0.23F, -0.2F, 0.2F, -0.35F, -0.05F, -1.1F, -0.35F, -0.05F); // Lamp
+		bodyModel[411].setRotationPoint(-29.57F, -15.5F, 0.4F);
+	}
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+
+		for (int i = 0; i < 412; i++) {
+			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
+				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
+				bodyModel[i].render(f5);
+				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
+			} else if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("cull")) {
+				GL11.glDisable(GL11.GL_CULL_FACE);
+				bodyModel[i].render(f5);
+				GL11.glEnable(GL11.GL_CULL_FACE);
+			} else {
+				bodyModel[i].render(f5);
+			}
+		}
 	}
 }

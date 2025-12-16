@@ -141,7 +141,7 @@ public enum EnumSounds implements TrainSoundRecord {
     Class378Front(EntityElectricClass378Front.class, "Class387Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     Class319Engine(EntityElectricClass319.class, "Class321ShortHorn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     Class390Front(EntityElectricClass390.class, "PendolinoHorn", 1.4F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
-    Class374Front(EntityElectricClass374.class, "mg_horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
+    Class374Front(EntityElectricClass374.class, "BB15000Horn", 1.1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     Class442DTS(EntityElectricClass442DTS.class, "british_two_tone", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     asteri(EntityLocoSteamasteri.class, "asteri", 1F, "asteri", 0.2F, 212, "mg_idle", 0.6F, 50, false),
     FGV4300(EntityLocoElectricFGV4300.class, "4300_horn", 1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 40, false),
