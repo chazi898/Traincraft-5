@@ -74,7 +74,7 @@ public class EntityPassengerClass404composite extends EntityRollingStock impleme
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return 3.0F;
+        return 2.9F;
     }
 
     @Override
