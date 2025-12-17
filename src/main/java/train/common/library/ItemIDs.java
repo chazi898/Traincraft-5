@@ -758,6 +758,7 @@ public enum ItemIDs {
 	minecartSNCF_BB15000("ItemRollingStock", "SNCF_BB15000_Icon", 5),
 	minecartMGTKLoco("ItemRollingStock", "MGT_K_Loco_icon", 2),
 	minecartMGTKTail("ItemRollingStock", "MGT_K_Tail_icon", 1),
+	minecartClass20("ItemRollingStock", "Class_20_Icon", 4),
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),
 

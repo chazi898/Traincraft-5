@@ -180,6 +180,7 @@ public enum EnumSounds implements TrainSoundRecord {
     SNCF_BB15000(EntityElectricSNCF_BB15000.class, "BB15000Horn", 1.1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 50, false),
     MGTKLoco(EntityElectricMGTKLoco.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
     B80D_A(EntityElectricB80D_A.class, "tram_bell", 1F, "mg_run", 0.6F, 50, "mg_run", 0.6F, 50, false),
+    Class20(EntityLocoDieselClass20.class, "Class47Horn", 1F, "Class20Thrash", 0.6F, 50, "mg_run",0.6F, 50, false),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),

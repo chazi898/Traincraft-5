@@ -17,14 +17,14 @@ import org.lwjgl.opengl.GL11;
 
 import java.util.ArrayList;
 
-public class ModelClass68 extends ModelConverter //Same as Filename
-{
-	int textureX = 512;
-	int textureY = 512;
+		public class ModelClass68 extends ModelConverter //Same as Filename
+		{
+			int textureX = 512;
+			int textureY = 512;
 
-	public ModelClass68() //Same as Filename
-	{
-		bodyModel = new ModelRendererTurbo[409];
+			public ModelClass68() //Same as Filename
+			{
+				bodyModel = new ModelRendererTurbo[409];
 
 		initbodyModel_1();
 
