@@ -186,6 +186,7 @@
   "Class88Horn": {"category": "master", "sounds" :  [{"name": "Class88Horn", "stream": true}]},
   "Class68Thrash": {"category": "master", "sounds" :  [{"name": "Class68Thrash", "stream": true}]},
   "Class20Thrash": {"category": "master", "sounds" :  [{"name": "Class20Thrash", "stream": true}]},
+  "Class20Horn": {"category": "master", "sounds" :  [{"name": "Class20Horn", "stream": true}]},
   "CompoundWhistle": {"category": "master", "sounds" :  [{"name": "CompoundWhistle", "stream": true}]},
   "GWRExpressWhistle": {"category": "master", "sounds" :  [{"name": "GWRExpressWhistle", "stream": true}]},
   "GWRStandardWhistle": {"category": "master", "sounds" :  [{"name": "GWRStandardWhistle", "stream": true}]},

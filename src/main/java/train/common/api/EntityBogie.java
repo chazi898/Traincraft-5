@@ -484,7 +484,7 @@ public class EntityBogie extends EntityMinecart implements IMinecart, IRoutableC
 			} else if (TCRailTypes.isDiagonalCrossingTrack(lastTrack)) {
 				moveOnTCDiagonal(i, j, k, lastTrack.xCoord, lastTrack.zCoord, lastTrack.getBlockMetadata(), lastTrack.getRailLength());
 			} else if (TCRailTypes.isCurvedSlopeTrack(lastTrack)) {
-				moveOnTCCurvedSlope(i, j, k, lastTrack.r, lastTrack.cx, lastTrack.cz, lastTrack.xCoord, lastTrack.zCoord, meta, 1, lastTrack.slopeAngle);
+				moveOnTCCurvedSlope(i, j, k, lastTrack.r, lastTrack.cx, lastTrack.cz, lastTrack.xCoord, lastTrack.zCoord, lastTrack.getBlockMetadata(), 1, lastTrack.slopeAngle);
 			} else if (TCRailTypes.isDiagonalTrack(lastTrack)) {
 				moveOnTCDiagonal(i, j, k, lastTrack.xCoord, lastTrack.zCoord, lastTrack.getBlockMetadata(), lastTrack.getRailLength());
 			}
