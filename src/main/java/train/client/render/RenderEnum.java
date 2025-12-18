@@ -1488,6 +1488,7 @@ public enum RenderEnum implements TrainRenderRecord {
     MGTKTail(EntityPassengerMGTKTail.class, new ModelMGT_K_Tail(), "MGT_K_", true, new float[]{-0.9F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     Class20(EntityLocoDieselClass20.class, new ModelClass20(), "Class_20_", true, new float[]{-1.5F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
     }, "", null, 0, false),
+    Tipper(EntityFreightTipper.class, new ModelTipperNG(), "tipperNG", false, new float[]{0F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;
