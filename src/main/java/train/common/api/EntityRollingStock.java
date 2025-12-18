@@ -1433,6 +1433,8 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
 
         double correctedPosX = circleX + ((circlePosX / circlePositionNormalized) * tileRadius);
         double correctedPosZ = circleZ + ((circlePosZ / circlePositionNormalized) * tileRadius);
+        motionX = negVelNormX;
+        motionZ = velNormZ;
         double newYPos = Math.abs(floor_Y + Math.min(1, (slopeAngle * Math.abs(tilePositionNormalized))) + yOffset + 0.34f);
         setPosition(correctedPosX, newYPos, correctedPosZ);
 
