@@ -608,7 +608,7 @@ public class EnumTrains {
 				TrainRecord.makeEntry("MGTKLoco", "MGTKLoco", EntityElectricMGTKLoco.class, ItemIDs.minecartMGTKLoco.item, "electric", 250, 70, 0, 20, 0, 100, 0.9, 0.4, 1000, new String[]{"Grey","Yellow"}, 18, -2.45, "Pack: Trams In Motion"),
 				TrainRecord.makeEntry("MGTKTail", "MGTKTail", EntityPassengerMGTKTail.class, ItemIDs.minecartMGTKTail.item, "passenger", 0, 0, 1, 0, 0, 0, 0, 0, 0, new String[]{"Grey","Yellow"}, 18, -1.85, "Pack: Trams In Motion"),
 				TrainRecord.makeEntry("Class20", "Class20", EntityLocoDieselClass20.class, ItemIDs.minecartClass20.item, "diesel",1000, 121, 0, 10, 0, 100, 0.6, 0.7, 7000, new String[]{"Black", "Blue", "Brown", "Cyan", "Green", "Grey", "LightBlue", "LightGrey", "Lime", "Magenta", "Orange", "Pink", "Purple", "Red", "White", "Yellow", "Skin17", "Skin18", "Skin19", "Skin20", "Skin21", "Skin22", "Skin23", "Skin24", "Skin25", "Skin26", "Skin27"}, 18, -3, "Pack: B.I.P."),
-				TrainRecord.makeEntry("Tipper", "Tipper", EntityFreightTipper.class, ItemIDs.minecartTipper.item, "freight", 3, null, 18, 9, "Pack: B.I.P."),
+				TrainRecord.makeEntry("Tipper", "Tipper", EntityFreightTipper.class, ItemIDs.minecartTipper.item, "freight", 0.3, null, 18, 9, "Pack: B.I.P."),
 
 		};
 	}

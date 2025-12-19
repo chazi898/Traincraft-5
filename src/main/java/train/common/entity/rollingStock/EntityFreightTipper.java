@@ -105,4 +105,8 @@ public class EntityFreightTipper extends Freight implements IInventory {
     public int getInventoryStackLimit() {
         return 1;
     }
+    @Override
+    public String transportcountry() {
+        return "uk";
+    }
 }

@@ -33,6 +33,7 @@ public class ModelRendererTurbo {
     public boolean mirror;
     public float rotateAngleX=0,rotateAngleY=0,rotateAngleZ=0;
     public float rotationPointX=0,rotationPointY=0,rotationPointZ=0;
+    public float width, height, depth;
     public boolean showModel; //previously known as !field_1402_i
     public boolean noCull=false;
     public boolean ignoresLighting=false;
@@ -249,6 +250,7 @@ public class ModelRendererTurbo {
      * @param scale
      */
     public ModelRendererTurbo addBox(float x, float y, float z, float w, float h, float d, float expansion, float scale, boolean[] sides){
+        width=w;height=h;depth=d;
         expansion +=0.005f;
         float x1 = (x + w+expansion)*scale;
         float y1 = (y + h+expansion)*scale;
@@ -1430,19 +1432,18 @@ public class ModelRendererTurbo {
         //fixes weird triangle bug
         w+=0.001f;
         h+=0.001f;
-        d+=0.001f;
 
         //fixes zbuffer issue
-        if(w==0){
+        if(w==0f){
             x-=0.005f;
             w=0.005f;
         }
-        if(h==0){
+        if(h==0f){
             y-=0.005f;
             h=0.005f;
         }
-        if(d==0) {
-            z -= 0.005f;
+        if(d==0f){
+            z-=0.005f;
             d=0.005f;
         }
         float f4 = x + w, f5 = y + h, f6 = z + d;
@@ -1455,13 +1456,13 @@ public class ModelRendererTurbo {
         float[][] v  = {{x  - x0, y  - y0, z  - z0}, {f4 + x1, y  - y1, z  - z1},{f4 + x5, f5 + y5, z  - z5}, {x  - x4, f5 + y4, z  - z4}, {x  - x3, y  - y3, f6 + z3}, {f4 + x2, y  - y2, f6 + z2},{f4 + x6, f5 + y6, f6 + z6}, {x  - x7, f5 + y7, f6 + z7}};
         //also fixes zbuffer issue
         if(w==0.005f){
-            w=0;
+            w=0f;
         }
         if(h==0.005f){
-            h=0;
+            h=0f;
         }
         if(d==0.005f){
-            d=0;
+            d=0f;
         }
         addRectShape(v[0], v[1], v[2], v[3], v[4], v[5], v[6], v[7], w, h, d,null);
 

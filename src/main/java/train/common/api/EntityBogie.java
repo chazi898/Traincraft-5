@@ -732,9 +732,9 @@ public class EntityBogie extends EntityMinecart implements IMinecart, IRoutableC
 				return;
 			}
 		}
-		this.posX = (this.boundingBox.minX + this.boundingBox.maxX) / 2.0D;
+		this.posX = (this.boundingBox.minX + this.boundingBox.maxX) / 2D;
 		this.posY = this.boundingBox.minY + (double)this.yOffset - (double)this.ySize;
-		this.posZ = (this.boundingBox.minZ + this.boundingBox.maxZ) / 2.0D;
+		this.posZ = (this.boundingBox.minZ + this.boundingBox.maxZ) / 2D;
 	}
 
 	private void moveOnTCStraight(int j, double cx, double cz, int meta) {

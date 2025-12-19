@@ -119,7 +119,7 @@ public class EntityElectricClass404motor extends ElectricTrain {
 
     @Override
     public String getInventoryName() {
-        return "Class 162 Engine";
+        return "Class 404 Motor";
     }
 
     @Override
