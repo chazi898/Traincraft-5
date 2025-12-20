@@ -166,7 +166,7 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
     private boolean hasSpawnedBogie = false;
     private double mountedOffset = -0.5;
     public double posYFromServer;
-    private double derailSpeed = 0.46;
+    private double derailSpeed = 0.77;
 
     private int scrollPosition;
     public TileTCRail lastTrack=null;
@@ -1101,7 +1101,7 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
             }
             if (bogieLoco != null) {
                 if (!bogieLoco.isOnRail()) {
-                    derailSpeed = 0;
+                    derailSpeed = 0.77;
                     this.unLink();
                 }
             }
