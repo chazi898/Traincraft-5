@@ -60,7 +60,7 @@ public class CollisionHandler {
 			box = boundingBox.expand(2, 0, 0.0);
 		}
 		else {
-			box = boundingBox.expand(2, 0, 2);
+			box = boundingBox.expand(1.02, 0, 1.02);
 		}
 		listRide = worldObj.getEntitiesWithinAABBExcludingEntity(entityOne, box);
 		if (listRide != null && listRide.size() > 0) {

@@ -596,7 +596,7 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         TrainSoundRecord sound = Traincraft.instance.traincraftRegistry.getTrainSoundRecord(this.getClass());
         if (sound != null && !sound.getHornString().isEmpty() && whistleDelay == 0) {
             worldObj.playSoundAtEntity(this, sound.getHornString(), sound.getHornVolume(), 1.0F);
-            whistleDelay = 65;
+            whistleDelay = 2;
         }
 
         List<?> entities = worldObj.getEntitiesWithinAABB(EntityAnimal.class, AxisAlignedBB.getBoundingBox(
