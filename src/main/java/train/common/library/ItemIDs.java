@@ -760,6 +760,9 @@ public enum ItemIDs {
 	minecartMGTKTail("ItemRollingStock", "MGT_K_Tail_icon", 1),
 	minecartClass20("ItemRollingStock", "Class_20_Icon", 4),
 	minecartTipper("ItemRollingStock", "TipperNG_Icon", 1),
+	minecartClass71("ItemRollingStock", "Class_71_Icon", 4),
+	minecartClass74("ItemRollingStock", "Class_74_Icon", 4),
+
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),
 

@@ -825,6 +825,8 @@ item.tc:minecartMGTKLoco.name=MGT K Loco
 item.tc:minecartMGTKTail.name=MGT K Tail
 item.tc:minecartClass20.name=Class 20
 item.tc:minecartTipper.name=Tipper NG
+item.tc:minecartClass71.name=Class 71
+item.tc:minecartClass74.name=Class 74
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1527,6 +1529,8 @@ entity.tc.MGTKLoco.name=MGT K Loco
 entity.tc.MGTKTail.name=MGT K Tail
 entity.tc.Class20.name=Class 20
 entity.tc.Tipper.name=Tipper NG
+entity.tc.Class71.name=Class 71
+entity.tc.Class74.name=Class 74
 
 description.villager.profession.tc.station_chief=Station Master
 
