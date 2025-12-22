@@ -1203,7 +1203,7 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
             } else if (TCRailTypes.isTurnTrack(lastTrack) || (TCRailTypes.isSwitchTrack(lastTrack) && lastTrack.getSwitchState())) {
                 if (bogieLoco != null) {
                     if (!bogieLoco.isOnRail()) {
-                        derailSpeed = 0;
+                        derailSpeed = 0.77;
                     }
                 }
                 if (derailSpeed == 0) {
@@ -1681,6 +1681,7 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
             l = MathHelper.floor_double(rotationYaw * 8.0F / 360.0F + 0.5) & 7;
 
         }
+
         if (l == 0 || l == 4) {
             moveEntity(motionX, 0.0D, 0.0D);
         } else if (l == 2 || l == 6) {
@@ -1695,6 +1696,7 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
             moveOnTCDiagonal(i, j, k, cx, cz, 4, 1);
         }
     }
+
     public void limitSpeedOnTCRail() {
         railMaxSpeed = 3;
         maxSpeed = Math.min(railMaxSpeed, getMaxCartSpeedOnRail());
