@@ -480,7 +480,7 @@ public class EntityBogie extends EntityMinecart implements IMinecart, IRoutableC
 			} else if (TCRailTypes.isSlopeTrack(lastTrack)) {
 				moveOnTCSlope(j, lastTrack.xCoord, lastTrack.zCoord, lastTrack.slopeAngle, lastTrack.slopeHeight, lastTrack.getBlockMetadata());
 			} else if (TCRailTypes.isDiagonalCrossingTrack(lastTrack)) {
-				moveOnTCDiamondCrossing(i, j, k, lastTrack.xCoord,  lastTrack.zCoord );
+				moveOnTCDiamondCrossing(i, j, k, lastTrack.xCoord, lastTrack.zCoord);
 			} else if (TCRailTypes.isDiagonalCrossingTrack(lastTrack)) {
 				moveOnTCDiagonal(i, j, k, lastTrack.xCoord, lastTrack.zCoord, lastTrack.getBlockMetadata(), lastTrack.getRailLength());
 			} else if (TCRailTypes.isCurvedSlopeTrack(lastTrack)) {
@@ -510,8 +510,8 @@ public class EntityBogie extends EntityMinecart implements IMinecart, IRoutableC
 			if (TCRailTypes.isSlopeTrack(lastTrack)) {
 				moveOnTCSlope(j, lastTrack.xCoord, lastTrack.zCoord, lastTrack.slopeAngle, lastTrack.slopeHeight, lastTrack.getBlockMetadata());
 			}
-			else if (TCRailTypes.isDiagonalCrossingTrack(lastTrack)) {
-				moveOnTCDiamondCrossing(i, j, k, lastTrack.xCoord,  lastTrack.zCoord );
+			if (TCRailTypes.isDiagonalCrossingTrack(lastTrack)) {
+				moveOnTCDiamondCrossing(i, j, k, lastTrack.xCoord,  lastTrack.zCoord);
 			}
 			if (TCRailTypes.isDiagonalTrack(lastTrack)) {
 				moveOnTCDiagonal(i, j, k, lastTrack.xCoord, lastTrack.zCoord, lastTrack.getBlockMetadata(), lastTrack.getRailLength());
@@ -653,9 +653,12 @@ public class EntityBogie extends EntityMinecart implements IMinecart, IRoutableC
 
 	protected void moveOnTCDiamondCrossing(int i, int j, int k, double cx, double cz) {
 
-
-
+		double exitX = 0;
+		double exitZ = 0;
+		double directionX;
+		double directionZ;
 		double norm = Math.sqrt(this.motionX * this.motionX + this.motionZ * this.motionZ);
+		double distanceNorm;
 
 		if (Math.abs(motionZ) > Math.abs(motionX * 2)) {
 			this.moveEntity(0.0D, 0.0D, Math.copySign(norm, this.motionZ));
@@ -666,29 +669,12 @@ public class EntityBogie extends EntityMinecart implements IMinecart, IRoutableC
 		else {
 			this.moveEntity(Math.copySign(norm, this.motionX), 0.0D, Math.copySign(norm, this.motionZ));
 		}
-/*
 
-		int l = MathHelper.floor_double(rotationYaw * 8.0F / 360.0F + 0.5) & 7;
-
-
-		if (l == 0 || l == 4) {
-			moveEntity(motionX, 0.0D, 0.0D);
-		}
-		else if (l == 2 || l == 6) {
-			moveEntity(0.0D, 0.0D, motionZ);
-		}
-		else if (l == 1) {
-			moveOnTCDiagonal(i, j, k, cx, cz, 5, 1);
-		}
-		else if (l == 3){
-			moveOnTCDiagonal(i, j, k, cx, cz, 6, 1);
-		}
-		else if (l == 5) {
-			moveOnTCDiagonal(i, j, k, cx, cz, 7, 1);
-		}
-		else if (l == 7) {
-			moveOnTCDiagonal(i, j, k, cx, cz, 4, 1);
-		}*/
+		directionX = exitX - posX;
+		directionZ = exitZ - posZ;
+		distanceNorm = Math.sqrt(directionX * directionX + directionZ * directionZ);
+		motionX = (directionX / distanceNorm) * norm;
+		motionZ = (directionZ / distanceNorm) * norm;
 	}
 
 	private void moveOnTCDiagonal(int i, int j, int k, double cx, double cz, int meta, double length) {
