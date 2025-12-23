@@ -762,6 +762,7 @@ public enum ItemIDs {
 	minecartTipper("ItemRollingStock", "TipperNG_Icon", 1),
 	minecartClass71("ItemRollingStock", "Class_71_Icon", 4),
 	minecartClass74("ItemRollingStock", "Class_74_Icon", 4),
+	minecartConflat("ItemRollingStock", "Conflat_icon", 1),
 
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),

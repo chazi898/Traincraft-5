@@ -827,6 +827,7 @@ item.tc:minecartClass20.name=Class 20
 item.tc:minecartTipper.name=Tipper NG
 item.tc:minecartClass71.name=Class 71
 item.tc:minecartClass74.name=Class 74
+item.tc:minecartConflat.name=Conflat
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1531,6 +1532,7 @@ entity.tc.Class20.name=Class 20
 entity.tc.Tipper.name=Tipper NG
 entity.tc.Class71.name=Class 71
 entity.tc.Class74.name=Class 74
+entity.tc.Conflat.name=Conflat
 
 description.villager.profession.tc.station_chief=Station Master
 

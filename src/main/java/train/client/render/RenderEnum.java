@@ -1492,6 +1492,7 @@ public enum RenderEnum implements TrainRenderRecord {
     Class71(EntityLocoElectricClass71.class, new ModelClass71(), "Class_71_", true, new float[]{-1.5F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     Class74(EntityLocoDieselClass74.class, new ModelClass74(), "Class_74", false, new float[]{-1.5F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
     }, "", null, 0, false),
+    Conflat(EntityFreightConflat.class, new ModelConflat(), "Conflat_", true, new float[]{0F, 0.15F, 0.0F}, new float[]{0F, 0F, 180F}, null, "", 0, null, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;
