@@ -193,5 +193,7 @@
   "GWRPannierWhistle": {"category": "master", "sounds" :  [{"name": "GWRPannierWhistle", "stream": true}]},
   "ThompsonWhistle": {"category": "master", "sounds" :  [{"name": "ThompsonWhistle", "stream": true}]},
   "BB15000Horn": {"category": "master", "sounds" :  [{"name": "BB15000Horn", "stream": true}]},
-  "Class175Horn": {"category": "master", "sounds" :  [{"name": "Class175Horn", "stream": true}]}
+  "Class175Horn": {"category": "master", "sounds" :  [{"name": "Class175Horn", "stream": true}]},
+  "Class71Whistle": {"category": "master", "sounds" :  [{"name": "Class71Whistle", "stream": true}]},
+  "Class71Thrash": {"category": "master", "sounds" :  [{"name": "Class71Thrash", "stream": true}]}
 }

@@ -1432,6 +1432,7 @@ public class ModelRendererTurbo {
         //fixes weird triangle bug
         w+=0.001f;
         h+=0.001f;
+        d+=0.001f;
 
         //fixes zbuffer issue
         if(w==0f){
@@ -1449,6 +1450,9 @@ public class ModelRendererTurbo {
         float f4 = x + w, f5 = y + h, f6 = z + d;
         x -= scale; y -= scale; z -= scale;
         f4 += scale; f5 += scale; f6 += scale;
+        w-=0.001f;
+        h-=0.001f;
+        d-=0.001f;
         if(mirror){
             float f7 = f4; f4 = x; x = f7;
         }
