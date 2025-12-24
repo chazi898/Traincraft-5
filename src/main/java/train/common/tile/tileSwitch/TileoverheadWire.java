@@ -9,15 +9,17 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraftforge.common.util.ForgeDirection;
+import train.common.api.blocks.TileSwitch;
 import train.common.library.BlockIDs;
 import train.common.api.blocks.TileTraincraft;
 
 import java.util.Random;
 
-public class TileoverheadWire extends TileTraincraft {
+public class TileoverheadWire extends TileSwitch {
 
     private int updateTicks = 0;
     private static Random rand = new Random();
+
 
     @Override
     public void updateEntity() {

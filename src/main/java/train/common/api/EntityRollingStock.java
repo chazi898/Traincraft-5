@@ -1435,7 +1435,7 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
         double correctedPosZ = circleZ + ((circlePosZ / circlePositionNormalized) * tileRadius);
         motionX = negVelNormX;
         motionZ = velNormZ;
-        double newYPos = Math.abs(floor_Y + Math.min(1, (slopeAngle * Math.abs(tilePositionNormalized))) + yOffset + 0.34f);
+        double newYPos = Math.abs(floor_Y + Math.min(1, (slopeAngle * Math.abs(tilePositionNormalized))) + yOffset + 0.3f);
         setPosition(correctedPosX, newYPos, correctedPosZ);
 
         /* slope speed-up. it works* but not in a desired fashion. will come back to it.
@@ -1578,7 +1578,7 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
     public double getSlopeAdjustedSpeed(double normalizedSpeed, double slopeAngle) {
         if (ConfigHandler.ENABLE_SLOPE_ACCELERATION) {
             if (this instanceof Locomotive && !((Locomotive) this).canBePulled) { //make this speedup only happen twice a second
-                if (this.ticksExisted % 10 == 0) {
+                if (this.ticksExisted % 20 == 0) {
                     int carsPulled = numCarsTotal();
                     carsPulled--; //locomotive counting as two entities?
                     int carsOnSlope = numCarsOnSlope();
