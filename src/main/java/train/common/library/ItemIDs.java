@@ -763,6 +763,7 @@ public enum ItemIDs {
 	minecartClass71("ItemRollingStock", "Class_71_Icon", 4),
 	minecartClass74("ItemRollingStock", "Class_74_Icon", 4),
 	minecartConflat("ItemRollingStock", "Conflat_icon", 1),
+	minecartBH040("ItemRollingStock", "Black_Hawthorne_0_4_0st_Icon", 3)
 
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),

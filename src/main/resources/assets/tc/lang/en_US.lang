@@ -828,6 +828,7 @@ item.tc:minecartTipper.name=Tipper NG
 item.tc:minecartClass71.name=Class 71
 item.tc:minecartClass74.name=Class 74
 item.tc:minecartConflat.name=Conflat
+item.tc:minecartBH040.name=Black Hawthorne 0-4-0st
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1533,6 +1534,7 @@ entity.tc.Tipper.name=Tipper NG
 entity.tc.Class71.name=Class 71
 entity.tc.Class74.name=Class 74
 entity.tc.Conflat.name=Conflat
+entity.tc.BH040.name=Black Hawthorne 0-4-0st
 
 description.villager.profession.tc.station_chief=Station Master
 

@@ -377,6 +377,15 @@ public enum RenderEnum implements TrainRenderRecord {
             add(new double[]{3D, 0.05D, 0.65D});
         }
     }, 2, true),
+    locoBH040(EntityLocoSteamBH040.class, new ModelBH040(), "Black_Hawthorne_0_4_0st_", true, new float[]{-1.2f, 0.15f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
+        {
+            add(new double[]{2.4D, 1.75D, 0D});
+        }
+    }, "explode", new ArrayList<double[]>() {
+        {
+            add(new double[]{2.5D, 0.1D, 0.65D});
+        }
+    }, 2, true),
 
 
     locoGWR_42xx(EntityLocoSteamGWR42xx.class, new ModelGWR4252xx(), "GWR_425272_", true, new float[]{-1.26f, 0.17f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
@@ -1493,6 +1502,8 @@ public enum RenderEnum implements TrainRenderRecord {
     Class74(EntityLocoDieselClass74.class, new ModelClass74(), "Class_74", false, new float[]{-1.5F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
     }, "", null, 0, false),
     Conflat(EntityFreightConflat.class, new ModelConflat(), "Conflat_", true, new float[]{0F, 0.15F, 0.0F}, new float[]{0F, 0F, 180F}, null, "", 0, null, "", null, 0, false),
+
+
     ;
 
     private final Class<? extends AbstractTrains> entityClass;

@@ -612,6 +612,7 @@ public class EnumTrains {
 				TrainRecord.makeEntry("Class71", "Class71", EntityLocoElectricClass71.class, ItemIDs.minecartClass71.item, "electric", 2552, 146, 0, 10, 0, 100, 0.6, 0.69, 1000, new String[]{"Black", "Blue", "Brown", "Cyan", "Green", "Grey", "LightBlue", "LightGrey", "Lime", "Magenta", "Orange", "Pink", "Purple", "Red", "White", "Yellow", "Skin17", "Skin18", "Skin19", "Skin20"}, 18, -3, "Pack: B.I.P."),
 				TrainRecord.makeEntry("Class74", "Class74", EntityLocoDieselClass74.class, ItemIDs.minecartClass74.item, "diesel", 2552, 141, 0, 10, 0, 100, 0.55, 0.69, 10000, null, 18, -3, "Pack: B.I.P."),
 				TrainRecord.makeEntry("Conflat", "Conflat", EntityFreightConflat.class, ItemIDs.minecartConflat.item, "freight", 1, new String[]{"Black", "Blue", "Brown", "Grey", "Yellow", "White"}, 18, 27, "Pack: B.I.P."),
+				TrainRecord.makeEntry("BH040", "BH040", EntityLocoSteamBH040.class, ItemIDs.minecartBH040.item, "steam", 450, 66, 0, 10, 10, 60, 0.8, 0.8, 8000, new String[]{"Black", "Green", "Grey", "LightBlue", "LightGrey", "Pink", "Purple", "Red"}, 18, -2.4f, "Pack: B.I.P."),
 		};
 	}
 
