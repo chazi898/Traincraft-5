@@ -23,11 +23,11 @@ import train.common.tile.tileSwitch.TileoverheadWireDouble;
 import java.util.List;
 import java.util.Random;
 
-public class BlockoverheadWireDouble extends BlockSwitch {
+public class BlockoverheadWireDouble extends BlockLever {
     private IIcon texture;
 
     public BlockoverheadWireDouble() {
-        super(Material.rock,0);
+        super();
         setCreativeTab(Traincraft.tcTab);
         this.setTickRandomly(true);
         this.setBlockBounds(0.1F , 0.0F, 0.1F , 0.9F ,  1.0F, 0.9F);
