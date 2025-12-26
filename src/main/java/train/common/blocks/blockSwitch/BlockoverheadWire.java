@@ -4,6 +4,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import li.cil.oc.common.tileentity.Switch;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockLever;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
@@ -25,14 +26,14 @@ import train.common.tile.tileSwitch.TileoverheadWire;
 import java.util.List;
 import java.util.Random;
 
-public class BlockoverheadWire extends Block {
+public class BlockoverheadWire extends BlockSwitch {
     private IIcon texture;
 
     public BlockoverheadWire() {
-        super(Material.rock);
+        super(Material.rock,0);
         setCreativeTab(Traincraft.tcTab);
         this.setTickRandomly(true);
-        //this.setBlockBounds(0.5F , 0.0F, 0.5F , 0.5F ,  2.0F, 0.5F);
+        this.setBlockBounds(0.1F , 0.0F, 0.1F , 0.9F ,  1.0F, 0.9F);
     }
 
     @Override

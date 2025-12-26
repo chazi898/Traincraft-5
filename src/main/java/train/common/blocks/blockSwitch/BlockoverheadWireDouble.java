@@ -3,6 +3,7 @@ package train.common.blocks.blockSwitch;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockLever;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
@@ -15,20 +16,21 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import train.common.Traincraft;
+import train.common.api.blocks.BlockSwitch;
 import train.common.library.Info;
 import train.common.tile.tileSwitch.TileoverheadWireDouble;
 
 import java.util.List;
 import java.util.Random;
 
-public class BlockoverheadWireDouble extends Block {
+public class BlockoverheadWireDouble extends BlockSwitch {
     private IIcon texture;
 
     public BlockoverheadWireDouble() {
-        super(Material.rock);
+        super(Material.rock,0);
         setCreativeTab(Traincraft.tcTab);
         this.setTickRandomly(true);
-        //this.setBlockBounds(0.5F , 0.0F, 0.5F , 0.5F ,  2.0F, 0.5F);
+        this.setBlockBounds(0.1F , 0.0F, 0.1F , 0.9F ,  1.0F, 0.9F);
     }
 
     @Override

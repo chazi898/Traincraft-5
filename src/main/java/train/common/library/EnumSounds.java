@@ -13,7 +13,7 @@ public enum EnumSounds implements TrainSoundRecord {
     locoSteamBR01_DB(EntityLocoSteamBR01_DB.class, "german_steam_horn", 0.8F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamBR80_DB(EntityLocoSteamBR80_DB.class, "german_steam_horn", 0.8F, "steam_run", 0.2F, 20, "steam_run", 0.2F, 20, true),
     locoSteamEr_USSR(EntityLocoSteamEr_Ussr.class, "steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
-    locoSteamPannier(EntityLocoSteamPannier.class, "GWRPannierWhistle", 1.2F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
+    locoSteamPannier(EntityLocoSteamPannier.class, "GWRPannierWhistle", 1.3F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamC41(EntityLocoSteamC41.class, "american_steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamBR_Black_5(EntityLocoSteamBR_Black_5.class, "StanierHooter", 1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamBR_Britannia_Class(EntityLocoSteamBR_Britannia_Class.class, "BritanniaWhistle", 1F, "BritanniaMediumChuff", 0.31F, 27, "steam_run", 0.4F, 20, true),
