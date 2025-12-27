@@ -28,7 +28,7 @@ public class EntityPassengerBR_MK3_Sleeper extends EntityRollingStock implements
     @Override
     public void updateRiderPosition() {
         if(riddenByEntity!=null) {
-            riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() - 0.1, posZ -0.45);
+            riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() - 0.1, posZ -0.29);
         }//ew yucky rider position code, good thing its a passenger car so it doesnt matter! Wheeze.png
     }
 

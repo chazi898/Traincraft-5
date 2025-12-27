@@ -19,18 +19,20 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import train.common.Traincraft;
+import train.common.api.blocks.BlockDynamic;
 import train.common.api.blocks.BlockSwitch;
+import train.common.blocks.BlockSwitchStand;
 import train.common.library.Info;
 import train.common.tile.tileSwitch.TileoverheadWire;
 
 import java.util.List;
 import java.util.Random;
 
-public class BlockoverheadWire extends BlockLever {
+public class BlockoverheadWire extends BlockSwitch {
     private IIcon texture;
 
     public BlockoverheadWire() {
-        super();
+        super(Material.iron, 0);
         setCreativeTab(Traincraft.tcTab);
         this.setTickRandomly(true);
         this.setBlockBounds(0.1F , 0.0F, 0.1F , 0.9F ,  1.0F, 0.9F);
@@ -58,7 +60,12 @@ public class BlockoverheadWire extends BlockLever {
 
     @Override
     public TileEntity createTileEntity(World world, int metadata) {
-        return new TileoverheadWire();
+        return new TileoverheadWire(this);
+    }
+
+    @Override
+    public TileEntity createNewTileEntity(World world, int metadata) {
+        return new TileoverheadWire(this);
     }
 
     @Override

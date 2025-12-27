@@ -376,7 +376,7 @@ public class ModelClass71 extends ModelConverter //Same as Filename
 		bodyModel[337] = new ModelRendererTurbo(this, 245, 113, textureX, textureY); // Box 371
 		bodyModel[338] = new ModelRendererTurbo(this, 212, 97, textureX, textureY); // Box 372
 		bodyModel[339] = new ModelRendererTurbo(this, 245, 113, textureX, textureY,"lamp"); // Lamp
-		bodyModel[340] = new ModelRendererTurbo(this, 245, 113, textureX, textureY,"lamp"); // Box 374
+		bodyModel[340] = new ModelRendererTurbo(this, 245, 113, textureX, textureY); // Box 374
 		bodyModel[341] = new ModelRendererTurbo(this, 245, 127, textureX, textureY,"lamp"); // Lamp
 		bodyModel[342] = new ModelRendererTurbo(this, 245, 127, textureX, textureY,"lamp"); // Lamp
 		bodyModel[343] = new ModelRendererTurbo(this, 40, 162, textureX, textureY); // Box 410

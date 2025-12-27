@@ -18,6 +18,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 import train.common.Traincraft;
 import train.common.api.blocks.BlockSwitch;
 import train.common.library.Info;
+import train.common.tile.tileSwitch.TileoverheadWire;
 import train.common.tile.tileSwitch.TileoverheadWireDouble;
 
 import java.util.List;
