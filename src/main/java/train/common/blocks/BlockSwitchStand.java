@@ -32,7 +32,7 @@ public class BlockSwitchStand extends BlockSwitch {
 	}
 
 	@Override
-	public float[] hitboxShape(){return new float[]{0,0,0,1,2,1};}
+	public float[] hitboxShape(){return new float[]{0,0,0,1,1,1};}
 
 
 	@Override
