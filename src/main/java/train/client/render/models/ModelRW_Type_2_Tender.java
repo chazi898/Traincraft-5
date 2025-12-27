@@ -135,15 +135,15 @@ public class ModelRW_Type_2_Tender extends ModelConverter //Same as Filename
 		bodyModel[97] = new ModelRendererTurbo(this, 465, 161, textureX, textureY); // Box 103
 		bodyModel[98] = new ModelRendererTurbo(this, 473, 161, textureX, textureY); // Box 103
 		bodyModel[99] = new ModelRendererTurbo(this, 409, 169, textureX, textureY); // Box 103
-		bodyModel[100] = new ModelRendererTurbo(this, 369, 161, textureX, textureY,"lamp"); // lamp
+		bodyModel[100] = new ModelRendererTurbo(this, 369, 161, textureX, textureY, "lamp"); // lamp
 		bodyModel[101] = new ModelRendererTurbo(this, 449, 121, textureX, textureY); // Box 0
 		bodyModel[102] = new ModelRendererTurbo(this, 449, 121, textureX, textureY); // Box 0
 		bodyModel[103] = new ModelRendererTurbo(this, 449, 121, textureX, textureY); // Box 0
 		bodyModel[104] = new ModelRendererTurbo(this, 449, 121, textureX, textureY); // Box 0
-		bodyModel[105] = new ModelRendererTurbo(this, 1, 129, textureX, textureY,"lamp"); // lamp
-		bodyModel[106] = new ModelRendererTurbo(this, 1, 129, textureX, textureY,"lamp"); // lamp
-		bodyModel[107] = new ModelRendererTurbo(this, 1, 129, textureX, textureY,"lamp"); // lamp
-		bodyModel[108] = new ModelRendererTurbo(this, 1, 129, textureX, textureY,"lamp"); // lamp
+		bodyModel[105] = new ModelRendererTurbo(this, 1, 129, textureX, textureY, "lamp"); // lamp
+		bodyModel[106] = new ModelRendererTurbo(this, 1, 129, textureX, textureY, "lamp"); // lamp
+		bodyModel[107] = new ModelRendererTurbo(this, 1, 129, textureX, textureY, "lamp"); // lamp
+		bodyModel[108] = new ModelRendererTurbo(this, 1, 129, textureX, textureY, "lamp"); // lamp
 		bodyModel[109] = new ModelRendererTurbo(this, 157, 249, textureX, textureY); // Box 137
 		bodyModel[110] = new ModelRendererTurbo(this, 157, 249, textureX, textureY); // Box 138
 		bodyModel[111] = new ModelRendererTurbo(this, 249, 241, textureX, textureY); // Box 139
@@ -188,14 +188,14 @@ public class ModelRW_Type_2_Tender extends ModelConverter //Same as Filename
 		bodyModel[150] = new ModelRendererTurbo(this, 391, 287, textureX, textureY); // Box 302
 		bodyModel[151] = new ModelRendererTurbo(this, 391, 287, textureX, textureY); // Box 303
 		bodyModel[152] = new ModelRendererTurbo(this, 397, 326, textureX, textureY); // Box 405
-		bodyModel[153] = new ModelRendererTurbo(this, 1, 173, textureX, textureY,"lamp"); // Lamp
-		bodyModel[154] = new ModelRendererTurbo(this, 1, 173, textureX, textureY,"lamp"); // Lamp
-		bodyModel[155] = new ModelRendererTurbo(this, 1, 173, textureX, textureY,"lamp"); // Lamp
-		bodyModel[156] = new ModelRendererTurbo(this, 1, 173, textureX, textureY,"lamp"); // Lamp
-		bodyModel[157] = new ModelRendererTurbo(this, 1, 173, textureX, textureY,"lamp"); // Lamp
-		bodyModel[158] = new ModelRendererTurbo(this, 1, 173, textureX, textureY,"lamp"); // Lamp
-		bodyModel[159] = new ModelRendererTurbo(this, 1, 173, textureX, textureY,"lamp"); // Lamp
-		bodyModel[160] = new ModelRendererTurbo(this, 1, 173, textureX, textureY,"lamp"); // Lamp
+		bodyModel[153] = new ModelRendererTurbo(this, 1, 173, textureX, textureY, "lamp"); // Lamp
+		bodyModel[154] = new ModelRendererTurbo(this, 1, 173, textureX, textureY, "lamp"); // Lamp
+		bodyModel[155] = new ModelRendererTurbo(this, 1, 173, textureX, textureY, "lamp"); // Lamp
+		bodyModel[156] = new ModelRendererTurbo(this, 1, 173, textureX, textureY, "lamp"); // Lamp
+		bodyModel[157] = new ModelRendererTurbo(this, 1, 173, textureX, textureY, "lamp"); // Lamp
+		bodyModel[158] = new ModelRendererTurbo(this, 1, 173, textureX, textureY, "lamp"); // Lamp
+		bodyModel[159] = new ModelRendererTurbo(this, 1, 173, textureX, textureY, "lamp"); // Lamp
+		bodyModel[160] = new ModelRendererTurbo(this, 1, 173, textureX, textureY, "lamp"); // Lamp
 		bodyModel[161] = new ModelRendererTurbo(this, 397, 326, textureX, textureY); // Box 414
 
 		bodyModel[0].addBox(0F, 0F, 0F, 36, 1, 22, 0F); // Box 1
@@ -220,46 +220,46 @@ public class ModelRW_Type_2_Tender extends ModelConverter //Same as Filename
 		bodyModel[6].setRotationPoint(17F, 0.5F, -11F);
 
 		bodyModel[7].addBox(0F, 0F, 0F, 2, 1, 1, 0F); // Box 123
-		bodyModel[7].setRotationPoint(18F, 1F, -7F);
+		bodyModel[7].setRotationPoint(18F, 1F, -6.5F);
 
 		bodyModel[8].addBox(0F, 0F, 0F, 2, 1, 1, 0F); // Box 123
-		bodyModel[8].setRotationPoint(18F, 1F, -9F);
+		bodyModel[8].setRotationPoint(18F, 1F, -8.5F);
 
 		bodyModel[9].addBox(0F, 0F, 0F, 2, 3, 1, 0F); // Box 123
-		bodyModel[9].setRotationPoint(18F, 0F, -8F);
+		bodyModel[9].setRotationPoint(18F, 0F, -7.5F);
 
 		bodyModel[10].addBox(0F, 0F, 0F, 2, 1, 1, 0F); // Box 123
-		bodyModel[10].setRotationPoint(18F, 1F, 8F);
+		bodyModel[10].setRotationPoint(18F, 1F, 7.5F);
 
 		bodyModel[11].addBox(0F, 0F, 0F, 2, 1, 1, 0F); // Box 123
-		bodyModel[11].setRotationPoint(18F, 1F, 6F);
+		bodyModel[11].setRotationPoint(18F, 1F, 5.5F);
 
 		bodyModel[12].addBox(0F, 0F, 0F, 2, 3, 1, 0F); // Box 123
-		bodyModel[12].setRotationPoint(18F, 0F, 7F);
+		bodyModel[12].setRotationPoint(18F, 0F, 6.5F);
 
 		bodyModel[13].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 123
-		bodyModel[13].setRotationPoint(18F, 0F, 8F);
+		bodyModel[13].setRotationPoint(18F, 0F, 7.5F);
 
 		bodyModel[14].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 123
-		bodyModel[14].setRotationPoint(18F, 2F, 6F);
+		bodyModel[14].setRotationPoint(18F, 2F, 5.5F);
 
 		bodyModel[15].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F); // Box 123
-		bodyModel[15].setRotationPoint(18F, 2F, 8F);
+		bodyModel[15].setRotationPoint(18F, 2F, 7.5F);
 
 		bodyModel[16].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 123
-		bodyModel[16].setRotationPoint(18F, 0F, 6F);
+		bodyModel[16].setRotationPoint(18F, 0F, 5.5F);
 
 		bodyModel[17].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 123
-		bodyModel[17].setRotationPoint(18F, 0F, -7F);
+		bodyModel[17].setRotationPoint(18F, 0F, -6.5F);
 
 		bodyModel[18].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 123
-		bodyModel[18].setRotationPoint(18F, 2F, -9F);
+		bodyModel[18].setRotationPoint(18F, 2F, -8.5F);
 
 		bodyModel[19].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F); // Box 123
-		bodyModel[19].setRotationPoint(18F, 2F, -7F);
+		bodyModel[19].setRotationPoint(18F, 2F, -6.5F);
 
 		bodyModel[20].addShapeBox(0F, 0F, 0F, 2, 1, 1, 0F,0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 123
-		bodyModel[20].setRotationPoint(18F, 0F, -9F);
+		bodyModel[20].setRotationPoint(18F, 0F, -8.5F);
 
 		bodyModel[21].addBox(0F, 0F, 0F, 36, 10, 1, 0F); // Box 1
 		bodyModel[21].setRotationPoint(-18F, -10.5F, -10.5F);
