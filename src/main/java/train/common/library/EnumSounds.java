@@ -164,7 +164,7 @@ public enum EnumSounds implements TrainSoundRecord {
     SentinelY3(EntityLocoSteamSentinelY3.class, "adler_whistle", 1f, "steam_run", 0.75f, 10, "steam_run", 0.25f, 20, true),
     Class142Front(EntityLocoDieselClass142.class, "Class150Horn", 1f, "chme3_idle", 0.75f, 10, "chme3_idle", 0.5f, 20, false),
     Class143Front(EntityLocoDieselClass143.class, "Class150Horn", 1f, "FM_38D_6_Notch8", 0.6f, 10, "chme3_idle", 0.5f, 20, false),
-    Jacknail(EntitylocoSteamJacknail.class, "american_steam_horn", 1.5f, "steam_run", 0.6f, 25, "adler_run", 0.5f, 17, true),
+    Jacknail(EntitylocoSteamJacknail.class, "american_steam_horn", 1.5f, "steam_run", 0.6f, 25, "adler_run", 0.45f, 17, true),
     MRcompound(EntitylocoSteamMRCompound.class, "CompoundWhistle", 0.8F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     Bagnall(EntityLocoDieselBagnall.class, "v60_horn", 1f, "chme3_idle", 0.8f, 10, "chme3_idle", 0.5f, 20, false),
     Class205(EntityLocoDieselClass205loco.class, "eu07_horn", 1F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),

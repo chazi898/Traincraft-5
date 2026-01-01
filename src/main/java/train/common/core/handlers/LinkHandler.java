@@ -407,8 +407,8 @@ public class LinkHandler {
 			double stretch = d2 -getOptimalDistance(cart1, cart2);
 			//System.out.println("stretch "+stretch);
 
-			double springX = limitForce(0.1D * stretch * vecX * -1);
-			double springZ = limitForce(0.1D * stretch * vecZ * -1);
+			double springX = limitForce(0.18D * stretch * vecX * -1);
+			double springZ = limitForce(0.18D * stretch * vecZ * -1);
 
 
 

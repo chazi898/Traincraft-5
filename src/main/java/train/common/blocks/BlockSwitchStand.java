@@ -23,17 +23,23 @@ import train.common.tile.TileSwitchStand;
 import java.util.List;
 import java.util.Random;
 
-public class BlockSwitchStand extends BlockSwitch {
+public class BlockSwitchStand extends BlockLever {
+	private IIcon texture;
 
 	public BlockSwitchStand() {
-		super(Material.wood, 0);
+		super();
 		setCreativeTab(Traincraft.tcTab);
 		this.setTickRandomly(true);
+		this.setBlockBounds(0.2F , 0.0F, 0.2F , 0.8F ,  2.0F, 0.8F);
 	}
 
 	@Override
-	public float[] hitboxShape(){return new float[]{0,0,0,1,1,1};}
+	public void addCollisionBoxesToList(World p_149743_1_, int p_149743_2_, int p_149743_3_, int p_149743_4_, AxisAlignedBB p_149743_5_, List p_149743_6_, Entity p_149743_7_)
+	{
+	}
 
+	//@Override
+	//public float[] hitboxShape(){return new float[]{0,0,0,1,1,1};}
 
 	@Override
 	public boolean hasTileEntity(int metadata) {
@@ -54,10 +60,6 @@ public class BlockSwitchStand extends BlockSwitch {
 	public TileEntity createTileEntity(World world, int metadata) {
 		return new TileSwitchStand();
 	}
-	@Override
-	public TileEntity createNewTileEntity(World world, int metadata) {
-		return new TileSwitchStand();
-	}
 
 	@Override
 	public int getRenderType() {
@@ -65,7 +67,6 @@ public class BlockSwitchStand extends BlockSwitch {
 	}
 
 	@SideOnly(Side.CLIENT)
-
 
 
 	@Override
@@ -87,4 +88,8 @@ public class BlockSwitchStand extends BlockSwitch {
 		return true;
 	}
 
+	@Override
+	public IIcon getIcon(int i, int j) {
+		return texture;
+	}
 }
