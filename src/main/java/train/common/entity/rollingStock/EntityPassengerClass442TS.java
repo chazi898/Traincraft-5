@@ -74,7 +74,7 @@ public class EntityPassengerClass442TS extends EntityRollingStock implements IPa
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return  3.05F;
+        return  3.02F;
     }
 
     @Override

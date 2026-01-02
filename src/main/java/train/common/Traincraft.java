@@ -130,9 +130,9 @@ public class Traincraft {
 
         /* Register Items, Blocks, ... */
         tcLog.info("Initialize Blocks, Items, ...");
-        tcTab = new CreativeTabTraincraft("Traincraft-MLP", Info.modID, "trains/train_br80");
+        tcTab = new CreativeTabTraincraft("Traincraft-MLP", Info.modID, "trains/class43");
         if (ConfigHandler.SPLIT_CREATIVE) {
-            tcTrainTab = new CreativeTabTraincraft("Traincraft Trains",  Info.modID,"trains/train_br01");
+            tcTrainTab = new CreativeTabTraincraft("Traincraft-MLP Trains",  Info.modID,"trains/Class_390_Front_Icon");
         }
         trainArmor = proxy.addArmor("armor");
         trainCloth = proxy.addArmor("Paintable");

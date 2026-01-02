@@ -1,5 +1,5 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2023 Minecraft-SMP.de
+// Copyright (C) 2026 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: 
@@ -11,6 +11,9 @@ package train.client.render.models; //Path where the model is located
 
 import fexcraft.tmt.slim.ModelConverter;
 import fexcraft.tmt.slim.ModelRendererTurbo;
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
+import org.lwjgl.opengl.GL11;
 
 public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 {
@@ -19,7 +22,7 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 
 	public ModelBR_MK3_Pantograph() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[326];
+		bodyModel = new ModelRendererTurbo[327];
 
 		initbodyModel_1();
 
@@ -31,7 +34,7 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 
 	private void initbodyModel_1()
 	{
-		bodyModel[0] = new ModelRendererTurbo(this, 26, 86, textureX, textureY); // 01
+		bodyModel[0] = new ModelRendererTurbo(this, 1, 1, textureX, textureY); // 01
 		bodyModel[1] = new ModelRendererTurbo(this, 209, 1, textureX, textureY); // 02
 		bodyModel[2] = new ModelRendererTurbo(this, 209, 9, textureX, textureY); // 03
 		bodyModel[3] = new ModelRendererTurbo(this, 233, 17, textureX, textureY); // 04
@@ -293,7 +296,7 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 		bodyModel[259] = new ModelRendererTurbo(this, 225, 188, textureX, textureY); // Box 170
 		bodyModel[260] = new ModelRendererTurbo(this, 225, 179, textureX, textureY); // Box 170
 		bodyModel[261] = new ModelRendererTurbo(this, 225, 188, textureX, textureY); // Box 170
-		bodyModel[262] = new ModelRendererTurbo(this, 337, 181, textureX, textureY); // Box 170
+		bodyModel[262] = new ModelRendererTurbo(this, 363, 181, textureX, textureY); // Box 170
 		bodyModel[263] = new ModelRendererTurbo(this, 469, 152, textureX, textureY); // Box 170
 		bodyModel[264] = new ModelRendererTurbo(this, 461, 162, textureX, textureY); // Box 170
 		bodyModel[265] = new ModelRendererTurbo(this, 174, 157, textureX, textureY); // Box 170
@@ -357,6 +360,7 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 		bodyModel[323] = new ModelRendererTurbo(this, 185, 243, textureX, textureY); // 216
 		bodyModel[324] = new ModelRendererTurbo(this, 8, 240, textureX, textureY); // 217
 		bodyModel[325] = new ModelRendererTurbo(this, 51, 241, textureX, textureY); // 218
+		bodyModel[326] = new ModelRendererTurbo(this, 363, 195, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 92, 1, 20, 0F,0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.5F, 0.4F, 0F, -0.5F, 0.4F, 0F, -0.5F, 0.4F, 0F, -0.5F, 0.4F); // 01
 		bodyModel[0].setRotationPoint(-48F, 0F, -10F);
@@ -1384,5 +1388,24 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 
 		bodyModel[325].addShapeBox(0F, 0F, 0F, 8, 5, 1, 0F,0F, -0.5F, -0.9F, -0.4F, -5.4F, -0.9F, -0.4F, -5.4F, 0.1F, 0F, -0.5F, 0.1F, 0.4F, -4.5F, -0.9F, -0.2F, 0.8F, -0.9F, -0.2F, 0.8F, 0.1F, 0.4F, -4.5F, 0.1F); // 218
 		bodyModel[325].setRotationPoint(26F, -26F, -1F);
+
+		bodyModel[326].addShapeBox(0F, 0F, 0F, 54, 1, 8, 0F,0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F); // Lamp
+		bodyModel[326].setRotationPoint(-42F, -21.03F, -4F);
+	}
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+
+		for (int i = 0; i < 327; i++) {
+			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
+				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
+				bodyModel[i].render(f5);
+				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
+			} else if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("cull")) {
+				GL11.glDisable(GL11.GL_CULL_FACE);
+				bodyModel[i].render(f5);
+				GL11.glEnable(GL11.GL_CULL_FACE);
+			} else {
+				bodyModel[i].render(f5);
+			}
+		}
 	}
 }
