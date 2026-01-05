@@ -1481,7 +1481,7 @@ public enum RenderEnum implements TrainRenderRecord {
     M8DNF1Middlelong(EntityPassengerM8DNF1MiddleLong.class, new ModelM8DNF1Middle1(), "m8d_nf1_", true, new float[]{0F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     M8DNF1Middleshort(EntityPassengerM8DNF1MiddleShort.class, new ModelM8DNF1Middle2(), "m8d_nf1_", true, new float[]{0F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     M8DNF1Tail(EntityPassengerM8DNF1Tail.class, new ModelM8DNF1End(), "m8d_nf1_", true, new float[]{-0.65F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
-    //TCCE-MLP
+    //TCCE-MLP-1
     Class68(EntityLocoDieselClass68.class, new ModelClass68(), "Class_68_", true, new float[]{-2.13F, 0.06F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     Class88(EntityElectricClass88.class, new ModelClass88(), "Class_88_", true, new float[]{-2.13F, 0.06F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     LessCoWagon(EntityFreightLessCoWagon.class, new ModelLessCoWagon(), "Less_Co2_", true, new float[]{0.0F, 0.05F, 0.0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
@@ -1502,6 +1502,8 @@ public enum RenderEnum implements TrainRenderRecord {
     Class74(EntityLocoDieselClass74.class, new ModelClass74(), "Class_74", false, new float[]{-1.5F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
     }, "", null, 0, false),
     Conflat(EntityFreightConflat.class, new ModelConflat(), "Conflat_", true, new float[]{0F, 0.15F, 0.0F}, new float[]{0F, 0F, 180F}, null, "", 0, null, "", null, 0, false),
+    //TCCE-MLP-2
+    Class404buffet(EntityPassengerClass404buffet.class, new ModelClass404buffet(), "4-Buf_", true, new float[]{0F, 0.155F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
 
 
     ;

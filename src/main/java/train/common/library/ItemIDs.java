@@ -741,7 +741,7 @@ public enum ItemIDs {
 	minecartM8DNF1Middlelong("ItemRollingStock", "m8d_nf1_middle_icon", 1),
 	minecartM8DNF1Middleshort("ItemRollingStock", "m8d_nf1_middle2_icon", 1),
 	minecartM8DNF1Tail("ItemRollingStock", "m8d_nf1_tail_icon", 2),
-	// TCCE-MLP
+	// TCCE-MLP-1
 	minecartClass68("ItemRollingStock", "Class_68_Icon", 5),
 	minecartClass88("ItemRollingStock", "Class_88_Icon", 5),
 	minecartLessCoWagon("ItemRollingStock", "Less_Co_Wagon_Icon", 2),
@@ -764,7 +764,9 @@ public enum ItemIDs {
 	minecartClass71("ItemRollingStock", "Class_71_Icon", 4),
 	minecartClass74("ItemRollingStock", "Class_74_Icon", 4),
 	minecartConflat("ItemRollingStock", "Conflat_icon", 1),
-	minecartBH040("ItemRollingStock", "Black_Hawthorne_0_4_0st_Icon", 3)
+	minecartBH040("ItemRollingStock", "Black_Hawthorne_0_4_0st_Icon", 3),
+	// TCCE-MLP-2
+	minecartClass404buffet("ItemRollingStock","4buf_Buffet_Icon",1),
 
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),
