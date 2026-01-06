@@ -714,7 +714,7 @@ public enum RenderEnum implements TrainRenderRecord {
             add(new double[]{2.8D, -0.4D, 0.8D});
         }
     }, 2, true),
-    locoSteamA4Mallard(EntityLocoSteamMallardA4.class, new ModelA4Locomotive(), "locoA4_UK_", true, new float[]{-3.0F, 0.2F, 0F}, new float[]{0F, 180F, 180F}, new float[]{0.975f, 0.975f, 0.975f}, "largesmoke", 20, new ArrayList<double[]>() {
+    locoSteamA4Mallard(EntityLocoSteamMallardA4.class, new ModelA4Locomotive(), "locoA4_UK_", true, new float[]{-3.0F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, new float[]{0.975f, 0.9f, 0.975f}, "largesmoke", 20, new ArrayList<double[]>() {
         {
             add(new double[]{4.8D, 1.95D, 0.0D});
         }
@@ -814,7 +814,7 @@ public enum RenderEnum implements TrainRenderRecord {
         }
     }, 2, true),
 
-    locoSteamA4Tender(EntityTenderA4.class, new ModelTenderA4(), "tenderA4_UK_", true, new float[]{-0.2F, 0.2F, 0.0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    locoSteamA4Tender(EntityTenderA4.class, new ModelTenderA4(), "tenderA4_UK_", true, new float[]{-0.2F, 0.1F, 0.0F}, new float[]{0F, 180F, 180F}, new float[]{1F, 0.9F, 1F}, "", 0, null, "", null, 0, false),
     LocoMRcompoundTender(EntityTenderMRCompound.class, new ModelMRCompoundTender(), "LMS_4p_", true, new float[]{0f, 0.15f, 0}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
     LocoBR_Black_5_Tender(EntityTenderBR_Black_5.class, new ModelBR_Black_5_Tender(), "BR_Black_5_Tender_", true, new float[]{-0.05f, 0f, 0f,}, new float[]{0F, 180f, 180F}, null, "", 0, null, "", null, 0, false),
     LocoBR1_Tender(EntityTenderBR1.class, new ModelBR1_Tender(), "BR1_Tender_", true, new float[]{0.02f, -0.01f, 0f,}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
