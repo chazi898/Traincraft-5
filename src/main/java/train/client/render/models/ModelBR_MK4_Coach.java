@@ -1,5 +1,5 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2025 Minecraft-SMP.de
+// Copyright (C) 2026 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: 
@@ -11,6 +11,9 @@ package train.client.render.models; //Path where the model is located
 
 import fexcraft.tmt.slim.ModelConverter;
 import fexcraft.tmt.slim.ModelRendererTurbo;
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
+import org.lwjgl.opengl.GL11;
 
 public class ModelBR_MK4_Coach extends ModelConverter //Same as Filename
 {
@@ -19,7 +22,7 @@ public class ModelBR_MK4_Coach extends ModelConverter //Same as Filename
 
 	public ModelBR_MK4_Coach() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[258];
+		bodyModel = new ModelRendererTurbo[261];
 
 		initbodyModel_1();
 
@@ -289,6 +292,9 @@ public class ModelBR_MK4_Coach extends ModelConverter //Same as Filename
 		bodyModel[255] = new ModelRendererTurbo(this, 32, 147, textureX, textureY); // Box 177
 		bodyModel[256] = new ModelRendererTurbo(this, 190, 169, textureX, textureY); // Box 179
 		bodyModel[257] = new ModelRendererTurbo(this, 171, 168, textureX, textureY); // Box 179
+		bodyModel[258] = new ModelRendererTurbo(this, 228, 169, textureX, textureY); // Box 179
+		bodyModel[259] = new ModelRendererTurbo(this, 228, 181, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[260] = new ModelRendererTurbo(this, 228, 186, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 93, 1, 21, 0F,0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, 0.5F, 0F, -0.5F, 0.5F); // 01
 		bodyModel[0].setRotationPoint(-49F, 0F, -11F);
@@ -1136,5 +1142,30 @@ public class ModelBR_MK4_Coach extends ModelConverter //Same as Filename
 
 		bodyModel[257].addShapeBox(0F, 0F, 0F, 1, 11, 8, 0F,-0.9F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.9F, 0F, 0F, -0.9F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.9F, 0F, 0F); // Box 179
 		bodyModel[257].setRotationPoint(34F, -17F, -4F);
+
+		bodyModel[258].addShapeBox(0F, 0F, 0F, 75, 1, 8, 0F,0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F); // Box 179
+		bodyModel[258].setRotationPoint(-40F, -21F, -4F);
+
+		bodyModel[259].addShapeBox(0F, 0F, 0F, 75, 1, 1, 0F,0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.65F, 0F, 0F, -0.65F, 0F, 0F, -0.65F, 0F, 0F, -0.65F, 0F); // Lamp
+		bodyModel[259].setRotationPoint(-40F, -21F, -3.7F);
+
+		bodyModel[260].addShapeBox(0F, 0F, 0F, 75, 1, 1, 0F,0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.65F, 0F, 0F, -0.65F, 0F, 0F, -0.65F, 0F, 0F, -0.65F, 0F); // Lamp
+		bodyModel[260].setRotationPoint(-40F, -21F, 2.7F);
+	}
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+
+		for (int i = 0; i < 261; i++) {
+			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
+				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
+				bodyModel[i].render(f5);
+				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
+			} else if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("cull")) {
+				GL11.glDisable(GL11.GL_CULL_FACE);
+				bodyModel[i].render(f5);
+				GL11.glEnable(GL11.GL_CULL_FACE);
+			} else {
+				bodyModel[i].render(f5);
+			}
+		}
 	}
 }
