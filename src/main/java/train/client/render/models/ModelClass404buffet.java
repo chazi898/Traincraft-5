@@ -2990,7 +2990,7 @@ public class ModelClass404buffet extends ModelConverter //Same as Filename
 			}
 		}
 
-		Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/Class_404_Blue.png"));
+		Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, "textures/trains/4-Buf_Bogie.png"));
 		GL11.glPushMatrix();
 		GL11.glScalef(1f, 1f, 1f);
 		GL11.glTranslatef(-1.8f, 0f, 0.0f);
