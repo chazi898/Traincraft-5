@@ -1578,7 +1578,7 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
     public double getSlopeAdjustedSpeed(double normalizedSpeed, double slopeAngle) {
         if (ConfigHandler.ENABLE_SLOPE_ACCELERATION) {
             if (this instanceof Locomotive && !((Locomotive) this).canBePulled) { //make this speedup only happen twice a second
-                if (this.ticksExisted % 20 == 0) {
+                if (this.ticksExisted % 24 == 0) {
                     int carsPulled = numCarsTotal();
                     carsPulled--; //locomotive counting as two entities?
                     int carsOnSlope = numCarsOnSlope();
