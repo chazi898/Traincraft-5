@@ -12,15 +12,15 @@ import train.common.Traincraft;
 import train.common.api.ElectricTrain;
 import train.common.library.GuiIDs;
 
-public class EntityElectricClass387Front extends ElectricTrain {
+public class EntityElectricClass357 extends ElectricTrain {
     //public TiltingHandler tiltingHandler = new TiltingHandler(7);
 
-    public EntityElectricClass387Front(World world) {
+    public EntityElectricClass357(World world) {
         super(world);
 
     }
 
-    public EntityElectricClass387Front(World world, double d, double d1, double d2) {
+    public EntityElectricClass357(World world, double d, double d1, double d2) {
         this(world);
         setPosition(d, d1 + (double) yOffset, d2);
         motionX = 0.0D;
@@ -119,7 +119,7 @@ public class EntityElectricClass387Front extends ElectricTrain {
 
     @Override
     public String getInventoryName() {
-        return "Class 387 Front";
+        return "Class 357";
     }
 
     @Override

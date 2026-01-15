@@ -1,6 +1,5 @@
 package train.common.entity.rollingStock;
 
-//import com.jcirmodelsquad.tcjcir.features.TiltingHandler;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -9,33 +8,37 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.Constants;
 import train.common.Traincraft;
-import train.common.api.ElectricTrain;
+import train.common.api.DieselTrain;
+import train.common.api.LiquidManager;
 import train.common.library.GuiIDs;
 
-public class EntityElectricClass387Front extends ElectricTrain {
-    //public TiltingHandler tiltingHandler = new TiltingHandler(7);
-
-    public EntityElectricClass387Front(World world) {
-        super(world);
+public class EntityLocoDieselClass168Clubman extends DieselTrain {
+    public EntityLocoDieselClass168Clubman(World world) {
+        super(world, LiquidManager.dieselFilter());
+        initLoco();
 
     }
-
-    public EntityElectricClass387Front(World world, double d, double d1, double d2) {
+    public EntityLocoDieselClass168Clubman(World world, double d, double d1, double d2){
         this(world);
-        setPosition(d, d1 + (double) yOffset, d2);
+        setPosition(d, d1 + yOffset, d2);
         motionX = 0.0D;
         motionY = 0.0D;
         motionZ = 0.0D;
-        prevPosX = d ;
+        prevPosX = d;
         prevPosY = d1;
         prevPosZ = d2;
+    }
+
+    public void initLoco() {
+        fuelTrain = 0;
+        locoInvent = new ItemStack[inventorySize];
     }
 
     @Override
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
-        double distance = 4.25;
+        double distance = 4.65;
         double yOffset = -0.24;
         float rotationCos1 = (float) Math.cos(Math.toRadians(this.renderYaw + 90));
         float rotationSin1 = (float) Math.sin(Math.toRadians((this.renderYaw + 90)));
@@ -49,7 +52,6 @@ public class EntityElectricClass387Front extends ElectricTrain {
         float pitch1 = (float) (posY + getMountedYOffset() + riddenByEntity.getYOffset() + yOffset);
         double bogieX1 = (this.posX + (rotationCos1 * distance));
         double bogieZ1 = (this.posZ + (rotationSin1* distance));
-        //System.out.println(rotationCos1+" "+rotationSin1);
         if(anglePitchClient>20 && rotationCos1 == 1){
             bogieX1-=pitchRads*2;
             pitch-=pitchRads*1.2;
@@ -65,7 +67,6 @@ public class EntityElectricClass387Front extends ElectricTrain {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
     }
-
     @Override
     public void setDead() {
         super.setDead();
@@ -75,8 +76,14 @@ public class EntityElectricClass387Front extends ElectricTrain {
     @Override
     public void pressKey(int i) {
         if (i == 7 && riddenByEntity != null && riddenByEntity instanceof EntityPlayer) {
-            ((EntityPlayer) riddenByEntity).openGui(Traincraft.instance, GuiIDs.LOCO, worldObj, (int) this.posX + 2, (int) this.posY, (int) this.posZ);
+            ((EntityPlayer) riddenByEntity).openGui(Traincraft.instance, GuiIDs.LOCO, worldObj, (int) this.posX, (int) this.posY, (int) this.posZ);
         }
+    }
+
+    @Override
+    public void onUpdate() {
+        checkInvent(locoInvent[0]);
+        super.onUpdate();
     }
 
     @Override
@@ -113,13 +120,22 @@ public class EntityElectricClass387Front extends ElectricTrain {
     }
 
     @Override
+    public float getOptimalDistance(EntityMinecart cart) { return 0.85F;
+    }
+
+    @Override
     public int getSizeInventory() {
         return inventorySize;
     }
 
     @Override
     public String getInventoryName() {
-        return "Class 387 Front";
+        return "Class 168 Clubman";
+    }
+
+    @Override
+    public boolean isItemValidForSlot(int p_94041_1_, ItemStack p_94041_2_) {
+        return false;
     }
 
     @Override
@@ -137,20 +153,12 @@ public class EntityElectricClass387Front extends ElectricTrain {
         return true;
     }
     @Override
-    public float getOptimalDistance(EntityMinecart cart) {
-        return 0.82F;
-    }
-
-    @Override
     public boolean canBeAdjusted(EntityMinecart cart) {
         return canBeAdjusted;
-    }
-    @Override
-    public boolean isItemValidForSlot(int i, ItemStack itemstack) {
-        return true;
     }
     @Override
     public String transportcountry() {
         return "uk";
     }
+
 }

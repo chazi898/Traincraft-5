@@ -767,6 +767,10 @@ public enum ItemIDs {
 	minecartBH040("ItemRollingStock", "Black_Hawthorne_0_4_0st_Icon", 3),
 	// TCCE-MLP-2
 	minecartClass404buffet("ItemRollingStock","4buf_Buffet_Icon",1),
+	minecartClass357("ItemRollingStock", "Class_357_Front_Icon", 4),
+	minecartClass168Clubman("ItemRollingStock", "Class_168_Icon", 4),
+	minecartClass170("ItemRollingStock", "Class_170_Icon", 4),
+	minecartClass172_3("ItemRollingStock", "Class_172_Icon", 4),
 
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),

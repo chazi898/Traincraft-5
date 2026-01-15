@@ -780,8 +780,8 @@ item.tc:minecartClass374PremierPanto.name=Class 374 Eurostar Premier Panto
 item.tc:minecartClass374StandardPanto.name=Class 374 Eurostar Standard Panto
 item.tc:minecartClass374Buffet.name=Class 374 Eurostar Buffet
 item.tc:minecartClass387Front.name=Class 387 Front
-item.tc:minecartClass387Coach.name=Class 387 Coach
-item.tc:minecartClass387Panto.name=Class 387 Panto
+item.tc:minecartClass387Coach.name=Class 387-357 Coach
+item.tc:minecartClass387Panto.name=Class 387-357 Panto
 item.tc:minecartClass387Tail.name=Class 387 Tail
 item.tc:minecartClass378Front.name=Class 378 Front
 item.tc:minecartClass378Middle.name=Class 378 Middle
@@ -793,7 +793,7 @@ item.tc:minecartClass142Front.name=Class 142 Front
 item.tc:minecartClass142Tail.name=Class 142 Tail
 item.tc:minecartBagnall.name=Bagnall Shunter
 item.tc:minecartClass389Front.name=Class 389 Front
-item.tc:minecartClass389Middle.name=Class 389 Middle
+item.tc:minecartClass389Middle.name=Class 389-170 Middle
 item.tc:minecartClass389Tail.name=Class 389 Tail
 item.tc:minecartClass442DTS.name=Class 442 DTS
 item.tc:minecartClass442TS.name=Class 442 TS
@@ -830,6 +830,10 @@ item.tc:minecartClass74.name=Class 74
 item.tc:minecartConflat.name=Conflat
 item.tc:minecartBH040.name=Black Hawthorne 0-4-0st
 item.tc:minecartClass404buffet.name=4-buf Buffet
+item.tc:minecartClass357.name=Class 357
+item.tc:minecartClass168Clubman.name=Class 168 Clubman
+item.tc:minecartClass170.name=Class 170
+item.tc:minecartClass172_3.name=Class 172-3
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1537,6 +1541,10 @@ entity.tc.Class74.name=Class 74
 entity.tc.Conflat.name=Conflat
 entity.tc.BH040.name=Black Hawthorne 0-4-0st
 entity.tc.Class404buffet.name=4-buf Buffet
+entity.tc.Class357.name=Class 357
+entity.tc.Class168Clubman.name=Class 168 Clubman
+entity.tc.Class170.name=Class 170
+entity.tc.Class172_3.name=Class 172-3
 
 description.villager.profession.tc.station_chief=Station Master
 

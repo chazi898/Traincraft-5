@@ -12,6 +12,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import ebf.tim.entities.EntitySeat;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.player.EntityPlayer;
@@ -21,6 +22,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
+import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import org.lwjgl.input.Keyboard;
 import train.common.Traincraft;
 import train.common.adminbook.ServerLogger;
@@ -526,6 +528,10 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         }
 
         if (i == 15) {
+            brakePressed = false;
+        }
+
+        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()== true) {
             brakePressed = false;
         }
 

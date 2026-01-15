@@ -1504,7 +1504,13 @@ public enum RenderEnum implements TrainRenderRecord {
     Conflat(EntityFreightConflat.class, new ModelConflat(), "Conflat_", true, new float[]{0F, 0.15F, 0.0F}, new float[]{0F, 0F, 180F}, null, "", 0, null, "", null, 0, false),
     //TCCE-MLP-2
     Class404buffet(EntityPassengerClass404buffet.class, new ModelClass404buffet(), "4-Buf_", true, new float[]{0F, 0.155F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
-
+    Class357(EntityElectricClass357.class, new ModelClass357(), "Class_357_", true, new float[]{-2F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    Class168Clubman(EntityLocoDieselClass168Clubman.class, new ModelClass168Clubman(), "Class_168_", true, new float[]{-2.4F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
+    }, "", null, 0, false),
+    Class170(EntityLocoDieselClass170.class, new ModelClass170(), "Class_170_", true, new float[]{-2.4F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
+    }, "", null, 0, false),
+    Class172_3(EntityLocoDieselClass172_3.class, new ModelClass172_3(), "Class_172-3_", true, new float[]{-2.4F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
+    }, "", null, 0, false),
 
     ;
 
