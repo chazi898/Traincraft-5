@@ -1,5 +1,5 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2024 Minecraft-SMP.de
+// Copyright (C) 2026 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: 
@@ -11,6 +11,9 @@ package train.client.render.models;
 
 import fexcraft.tmt.slim.ModelConverter;
 import fexcraft.tmt.slim.ModelRendererTurbo;
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
+import org.lwjgl.opengl.GL11;
 
 public class ModelClass390Panto extends ModelConverter //Same as Filename
 {
@@ -19,7 +22,7 @@ public class ModelClass390Panto extends ModelConverter //Same as Filename
 
 	public ModelClass390Panto() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[422];
+		bodyModel = new ModelRendererTurbo[423];
 
 		initbodyModel_1();
 
@@ -374,7 +377,7 @@ public class ModelClass390Panto extends ModelConverter //Same as Filename
 		bodyModel[340] = new ModelRendererTurbo(this, 481, 161, textureX, textureY); // Box 115
 		bodyModel[341] = new ModelRendererTurbo(this, 129, 177, textureX, textureY); // Box 115
 		bodyModel[342] = new ModelRendererTurbo(this, 1, 177, textureX, textureY); // Box 115
-		bodyModel[343] = new ModelRendererTurbo(this, 1, 185, textureX, textureY); // Box 12
+		bodyModel[343] = new ModelRendererTurbo(this, 1, 185, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[344] = new ModelRendererTurbo(this, 1, 169, textureX, textureY); // Box 5
 		bodyModel[345] = new ModelRendererTurbo(this, 353, 177, textureX, textureY); // Box 12
 		bodyModel[346] = new ModelRendererTurbo(this, 145, 185, textureX, textureY); // Box 5
@@ -443,16 +446,17 @@ public class ModelClass390Panto extends ModelConverter //Same as Filename
 		bodyModel[409] = new ModelRendererTurbo(this, 401, 193, textureX, textureY); // Box 115
 		bodyModel[410] = new ModelRendererTurbo(this, 41, 219, textureX, textureY); // Box 115
 		bodyModel[411] = new ModelRendererTurbo(this, 201, 219, textureX, textureY); // Box 115
-		bodyModel[412] = new ModelRendererTurbo(this, 113, 219, textureX, textureY); // Box 115
-		bodyModel[413] = new ModelRendererTurbo(this, 129, 219, textureX, textureY); // Box 115
+		bodyModel[412] = new ModelRendererTurbo(this, 113, 219, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[413] = new ModelRendererTurbo(this, 129, 219, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[414] = new ModelRendererTurbo(this, 33, 219, textureX, textureY); // Box 115
 		bodyModel[415] = new ModelRendererTurbo(this, 97, 219, textureX, textureY); // Box 115
-		bodyModel[416] = new ModelRendererTurbo(this, 57, 219, textureX, textureY); // Box 115
-		bodyModel[417] = new ModelRendererTurbo(this, 121, 219, textureX, textureY); // Box 115
+		bodyModel[416] = new ModelRendererTurbo(this, 57, 219, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[417] = new ModelRendererTurbo(this, 121, 219, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[418] = new ModelRendererTurbo(this, 33, 219, textureX, textureY); // Box 115
 		bodyModel[419] = new ModelRendererTurbo(this, 97, 219, textureX, textureY); // Box 115
-		bodyModel[420] = new ModelRendererTurbo(this, 57, 219, textureX, textureY); // Box 115
-		bodyModel[421] = new ModelRendererTurbo(this, 121, 219, textureX, textureY); // Box 115
+		bodyModel[420] = new ModelRendererTurbo(this, 57, 219, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[421] = new ModelRendererTurbo(this, 121, 219, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[422] = new ModelRendererTurbo(this, 1, 199, textureX, textureY); // Box 12
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 96, 1, 20, 0F,0F, 0F, 0.15F, 0F, 0F, 0.15F, 0F, 0F, 0.15F, 0F, 0F, 0.15F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-48F, 0F, -10F);
@@ -1483,7 +1487,7 @@ public class ModelClass390Panto extends ModelConverter //Same as Filename
 		bodyModel[342].addShapeBox(0F, 0F, 0F, 51, 1, 5, 0F,-0.1F, -0.8F, -0.5F, -0.1F, -0.8F, -0.5F, -0.1F, -0.8F, -0.9F, -0.1F, -0.8F, -0.9F, -0.1F, 0F, -0.5F, -0.1F, 0F, -0.5F, -0.1F, 0.7F, -0.85F, -0.1F, 0.7F, -0.85F); // Box 115
 		bodyModel[342].setRotationPoint(-43F, -17F, 6F);
 
-		bodyModel[343].addShapeBox(0F, 0F, 0F, 66, 2, 8, 0F,0F, -0.5F, -0.2F, 0F, -0.5F, -0.2F, 0F, -0.5F, -0.2F, 0F, -0.5F, -0.2F, 0F, -1.4F, -1.7F, 0F, -1.4F, -1.7F, 0F, -1.4F, -1.7F, 0F, -1.4F, -1.7F); // Box 12
+		bodyModel[343].addShapeBox(0F, 0F, 0F, 66, 2, 8, 0F,0F, -0.5F, -0.2F, 0F, -0.5F, -0.2F, 0F, -0.5F, -0.2F, 0F, -0.5F, -0.2F, 0F, -1.4F, -1.7F, 0F, -1.4F, -1.7F, 0F, -1.4F, -1.7F, 0F, -1.4F, -1.7F); // Lamp
 		bodyModel[343].setRotationPoint(-18F, -19F, -4F);
 
 		bodyModel[344].addShapeBox(0F, 0F, 0F, 7, 3, 3, 0F,0F, 0F, -2.9F, 0F, 0F, -2.9F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, -3.4F, 0F, 0F, -3.4F); // Box 5
@@ -1690,10 +1694,10 @@ public class ModelClass390Panto extends ModelConverter //Same as Filename
 		bodyModel[411].addShapeBox(0F, 0F, 0F, 3, 1, 1, 0F,0F, -0.7F, -0.2F, -2F, -0.7F, -0.2F, -2F, -0.7F, -0.3F, 0F, -0.7F, -0.3F, 0F, 0F, -0.2F, -2F, 0F, -0.2F, -2F, 0F, -0.3F, 0F, 0F, -0.3F); // Box 115
 		bodyModel[411].setRotationPoint(1F, -9F, 10F);
 
-		bodyModel[412].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.7F, -0.2F, -0.5F, -0.7F, -0.4F, -0.5F, -0.7F, -0.5F, 0F, -0.7F, -0.3F, 0F, 0F, -0.2F, -0.5F, 0F, -0.4F, -0.5F, 0F, -0.5F, 0F, 0F, -0.3F); // Box 115
+		bodyModel[412].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.7F, -0.2F, -0.5F, -0.7F, -0.4F, -0.5F, -0.7F, -0.5F, 0F, -0.7F, -0.3F, 0F, 0F, -0.2F, -0.5F, 0F, -0.4F, -0.5F, 0F, -0.5F, 0F, 0F, -0.3F); // Lamp
 		bodyModel[412].setRotationPoint(2F, -9F, 10F);
 
-		bodyModel[413].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.5F, -0.7F, -0.4F, 0F, -0.7F, -0.2F, 0F, -0.7F, -0.3F, -0.5F, -0.7F, -0.5F, -0.5F, 0F, -0.4F, 0F, 0F, -0.2F, 0F, 0F, -0.3F, -0.5F, 0F, -0.5F); // Box 115
+		bodyModel[413].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.5F, -0.7F, -0.4F, 0F, -0.7F, -0.2F, 0F, -0.7F, -0.3F, -0.5F, -0.7F, -0.5F, -0.5F, 0F, -0.4F, 0F, 0F, -0.2F, 0F, 0F, -0.3F, -0.5F, 0F, -0.5F); // Lamp
 		bodyModel[413].setRotationPoint(0F, -9F, 10F);
 
 		bodyModel[414].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.4F, 0F, -0.35F, -0.4F, 0F, -0.35F, -0.4F, 0F, -0.45F, -0.4F, 0F, -0.45F, -0.4F, 0F, -0.2F, -0.4F, 0F, -0.2F, -0.4F, 0F, -0.6F, -0.4F, 0F, -0.6F); // Box 115
@@ -1702,10 +1706,10 @@ public class ModelClass390Panto extends ModelConverter //Same as Filename
 		bodyModel[415].addShapeBox(0F, 0F, 0F, 3, 1, 1, 0F,0F, -0.7F, -0.3F, -2F, -0.7F, -0.3F, -2F, -0.7F, -0.2F, 0F, -0.7F, -0.2F, 0F, 0F, -0.3F, -2F, 0F, -0.3F, -2F, 0F, -0.2F, 0F, 0F, -0.2F); // Box 115
 		bodyModel[415].setRotationPoint(-12F, -9F, -11F);
 
-		bodyModel[416].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.7F, -0.3F, -0.5F, -0.7F, -0.5F, -0.5F, -0.7F, -0.4F, 0F, -0.7F, -0.2F, 0F, 0F, -0.3F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.4F, 0F, 0F, -0.2F); // Box 115
+		bodyModel[416].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.7F, -0.3F, -0.5F, -0.7F, -0.5F, -0.5F, -0.7F, -0.4F, 0F, -0.7F, -0.2F, 0F, 0F, -0.3F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.4F, 0F, 0F, -0.2F); // Lamp
 		bodyModel[416].setRotationPoint(-11F, -9F, -11F);
 
-		bodyModel[417].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.5F, -0.7F, -0.5F, 0F, -0.7F, -0.3F, 0F, -0.7F, -0.2F, -0.5F, -0.7F, -0.4F, -0.5F, 0F, -0.5F, 0F, 0F, -0.3F, 0F, 0F, -0.2F, -0.5F, 0F, -0.4F); // Box 115
+		bodyModel[417].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.5F, -0.7F, -0.5F, 0F, -0.7F, -0.3F, 0F, -0.7F, -0.2F, -0.5F, -0.7F, -0.4F, -0.5F, 0F, -0.5F, 0F, 0F, -0.3F, 0F, 0F, -0.2F, -0.5F, 0F, -0.4F); // Lamp
 		bodyModel[417].setRotationPoint(-13F, -9F, -11F);
 
 		bodyModel[418].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.4F, 0F, -0.35F, -0.4F, 0F, -0.35F, -0.4F, 0F, -0.45F, -0.4F, 0F, -0.45F, -0.4F, 0F, -0.2F, -0.4F, 0F, -0.2F, -0.4F, 0F, -0.6F, -0.4F, 0F, -0.6F); // Box 115
@@ -1714,10 +1718,29 @@ public class ModelClass390Panto extends ModelConverter //Same as Filename
 		bodyModel[419].addShapeBox(0F, 0F, 0F, 3, 1, 1, 0F,0F, -0.7F, -0.3F, -2F, -0.7F, -0.3F, -2F, -0.7F, -0.2F, 0F, -0.7F, -0.2F, 0F, 0F, -0.3F, -2F, 0F, -0.3F, -2F, 0F, -0.2F, 0F, 0F, -0.2F); // Box 115
 		bodyModel[419].setRotationPoint(2F, -9F, -11F);
 
-		bodyModel[420].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.7F, -0.3F, -0.5F, -0.7F, -0.5F, -0.5F, -0.7F, -0.4F, 0F, -0.7F, -0.2F, 0F, 0F, -0.3F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.4F, 0F, 0F, -0.2F); // Box 115
+		bodyModel[420].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -0.7F, -0.3F, -0.5F, -0.7F, -0.5F, -0.5F, -0.7F, -0.4F, 0F, -0.7F, -0.2F, 0F, 0F, -0.3F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.4F, 0F, 0F, -0.2F); // Lamp
 		bodyModel[420].setRotationPoint(3F, -9F, -11F);
 
-		bodyModel[421].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.5F, -0.7F, -0.5F, 0F, -0.7F, -0.3F, 0F, -0.7F, -0.2F, -0.5F, -0.7F, -0.4F, -0.5F, 0F, -0.5F, 0F, 0F, -0.3F, 0F, 0F, -0.2F, -0.5F, 0F, -0.4F); // Box 115
+		bodyModel[421].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.5F, -0.7F, -0.5F, 0F, -0.7F, -0.3F, 0F, -0.7F, -0.2F, -0.5F, -0.7F, -0.4F, -0.5F, 0F, -0.5F, 0F, 0F, -0.3F, 0F, 0F, -0.2F, -0.5F, 0F, -0.4F); // Lamp
 		bodyModel[421].setRotationPoint(1F, -9F, -11F);
+
+		bodyModel[422].addShapeBox(0F, 0F, 0F, 66, 1, 8, 0F,0F, -0.5F, -1.7F, 0F, -0.5F, -1.7F, 0F, -0.5F, -1.7F, 0F, -0.5F, -1.7F, 0F, -0.4F, -1.7F, 0F, -0.4F, -1.7F, 0F, -0.4F, -1.7F, 0F, -0.4F, -1.7F); // Box 12
+		bodyModel[422].setRotationPoint(-18F, -18.99F, -4F);
+	}
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+
+		for (int i = 0; i < 423; i++) {
+			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
+				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
+				bodyModel[i].render(f5);
+				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
+			} else if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("cull")) {
+				GL11.glDisable(GL11.GL_CULL_FACE);
+				bodyModel[i].render(f5);
+				GL11.glEnable(GL11.GL_CULL_FACE);
+			} else {
+				bodyModel[i].render(f5);
+			}
+		}
 	}
 }
