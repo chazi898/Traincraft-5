@@ -10,6 +10,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.Constants;
 import train.common.Traincraft;
 import train.common.api.ElectricTrain;
+import train.common.core.util.TraincraftUtil;
 import train.common.library.GuiIDs;
 
 public class EntityElectricClass390 extends ElectricTrain {
@@ -35,7 +36,7 @@ public class EntityElectricClass390 extends ElectricTrain {
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
-        double distance = 4.86;
+        double distance = 4.88;
         double yOffset = -0.24;
         float rotationCos1 = (float) Math.cos(Math.toRadians(this.renderYaw + 90));
         float rotationSin1 = (float) Math.sin(Math.toRadians((this.renderYaw + 90)));
@@ -64,6 +65,11 @@ public class EntityElectricClass390 extends ElectricTrain {
         if (pitchRads > -1.01 && pitchRads < 1.01) {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
+    }
+
+    @Override
+    public float getPlayerScale(){
+        return 0.9f;
     }
 
     @Override

@@ -11,13 +11,23 @@ import net.minecraftforge.common.util.Constants;
 import train.common.Traincraft;
 import train.common.api.ElectricTrain;
 import train.common.library.GuiIDs;
+import train.common.overlaytexture.EnumOverlayFonts;
+import train.common.overlaytexture.OTSpecificationDynamic;
+import train.common.overlaytexture.OverlayTextureManager;
+
+import java.awt.*;
 
 public class EntityElectricM8CLoco extends ElectricTrain {
     //public TiltingHandler tiltingHandler = new TiltingHandler(7);
 
     public EntityElectricM8CLoco(World world) {
         super(world);
-
+        initOverlayTextures(OverlayTextureManager.Type.DYNAMIC);
+        getOverlayTextureContainer().initSpecificationDynamic(new OTSpecificationDynamic(
+                "Destination Sign",
+                40, 12, 11, EnumOverlayFonts.OxygenSansSmall, 16f, OTSpecificationDynamic.AlignmentMode.ALIGN_CENTER_AND_FILL,
+                new Point[]{new Point(21, 108)})
+        );
     }
 
     public EntityElectricM8CLoco(World world, double d, double d1, double d2) {
@@ -35,7 +45,7 @@ public class EntityElectricM8CLoco extends ElectricTrain {
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
-        double distance = 3.5;
+        double distance = 3.26;
         double yOffset = -0.1;
         float rotationCos1 = (float) Math.cos(Math.toRadians(this.renderYaw + 90));
         float rotationSin1 = (float) Math.sin(Math.toRadians((this.renderYaw + 90)));

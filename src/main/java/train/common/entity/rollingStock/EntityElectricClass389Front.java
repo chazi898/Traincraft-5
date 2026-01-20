@@ -35,7 +35,7 @@ public class EntityElectricClass389Front extends ElectricTrain {
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
-        double distance = 4.67;
+        double distance = 4.66;
         double yOffset = -0.24;
         float rotationCos1 = (float) Math.cos(Math.toRadians(this.renderYaw + 90));
         float rotationSin1 = (float) Math.sin(Math.toRadians((this.renderYaw + 90)));
@@ -64,6 +64,11 @@ public class EntityElectricClass389Front extends ElectricTrain {
         if (pitchRads > -1.01 && pitchRads < 1.01) {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
+    }
+
+    @Override
+    public float getPlayerScale(){
+        return 0.9f;
     }
 
     @Override
