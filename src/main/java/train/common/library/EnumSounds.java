@@ -188,6 +188,7 @@ public enum EnumSounds implements TrainSoundRecord {
     Class168Clubman(EntityLocoDieselClass168Clubman.class, "Class170Horn", 1.3F, "chme3_idle", 0.7F, 10, "chme3_idle", 0.6F, 20, false),
     Class170(EntityLocoDieselClass170.class, "Class170Horn", 1.3F, "chme3_idle", 0.7F, 10, "chme3_idle", 0.6F, 20, false),
     Class172_3(EntityLocoDieselClass172_3.class, "Class170Horn", 1.3F, "chme3_idle", 0.7F, 10, "chme3_idle", 0.6F, 20, false),
+    Class37(EntityLocoDieselClass37.class, "Class37Horn", 1.15F, "Class37Thrash", 0.85F, 45, "Class37Idle", 0.4F, 45, false),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),

@@ -1511,6 +1511,8 @@ public enum RenderEnum implements TrainRenderRecord {
     }, "", null, 0, false),
     Class172_3(EntityLocoDieselClass172_3.class, new ModelClass172_3(), "Class_172-3_", true, new float[]{-2.4F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
     }, "", null, 0, false),
+    Class37(EntityLocoDieselClass37.class, new ModelClass37(), "Class_37_", true, new float[]{-2.1F, 0.06F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
+    }, "", null, 0, false),
 
     ;
 

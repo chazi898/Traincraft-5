@@ -1222,7 +1222,7 @@ public class ModelClass47 extends ModelConverter //Same as Filename
 	public ArrayList<double[]> getSmokePosition() {
 		return new ArrayList<double[]>() {
 			{
-				add(new double[]{0D, 1.45D, 0.0D});
+				add(new double[]{1D, 1.35D, 0.0D});
 			}
 		};
 	}
