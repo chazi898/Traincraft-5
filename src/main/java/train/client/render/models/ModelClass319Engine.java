@@ -1,5 +1,5 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2025 Minecraft-SMP.de
+// Copyright (C) 2026 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: 
@@ -22,7 +22,7 @@ public class ModelClass319Engine extends ModelConverter //Same as Filename
 
 	public ModelClass319Engine() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[411];
+		bodyModel = new ModelRendererTurbo[412];
 
 		initbodyModel_1();
 
@@ -445,6 +445,7 @@ public class ModelClass319Engine extends ModelConverter //Same as Filename
 		bodyModel[408] = new ModelRendererTurbo(this, 433, 65, textureX, textureY); // Box 415
 		bodyModel[409] = new ModelRendererTurbo(this, 433, 65, textureX, textureY); // Box 416
 		bodyModel[410] = new ModelRendererTurbo(this, 321, 57, textureX, textureY); // Box 417
+		bodyModel[411] = new ModelRendererTurbo(this, 64, 132, textureX, textureY); // Import Box185
 
 		bodyModel[0].addShapeBox(0F, 0F, -1F, 20, 3, 1, 0F,0F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, -0.75F, 0F, -0.25F, 0F, 0F, 0.25F, 0F, 0F, 0.25F); // Box 21
 		bodyModel[0].setRotationPoint(20F, -3F, -10F);
@@ -1681,10 +1682,13 @@ public class ModelClass319Engine extends ModelConverter //Same as Filename
 
 		bodyModel[410].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 417
 		bodyModel[410].setRotationPoint(-22F, 7.5F, -8.5F);
+
+		bodyModel[411].addShapeBox(0F, 0F, 0F, 3, 4, 3, 0F,-0.5F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.5F, 0F, -0.2F, -0.5F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.2F, 0F, -0.2F, -0.5F, 0F, -0.2F); // Import Box185
+		bodyModel[411].setRotationPoint(-37F, -1F, -6.5F);
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
 	{
-		for (int i = 0; i < 409; i++) {
+		for (int i = 0; i < 412; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp") ) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);
