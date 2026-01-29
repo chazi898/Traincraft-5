@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import train.common.api.EntityRollingStock;
 import train.common.api.IPassenger;
+import train.common.api.TrainSoundRecord;
 
 public class EntityPassengerBR_Mk1_TSO extends EntityRollingStock implements IPassenger {
     //public TiltingHandler tiltingHandler = new TiltingHandler(7);
@@ -58,26 +59,16 @@ public class EntityPassengerBR_Mk1_TSO extends EntityRollingStock implements IPa
     }
 
     @Override
-    public boolean canBeRidden() {
-        return true;
-    }
+    public boolean canBeRidden() { return true ; }
 
     @Override
-    public boolean isStorageCart() {
-        return false;
-    }
+    public boolean isStorageCart() { return false ;}
 
     @Override
-    public boolean isPoweredCart() {
-        return false;
-    }
+    public boolean isPoweredCart() { return false ;}
 
     @Override
-    public float getOptimalDistance(EntityMinecart cart) {
-        return 2.7F;
-    }
+    public float getOptimalDistance(EntityMinecart cart) { return 2.7F;}
     @Override
-    public String transportcountry() {
-        return "uk";
-    }
+    public String transportcountry() { return "uk" ;}
 }

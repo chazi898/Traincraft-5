@@ -1533,7 +1533,7 @@ public class ModelClass153 extends ModelConverter //Same as Filename
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
 	{
-		for (int i = 0; i < 371; i++) {
+		for (int i = 0; i < 373; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp") ) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);
