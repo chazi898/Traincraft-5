@@ -167,4 +167,5 @@ public class EntityLocoDieselClass37 extends DieselTrain {
         return "uk";
     }
 
+//    public String getBellString() {return "Class47Horn";}
 }
