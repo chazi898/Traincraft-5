@@ -772,6 +772,7 @@ public enum ItemIDs {
 	minecartClass170("ItemRollingStock", "Class_170_Icon", 4),
 	minecartClass172_3("ItemRollingStock", "Class_172_Icon", 4),
 	minecartClass37("ItemRollingStock", "Class_37_Icon", 5),
+	minecartGWR14xx("ItemRollingStock", "GWR_14xx_Icon",4),
 
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),

@@ -835,6 +835,7 @@ item.tc:minecartClass168Clubman.name=Class 168 Clubman
 item.tc:minecartClass170.name=Class 170
 item.tc:minecartClass172_3.name=Class 172-3
 item.tc:minecartClass37.name=Class 37
+item.tc:minecartGWR14xx.name=GWR 14xx
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1547,6 +1548,7 @@ entity.tc.Class168Clubman.name=Class 168 Clubman
 entity.tc.Class170.name=Class 170
 entity.tc.Class172_3.name=Class 172-3
 entity.tc.Class37.name=Class 37
+entity.tc.GWR14xx.name=GWR 14xx
 
 description.villager.profession.tc.station_chief=Station Master
 

@@ -813,6 +813,15 @@ public enum RenderEnum implements TrainRenderRecord {
             add(new double[]{2.52D, -0.05D, 0.65D});
         }
     }, 2, true),
+    locoGWR14xx(EntityLocoSteamGWR14xx.class, new ModelGWR14xx(), "GWR_14xx_", true, new float[]{-1.65f, 0.16f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
+        {
+            add(new double[]{2.68D, 1.45D, 0D});
+        }
+    }, "explode", new ArrayList<double[]>() {
+        {
+            add(new double[]{2.92D, -0.05D, 0.65D});
+        }
+    }, 2, true),
 
     locoSteamA4Tender(EntityTenderA4.class, new ModelTenderA4(), "tenderA4_UK_", true, new float[]{-0.2F, 0.1F, 0.0F}, new float[]{0F, 180F, 180F}, new float[]{1F, 0.9F, 1F}, "", 0, null, "", null, 0, false),
     LocoMRcompoundTender(EntityTenderMRCompound.class, new ModelMRCompoundTender(), "LMS_4p_", true, new float[]{0f, 0.15f, 0}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
