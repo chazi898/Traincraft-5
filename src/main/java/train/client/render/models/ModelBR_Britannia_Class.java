@@ -1,5 +1,5 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2025 Minecraft-SMP.de
+// Copyright (C) 2026 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: 
@@ -580,13 +580,13 @@ public class ModelBR_Britannia_Class extends ModelConverter //Same as Filename
 		bodyModel[14].setRotationPoint(38F, 2F, -9F);
 
 		bodyModel[15].addBox(0F, 0F, 0F, 1, 1, 12, 0F); // Box 12
-		bodyModel[15].setRotationPoint(-6.75F, -0.75F, -6F);
+		bodyModel[15].setRotationPoint(-6.75F, -0.25F, -6F);
 
 		bodyModel[16].addBox(0F, 0F, 0F, 1, 1, 12, 0F); // Box 12
-		bodyModel[16].setRotationPoint(6.25F, -0.75F, -6F);
+		bodyModel[16].setRotationPoint(6.25F, -0.25F, -6F);
 
 		bodyModel[17].addBox(0F, 0F, 0F, 1, 1, 12, 0F); // Box 12
-		bodyModel[17].setRotationPoint(19.25F, -0.75F, -6F);
+		bodyModel[17].setRotationPoint(19.25F, -0.25F, -6F);
 
 		bodyModel[18].addShapeBox(0F, 0F, 0F, 12, 1, 4, 0F,0F, 0F, 0F, -6F, 0F, 0F, -6F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, -6F, 0F, -1F, -6F, 0F, -1F, 0F, 0F, -1F); // Box 18
 		bodyModel[18].setRotationPoint(-26F, -0.5F, -10F);
