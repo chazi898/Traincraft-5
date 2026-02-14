@@ -551,7 +551,7 @@ public class ModelClass91 extends ModelConverter //Same as Filename
 		bodyModel[49].addShapeBox(0F, 0F, 0F, 1, 3, 1, 0F,-0.7F, -0.5F, 0.15F, -0.1F, -0.5F, 0.15F, 0F, -0.5F, -0.85F, -0.7F, -0.5F, -0.85F, -0.7F, 0.5F, 0.15F, -0.1F, 0.5F, 0.15F, -0.1F, 0.5F, -0.85F, -0.7F, 0.5F, -0.85F); // 50
 		bodyModel[49].setRotationPoint(-59F, 1F, 4F);
 
-		bodyModel[50].addShapeBox(0F, 0F, 0F, 2, 3, 11, 0F,-0.2F, 0F, -0.75F, -1.5F, 0F, -0.7F, -1.5F, 0F, 0F, -0.2F, 0F, 0F, -0.2F, 0F, -0.7F, -0.5F, 0F, -0.55F, -0.5F, 0F, 0F, -0.2F, 0F, 0F); // 51
+		bodyModel[50].addShapeBox(0F, 0F, 0F, 2, 3, 11, 0F,-0.3F, 0F, -0.75F, -1.5F, 0F, -0.7F, -1.5F, 0F, 0F, -0.3F, 0F, 0F, -0.2F, 0F, -0.7F, -0.5F, 0F, -0.55F, -0.5F, 0F, 0F, -0.2F, 0F, 0F); // 51
 		bodyModel[50].setRotationPoint(-55F, -10F, -11F);
 
 		bodyModel[51].addShapeBox(0F, 0F, 0F, 2, 3, 7, 0F,-0.2F, -0.1F, 0F, -1.8F, -0.1F, 0F, -1.8F, -0.1F, -0.7F, -0.2F, -0.1F, -0.7F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.55F, 0F, 0F, -0.7F); // 52
