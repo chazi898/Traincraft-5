@@ -37,7 +37,24 @@ tile.tc:pdmInstructionBlock.name=W-MTC Wireless Radio
 tile.tc:dirtyBallast.name=Dirty Ballast
 tile.tc:dirtierBallast.name=Dirtier Ballast
 tile.tc:metroMadridPole.name=Metro Madrid Overhead Line
+tile.tc:highSpeedBallast.name=High Speed Ballast
 
+tile.tc:poweredGravel.name=Powered Gravel
+tile.tc:snowGravel.name=Snowy Gravel
+tile.tc:asphalt.name=Asphalt Block
+tile.tc:ballastSlab.name=Ballast Slab
+tile.tc:dirtyBallastSlab.name=Dirty Ballast Slab
+tile.tc:dirtierBallastSlab.name=Dirtier Ballast Slab
+tile.tc:highSpeedBallastSlab.name=High Speed Ballast Slab
+tile.tc:snowGravelSlab.name=Snow Gravel Slab
+tile.tc:asphaltSlab.name=Asphalt Slab
+
+tile.tc:ballastStairs.name=Ballast Stairs
+tile.tc:dirtyBallastStairs.name=Dirty Ballast Stairs
+tile.tc:dirtierBallastStairs.name=Dirtier Ballast Stairs
+tile.tc:highSpeedBallastStairs.name=High Speed Ballst Stairs
+tile.tc:snowGravelStairs.name=Snow Gravel Stairs
+tile.tc:asphaltStairs.name=Asphalt Stairs
 
 <!-- ## Fluids ## -->
 fluid.diesel.name=Diesel Fuel
@@ -68,7 +85,7 @@ tile.tc.track.coupler.name=Coupler Track
 tile.tc.track.speed.loco.name=Speed Limiter Track
 tile.tc.track.steel.name=Steel Track
 
-
+<!-- ## Tiles ## -->
 tile.tc:owoSwitchStand.name=OWO Road Switch Stand
 tile.tc:autoSwtichStand.name=Auto Switch Stand
 tile.tc:circleSwitchStand.name= Circle Switch Stand
@@ -76,26 +93,12 @@ tile.tc:owoYardSwitchStand.name=OWO Yard Switch Stand
 tile.tc:MILWSwitchStand.name= MILW Switch Stand
 tile.tc:overheadWire.name=Overhead Wires
 tile.tc:overheadWireDouble.name=Double Overhead Wires
-tile.tc:poweredGravel.name=Powered Gravel
-tile.tc:snowGravel.name=Snowy Gravel
-tile.tc:asphalt.name=Asphalt Block
-tile.tc:ballastSlab.name=Ballast Slab
-tile.tc:dirtyBallastSlab.name=Dirty Ballast Slab
-tile.tc:dirtierBallastSlab.name=Dirtier Ballast Slab
-tile.tc:highSpeedBallastSlab.name=High Speed Ballast Slab
-tile.tc:snowGravelSlab.name=Snow Gravel Slab
-tile.tc:asphaltSlab.name=Asphalt Slab
-
-tile.tc:ballastStairs.name=Ballast Stairs
-tile.tc:dirtyBallastStairs.name=Dirty Ballast Stairs
-tile.tc:dirtierBallastStairs.name=Dirtier Ballast Stairs
-tile.tc:highSpeedBallastStairs.name=High Speed Ballst Stairs
-tile.tc:snowGravelStairs.name=Snow Gravel Stairs
-tile.tc:asphaltStairs.name=Asphalt Stairs
-
-tile.tc:highSpeedBallast.name=High Speed Ballast
 tile.tc:signalSpanish.name=Spanish Signal
 tile.tc:kSignal.name=Ks Signal
+tile.tc:BR_Modern_Buffer.name=BR Modern Buffer
+tile.tc:BR_2_Aspect_Signal.name=BR 2 Aspect Signal
+tile.tc:BR_3_Aspect_Signal.name=BR 3 Aspect Signal
+tile.tc:BR_4_Aspect_Signal.name=BR 4 Aspect Signal
 
 
 <!-- ## Items ## -->

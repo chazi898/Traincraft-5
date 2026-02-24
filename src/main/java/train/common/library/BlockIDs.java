@@ -80,6 +80,10 @@ public enum BlockIDs {
 	metroMadridPole(false, null),
 	FortyFootContainer(true, ItemFortyFootContainer.class),
 	speedSign(false, null),
+	BR_Modern_Buffer(true, ItemBR_Modern_Buffer.class),
+	BR_2_Aspect_Signal(true, ItemBR_2_Aspect_Signal.class),
+	BR_3_Aspect_Signal(true, ItemBR_3_Aspect_Signal.class),
+	BR_4_Aspect_Signal(true, ItemBR_4_Aspect_Signal.class),
 
 
 

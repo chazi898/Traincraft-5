@@ -112,6 +112,12 @@ public class TCBlocks {
 		BlockIDs.kSignal.block = new BlockkSignal().setHardness(1F).setResistance(10F).setLightLevel(0.2F).setStepSound(Block.soundTypeMetal).setCreativeTab(null);
 		BlockIDs.speedSign.block = new BlockSpeedSign().setCreativeTab(Traincraft.tcTab);
 		BlockIDs.metroMadridPole.block = new BlockMetroMadridPole( Material.iron).setHardness(2F).setCreativeTab(Traincraft.tcTab).setBlockName("MetroMadridPole");
+		//BIP-Infrastructure
+		BlockIDs.BR_Modern_Buffer.block = new BlockBR_Modern_Buffer().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
+		BlockIDs.BR_2_Aspect_Signal.block = new BlockBR_2_Aspect_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
+		BlockIDs.BR_3_Aspect_Signal.block = new BlockBR_3_Aspect_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
+		BlockIDs.BR_4_Aspect_Signal.block = new BlockBR_4_Aspect_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
+
 		//BlockIDs.FortyFootContainer.block = new BlockFortyFootContainer(Material.rock).setHardness(4.5F).setCreativeTab(Traincraft.tcTab).setStepSound(Block.soundTypeMetal);
 
 		if (Loader.isModLoaded("ComputerCraft")) {

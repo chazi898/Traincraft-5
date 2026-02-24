@@ -69,6 +69,7 @@ public class TCItems {
 		ItemIDs.composite_wrench.item = new ItemWrench();
 
 
+
 		/*Normal Straights*/
 		ItemIDs.tcRailSmallStraight.item = new ItemTCRail(EnumTracks.SMALL_STRAIGHT);
 		ItemIDs.tcRailMediumStraight.item = new ItemTCRail(EnumTracks.MEDIUM_STRAIGHT);

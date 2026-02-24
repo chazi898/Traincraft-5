@@ -30,10 +30,7 @@ import org.apache.logging.log4j.Logger;
 import train.common.api.AbstractTrains;
 import train.common.api.LiquidManager;
 import train.common.blocks.TCBlocks;
-import train.common.core.CommonProxy;
-import train.common.core.CreativeTabTraincraft;
-import train.common.core.CreativeTabTraincraftTrains;
-import train.common.core.TrainModCore;
+import train.common.core.*;
 import train.common.core.handlers.*;
 import train.common.core.util.TraincraftUtil;
 import train.common.generation.ComponentVillageTrainstation;
@@ -106,6 +103,9 @@ public class Traincraft {
     /* Creative tab for Traincraft */
     public static CreativeTabTraincraft tcTab, tcTrainTab;
 
+    /* Creative tab for BIP Infrastructure */
+    public static CreativeTabTraincraft BIPInfrastructureTab;
+
     public ArmorMaterial armor = EnumHelper.addArmorMaterial("Armor", 5, new int[]{1, 2, 2, 1}, 25);
     public ArmorMaterial armorCloth = EnumHelper.addArmorMaterial("TCcloth", 5, new int[]{1, 2, 2, 1}, 25);
     public ArmorMaterial armorCompositeSuit = EnumHelper.addArmorMaterial("TCsuit", 70, new int[]{2, 6, 5, 2}, 50);
@@ -134,6 +134,7 @@ public class Traincraft {
         if (ConfigHandler.SPLIT_CREATIVE) {
             tcTrainTab = new CreativeTabTraincraft("Traincraft-MLP Trains",  Info.modID,"trains/Class_390_Front_Icon");
         }
+        BIPInfrastructureTab = new CreativeTabTraincraft("BIP-Infrastructure", Info.modID, "br_modern_buffer");
         trainArmor = proxy.addArmor("armor");
         trainCloth = proxy.addArmor("Paintable");
         trainCompositeSuit = proxy.addArmor("CompositeSuit");

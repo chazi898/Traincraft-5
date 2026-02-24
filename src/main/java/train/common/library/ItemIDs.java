@@ -85,6 +85,12 @@ public enum ItemIDs {
 	reinforcedPlates("ItemTrain", "item_reinforced_plate", 10),
 	composite_wrench("ItemWrench", "item_composite_wrench", 1),
 
+	/**BIP-Infrastructure*/
+	BR_Modern_Buffer("ItemTCRail", "br_modern_buffer", 2),
+	BR_2_Aspect_Signal("ItemTCRail", "br_2_aspect_signal", 2),
+	BR_3_Aspect_Signal("ItemTCRail", "br_3_aspect_signal", 2),
+	BR_4_Aspect_Signal("ItemTCRail", "br_4_aspect_signal", 2),
+
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),
 	tcRailMediumStraight("ItemTCRail", "item_rail_straight_medium", 5),
