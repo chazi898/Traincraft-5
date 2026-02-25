@@ -84,6 +84,10 @@ public enum BlockIDs {
 	BR_2_Aspect_Signal(true, ItemBR_2_Aspect_Signal.class),
 	BR_3_Aspect_Signal(true, ItemBR_3_Aspect_Signal.class),
 	BR_4_Aspect_Signal(true, ItemBR_4_Aspect_Signal.class),
+	BR_UK_SpeedSign(true, ItemBR_UK_SpeedSign.class),
+	BR_UK_SpeedSign_Left(true, ItemBR_UK_SpeedSign_Left.class),
+	BR_UK_SpeedSign_Right(true, ItemBR_UK_SpeedSign_Right.class),
+
 
 
 
