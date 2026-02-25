@@ -106,6 +106,7 @@ public class CommonProxy implements IGuiHandler {
         GameRegistry.registerTileEntity(TileBR_UK_SpeedSign.class, "TileBR_UK_SpeedSign");
         GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_Left.class, "TileBR_UK_SpeedSign_Left");
         GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_Right.class, "TileBR_UK_SpeedSign_Right");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_ETCS.class, "TileBR_UK_SpeedSign_ETCS");
 
         //switches -hariesh
         GameRegistry.registerTileEntity(TileowoSwitchStand.class, "tileowoswitchstand");

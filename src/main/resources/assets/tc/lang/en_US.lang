@@ -102,6 +102,7 @@ tile.tc:BR_4_Aspect_Signal.name=BR 4 Aspect Signal
 tile.tc:BR_UK_SpeedSign.name=BR UK Speed Sign
 tile.tc:BR_UK_SpeedSign_Left.name=BR UK Speed Sign Left
 tile.tc:BR_UK_SpeedSign_Right.name=BR UK Speed Sign Right
+tile.tc:BR_UK_SpeedSign_ETCS.name=BR UK Speed Sign ETCS
 
 
 <!-- ## Items ## -->

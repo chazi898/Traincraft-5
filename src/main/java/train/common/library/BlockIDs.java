@@ -87,7 +87,7 @@ public enum BlockIDs {
 	BR_UK_SpeedSign(true, ItemBR_UK_SpeedSign.class),
 	BR_UK_SpeedSign_Left(true, ItemBR_UK_SpeedSign_Left.class),
 	BR_UK_SpeedSign_Right(true, ItemBR_UK_SpeedSign_Right.class),
-
+	BR_UK_SpeedSign_ETCS(true, ItemBR_UK_SpeedSign_ETCS.class),
 
 
 

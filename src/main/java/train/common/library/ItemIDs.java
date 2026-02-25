@@ -93,6 +93,7 @@ public enum ItemIDs {
 	BR_UK_SpeedSign("ItemTCRail", "br_uk_speedsign", 2),
 	BR_UK_SpeedSign_Left("ItemTCRail", "br_uk_speedsign", 2),
 	BR_UK_SpeedSign_Right("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_ETCS("ItemTCRail", "br_uk_speedsign", 2),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),
