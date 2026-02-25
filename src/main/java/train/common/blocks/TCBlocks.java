@@ -117,6 +117,9 @@ public class TCBlocks {
 		BlockIDs.BR_2_Aspect_Signal.block = new BlockBR_2_Aspect_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
 		BlockIDs.BR_3_Aspect_Signal.block = new BlockBR_3_Aspect_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
 		BlockIDs.BR_4_Aspect_Signal.block = new BlockBR_4_Aspect_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
+		BlockIDs.BR_UK_SpeedSign.block = new BlockBR_UK_SpeedSign().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_UK_SpeedSign_Left.block = new BlockBR_UK_SpeedSign_Left().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_UK_SpeedSign_Right.block = new BlockBR_UK_SpeedSign_Right().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 
 		//BlockIDs.FortyFootContainer.block = new BlockFortyFootContainer(Material.rock).setHardness(4.5F).setCreativeTab(Traincraft.tcTab).setStepSound(Block.soundTypeMetal);
 

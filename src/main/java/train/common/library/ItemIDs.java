@@ -90,6 +90,9 @@ public enum ItemIDs {
 	BR_2_Aspect_Signal("ItemTCRail", "br_2_aspect_signal", 2),
 	BR_3_Aspect_Signal("ItemTCRail", "br_3_aspect_signal", 2),
 	BR_4_Aspect_Signal("ItemTCRail", "br_4_aspect_signal", 2),
+	BR_UK_SpeedSign("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_Left("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_Right("ItemTCRail", "br_uk_speedsign", 2),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),

@@ -99,6 +99,9 @@ tile.tc:BR_Modern_Buffer.name=BR Modern Buffer
 tile.tc:BR_2_Aspect_Signal.name=BR 2 Aspect Signal
 tile.tc:BR_3_Aspect_Signal.name=BR 3 Aspect Signal
 tile.tc:BR_4_Aspect_Signal.name=BR 4 Aspect Signal
+tile.tc:BR_UK_SpeedSign.name=BR UK Speed Sign
+tile.tc:BR_UK_SpeedSign_Left.name=BR UK Speed Sign Left
+tile.tc:BR_UK_SpeedSign_Right.name=BR UK Speed Sign Right
 
 
 <!-- ## Items ## -->
