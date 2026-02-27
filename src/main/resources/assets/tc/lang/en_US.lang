@@ -103,6 +103,9 @@ tile.tc:BR_UK_SpeedSign.name=BR UK Speed Sign
 tile.tc:BR_UK_SpeedSign_Left.name=BR UK Speed Sign Left
 tile.tc:BR_UK_SpeedSign_Right.name=BR UK Speed Sign Right
 tile.tc:BR_UK_SpeedSign_ETCS.name=BR UK Speed Sign ETCS
+tile.tc:BR_UK_SpeedSign_DoubleLeft.name=BR UK Speed Sign Double Left
+tile.tc:BR_UK_SpeedSign_DoubleRight.name=BR UK Speed Sign Double Right
+tile.tc:BR_UK_SpeedSign_EPS.name=BR UK Speed Sign EPS
 
 
 <!-- ## Items ## -->
