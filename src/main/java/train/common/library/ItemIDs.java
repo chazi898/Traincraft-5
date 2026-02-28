@@ -97,6 +97,9 @@ public enum ItemIDs {
 	BR_UK_SpeedSign_DoubleLeft("ItemTCRail", "br_uk_speedsign", 2),
 	BR_UK_SpeedSign_DoubleRight("ItemTCRail", "br_uk_speedsign", 2),
 	BR_UK_SpeedSign_EPS("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_Cutout("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_CutoutLeft("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_CutoutRight("ItemTCRail", "br_uk_speedsign", 2),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),

@@ -8,15 +8,15 @@ import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import train.common.api.blocks.TileRenderFacing;
 import train.common.blocks.blockSwitch.BlockBR_UK_SpeedSign;
-import train.common.blocks.blockSwitch.BlockBR_UK_SpeedSign_ETCS;
+import train.common.blocks.blockSwitch.BlockBR_UK_SpeedSign_CutoutRight;
 
-public class TileBR_UK_SpeedSign_ETCS extends TileRenderFacing {
+public class TileBR_UK_SpeedSign_CutoutRight extends TileRenderFacing {
 
 	private int skinstate;
 
-	public TileBR_UK_SpeedSign_ETCS(){
+	public TileBR_UK_SpeedSign_CutoutRight(){
 	}
-	public TileBR_UK_SpeedSign_ETCS(BlockBR_UK_SpeedSign_ETCS block){
+	public TileBR_UK_SpeedSign_CutoutRight(BlockBR_UK_SpeedSign_CutoutRight block){
 		host = block;
 	}
 	public void setSkinstate(int skinstate) {
@@ -30,7 +30,7 @@ public class TileBR_UK_SpeedSign_ETCS extends TileRenderFacing {
 	}
 
 	public void increaseSkinState(){
-		if (skinstate >= 32){
+		if (skinstate >= 17){
 			skinstate = 0;
 		} else {
 			skinstate++;

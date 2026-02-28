@@ -279,6 +279,15 @@ public class ClientProxy extends CommonProxy {
         ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_EPS.class, new RenderBR_UK_SpeedSign_EPS());
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_EPS.block), new ItemRenderBR_UK_SpeedSign_EPS());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_Cutout.class, new RenderBR_UK_SpeedSign_Cutout());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_Cutout.block), new ItemRenderBR_UK_SpeedSign_Cutout());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_CutoutLeft.class, new RenderBR_UK_SpeedSign_CutoutLeft());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_CutoutLeft.block), new ItemRenderBR_UK_SpeedSign_CutoutLeft());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_CutoutRight.class, new RenderBR_UK_SpeedSign_CutoutRight());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_CutoutRight.block), new ItemRenderBR_UK_SpeedSign_CutoutRight());
+
         //seats
         RenderingRegistry.registerEntityRenderingHandler(EntitySeat.class, nullRender);
 
