@@ -5,10 +5,8 @@ import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
-import train.client.render.renderSwitch.models.ModelBR_UK_SpeedSign;
 import train.client.render.renderSwitch.models.ModelBR_UK_SpeedSign_Cutout;
 import train.common.library.Info;
-import train.common.tile.tileSwitch.TileBR_UK_SpeedSign;
 import train.common.tile.tileSwitch.TileBR_UK_SpeedSign_Cutout;
 
 public class RenderBR_UK_SpeedSign_Cutout extends TileEntitySpecialRenderer {
