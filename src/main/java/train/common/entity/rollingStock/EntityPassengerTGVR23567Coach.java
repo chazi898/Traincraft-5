@@ -6,8 +6,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import train.common.api.EntityRollingStock;
 import train.common.api.IPassenger;
+import train.common.api.ISecondBogie;
 
-public class EntityPassengerTGVR23567Coach extends EntityRollingStock implements IPassenger {
+public class EntityPassengerTGVR23567Coach extends EntityRollingStock implements IPassenger, ISecondBogie {
     //public TiltingHandler tiltingHandler = new TiltingHandler(7);
 
     public EntityPassengerTGVR23567Coach(World world) {
@@ -73,9 +74,7 @@ public class EntityPassengerTGVR23567Coach extends EntityRollingStock implements
     }
 
     @Override
-    public float getOptimalDistance(EntityMinecart cart) {
-        return 2.36F;
-    }
+    public float getOptimalDistance(EntityMinecart cart) {return 0.92F; }
 
     @Override
     public String transportcountry() {

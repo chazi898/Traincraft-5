@@ -1533,9 +1533,9 @@ public enum RenderEnum implements TrainRenderRecord {
     Class37(EntityLocoDieselClass37.class, new ModelClass37(), "Class_37_", true, new float[]{-2.1F, 0.06F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
     }, "", null, 0, false),
     TGVPowerCar(EntityElectricTGVPowerCar.class, new ModelTGV_PowerCar(), "TGV_SudEst_", true, new float[]{-2.3F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
-    TGVR1R8Coach(EntityPassengerTGVR1R8Coach.class, new ModelTGV_R1R8(), "TGV_R1-R8_", true, new float[]{0.2F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
-    TGVR23567Coach(EntityPassengerTGVR23567Coach.class, new ModelTGV_R23567(), "TGV_R2-3-5-6-7_", true, new float[]{0F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
-    TGVR4BarCar(EntityPassengerTGVR4BarCar.class, new ModelTGV_R4BarCar(), "TGV_R4_", true, new float[]{-0.35F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    TGVR1R8Coach(EntityPassengerTGVR1R8Coach.class, new ModelTGV_R1R8(), "TGV_R1-R8_", true, new float[]{-1.6F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    TGVR23567Coach(EntityPassengerTGVR23567Coach.class, new ModelTGV_R23567(), "TGV_R2-3-5-6-7_", true, new float[]{-1.5F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    TGVR4BarCar(EntityPassengerTGVR4BarCar.class, new ModelTGV_R4BarCar(), "TGV_R4_", true, new float[]{-1.85F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
 
     ;
 
