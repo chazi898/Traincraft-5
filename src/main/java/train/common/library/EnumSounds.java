@@ -295,7 +295,9 @@ public enum EnumSounds implements TrainSoundRecord {
 
     private Class entityClass;
     private String horn;
+    private String bell;
     private float hornVolume;
+    private float bellVolume;
     private String run;
     private String idle;
     private float runVolume;
