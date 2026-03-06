@@ -14,6 +14,7 @@ import io.netty.buffer.ByteBuf;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -41,8 +42,7 @@ import train.common.mtc.packets.*;
 import java.util.List;
 import java.util.Random;
 
-public abstract class Locomotive extends EntityRollingStock implements IInventory, WirelessTransmitter, IRollingStockLightControls
-{
+public abstract class Locomotive extends EntityRollingStock implements IInventory, WirelessTransmitter, IRollingStockLightControls {
 
     public int inventorySize;
     protected ItemStack[] locoInvent;
@@ -103,6 +103,7 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
     private byte beaconCycleIndex = 0;
 
     public TrainSoundRecord sound = Traincraft.instance.traincraftRegistry.getTrainSoundRecord(this.getClass());
+    public TrainSound soundBell;
     /**
      * state of the loco
      */
@@ -138,7 +139,9 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
 
     public Locomotive(World world) {
         super(world);
-        if(world==null){return;}
+        if (world == null) {
+            return;
+        }
         setFuelConsumption(0);
         inventorySize = numCargoSlots + numCargoSlots2 + numCargoSlots1;
         dataWatcher.addObject(2, 0);
@@ -240,7 +243,7 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
     /**
      * set the max speed in km/h if the param is 0 then the default speed is
      * used
-     *
+     * <p>
      * //@param speed //this is for making documentation of some sort via javadoc, shouldn't be relevant to the operation of the mod
      */
     public void setCustomSpeed(double m) {
@@ -319,8 +322,9 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
     /**
      * set the fuel consumption rate for each loco if i is 0 then default
      * consumption is used
-     *
+     * <p>
      * //@param i //this is for making documentation of some sort via javadoc, shouldn't be relevant to the operation of the mod
+     *
      * @return
      */
     public int setFuelConsumption(int c) {
@@ -422,9 +426,7 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         JsonObject lightingDetailsJSONStringObject;
         try {
             lightingDetailsJSONStringObject = new JsonParser().parse(ntc.getString(DataMemberName.lightingDetailsJSONString.AsString())).getAsJsonObject();
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             lightingDetailsJSONStringObject = lightingDetailsAsJSON();
         }
 
@@ -504,12 +506,12 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
 
         if (i == 7) {
             if (seats != null && seats.size() != 0) {
-                for(EntitySeat seat: seats) {
-                    if(seat.isControlSeat() && seat.getPassenger() != null && playerEntity == seat.getPassenger()) {
+                for (EntitySeat seat : seats) {
+                    if (seat.isControlSeat() && seat.getPassenger() != null && playerEntity == seat.getPassenger()) {
                         ((EntityPlayer) seat.getPassenger()).openGui(Traincraft.instance, GuiIDs.LOCO, worldObj, (int) this.posX, (int) this.posY, (int) this.posZ);
                         break;
                     } else if (seat.getPassenger() != null && seat.getPassenger() instanceof EntityPlayer) {
-                        Traincraft.proxy.seatGUI((EntityPlayer) seat.getPassenger(),this);
+                        Traincraft.proxy.seatGUI((EntityPlayer) seat.getPassenger(), this);
                     }
                 }
             }
@@ -531,7 +533,7 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
             brakePressed = false;
         }
 
-        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()== true) {
+        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen() == true) {
             brakePressed = false;
         }
 
@@ -618,10 +620,16 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
     }
 
     public void soundWhistle() {
-        worldObj.playSoundAtEntity(this, Info.resourceLocation + ":" + "bell", 0.5F, 1.0F);
-
+    //    worldObj.playSoundAtEntity(this, Info.resourceLocation + ":" + "bell", 0.5F, 1.0F);
+        if(soundBell==null){
+            soundBell=getBell();
+        }
+        if (soundBell != null && !soundBell.addr.isEmpty() && whistleDelay == 0) {
+            worldObj.playSoundAtEntity(this, soundBell.addr, soundBell.vol, soundBell.pit);
+            whistleDelay = 2;
+        }
     }
-    
+
     @SideOnly(Side.CLIENT)
     public void keyHandling() {
         if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindForward.getKeyCode())

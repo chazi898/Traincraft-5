@@ -191,6 +191,7 @@ public enum EnumSounds implements TrainSoundRecord {
     Class37(EntityLocoDieselClass37.class, "Class37Horn", 1.25F, "Class37Thrash", 0.9F, 45, "Class37Idle", 0.4F, 45, false),
     GWR14xx(EntityLocoSteamGWR14xx.class, "GWRPannierWhistle", 1.2F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
     Jenny042(EntityLocoSteam042Jenny.class, "ThompsonWhistle", 1.1F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
+    TGVPowerCar(EntityElectricTGVPowerCar.class, "BB15000Horn", 1.1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),
@@ -294,7 +295,9 @@ public enum EnumSounds implements TrainSoundRecord {
 
     private Class entityClass;
     private String horn;
+    private String bell;
     private float hornVolume;
+    private float bellVolume;
     private String run;
     private String idle;
     private float runVolume;

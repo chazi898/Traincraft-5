@@ -102,6 +102,13 @@ tile.tc:BR_4_Aspect_Signal.name=BR 4 Aspect Signal
 tile.tc:BR_UK_SpeedSign.name=BR UK Speed Sign
 tile.tc:BR_UK_SpeedSign_Left.name=BR UK Speed Sign Left
 tile.tc:BR_UK_SpeedSign_Right.name=BR UK Speed Sign Right
+tile.tc:BR_UK_SpeedSign_ETCS.name=BR UK Speed Sign ETCS
+tile.tc:BR_UK_SpeedSign_DoubleLeft.name=BR UK Speed Sign Double Left
+tile.tc:BR_UK_SpeedSign_DoubleRight.name=BR UK Speed Sign Double Right
+tile.tc:BR_UK_SpeedSign_EPS.name=BR UK Speed Sign EPS
+tile.tc:BR_UK_SpeedSign_Cutout.name=BR UK Speed Sign Cutout
+tile.tc:BR_UK_SpeedSign_CutoutLeft.name=BR UK Speed Sign Cutout Left
+tile.tc:BR_UK_SpeedSign_CutoutRight.name=BR UK Speed Sign Cutout Right
 
 
 <!-- ## Items ## -->
@@ -844,6 +851,10 @@ item.tc:minecartClass37.name=Class 37
 item.tc:minecartGWR14xx.name=GWR 14xx
 item.tc:minecart042Jenny.name=0-4-2 Jenny
 item.tc:minecart042JennyTender.name=0-4-2 Jenny's Tender
+item.tc:minecartTGVPowerCar.name=TGV Power Car
+item.tc:minecartTGVR1R8Coach.name=TGV R1-R8 Coach
+item.tc:minecartTGVR23567Coach.name=TGV R2-3-5-6-7 Coach
+item.tc:minecartTGVR4BarCar.name=TGV R4 Bar Car
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1559,6 +1570,10 @@ entity.tc.Class37.name=Class 37
 entity.tc.GWR14xx.name=GWR 14xx
 entity.tc.042Jenny.name=0-4-2 Jenny
 entity.tc.Tender042Jenny.name=0-4-2 Jenny's Tender
+entity.tc.TGVPowerCar.name=TGV Power Car
+entity.tc.TGVR1R8Coach.name=TGV R1-R8 Coach
+entity.tc.TGVR23567Coach.name=TGV R2-3-5-6-7 Coach
+entity.tc.TGVR4BarCar.name=TGV R4 Bar Car
 
 description.villager.profession.tc.station_chief=Station Master
 

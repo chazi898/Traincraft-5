@@ -120,6 +120,13 @@ public class TCBlocks {
 		BlockIDs.BR_UK_SpeedSign.block = new BlockBR_UK_SpeedSign().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.BR_UK_SpeedSign_Left.block = new BlockBR_UK_SpeedSign_Left().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.BR_UK_SpeedSign_Right.block = new BlockBR_UK_SpeedSign_Right().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_UK_SpeedSign_ETCS.block = new BlockBR_UK_SpeedSign_ETCS().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_UK_SpeedSign_DoubleLeft.block = new BlockBR_UK_SpeedSign_DoubleLeft().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_UK_SpeedSign_DoubleRight.block = new BlockBR_UK_SpeedSign_DoubleRight().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_UK_SpeedSign_EPS.block = new BlockBR_UK_SpeedSign_EPS().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_UK_SpeedSign_Cutout.block = new BlockBR_UK_SpeedSign_Cutout().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_UK_SpeedSign_CutoutLeft.block = new BlockBR_UK_SpeedSign_CutoutLeft().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_UK_SpeedSign_CutoutRight.block = new BlockBR_UK_SpeedSign_CutoutRight().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 
 		//BlockIDs.FortyFootContainer.block = new BlockFortyFootContainer(Material.rock).setHardness(4.5F).setCreativeTab(Traincraft.tcTab).setStepSound(Block.soundTypeMetal);
 
