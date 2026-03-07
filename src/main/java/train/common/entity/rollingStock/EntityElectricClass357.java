@@ -10,6 +10,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.Constants;
 import train.common.Traincraft;
 import train.common.api.ElectricTrain;
+import train.common.api.TrainSound;
 import train.common.library.GuiIDs;
 
 public class EntityElectricClass357 extends ElectricTrain {
@@ -136,6 +137,10 @@ public class EntityElectricClass357 extends ElectricTrain {
         }
         return true;
     }
+
+    @Override
+    public TrainSound getBell(){return new TrainSound("tc:ButtonDoorClosing",0.4f,1,1);}
+
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return 0.82F;

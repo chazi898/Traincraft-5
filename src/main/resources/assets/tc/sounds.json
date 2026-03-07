@@ -200,5 +200,6 @@
   "Class37Horn": {"category": "master", "sounds" :  [{"name": "Class37Horn", "stream": true}]},
   "Class37Idle": {"category": "master", "sounds" :  [{"name": "Class37Idle", "stream": true}]},
   "Class37Thrash": {"category": "master", "sounds" :  [{"name": "Class37Thrash", "stream": true}]},
-  "Mk1Sound": {"category": "master", "sounds" :  [{"name": "Mk1Sound", "stream": true}]}
+  "Mk1Sound": {"category": "master", "sounds" :  [{"name": "Mk1Sound", "stream": true}]},
+  "ButtonDoorClosing": {"category": "master", "sounds" :  [{"name": "ButtonDoorClosing", "stream": true}]}
 }
