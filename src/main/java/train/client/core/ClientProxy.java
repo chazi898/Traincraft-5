@@ -288,6 +288,24 @@ public class ClientProxy extends CommonProxy {
         ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_CutoutRight.class, new RenderBR_UK_SpeedSign_CutoutRight());
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_CutoutRight.block), new ItemRenderBR_UK_SpeedSign_CutoutRight());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_Diagonal_Left.class, new RenderPlatform_Slab_Diagonal_Left());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_Diagonal_Left.block), new ItemRenderPlatform_Slab_Diagonal_Left());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_Diagonal_Right.class, new RenderPlatform_Slab_Diagonal_Right());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_Diagonal_Right.block), new ItemRenderPlatform_Slab_Diagonal_Right());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_Diagonal_End.class, new RenderPlatform_Slab_Diagonal_End());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_Diagonal_End.block), new ItemRenderPlatform_Slab_Diagonal_End());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_End_Left.class, new RenderPlatform_Slab_End_Left());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_End_Left.block), new ItemRenderPlatform_Slab_End_Left());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_End_Right.class, new RenderPlatform_Slab_End_Right());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_End_Right.block), new ItemRenderPlatform_Slab_End_Right());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_10x10_Outside.class, new RenderPlatform_Slab_10x10_Outside());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_10x10_Outside.block), new ItemRenderPlatform_Slab_10x10_Outside());
+
         //seats
         RenderingRegistry.registerEntityRenderingHandler(EntitySeat.class, nullRender);
 

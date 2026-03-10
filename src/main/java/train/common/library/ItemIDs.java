@@ -100,6 +100,12 @@ public enum ItemIDs {
 	BR_UK_SpeedSign_Cutout("ItemTCRail", "br_uk_speedsign", 2),
 	BR_UK_SpeedSign_CutoutLeft("ItemTCRail", "br_uk_speedsign", 2),
 	BR_UK_SpeedSign_CutoutRight("ItemTCRail", "br_uk_speedsign", 2),
+	Platform_Slab_Diagonal_Left("ItemBlock", "platform_slab", 1),
+	Platform_Slab_Diagonal_Right("ItemBlock", "platform_slab", 1),
+	Platform_Slab_Diagonal_End("ItemBlock", "platform_slab", 1),
+	Platform_Slab_End_Left("ItemBlock", "platform_slab", 1),
+	Platform_Slab_End_Right("ItemBlock", "platform_slab", 1),
+	Platform_Slab_10x10_Outside("ItemBlock", "platform_slab", 2),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),
