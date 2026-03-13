@@ -153,7 +153,7 @@ public class EntityLocoSteamGWRMogul extends SteamTrain {
     }
 
     @Override
-    public TrainSound getBell(){return new TrainSound("tc:GWRStandardWhistle",0.8f,1,1);}
+    public TrainSound getBell(){return new TrainSound("tc:GWRStandardWhistle",1f,1,1);}
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {

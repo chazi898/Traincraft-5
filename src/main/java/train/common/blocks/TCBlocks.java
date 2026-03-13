@@ -127,6 +127,12 @@ public class TCBlocks {
 		BlockIDs.BR_UK_SpeedSign_Cutout.block = new BlockBR_UK_SpeedSign_Cutout().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.BR_UK_SpeedSign_CutoutLeft.block = new BlockBR_UK_SpeedSign_CutoutLeft().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.BR_UK_SpeedSign_CutoutRight.block = new BlockBR_UK_SpeedSign_CutoutRight().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.Platform_Slab_Diagonal_Left.block = new BlockPlatform_Slab_Diagonal_Left().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.Platform_Slab_Diagonal_Right.block = new BlockPlatform_Slab_Diagonal_Right().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.Platform_Slab_Diagonal_End.block = new BlockPlatform_Slab_Diagonal_End().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.Platform_Slab_End_Left.block = new BlockPlatform_Slab_End_Left().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.Platform_Slab_End_Right.block = new BlockPlatform_Slab_End_Right().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.Platform_Slab_10x10_Outside.block = new BlockPlatform_Slab_10x10_Outside().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 
 		//BlockIDs.FortyFootContainer.block = new BlockFortyFootContainer(Material.rock).setHardness(4.5F).setCreativeTab(Traincraft.tcTab).setStepSound(Block.soundTypeMetal);
 

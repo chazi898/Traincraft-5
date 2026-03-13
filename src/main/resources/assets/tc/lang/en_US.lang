@@ -109,6 +109,12 @@ tile.tc:BR_UK_SpeedSign_EPS.name=BR UK Speed Sign EPS
 tile.tc:BR_UK_SpeedSign_Cutout.name=BR UK Speed Sign Cutout
 tile.tc:BR_UK_SpeedSign_CutoutLeft.name=BR UK Speed Sign Cutout Left
 tile.tc:BR_UK_SpeedSign_CutoutRight.name=BR UK Speed Sign Cutout Right
+tile.tc:Platform_Slab_Diagonal_Left.name=Platform Slab Diagonal Left
+tile.tc:Platform_Slab_Diagonal_Right.name=Platform Slab Diagonal Right
+tile.tc:Platform_Slab_Diagonal_End.name=Platform Slab Diagonal End
+tile.tc:Platform_Slab_End_Left.name=Platform Slab End Left
+tile.tc:Platform_Slab_End_Right.name=Platform Slab End Right
+tile.tc:Platform_Slab_10x10_Outside.name=Platform Slab 10x10 Outside
 
 
 <!-- ## Items ## -->

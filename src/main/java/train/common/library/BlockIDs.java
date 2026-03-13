@@ -94,6 +94,12 @@ public enum BlockIDs {
 	BR_UK_SpeedSign_Cutout(true, ItemBR_UK_SpeedSign_Cutout.class),
 	BR_UK_SpeedSign_CutoutLeft(true, ItemBR_UK_SpeedSign_CutoutLeft.class),
 	BR_UK_SpeedSign_CutoutRight(true, ItemBR_UK_SpeedSign_CutoutRight.class),
+	Platform_Slab_Diagonal_Left(true, ItemPlatform_Slab_Diagonal_Left.class),
+	Platform_Slab_Diagonal_Right(true, ItemPlatform_Slab_Diagonal_Right.class),
+	Platform_Slab_Diagonal_End(true, ItemPlatform_Slab_Diagonal_End.class),
+	Platform_Slab_End_Left(true, ItemPlatform_Slab_End_Left.class),
+	Platform_Slab_End_Right(true, ItemPlatform_Slab_End_Right.class),
+	Platform_Slab_10x10_Outside(true, ItemPlatform_Slab_10x10_Outside.class),
 
 
 

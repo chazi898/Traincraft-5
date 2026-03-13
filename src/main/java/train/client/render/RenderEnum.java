@@ -271,7 +271,7 @@ public enum RenderEnum implements TrainRenderRecord {
     locoVL10(EntityLocoElectricVL10.class, new ModelVL10(), "vl10", false, new float[]{-1.2F, -0.47F, 0.0F}, null, null, "", 0, null, "", null, 0, false),
     locoBR_E69(EntityLocoElectricBR_E69.class, new ModelBR_E69(), "locoBR_E69_", true, new float[]{0.0F, -0.42F, 0.0F}, null, null, "", 0, null, "", null, 0, false),
     locoMineTrain(EntityLocoElectricMinetrain.class, new ModelLocoMinetrain(), "locoMinetrain", false, new float[]{-0.8F, -0.47F, 0.0F}, null, null, "", 0, null, "", null, 0, false),
-    locoSpeedZeroED(EntityLocoElectricHighSpeedZeroED.class, new ModelLocoHighSpeedZeroED(), "locoHighSpeedZeroED", false, new float[]{-1.7F, -0.44F, 0.0F}, null, null, "", 0, null, "", null, 0, false),
+    locoSpeedZeroED(EntityLocoElectricHighSpeedZeroED.class, new ModelLocoHighSpeedZeroED(), "locoHighSpeedZeroED", false, new float[]{-1.7F, -0.47F, 0.0F}, null, null, "", 0, null, "", null, 0, false),
     locoICE1(EntityLocoElectricICE1.class, new ModelICE1(), "ICE1_Engine_", true, new float[]{0.0F, 0.18F, 0.1F}, new float[]{0F, 180F, 180F}, new float[]{0.8f, 1f, 0.8f}, "", 0, null, "", null, 0, false),
     //locoSpeedGrey(EntityNewHighSpeedLoco.class, new ModelNewHighSpeedLoco(), "newhighspeedloco", false, new float[] { -0.05F, -0.5F, 0.0F }, new float[] { 0F, 90F, 0F }, new float[] { 0.8F, 0.8F, 0.8F }, "", 0, null, "", null, 0),
     locoTramYellow(EntityLocoElectricTramWood.class, new ModelTram(), "tram", false, new float[]{-0.8F, -0.44F, 0F}, new float[]{0F, 180F, 0F}, null, "", 0, null, "", null, 0, false),
