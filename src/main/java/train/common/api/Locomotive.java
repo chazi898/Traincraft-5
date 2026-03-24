@@ -154,6 +154,8 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         dataWatcher.addObject(25, (int) convertSpeed(Math.sqrt(Math.abs(motionX * motionX) + Math.abs(motionZ * motionZ))));//convertSpeed((Math.abs(this.motionX) + Math.abs(this.motionZ))
         dataWatcher.addObject(26, guiDetailsJSON());
         dataWatcher.addObject(28, lightingDetailsJSONString());
+        dataWatcher.addObject(29, castToString(currentAccelSlowDown));
+        dataWatcher.addObject(30, castToString(currentBrakeSlowDown));
 
         //dataWatcher.addObject(32, lineWaypoints);
         setAccel(0);
@@ -1159,8 +1161,8 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         gui.addProperty("cartsPulled", currentNumCartsPulled);
         gui.addProperty("massPulled", currentMassPulled);
         gui.addProperty("slowDown", Math.round(currentSpeedSlowDown));
-        gui.addProperty("accelSlowDown", currentAccelSlowDown);
-        gui.addProperty("brakeSlowDown", currentBrakeSlowDown);
+        gui.addProperty("accelSlowDown", (double)Math.round(currentAccelSlowDown*1000)/1000);
+        gui.addProperty("brakeSlowDown", (double)Math.round(currentBrakeSlowDown*1000)/1000);
         gui.addProperty("fuelUseChange", currentFuelConsumptionChange);
         return gui.toString();
     }

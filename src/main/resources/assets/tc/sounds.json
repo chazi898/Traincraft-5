@@ -203,5 +203,6 @@
   "Mk1Sound": {"category": "master", "sounds" :  [{"name": "Mk1Sound", "stream": true}]},
   "ButtonDoorClosing": {"category": "master", "sounds" :  [{"name": "ButtonDoorClosing", "stream": true}]},
   "PendolinoDoorClosing": {"category": "master", "sounds" :  [{"name": "PendolinoDoorClosing", "stream": true}]},
-  "AcknowledgeBell": {"category": "master", "sounds" :  [{"name": "AcknowledgeBell", "stream": true}]}
+  "AcknowledgeBell": {"category": "master", "sounds" :  [{"name": "AcknowledgeBell", "stream": true}]},
+  "Class442Horn": {"category": "master", "sounds" :  [{"name": "Class442Horn", "stream": true}]}
 }
