@@ -801,6 +801,7 @@ public enum ItemIDs {
 	minecartTGVR1R8Coach("ItemRollingStock", "TGV_R1R8_Icon", 2),
 	minecartTGVR23567Coach("ItemRollingStock", "TGV_R23567_Icon", 2),
 	minecartTGVR4BarCar("ItemRollingStock", "TGV_R4BarCar_Icon", 2),
+	minecartAW307("ItemRollingStock","Aw_icon",4),
 
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),

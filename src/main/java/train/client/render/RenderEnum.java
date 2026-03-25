@@ -1536,6 +1536,7 @@ public enum RenderEnum implements TrainRenderRecord {
     TGVR1R8Coach(EntityPassengerTGVR1R8Coach.class, new ModelTGV_R1R8(), "TGV_R1-R8_", true, new float[]{-1.6F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     TGVR23567Coach(EntityPassengerTGVR23567Coach.class, new ModelTGV_R23567(), "TGV_R2-3-5-6-7_", true, new float[]{-1.5F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     TGVR4BarCar(EntityPassengerTGVR4BarCar.class, new ModelTGV_R4BarCar(), "TGV_R4_", true, new float[]{-1.85F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    AW307(EntityLocoElectricAW307.class, new ModelAW307(), "Aw_", true, new float[]{-1.0F, 0.18F, 0.0F}, new float[]{0.0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
 
     ;
 
