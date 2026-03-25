@@ -1,5 +1,5 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2025 Minecraft-SMP.de
+// Copyright (C) 2026 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: 
@@ -22,7 +22,7 @@ public class ModelClass88 extends ModelConverter //Same as Filename
 
 	public ModelClass88() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[468];
+		bodyModel = new ModelRendererTurbo[469];
 
 		initbodyModel_1();
 
@@ -502,6 +502,7 @@ public class ModelClass88 extends ModelConverter //Same as Filename
 		bodyModel[465] = new ModelRendererTurbo(this, 353, 319, textureX, textureY); // Box 6
 		bodyModel[466] = new ModelRendererTurbo(this, 217, 319, textureX, textureY); // Box 6
 		bodyModel[467] = new ModelRendererTurbo(this, 269, 319, textureX, textureY); // Box 6
+		bodyModel[468] = new ModelRendererTurbo(this, 450, 199, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 7, 7, 0, 0F,0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, -1F, -1F, 0F, -1F, -1F, 0F, 0F, -1F, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-37F, 2F, -6F);
@@ -1910,10 +1911,13 @@ public class ModelClass88 extends ModelConverter //Same as Filename
 
 		bodyModel[467].addShapeBox(0F, 0F, 0F, 3, 1, 8, 0F,-1.7F, 0F, 0F, 0.2F, 0F, 0F, 0.2F, 0F, -4.5F, -3.2F, 0F, -4.5F, -1.7F, 0F, 0F, 0.2F, 0F, 0F, 0.2F, 0F, -4.5F, -3.2F, 0F, -4.5F); // Box 6
 		bodyModel[467].setRotationPoint(34F, -9F, -5F);
+
+		bodyModel[468].addShapeBox(0F, 0F, 0F, 3, 2, 2, 0F,-1.1F, 0F, 0F, -1.2F, 0F, 0F, -1.2F, 0F, 0F, -1.1F, 0F, 0F, -0.72F, -0.8F, 0F, -1.2F, -0.8F, 0F, -1.2F, -0.8F, 0F, -0.72F, -0.8F, 0F); // Lamp
+		bodyModel[468].setRotationPoint(-39.01F, -20F, -1F);
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 468; i++) {
+		for (int i = 0; i < 469; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);

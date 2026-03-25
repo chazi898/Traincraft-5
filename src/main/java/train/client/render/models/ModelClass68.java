@@ -1,5 +1,5 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2025 Minecraft-SMP.de
+// Copyright (C) 2026 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: 
@@ -17,14 +17,14 @@ import org.lwjgl.opengl.GL11;
 
 import java.util.ArrayList;
 
-		public class ModelClass68 extends ModelConverter //Same as Filename
-		{
-			int textureX = 512;
-			int textureY = 512;
+public class ModelClass68 extends ModelConverter //Same as Filename
+{
+	int textureX = 512;
+	int textureY = 512;
 
-			public ModelClass68() //Same as Filename
-			{
-				bodyModel = new ModelRendererTurbo[409];
+	public ModelClass68() //Same as Filename
+	{
+		bodyModel = new ModelRendererTurbo[410];
 
 		initbodyModel_1();
 
@@ -445,6 +445,7 @@ import java.util.ArrayList;
 		bodyModel[406] = new ModelRendererTurbo(this, 281, 97, textureX, textureY); // Box 6
 		bodyModel[407] = new ModelRendererTurbo(this, 425, 97, textureX, textureY); // Box 6
 		bodyModel[408] = new ModelRendererTurbo(this, 177, 113, textureX, textureY); // Box 6
+		bodyModel[409] = new ModelRendererTurbo(this, 450, 192, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 7, 7, 0, 0F,0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, -1F, -1F, 0F, -1F, -1F, 0F, 0F, -1F, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-37F, 2F, -6F);
@@ -1672,10 +1673,13 @@ import java.util.ArrayList;
 
 		bodyModel[408].addShapeBox(0F, 0F, 0F, 1, 5, 1, 0F,-0.8F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, -0.5F, 0F, -0.8F, -0.5F, 0F, -0.8F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, -0.8F, 0F, 0F); // Box 6
 		bodyModel[408].setRotationPoint(30.2F, 0F, 9.7F);
+
+		bodyModel[409].addShapeBox(0F, 0F, 0F, 3, 2, 2, 0F,-1.1F, 0F, 0F, -1.2F, 0F, 0F, -1.2F, 0F, 0F, -1.1F, 0F, 0F, -0.72F, -0.8F, 0F, -1.2F, -0.8F, 0F, -1.2F, -0.8F, 0F, -0.72F, -0.8F, 0F); // Lamp
+		bodyModel[409].setRotationPoint(-39.01F, -20F, -1F);
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 409; i++) {
+		for (int i = 0; i < 410; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);

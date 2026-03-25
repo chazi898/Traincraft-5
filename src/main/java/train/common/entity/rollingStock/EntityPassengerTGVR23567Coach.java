@@ -78,6 +78,6 @@ public class EntityPassengerTGVR23567Coach extends EntityRollingStock implements
 
     @Override
     public String transportcountry() {
-        return "uk";
+        return "fr";
     }
 }

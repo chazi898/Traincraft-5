@@ -80,6 +80,6 @@ public class EntityPassengerTGVR4BarCar extends EntityRollingStock implements IP
 
     @Override
     public String transportcountry() {
-        return "uk";
+        return "fr";
     }
 }
