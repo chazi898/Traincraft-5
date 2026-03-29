@@ -802,6 +802,10 @@ public enum ItemIDs {
 	minecartTGVR23567Coach("ItemRollingStock", "TGV_R23567_Icon", 2),
 	minecartTGVR4BarCar("ItemRollingStock", "TGV_R4BarCar_Icon", 2),
 	minecartAW307("ItemRollingStock","Aw_icon",4),
+	minecartPEPTSO("ItemRollingStock", "PEP_TSO", 1),
+	minecartPEPPTSO("ItemRollingStock", "PEP_PTSO", 1),
+	minecartPEPDMSO("ItemRollingStock", "PEP_DMSO", 3),
+
 
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),
