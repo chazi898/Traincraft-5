@@ -11,7 +11,6 @@ import net.minecraftforge.common.util.Constants;
 import train.common.Traincraft;
 import train.common.api.ElectricTrain;
 import train.common.api.TrainSound;
-import train.common.core.util.TraincraftUtil;
 import train.common.library.GuiIDs;
 
 public class EntityLocoElectricPEPDMSO extends ElectricTrain {
