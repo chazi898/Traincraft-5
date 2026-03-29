@@ -4,8 +4,8 @@
 
 // Model: 
 // Model Creator: 
-// Created on: 19.07.2023 - 14:23:44
-// Last changed on: 19.07.2023 - 14:23:44
+// Created on: 01.03.2026 - 01:34:26
+// Last changed on: 01.03.2026 - 01:34:26
 
 package train.client.render.models; //Path where the model is located
 
@@ -19,7 +19,7 @@ public class ModelPEPTSO extends ModelConverter //Same as Filename
 
 	public ModelPEPTSO() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[423];
+		bodyModel = new ModelRendererTurbo[425];
 
 		initbodyModel_1();
 
@@ -454,6 +454,8 @@ public class ModelPEPTSO extends ModelConverter //Same as Filename
 		bodyModel[420] = new ModelRendererTurbo(this, 1, 233, textureX, textureY); // Box 742
 		bodyModel[421] = new ModelRendererTurbo(this, 281, 385, textureX, textureY); // Box 423
 		bodyModel[422] = new ModelRendererTurbo(this, 505, 17, textureX, textureY); // Box 424
+		bodyModel[423] = new ModelRendererTurbo(this, 281, 385, textureX, textureY); // Box 423
+		bodyModel[424] = new ModelRendererTurbo(this, 505, 17, textureX, textureY); // Box 424
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 5, 10, 1, 0F,0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, -0.75F, 0F, 0.5F, -0.75F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, -1.25F, 0F, 0F, -1.25F); // Passenger door left Forward
 		bodyModel[0].setRotationPoint(10F, -13.5F, -10.9F);
@@ -734,7 +736,7 @@ public class ModelPEPTSO extends ModelConverter //Same as Filename
 		bodyModel[92].addShapeBox(0F, 0F, 0F, 3, 12, 1, 0F,-0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, -0.25F, 0F, -0.25F, -3F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, -0.75F, -3F, 0F, -0.75F); // Box 664
 		bodyModel[92].setRotationPoint(-42F, -15.5F, -11F);
 
-		bodyModel[93].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 665
+		bodyModel[93].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F); // Box 665
 		bodyModel[93].setRotationPoint(-42F, -16.5F, 10F);
 
 		bodyModel[94].addBox(0F, 0F, 0F, 1, 1, 20, 0F); // Box 666
@@ -758,7 +760,7 @@ public class ModelPEPTSO extends ModelConverter //Same as Filename
 		bodyModel[100].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 672
 		bodyModel[100].setRotationPoint(-42F, -17.5F, -10F);
 
-		bodyModel[101].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 673
+		bodyModel[101].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.25F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F); // Box 673
 		bodyModel[101].setRotationPoint(-42F, -16.5F, -11F);
 
 		bodyModel[102].addBox(0F, 0F, 0F, 2, 1, 8, 0F); // Box 674
@@ -836,7 +838,7 @@ public class ModelPEPTSO extends ModelConverter //Same as Filename
 		bodyModel[126].addBox(0F, 0F, 0F, 2, 16, 1, 0F); // Box 102
 		bodyModel[126].setRotationPoint(42F, -14.5F, -4F);
 
-		bodyModel[127].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 99
+		bodyModel[127].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, 0F); // Box 99
 		bodyModel[127].setRotationPoint(41F, -16.5F, -11F);
 
 		bodyModel[128].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, -0.5F, -1F, 0F, -0.5F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 99
@@ -854,7 +856,7 @@ public class ModelPEPTSO extends ModelConverter //Same as Filename
 		bodyModel[132].addBox(0F, 0F, 0F, 1, 1, 20, 0F); // Box 99
 		bodyModel[132].setRotationPoint(41F, -16.5F, -10F);
 
-		bodyModel[133].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 99
+		bodyModel[133].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, -0.25F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, -0.25F, 0F, 0F, 0F, 0F, 0F); // Box 99
 		bodyModel[133].setRotationPoint(41F, -16.5F, 10F);
 
 		bodyModel[134].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 99
@@ -1188,16 +1190,16 @@ public class ModelPEPTSO extends ModelConverter //Same as Filename
 		bodyModel[243].setRotationPoint(-41F, 2.5F, -11F);
 
 		bodyModel[244].addBox(0F, 0F, 0F, 0, 20, 20, 0F); // Box 102
-		bodyModel[244].setRotationPoint(-20F, -17.5F, -10F);
+		bodyModel[244].setRotationPoint(-19.99F, -17.5F, -10F);
 
 		bodyModel[245].addBox(0F, 0F, 0F, 0, 20, 20, 0F); // Box 102
-		bodyModel[245].setRotationPoint(10F, -17.5F, -10F);
+		bodyModel[245].setRotationPoint(10.01F, -17.5F, -10F);
 
 		bodyModel[246].addBox(0F, 0F, 0F, 0, 20, 20, 0F); // Box 102
-		bodyModel[246].setRotationPoint(20F, -17.5F, -10F);
+		bodyModel[246].setRotationPoint(19.99F, -17.5F, -10F);
 
 		bodyModel[247].addBox(0F, 0F, 0F, 0, 20, 20, 0F); // Box 102
-		bodyModel[247].setRotationPoint(-10F, -17.5F, -10F);
+		bodyModel[247].setRotationPoint(-10.01F, -17.5F, -10F);
 
 		bodyModel[248].addShapeBox(0F, 0F, 0F, 10, 2, 1, 0F,0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.3F, 0F, -0.5F, -0.3F, 0F, -0.5F, 0.05F, 0F, -0.5F, 0.05F); // Box 99
 		bodyModel[248].setRotationPoint(10F, -15.5F, 10F);
@@ -1723,5 +1725,11 @@ public class ModelPEPTSO extends ModelConverter //Same as Filename
 
 		bodyModel[422].addShapeBox(0F, 0F, 0F, 3, 12, 0, 0F,-0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, -0.5F, -0.5F, 0F, 0F); // Box 424
 		bodyModel[422].setRotationPoint(-42F, -15.5F, -11.01F);
+
+		bodyModel[423].addShapeBox(0F, 0F, 0F, 3, 12, 0, 0F,0F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, -0.5F); // Box 423
+		bodyModel[423].setRotationPoint(39F, -15.5F, -11.01F);
+
+		bodyModel[424].addShapeBox(0F, 0F, 0F, 3, 12, 0, 0F,-0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, 0.5F, -0.5F, 0F, 0F); // Box 424
+		bodyModel[424].setRotationPoint(-42F, -15.5F, 11.01F);
 	}
 }

@@ -1537,9 +1537,9 @@ public enum RenderEnum implements TrainRenderRecord {
     TGVR23567Coach(EntityPassengerTGVR23567Coach.class, new ModelTGV_R23567(), "TGV_R2-3-5-6-7_", true, new float[]{0F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     TGVR4BarCar(EntityPassengerTGVR4BarCar.class, new ModelTGV_R4BarCar(), "TGV_R4_", true, new float[]{-0.35F, 0.1F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     AW307(EntityLocoElectricAW307.class, new ModelAW307(), "Aw_", true, new float[]{-1.0F, 0.18F, 0.0F}, new float[]{0.0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    PEPDMSO(EntityLocoElectricPEPDMSO.class, new ModelPEPDMSO(), "PEP_", true, new float[]{-2.0F, 0.18F, 0.0F}, new float[]{0F, 180F, 180F}, null,"", 0, null, "", null, 0, false),
     PEPTSO(EntityPassengerPEPTSO.class, new ModelPEPTSO(), "PEP_", true, new float[]{0F, 0.18F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     PEPPTSO(EntityPassengerPEPPTSO.class, new ModelPEPPTSO(), "PEP_", true, new float[]{0F, 0.18F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
-    PEPDMSO(EntityLocoElectricPEPDMSO.class, new ModelPEPDMSO(), "PEP_", true, new float[]{-2.0F, 0.18F, 0.0F}, new float[]{0F, 180F, 180F}, null,"", 0, null, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;

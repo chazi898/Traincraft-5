@@ -4,8 +4,8 @@
 
 // Model: 
 // Model Creator: 
-// Created on: 19.07.2023 - 14:23:44
-// Last changed on: 19.07.2023 - 14:23:44
+// Created on: 27.02.2026 - 20:04:58
+// Last changed on: 27.02.2026 - 20:04:58
 
 package train.client.render.models; //Path where the model is located
 
@@ -22,7 +22,7 @@ public class ModelPEPDMSO extends ModelConverter //Same as Filename
 
 	public ModelPEPDMSO() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[695];
+		bodyModel = new ModelRendererTurbo[696];
 
 		initbodyModel_1();
 		initbodyModel_2();
@@ -1710,16 +1710,16 @@ public class ModelPEPDMSO extends ModelConverter //Same as Filename
 		bodyModel[390].setRotationPoint(39.25F, -0.5F, -11F);
 
 		bodyModel[391].addBox(0F, 0F, 0F, 0, 20, 20, 0F); // Box 102
-		bodyModel[391].setRotationPoint(-16.75F, -17.5F, -10F);
+		bodyModel[391].setRotationPoint(-16.74F, -17.5F, -10F);
 
 		bodyModel[392].addBox(0F, 0F, 0F, 0, 20, 20, 0F); // Box 102
-		bodyModel[392].setRotationPoint(-6.75F, -17.5F, -10F);
+		bodyModel[392].setRotationPoint(-6.76F, -17.5F, -10F);
 
 		bodyModel[393].addBox(0F, 0F, 0F, 0, 20, 20, 0F); // Box 102
-		bodyModel[393].setRotationPoint(11.25F, -17.5F, -10F);
+		bodyModel[393].setRotationPoint(11.26F, -17.5F, -10F);
 
 		bodyModel[394].addBox(0F, 0F, 0F, 0, 20, 20, 0F); // Box 102
-		bodyModel[394].setRotationPoint(21.25F, -17.5F, -10F);
+		bodyModel[394].setRotationPoint(21.24F, -17.5F, -10F);
 
 		bodyModel[395].addBox(0F, 0F, 0F, 13, 0, 4, 0F); // Box 699
 		bodyModel[395].setRotationPoint(-29.75F, -13.5F, 7F);
@@ -2234,6 +2234,7 @@ public class ModelPEPDMSO extends ModelConverter //Same as Filename
 		bodyModel[692] = new ModelRendererTurbo(this, 297, 321, textureX, textureY); // Box 674
 		bodyModel[693] = new ModelRendererTurbo(this, 505, 81, textureX, textureY); // Box 695
 		bodyModel[694] = new ModelRendererTurbo(this, 233, 249, textureX, textureY); // Box 696
+		bodyModel[695] = new ModelRendererTurbo(this, 505, 81, textureX, textureY); // Box 695
 
 		bodyModel[500].addShapeBox(0F, 0F, 0F, 1, 1, 1, 0F,-0.25F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, -0.25F, -0.5F, -0.25F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, -0.25F); // Box 1503
 		bodyModel[500].setRotationPoint(40.5F, -10F, 5F);
@@ -2819,10 +2820,13 @@ public class ModelPEPDMSO extends ModelConverter //Same as Filename
 
 		bodyModel[694].addShapeBox(0F, 0F, 0F, 3, 12, 0, 0F,-0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.25F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, -0.5F, -0.5F, 0F, 0F); // Box 696
 		bodyModel[694].setRotationPoint(-41.75F, -15.5F, -11.01F);
+
+		bodyModel[695].addShapeBox(0F, 0F, 0F, 3, 12, 0, 0F,0F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0F, -0.5F); // Box 695
+		bodyModel[695].setRotationPoint(39.25F, -15.5F, -11.01F);
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 695; i++) {
+		for (int i = 0; i < 696; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);
