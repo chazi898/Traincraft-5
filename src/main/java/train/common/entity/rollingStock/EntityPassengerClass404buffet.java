@@ -2,21 +2,30 @@ package train.common.entity.rollingStock;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import train.common.api.EntityRollingStock;
-import train.common.api.IPassenger;
+import train.common.Traincraft;
+import train.common.api.AbstractWorkCart;
+import train.common.core.util.TraincraftUtil;
+import train.common.library.GuiIDs;
 
-public class EntityPassengerClass404buffet extends EntityRollingStock implements IPassenger {
-    //public TiltingHandler tiltingHandler = new TiltingHandler(7);
-
+public class EntityPassengerClass404buffet extends AbstractWorkCart implements IInventory {
     public EntityPassengerClass404buffet(World world) {
         super(world);
+        initWorkCart();
     }
 
-    public EntityPassengerClass404buffet(World world, double d, double d1, double d2){
+    public void initWorkCart() {
+        furnaceItemStacks = new ItemStack[3];
+        furnaceBurnTime = 0;
+        currentItemBurnTime = 0;
+        furnaceCookTime = 0;
+    }
+
+    public EntityPassengerClass404buffet(World world, double d, double d1, double d2) {
         this(world);
-        setPosition(d, d1 + yOffset, d2);
+        setPosition(d, d1 + (double) yOffset, d2);
         motionX = 0.0D;
         motionY = 0.0D;
         motionZ = 0.0D;
@@ -27,9 +36,7 @@ public class EntityPassengerClass404buffet extends EntityRollingStock implements
 
     @Override
     public void updateRiderPosition() {
-        if(riddenByEntity!=null) {
-            riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() + 0.0, posZ);
-        }//ew yucky rider position code, good thing its a passenger car so it doesnt matter! Wheeze.png
+        TraincraftUtil.updateRider(this,  0, 0);
     }
 
     @Override
@@ -39,8 +46,33 @@ public class EntityPassengerClass404buffet extends EntityRollingStock implements
     }
 
     @Override
+    public void pressKey(int i) {
+        if (riddenByEntity != null && riddenByEntity instanceof EntityPlayer) {
+            if (locked && !((EntityPlayer) riddenByEntity).getDisplayName().toLowerCase().equals(this.trainOwner.toLowerCase())) {
+                return;
+            }
+            if (i == 7) {
+                ((EntityPlayer) riddenByEntity).openGui(Traincraft.instance, GuiIDs.CRAFTING_CART, worldObj, (int) this.posX, (int) this.posY, (int) this.posZ);
+            }
+            if (i == 9) {
+                ((EntityPlayer) riddenByEntity).openGui(Traincraft.instance, GuiIDs.FURNACE_CART, worldObj, (int) this.posX, (int) this.posY, (int) this.posZ);
+            }
+        }
+    }
+
+    @Override
+    public void onUpdate() {
+        super.onUpdate();
+        updateBurning();
+    }
+
+    @Override
+    public String getInventoryName() {
+        return "4-BUF buffet";
+    }
+
+    @Override
     public boolean interactFirst(EntityPlayer entityplayer) {
-        playerEntity = entityplayer;
         if ((super.interactFirst(entityplayer))) {
             return false;
         }
@@ -58,8 +90,8 @@ public class EntityPassengerClass404buffet extends EntityRollingStock implements
     }
 
     @Override
-    public boolean canBeRidden() {
-        return true;
+    public boolean isUseableByPlayer(EntityPlayer entityplayer) {
+        return !isDead && entityplayer.getDistanceSqToEntity(this) <= 64D;
     }
 
     @Override
@@ -68,17 +100,24 @@ public class EntityPassengerClass404buffet extends EntityRollingStock implements
     }
 
     @Override
-    public boolean isPoweredCart() {
-        return false;
+    public boolean canBeRidden() {
+        return true;
     }
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return 2.9F;
+        return 2.90F;
     }
 
     @Override
+    public boolean isItemValidForSlot(int i, ItemStack itemstack) {
+        return true;
+    }
+
+    public void markDirty(){}
+
+    @Override
     public String transportcountry() {
-        return "uk";
+        return "UK";
     }
 }
