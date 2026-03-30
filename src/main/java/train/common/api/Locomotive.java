@@ -25,6 +25,7 @@ import net.minecraft.util.*;
 import net.minecraft.world.World;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import org.lwjgl.input.Keyboard;
+import train.client.gui.GuiMTCInfo;
 import train.common.Traincraft;
 import train.common.adminbook.ServerLogger;
 import train.common.core.HandleMaxAttachedCarts;
@@ -629,42 +630,51 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         }
     }
 
+
+
+
     @SideOnly(Side.CLIENT)
     public void keyHandling() {
-        if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindForward.getKeyCode())
-                && !forwardPressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(4));
-            forwardPressed = true;
-        } else if (!Keyboard
-                .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindForward.getKeyCode())
-                && forwardPressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(13));
-            forwardPressed = false;
+        if (!Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
+            if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindForward.getKeyCode())
+                    && !forwardPressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(4));
+                forwardPressed = true;
+            } else if (!Keyboard
+                    .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindForward.getKeyCode())
+                    && forwardPressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(13));
+                forwardPressed = false;
+            }
+            if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindBack.getKeyCode())
+                    && !backwardPressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(5));
+                backwardPressed = true;
+            } else if (!Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindBack.getKeyCode())
+                    && backwardPressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(14));
+                backwardPressed = false;
+            }
+            if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
+                    && !brakePressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(12));
+                brakePressed = true;
+            } else if (!Keyboard
+                    .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
+                    && brakePressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(15));
+                brakePressed = false;
+            }
+
+
+
+
         }
-        if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindBack.getKeyCode())
-                && !backwardPressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(5));
-            backwardPressed = true;
-        } else if (!Keyboard
-                .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindBack.getKeyCode())
-                && backwardPressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(14));
-            backwardPressed = false;
-        }
-        if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
-                && !brakePressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(12));
-            brakePressed = true;
-        } else if (!Keyboard
-                .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
-                && brakePressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(15));
-            brakePressed = false;
-        }
-        if ((Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
-                && Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen() == true)) {
-            brakePressed = false;
-        }
+
+
+
+
+
     }
 
     private void cycleBeaconIndex()
