@@ -661,8 +661,8 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
             Traincraft.keyChannel.sendToServer(new PacketKeyPress(15));
             brakePressed = false;
         }
-        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(15));
+        if ((Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
+                && Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen() == true)) {
             brakePressed = false;
         }
     }
