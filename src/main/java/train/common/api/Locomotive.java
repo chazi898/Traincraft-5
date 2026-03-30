@@ -489,10 +489,6 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
             }
         }
 
-        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
-            brakePressed = false;
-        }
-
         pressKey(i);
 
         if (i == 8 && ConfigHandler.SOUNDS) {
@@ -663,6 +659,9 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
                 .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
                 && brakePressed) {
             Traincraft.keyChannel.sendToServer(new PacketKeyPress(15));
+            brakePressed = false;
+        }
+        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
             brakePressed = false;
         }
     }
