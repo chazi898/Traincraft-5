@@ -489,7 +489,7 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
             }
         }
 
-        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen() == true) {
+        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
             brakePressed = false;
         }
 
