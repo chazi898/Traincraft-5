@@ -488,6 +488,11 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
                 return;
             }
         }
+
+        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen() == true) {
+            brakePressed = false;
+        }
+
         pressKey(i);
 
         if (i == 8 && ConfigHandler.SOUNDS) {
@@ -532,10 +537,6 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         }
 
         if (i == 15) {
-            brakePressed = false;
-        }
-
-        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen() == true) {
             brakePressed = false;
         }
 
