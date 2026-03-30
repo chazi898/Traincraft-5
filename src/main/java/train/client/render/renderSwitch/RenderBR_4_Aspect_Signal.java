@@ -7,7 +7,6 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import train.client.render.renderSwitch.models.ModelBR_4_Aspect_Signal;
 import train.common.library.Info;
-import train.common.tile.tileSwitch.TileBR_2_Aspect_Signal;
 import train.common.tile.tileSwitch.TileBR_4_Aspect_Signal;
 
 public class RenderBR_4_Aspect_Signal extends TileEntitySpecialRenderer {

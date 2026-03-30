@@ -258,6 +258,54 @@ public class ClientProxy extends CommonProxy {
         ClientRegistry.bindTileEntitySpecialRenderer(TileBR_4_Aspect_Signal.class, new RenderBR_4_Aspect_Signal());
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_4_Aspect_Signal.block), new ItemRenderBR_4_Aspect_Signal());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign.class, new RenderBR_UK_SpeedSign());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign.block), new ItemRenderBR_UK_SpeedSign());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_Left.class, new RenderBR_UK_SpeedSign_Left());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_Left.block), new ItemRenderBR_UK_SpeedSign_Left());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_Right.class, new RenderBR_UK_SpeedSign_Right());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_Right.block), new ItemRenderBR_UK_SpeedSign_Right());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_ETCS.class, new RenderBR_UK_SpeedSign_ETCS());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_ETCS.block), new ItemRenderBR_UK_SpeedSign_ETCS());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_DoubleLeft.class, new RenderBR_UK_SpeedSign_DoubleLeft());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_DoubleLeft.block), new ItemRenderBR_UK_SpeedSign_DoubleLeft());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_DoubleRight.class, new RenderBR_UK_SpeedSign_DoubleRight());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_DoubleRight.block), new ItemRenderBR_UK_SpeedSign_DoubleRight());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_EPS.class, new RenderBR_UK_SpeedSign_EPS());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_EPS.block), new ItemRenderBR_UK_SpeedSign_EPS());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_Cutout.class, new RenderBR_UK_SpeedSign_Cutout());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_Cutout.block), new ItemRenderBR_UK_SpeedSign_Cutout());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_CutoutLeft.class, new RenderBR_UK_SpeedSign_CutoutLeft());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_CutoutLeft.block), new ItemRenderBR_UK_SpeedSign_CutoutLeft());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_CutoutRight.class, new RenderBR_UK_SpeedSign_CutoutRight());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_CutoutRight.block), new ItemRenderBR_UK_SpeedSign_CutoutRight());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_Diagonal_Left.class, new RenderPlatform_Slab_Diagonal_Left());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_Diagonal_Left.block), new ItemRenderPlatform_Slab_Diagonal_Left());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_Diagonal_Right.class, new RenderPlatform_Slab_Diagonal_Right());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_Diagonal_Right.block), new ItemRenderPlatform_Slab_Diagonal_Right());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_Diagonal_End.class, new RenderPlatform_Slab_Diagonal_End());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_Diagonal_End.block), new ItemRenderPlatform_Slab_Diagonal_End());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_End_Left.class, new RenderPlatform_Slab_End_Left());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_End_Left.block), new ItemRenderPlatform_Slab_End_Left());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_End_Right.class, new RenderPlatform_Slab_End_Right());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_End_Right.block), new ItemRenderPlatform_Slab_End_Right());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_10x10_Outside.class, new RenderPlatform_Slab_10x10_Outside());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_10x10_Outside.block), new ItemRenderPlatform_Slab_10x10_Outside());
+
         //seats
         RenderingRegistry.registerEntityRenderingHandler(EntitySeat.class, nullRender);
 

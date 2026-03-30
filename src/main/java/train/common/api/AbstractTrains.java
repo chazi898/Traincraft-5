@@ -802,4 +802,9 @@ public abstract class AbstractTrains extends EntityMinecart implements IMinecart
      * may return null. */
     @SideOnly(Side.CLIENT)
     public ModelBase[] getModel(){return new ModelBase[]{getRender().getModel()};}
+
+    @SideOnly(Side.CLIENT)
+    public TrainSound getBell(){
+        return new TrainSound(Info.resourceLocation + ":bell",0.5f,1f, 0);
+    }
 }

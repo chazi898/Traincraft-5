@@ -98,10 +98,27 @@ public class CommonProxy implements IGuiHandler {
         GameRegistry.registerTileEntity(TileTCRail.class, "tileTCRail");
         GameRegistry.registerTileEntity(TileBridgePillar.class, "tileTCBridgePillar");
         GameRegistry.registerTileEntity(TileMetroMadridPole.class, "tileMetroMadridPole");
+        //BIP-Infrastructure
         GameRegistry.registerTileEntity(TileBR_Modern_Buffer.class, "TileBR_Modern_Buffer");
         GameRegistry.registerTileEntity(TileBR_2_Aspect_Signal.class, "TileBR_2_Aspect_Signal");
         GameRegistry.registerTileEntity(TileBR_3_Aspect_Signal.class, "TileBR_3_Aspect_Signal");
         GameRegistry.registerTileEntity(TileBR_4_Aspect_Signal.class, "TileBR_4_Aspect_Signal");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign.class, "TileBR_UK_SpeedSign");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_Left.class, "TileBR_UK_SpeedSign_Left");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_Right.class, "TileBR_UK_SpeedSign_Right");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_ETCS.class, "TileBR_UK_SpeedSign_ETCS");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_DoubleLeft.class, "TileBR_UK_SpeedSign_DoubleLeft");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_DoubleRight.class, "TileBR_UK_SpeedSign_DoubleRight");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_EPS.class, "TileBR_UK_SpeedSign_EPS");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_Cutout.class, "TileBR_UK_SpeedSign_Cutout");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_CutoutLeft.class, "TileBR_UK_SpeedSign_CutoutLeft");
+        GameRegistry.registerTileEntity(TileBR_UK_SpeedSign_CutoutRight.class, "TileBR_UK_SpeedSign_CutoutRight");
+        GameRegistry.registerTileEntity(TilePlatform_Slab_Diagonal_Left.class, "TilePlatform_Slab_Diagonal_Left");
+        GameRegistry.registerTileEntity(TilePlatform_Slab_Diagonal_Right.class, "TilePlatform_Slab_Diagonal_Right");
+        GameRegistry.registerTileEntity(TilePlatform_Slab_Diagonal_End.class, "TilePlatform_Slab_Diagonal_End");
+        GameRegistry.registerTileEntity(TilePlatform_Slab_End_Left.class, "TilePlatform_Slab_End_Left");
+        GameRegistry.registerTileEntity(TilePlatform_Slab_End_Right.class, "TilePlatform_Slab_End_Right");
+        GameRegistry.registerTileEntity(TilePlatform_Slab_10x10_Outside.class, "TilePlatform_Slab_10x10_Outside");
 
         //switches -hariesh
         GameRegistry.registerTileEntity(TileowoSwitchStand.class, "tileowoswitchstand");

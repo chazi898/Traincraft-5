@@ -5,12 +5,16 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.Constants;
 import train.common.Traincraft;
 import train.common.api.LiquidManager;
 import train.common.api.SteamTrain;
+import train.common.api.TrainSound;
+import train.common.api.TrainSoundRecord;
 import train.common.library.GuiIDs;
+import train.common.library.Info;
 
 public class EntityLocoSteamGWRMogul extends SteamTrain {
     public EntityLocoSteamGWRMogul(World world) {
@@ -149,10 +153,12 @@ public class EntityLocoSteamGWRMogul extends SteamTrain {
     }
 
     @Override
+    public TrainSound getBell(){return new TrainSound("tc:GWRStandardWhistle",1f,1,1);}
+
+    @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return 0.45F;
     }
-
 
     @Override
     public boolean canBeAdjusted(EntityMinecart cart) { return canBeAdjusted; }

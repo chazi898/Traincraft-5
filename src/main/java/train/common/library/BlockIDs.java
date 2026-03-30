@@ -84,6 +84,22 @@ public enum BlockIDs {
 	BR_2_Aspect_Signal(true, ItemBR_2_Aspect_Signal.class),
 	BR_3_Aspect_Signal(true, ItemBR_3_Aspect_Signal.class),
 	BR_4_Aspect_Signal(true, ItemBR_4_Aspect_Signal.class),
+	BR_UK_SpeedSign(true, ItemBR_UK_SpeedSign.class),
+	BR_UK_SpeedSign_Left(true, ItemBR_UK_SpeedSign_Left.class),
+	BR_UK_SpeedSign_Right(true, ItemBR_UK_SpeedSign_Right.class),
+	BR_UK_SpeedSign_ETCS(true, ItemBR_UK_SpeedSign_ETCS.class),
+	BR_UK_SpeedSign_DoubleLeft(true, ItemBR_UK_SpeedSign_DoubleLeft.class),
+	BR_UK_SpeedSign_DoubleRight(true, ItemBR_UK_SpeedSign_DoubleRight.class),
+	BR_UK_SpeedSign_EPS(true, ItemBR_UK_SpeedSign_EPS.class),
+	BR_UK_SpeedSign_Cutout(true, ItemBR_UK_SpeedSign_Cutout.class),
+	BR_UK_SpeedSign_CutoutLeft(true, ItemBR_UK_SpeedSign_CutoutLeft.class),
+	BR_UK_SpeedSign_CutoutRight(true, ItemBR_UK_SpeedSign_CutoutRight.class),
+	Platform_Slab_Diagonal_Left(true, ItemPlatform_Slab_Diagonal_Left.class),
+	Platform_Slab_Diagonal_Right(true, ItemPlatform_Slab_Diagonal_Right.class),
+	Platform_Slab_Diagonal_End(true, ItemPlatform_Slab_Diagonal_End.class),
+	Platform_Slab_End_Left(true, ItemPlatform_Slab_End_Left.class),
+	Platform_Slab_End_Right(true, ItemPlatform_Slab_End_Right.class),
+	Platform_Slab_10x10_Outside(true, ItemPlatform_Slab_10x10_Outside.class),
 
 
 

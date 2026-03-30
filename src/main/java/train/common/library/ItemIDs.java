@@ -90,6 +90,22 @@ public enum ItemIDs {
 	BR_2_Aspect_Signal("ItemTCRail", "br_2_aspect_signal", 2),
 	BR_3_Aspect_Signal("ItemTCRail", "br_3_aspect_signal", 2),
 	BR_4_Aspect_Signal("ItemTCRail", "br_4_aspect_signal", 2),
+	BR_UK_SpeedSign("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_Left("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_Right("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_ETCS("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_DoubleLeft("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_DoubleRight("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_EPS("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_Cutout("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_CutoutLeft("ItemTCRail", "br_uk_speedsign", 2),
+	BR_UK_SpeedSign_CutoutRight("ItemTCRail", "br_uk_speedsign", 2),
+	Platform_Slab_Diagonal_Left("ItemBlock", "platform_slab", 1),
+	Platform_Slab_Diagonal_Right("ItemBlock", "platform_slab", 1),
+	Platform_Slab_Diagonal_End("ItemBlock", "platform_slab", 1),
+	Platform_Slab_End_Left("ItemBlock", "platform_slab", 1),
+	Platform_Slab_End_Right("ItemBlock", "platform_slab", 1),
+	Platform_Slab_10x10_Outside("ItemBlock", "platform_slab", 2),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),
@@ -781,6 +797,15 @@ public enum ItemIDs {
 	minecartGWR14xx("ItemRollingStock", "GWR_14xx_Icon",4),
 	minecart042Jenny("ItemRollingStock", "Jenny_Icon",3),
 	minecart042JennyTender("ItemRollingStock", "Jenny_Tender_Icon",1),
+	minecartTGVPowerCar("ItemRollingStock", "TGV_PowerCar_Icon", 5),
+	minecartTGVR1R8Coach("ItemRollingStock", "TGV_R1R8_Icon", 2),
+	minecartTGVR23567Coach("ItemRollingStock", "TGV_R23567_Icon", 2),
+	minecartTGVR4BarCar("ItemRollingStock", "TGV_R4BarCar_Icon", 2),
+	minecartAW307("ItemRollingStock","Aw_icon",4),
+	minecartPEPDMSO("ItemRollingStock", "PEP_DMSO", 3),
+	minecartPEPTSO("ItemRollingStock", "PEP_TSO", 1),
+	minecartPEPPTSO("ItemRollingStock", "PEP_PTSO", 1),
+
 
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),

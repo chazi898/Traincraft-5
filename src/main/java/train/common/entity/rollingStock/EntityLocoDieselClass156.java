@@ -10,6 +10,7 @@ import net.minecraftforge.common.util.Constants;
 import train.common.Traincraft;
 import train.common.api.DieselTrain;
 import train.common.api.LiquidManager;
+import train.common.api.TrainSound;
 import train.common.library.EnumTrains;
 import train.common.library.GuiIDs;
 
@@ -159,6 +160,10 @@ public class EntityLocoDieselClass156 extends DieselTrain {
         }
         return true;
     }
+
+    @Override
+    public TrainSound getBell(){return new TrainSound("tc:ButtonDoorClosing",0.4f,1,1);}
+
     @Override
     public boolean canBeAdjusted(EntityMinecart cart) {
         return canBeAdjusted;

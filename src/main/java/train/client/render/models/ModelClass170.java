@@ -24,7 +24,7 @@ public class ModelClass170 extends ModelConverter //Same as Filename
 
 	public ModelClass170() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[528];
+		bodyModel = new ModelRendererTurbo[529];
 
 		initbodyModel_1();
 		initbodyModel_2();
@@ -2069,6 +2069,7 @@ public class ModelClass170 extends ModelConverter //Same as Filename
 		bodyModel[525] = new ModelRendererTurbo(this, 387, 280, textureX, textureY); // Box 18
 		bodyModel[526] = new ModelRendererTurbo(this, 387, 280, textureX, textureY); // Box 18
 		bodyModel[527] = new ModelRendererTurbo(this, 387, 280, textureX, textureY); // Box 18
+		bodyModel[528] = new ModelRendererTurbo(this, 460, 157, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[500].addShapeBox(0F, 0F, 0F, 4, 1, 1, 0F,0F, 0.3F, -0.2F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, 0.3F, -0.2F, 0F, 0.4F, -0.2F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, 0.4F, -0.2F); // Box 18
 		bodyModel[500].setRotationPoint(-34F, 4F, 6F);
@@ -2153,10 +2154,13 @@ public class ModelClass170 extends ModelConverter //Same as Filename
 
 		bodyModel[527].addShapeBox(0F, 0F, 0F, 5, 1, 2, 0F,-0.9F, 0F, -1F, 0.5F, -0.7F, 1.5F, 0.5F, -0.7F, -3F, -0.9F, 0F, -0.5F, -0.9F, -0.5F, -1F, 0.5F, 0.2F, 1.5F, 0.5F, 0.2F, -3F, -0.9F, -0.5F, -0.5F); // Box 18
 		bodyModel[527].setRotationPoint(34F, 3F, 8F);
+
+		bodyModel[528].addShapeBox(0F, 0F, 0F, 1, 5, 5, 0F,-1.32F, 0.6F, 1F, 0.4F, 0.6F, 1F, 0.4F, 0.6F, -4F, -1.32F, 0.6F, -4F, -0.83F, -4.6F, 1F, 0F, -4.6F, 1F, 0F, -4.6F, -4F, -0.83F, -4.6F, -4F); // Lamp
+		bodyModel[528].setRotationPoint(-40.35F, -21.4F, 0F);
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 528; i++) {
+		for (int i = 0; i < 529; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);

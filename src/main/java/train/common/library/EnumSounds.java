@@ -132,21 +132,21 @@ public enum EnumSounds implements TrainSoundRecord {
     ElectricRenfe450Motor(EntityLocoElectricRenfe450Motor.class, "446Horn", 0.8F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
     SteamC11(EntityLocoSteamC11.class, "class62_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     SteamStarClass(EntityLocoSteamStarClass.class, "adler_whistle", 0.8F, "adler_run", 0.2F, 20, "adler_run", 0.2F, 20, true),
-    Class43(EntityLocoDieselClass43.class, "HSTHorn", 1.3F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
+    Class43(EntityLocoDieselClass43.class, "HSTHorn", 1.3F, "chme3_idle", 0.7F, 40, "chme3_idle", 0.65F, 40, false),
     Class90(EntityElectricClass90.class, "Mk4DVTHorn", 1.2F, "Class868790Thrash", 0.75F, 20, "Class90Idle", 0.55F, 50, false),
     Class91(EntityElectricClass91.class, "Mk4DVTHorn", 1.2F, "Class868790Thrash", 0.75F, 20, "Class90Idle", 0.55F, 50, false),
     Class321(EntityElectricClass321.class, "Class321ShortHorn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
-    Class389Front(EntityElectricClass389Front.class, "Class387Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
-    Class387Front(EntityElectricClass387Front.class, "Class387Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
-    Class378Front(EntityElectricClass378Front.class, "Class387Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
+    Class389Front(EntityElectricClass389Front.class, "Class387Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.5F, 50, false),
+    Class387Front(EntityElectricClass387Front.class, "Class387Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.5F, 50, false),
+    Class378Front(EntityElectricClass378Front.class, "Class387Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.5F, 50, false),
     Class319Engine(EntityElectricClass319.class, "Class321ShortHorn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     Class390Front(EntityElectricClass390.class, "PendolinoHorn", 1.4F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     Class374Front(EntityElectricClass374.class, "BB15000Horn", 1.1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
-    Class442DTS(EntityElectricClass442DTS.class, "british_two_tone", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
+    Class442DTS(EntityElectricClass442DTS.class, "Class442Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     asteri(EntityLocoSteamasteri.class, "asteri", 1F, "asteri", 0.2F, 212, "mg_idle", 0.6F, 50, false),
     FGV4300(EntityLocoElectricFGV4300.class, "4300_horn", 1F, "vl10_idle", 0.65F, 10, "vl10_idle", 0.6F, 40, false),
     Class404motor(EntityElectricClass404motor.class, "mg_horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
-    Class34(EntityLocoDieselClass34.class, "british_two_tone", 0.8F, "chme3_idle", 0.65F, 40, "chme3_idle", 0.65F, 40, false),
+    Class34(EntityLocoDieselClass34.class, "british_two_tone", 0.8F, "chme3_idle", 0.7F, 40, "chme3_idle", 0.65F, 40, false),
     TW305(EntityLocoElectricTW305.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
     MetalTram(EntityLocoElectricMetalTram.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
     KVB_2300(EntityElectricKVB_2300.class, "tram_bell", 1F, "mg_run", 0.6F, 50, "mg_run", 0.6F, 50, false),
@@ -184,13 +184,16 @@ public enum EnumSounds implements TrainSoundRecord {
     Class71(EntityLocoElectricClass71.class, "Class71Whistle", 1F, "Class71Thrash", 0.7F,20, "Class71Thrash", 0.45F, 48, false),
     Class74(EntityLocoDieselClass74.class, "british_two_tone", 1F, "chme3_idle", 0.75f, 10, "chme3_idle", 0.6F, 50, false),
     BH040(EntityLocoSteamBH040.class, "ThompsonWhistle", 1.1F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
-    Class357(EntityElectricClass357.class, "Class387Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
+    Class357(EntityElectricClass357.class, "Class387Horn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.5F, 50, false),
     Class168Clubman(EntityLocoDieselClass168Clubman.class, "Class170Horn", 1.3F, "chme3_idle", 0.7F, 10, "chme3_idle", 0.6F, 20, false),
     Class170(EntityLocoDieselClass170.class, "Class170Horn", 1.3F, "chme3_idle", 0.7F, 10, "chme3_idle", 0.6F, 20, false),
     Class172_3(EntityLocoDieselClass172_3.class, "Class170Horn", 1.3F, "chme3_idle", 0.7F, 10, "chme3_idle", 0.6F, 20, false),
     Class37(EntityLocoDieselClass37.class, "Class37Horn", 1.25F, "Class37Thrash", 0.9F, 45, "Class37Idle", 0.4F, 45, false),
     GWR14xx(EntityLocoSteamGWR14xx.class, "GWRPannierWhistle", 1.2F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
     Jenny042(EntityLocoSteam042Jenny.class, "ThompsonWhistle", 1.1F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
+    TGVPowerCar(EntityElectricTGVPowerCar.class, "BB15000Horn", 1.1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
+    AW307(EntityLocoElectricAW307.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
+    PEPDMSO(EntityLocoElectricPEPDMSO.class, "PEPHorn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.5F, 50, false),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),
@@ -294,7 +297,9 @@ public enum EnumSounds implements TrainSoundRecord {
 
     private Class entityClass;
     private String horn;
+    private String bell;
     private float hornVolume;
+    private float bellVolume;
     private String run;
     private String idle;
     private float runVolume;
