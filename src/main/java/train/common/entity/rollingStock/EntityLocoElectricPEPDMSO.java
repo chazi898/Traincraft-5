@@ -144,7 +144,7 @@ public class EntityLocoElectricPEPDMSO extends ElectricTrain {
     }
 
     @Override
-    public TrainSound getBell(){return new TrainSound("tc:PendolinoDoorClosing",0.45f,1,1);}
+    public TrainSound getBell(){return new TrainSound("tc:ButtonDoorClosing",0.45f,1,1);}
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {

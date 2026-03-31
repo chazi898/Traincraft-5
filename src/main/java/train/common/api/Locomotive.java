@@ -620,13 +620,15 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
     }
 
     public void soundWhistle() {
-    //    worldObj.playSoundAtEntity(this, Info.resourceLocation + ":" + "bell", 0.5F, 1.0F);
-        if(soundBell==null){
-            soundBell=getBell();
-        }
-        if (soundBell != null && !soundBell.addr.isEmpty() && whistleDelay == 0) {
-            worldObj.playSoundAtEntity(this, soundBell.addr, soundBell.vol, soundBell.pit);
-            whistleDelay = 2;
+        //    worldObj.playSoundAtEntity(this, Info.resourceLocation + ":" + "bell", 0.5F, 1.0F);
+        if (!Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
+            if (soundBell == null) {
+                soundBell = getBell();
+            }
+            if (soundBell != null && !soundBell.addr.isEmpty() && whistleDelay == 0) {
+                worldObj.playSoundAtEntity(this, soundBell.addr, soundBell.vol, soundBell.pit);
+                whistleDelay = 2;
+            }
         }
     }
 
