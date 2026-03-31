@@ -621,7 +621,6 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
 
     public void soundWhistle() {
         //    worldObj.playSoundAtEntity(this, Info.resourceLocation + ":" + "bell", 0.5F, 1.0F);
-        if (!Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
             if (soundBell == null) {
                 soundBell = getBell();
             }
@@ -630,7 +629,6 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
                 whistleDelay = 2;
             }
         }
-    }
 
 
 
