@@ -806,6 +806,8 @@ public enum ItemIDs {
 	minecartPEPTSO("ItemRollingStock", "PEP_TSO", 1),
 	minecartPEPPTSO("ItemRollingStock", "PEP_PTSO", 1),
 	minecartClass17("ItemRollingStock", "Class_17_Icon", 4),
+	minecartDHP1("ItemRollingStock", "Clayton_DHP1_Icon", 4),
+
 
 
 
