@@ -1540,6 +1540,8 @@ public enum RenderEnum implements TrainRenderRecord {
     PEPDMSO(EntityLocoElectricPEPDMSO.class, new ModelPEPDMSO(), "PEP_", true, new float[]{-2.0F, 0.18F, 0.0F}, new float[]{0F, 180F, 180F}, null,"", 0, null, "", null, 0, false),
     PEPTSO(EntityPassengerPEPTSO.class, new ModelPEPTSO(), "PEP_", true, new float[]{0F, 0.18F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     PEPPTSO(EntityPassengerPEPPTSO.class, new ModelPEPPTSO(), "PEP_", true, new float[]{0F, 0.18F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    Class17(EntityLocoDieselClass17.class, new ModelClayton(), "Class_17_", true, new float[]{-1.5F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
+    }, "", null, 0, false),
     ;
 
     private final Class<? extends AbstractTrains> entityClass;

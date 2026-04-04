@@ -865,6 +865,7 @@ item.tc:minecartAW307.name=Aw 307
 item.tc:minecartPEPTSO.name=PEP TSO
 item.tc:minecartPEPPTSO.name=PEP TSO Panto
 item.tc:minecartPEPDMSO.name=PEP DMSO Engine
+item.tc:minecartClass17.name=Class 17
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1588,6 +1589,7 @@ entity.tc.AW307.name=Aw 307
 entity.tc.PEPTSO.name=PEP TSO
 entity.tc.PEPPTSO.name=PEP TSO Panto
 entity.tc.PEPDMSO.name=PEP DMSO Engine
+entity.tc.Class17.name=Class 17
 
 description.villager.profession.tc.station_chief=Station Master
 
