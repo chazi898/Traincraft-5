@@ -205,5 +205,7 @@
   "PendolinoDoorClosing": {"category": "master", "sounds" :  [{"name": "PendolinoDoorClosing", "stream": true}]},
   "AcknowledgeBell": {"category": "master", "sounds" :  [{"name": "AcknowledgeBell", "stream": true}]},
   "Class442Horn": {"category": "master", "sounds" :  [{"name": "Class442Horn", "stream": true}]},
-  "PEPHorn": {"category": "master", "sounds" :  [{"name": "PEPHorn", "stream": true}]}
+  "PEPHorn": {"category": "master", "sounds" :  [{"name": "PEPHorn", "stream": true}]},
+  "Class17Horn": {"category": "master", "sounds" :  [{"name": "Class17Horn", "stream": true}]},
+  "Class17Thrash": {"category": "master", "sounds" :  [{"name": "Class17Thrash", "stream": true}]}
 }

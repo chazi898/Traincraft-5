@@ -10,6 +10,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
 import train.client.render.renderSwitch.models.ModelBR_UK_SpeedSign_Cutout;
+import train.client.render.renderSwitch.models.ModelBR_UK_SpeedSign_Cutouta;
 import train.common.library.Info;
 
 public class ItemRenderBR_UK_SpeedSign_CutoutRight implements IItemRenderer {

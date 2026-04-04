@@ -194,6 +194,7 @@ public enum EnumSounds implements TrainSoundRecord {
     TGVPowerCar(EntityElectricTGVPowerCar.class, "BB15000Horn", 1.1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     AW307(EntityLocoElectricAW307.class, "tram_bell", 1F, "vl10_idle", 0.6F, 50, "vl10_idle", 0.6F, 50, false),
     PEPDMSO(EntityLocoElectricPEPDMSO.class, "PEPHorn", 1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.5F, 50, false),
+    Class17(EntityLocoDieselClass17.class, "Class17Horn", 1F, "Class17Thrash", 0.9F, 45, "Class17Thrash", 0.26F, 45, false),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),

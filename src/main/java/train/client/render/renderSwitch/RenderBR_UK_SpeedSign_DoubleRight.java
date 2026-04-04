@@ -7,7 +7,6 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import train.client.render.renderSwitch.models.ModelBR_UK_SpeedSign_Double;
 import train.common.library.Info;
-import train.common.tile.tileSwitch.TileBR_UK_SpeedSign_DoubleLeft;
 import train.common.tile.tileSwitch.TileBR_UK_SpeedSign_DoubleRight;
 
 public class RenderBR_UK_SpeedSign_DoubleRight extends TileEntitySpecialRenderer {
