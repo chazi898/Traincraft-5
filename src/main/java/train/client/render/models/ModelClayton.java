@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 			public ModelClayton() //Same as Filename
 			{
-				bodyModel = new ModelRendererTurbo[376];
+				bodyModel = new ModelRendererTurbo[380];
 
 		initbodyModel_1();
 
@@ -273,10 +273,10 @@ import java.util.ArrayList;
 		bodyModel[240] = new ModelRendererTurbo(this, 297, 1, textureX, textureY); // Lamp iron Class 17
 		bodyModel[241] = new ModelRendererTurbo(this, 25, 9, textureX, textureY); // Lamp iron Class 17
 		bodyModel[242] = new ModelRendererTurbo(this, 121, 9, textureX, textureY); // Lamp iron Class 17
-		bodyModel[243] = new ModelRendererTurbo(this, 345, 33, textureX, textureY); // Marker light Class 17
-		bodyModel[244] = new ModelRendererTurbo(this, 345, 33, textureX, textureY); // Marker light Class 17
-		bodyModel[245] = new ModelRendererTurbo(this, 1, 49, textureX, textureY); // Marker light DHP1
-		bodyModel[246] = new ModelRendererTurbo(this, 1, 49, textureX, textureY); // Marker light DHP1
+		bodyModel[243] = new ModelRendererTurbo(this, 345, 33, textureX, textureY, "lamp"); // Marker light Class 17
+		bodyModel[244] = new ModelRendererTurbo(this, 345, 33, textureX, textureY, "lamp"); // Marker light Class 17
+		bodyModel[245] = new ModelRendererTurbo(this, 1, 49, textureX, textureY, "lamp"); // Marker light DHP1
+		bodyModel[246] = new ModelRendererTurbo(this, 1, 49, textureX, textureY, "lamp"); // Marker light DHP1
 		bodyModel[247] = new ModelRendererTurbo(this, 297, 17, textureX, textureY); // Box 300
 		bodyModel[248] = new ModelRendererTurbo(this, 297, 17, textureX, textureY); // Box 301
 		bodyModel[249] = new ModelRendererTurbo(this, 297, 17, textureX, textureY); // Lamp iron DHP1
@@ -299,8 +299,8 @@ import java.util.ArrayList;
 		bodyModel[266] = new ModelRendererTurbo(this, 288, 119, textureX, textureY); // Box 339
 		bodyModel[267] = new ModelRendererTurbo(this, 288, 119, textureX, textureY); // Box 340
 		bodyModel[268] = new ModelRendererTurbo(this, 288, 119, textureX, textureY); // Box 341
-		bodyModel[269] = new ModelRendererTurbo(this, 142, 34, textureX, textureY); // Ditch Light
-		bodyModel[270] = new ModelRendererTurbo(this, 142, 34, textureX, textureY); // Ditch Light
+		bodyModel[269] = new ModelRendererTurbo(this, 142, 34, textureX, textureY, "lamp"); // Ditch Light
+		bodyModel[270] = new ModelRendererTurbo(this, 142, 34, textureX, textureY, "lamp"); // Ditch Light
 		bodyModel[271] = new ModelRendererTurbo(this, 149, 29, textureX, textureY); // Buckeye
 		bodyModel[272] = new ModelRendererTurbo(this, 130, 44, textureX, textureY); // Box 322
 		bodyModel[273] = new ModelRendererTurbo(this, 132, 33, textureX, textureY); // Prime 4
@@ -313,18 +313,18 @@ import java.util.ArrayList;
 		bodyModel[280] = new ModelRendererTurbo(this, 132, 33, textureX, textureY); // Prime 2
 		bodyModel[281] = new ModelRendererTurbo(this, 130, 44, textureX, textureY); // Box 331
 		bodyModel[282] = new ModelRendererTurbo(this, 360, 138, textureX, textureY); // Box 338
-		bodyModel[283] = new ModelRendererTurbo(this, 449, 119, textureX, textureY); // Front headlight
-		bodyModel[284] = new ModelRendererTurbo(this, 449, 119, textureX, textureY); // Front headlight
-		bodyModel[285] = new ModelRendererTurbo(this, 345, 33, textureX, textureY); // Marker light Class 17
-		bodyModel[286] = new ModelRendererTurbo(this, 345, 33, textureX, textureY); // Marker light Class 17
-		bodyModel[287] = new ModelRendererTurbo(this, 1, 49, textureX, textureY); // Marker light DHP1
-		bodyModel[288] = new ModelRendererTurbo(this, 1, 49, textureX, textureY); // Marker light DHP1
-		bodyModel[289] = new ModelRendererTurbo(this, 142, 34, textureX, textureY); // Ditch Light
-		bodyModel[290] = new ModelRendererTurbo(this, 142, 34, textureX, textureY); // Ditch Light
+		bodyModel[283] = new ModelRendererTurbo(this, 449, 119, textureX, textureY, "lamp"); // Front headlight
+		bodyModel[284] = new ModelRendererTurbo(this, 449, 119, textureX, textureY, "lamp"); // Front headlight
+		bodyModel[285] = new ModelRendererTurbo(this, 345, 33, textureX, textureY, "lamp"); // Marker light Class 17
+		bodyModel[286] = new ModelRendererTurbo(this, 345, 33, textureX, textureY, "lamp"); // Marker light Class 17
+		bodyModel[287] = new ModelRendererTurbo(this, 1, 49, textureX, textureY, "lamp"); // Marker light DHP1
+		bodyModel[288] = new ModelRendererTurbo(this, 1, 49, textureX, textureY, "lamp"); // Marker light DHP1
+		bodyModel[289] = new ModelRendererTurbo(this, 142, 34, textureX, textureY, "lamp"); // Ditch Light
+		bodyModel[290] = new ModelRendererTurbo(this, 142, 34, textureX, textureY, "lamp"); // Ditch Light
 		bodyModel[291] = new ModelRendererTurbo(this, 149, 29, textureX, textureY); // Buckeye
 		bodyModel[292] = new ModelRendererTurbo(this, 360, 138, textureX, textureY); // Box 338
-		bodyModel[293] = new ModelRendererTurbo(this, 449, 119, textureX, textureY); // Front headlight
-		bodyModel[294] = new ModelRendererTurbo(this, 449, 119, textureX, textureY); // Front headlight
+		bodyModel[293] = new ModelRendererTurbo(this, 449, 119, textureX, textureY, "lamp"); // Front headlight
+		bodyModel[294] = new ModelRendererTurbo(this, 449, 119, textureX, textureY, "lamp"); // Front headlight
 		bodyModel[295] = new ModelRendererTurbo(this, 76, 22, textureX, textureY); // Box 341
 		bodyModel[296] = new ModelRendererTurbo(this, 76, 22, textureX, textureY); // Box 342
 		bodyModel[297] = new ModelRendererTurbo(this, 55, 18, textureX, textureY); // Box 343
@@ -406,6 +406,10 @@ import java.util.ArrayList;
 		bodyModel[373] = new ModelRendererTurbo(this, 201, 152, textureX, textureY); // Box 422
 		bodyModel[374] = new ModelRendererTurbo(this, 201, 152, textureX, textureY); // Box 423
 		bodyModel[375] = new ModelRendererTurbo(this, 201, 152, textureX, textureY); // Box 424
+		bodyModel[376] = new ModelRendererTurbo(this, 432, 126, textureX, textureY, "lamp"); // Headcode Lamps DHP1
+		bodyModel[377] = new ModelRendererTurbo(this, 432, 126, textureX, textureY, "lamp"); // Headcode Lamps DHP1
+		bodyModel[378] = new ModelRendererTurbo(this, 401, 125, textureX, textureY, "lamp"); // Box 380
+		bodyModel[379] = new ModelRendererTurbo(this, 401, 125, textureX, textureY, "lamp"); // Box 381
 
 		bodyModel[0].addBox(0F, 0F, 0F, 2, 2, 2, 0F); // Box 106
 		bodyModel[0].setRotationPoint(-35.5F, 2.01F, 5.75F);
@@ -630,25 +634,25 @@ import java.util.ArrayList;
 		bodyModel[73].setRotationPoint(-6F, 2F, 9.75F);
 
 		bodyModel[74].addBox(0F, 0F, 0F, 4, 2, 19, 0F); // Box 35
-		bodyModel[74].setRotationPoint(-10.5F, 2.5F, -10F);
+		bodyModel[74].setRotationPoint(-9.5F, 2.5F, -10F);
 
 		bodyModel[75].addBox(0F, 0F, 0F, 2, 1, 19, 0F); // Box 35
-		bodyModel[75].setRotationPoint(-9.5F, 1.5F, -10F);
+		bodyModel[75].setRotationPoint(-8.5F, 1.5F, -10F);
 
 		bodyModel[76].addBox(0F, 0F, 0F, 2, 1, 19, 0F); // Box 35
-		bodyModel[76].setRotationPoint(-9.5F, 4.5F, -10F);
+		bodyModel[76].setRotationPoint(-8.5F, 4.5F, -10F);
 
 		bodyModel[77].addShapeBox(0F, 0F, 0F, 1, 1, 19, 0F,0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 35
-		bodyModel[77].setRotationPoint(-10.5F, 1.5F, -10F);
+		bodyModel[77].setRotationPoint(-9.5F, 1.5F, -10F);
 
 		bodyModel[78].addShapeBox(0F, 0F, 0F, 1, 1, 19, 0F,0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 35
-		bodyModel[78].setRotationPoint(-7.5F, 1.5F, -10F);
+		bodyModel[78].setRotationPoint(-6.5F, 1.5F, -10F);
 
 		bodyModel[79].addShapeBox(0F, 0F, 0F, 1, 1, 19, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F); // Box 35
-		bodyModel[79].setRotationPoint(-10.5F, 4.5F, -10F);
+		bodyModel[79].setRotationPoint(-9.5F, 4.5F, -10F);
 
 		bodyModel[80].addShapeBox(0F, 0F, 0F, 1, 1, 19, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F); // Box 35
-		bodyModel[80].setRotationPoint(-7.5F, 4.5F, -10F);
+		bodyModel[80].setRotationPoint(-6.5F, 4.5F, -10F);
 
 		bodyModel[81].addBox(0F, 0F, 0F, 5, 4, 17, 0F); // Box 104
 		bodyModel[81].setRotationPoint(-8.5F, 0.5F, -9F);
@@ -657,9 +661,9 @@ import java.util.ArrayList;
 		bodyModel[82].setRotationPoint(-3.5F, 1F, -10.5F);
 
 		bodyModel[83].addBox(0F, 0F, 0F, 4, 5, 20, 0F); // Box 106
-		bodyModel[83].setRotationPoint(7.5F, 1F, -10.5F);
+		bodyModel[83].setRotationPoint(6.5F, 1F, -10.5F);
 
-		bodyModel[84].addBox(0F, 0F, 0F, 10, 5, 19, 0F); // Box 107
+		bodyModel[84].addBox(0F, 0F, 0F, 9, 5, 19, 0F); // Box 107
 		bodyModel[84].setRotationPoint(-2.5F, 1F, -10F);
 
 		bodyModel[85].addShapeBox(0F, 0F, 0F, 1, 7, 5, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 108
@@ -1047,12 +1051,12 @@ import java.util.ArrayList;
 		bodyModel[212].setRotationPoint(-32.5F, 1F, -10F);
 
 		bodyModel[213].addShapeBox(0F, 0F, 0F, 5, 4, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 297
-		bodyModel[213].setRotationPoint(-11F, 2F, 8.25F);
+		bodyModel[213].setRotationPoint(-10F, 2F, 8.25F);
 
 		bodyModel[214].addShapeBox(0F, 0F, 0F, 7, 5, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 298
 		bodyModel[214].setRotationPoint(-2F, 2F, 8.25F);
 
-		bodyModel[215].addShapeBox(0F, 0F, 0F, 5, 5, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 299
+		bodyModel[215].addShapeBox(0F, 0F, 0F, 4, 5, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 299
 		bodyModel[215].setRotationPoint(7F, 2F, 8.25F);
 
 		bodyModel[216].addShapeBox(0F, 0F, 0F, 2, 2, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 300
@@ -1534,12 +1538,24 @@ import java.util.ArrayList;
 
 		bodyModel[375].addShapeBox(0F, 0F, 0F, 1, 10, 1, 0F,-0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F, -0.25F); // Box 424
 		bodyModel[375].setRotationPoint(6F, -11F, -11.5F);
+
+		bodyModel[376].addShapeBox(0F, 0F, 0F, 0, 3, 7, 0F,0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Headcode Lamps DHP1
+		bodyModel[376].setRotationPoint(-33.2F, -11.8F, -3.5F);
+
+		bodyModel[377].addShapeBox(0F, 0F, 0F, 0, 3, 7, 0F,0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Headcode Lamps DHP1
+		bodyModel[377].setRotationPoint(33.2F, -11.8F, -3.5F);
+
+		bodyModel[378].addShapeBox(0F, 0F, 0F, 0, 3, 7, 0F,0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Box 380
+		bodyModel[378].setRotationPoint(-33.27F, -9.5F, -3.5F);
+
+		bodyModel[379].addShapeBox(0F, 0F, 0F, 0, 3, 7, 0F,0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F, 0F, -0.25F, -0.25F); // Box 381
+		bodyModel[379].setRotationPoint(33.27F, -9.5F, -3.5F);
 	}
 	ModelClass17bogie bogie = new ModelClass17bogie();
 
 			public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-				for (int i = 0; i < 376; i++) {
+				for (int i = 0; i < 380; i++) {
 					if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("lamp")) {
 						Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 						bodyModel[i].render(f5);
@@ -1569,5 +1585,15 @@ import java.util.ArrayList;
 
 			public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5)
 			{
+			}
+			public ArrayList<double[]> getSmokePosition() {
+				return new ArrayList<double[]>() {
+					{
+						add(new double[]{2.2D, 1.1D, 0.0D});
+					}
+					{
+						add(new double[]{0.8D, 1.1D, 0.0D});
+					}
+				};
 			}
 		}
