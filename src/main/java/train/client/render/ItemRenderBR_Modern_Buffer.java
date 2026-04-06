@@ -53,11 +53,9 @@ public class ItemRenderBR_Modern_Buffer implements IItemRenderer {
                 return;
             }
             case INVENTORY: {
-                GL11.glPushMatrix();
                 GL11.glRotatef(180,3f,0f,0f);
                 GL11.glRotatef(90,0f,-1f,0f);
                 renderBR_Modern_Buffer(1F, 0.65F, 1F, 0.0F);
-                GL11.glPopMatrix();
                 break;
             }
             default:

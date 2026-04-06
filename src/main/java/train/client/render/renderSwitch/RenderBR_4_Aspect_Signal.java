@@ -10,7 +10,7 @@ import train.common.library.Info;
 import train.common.tile.tileSwitch.TileBR_4_Aspect_Signal;
 
 public class RenderBR_4_Aspect_Signal extends TileEntitySpecialRenderer {
-	static final ModelBR_4_Aspect_Signal modelBR_4_aspect_signal = new ModelBR_4_Aspect_Signal();
+	static final ModelBR_4_Aspect_Signal modelBR_4_Aspect_Signal = new ModelBR_4_Aspect_Signal();
 	/*
 	private static final ResourceLocation texture = new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "speedSign.png");
 	private static final ResourceLocation texture2 = new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "speedSign2.png");
@@ -112,7 +112,7 @@ public class RenderBR_4_Aspect_Signal extends TileEntitySpecialRenderer {
 
 			 */
 
-			modelBR_4_aspect_signal.render(null, 0, 0, 0, 0, 0, 0.0625f);
+			modelBR_4_Aspect_Signal.render(null, 0, 0, 0, 0, 0, 0.0625f);
 
 
 

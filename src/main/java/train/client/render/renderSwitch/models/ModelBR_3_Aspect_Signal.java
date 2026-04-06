@@ -13,7 +13,9 @@ import fexcraft.tmt.slim.ModelConverter;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
+import net.minecraft.tileentity.TileEntity;
 import org.lwjgl.opengl.GL11;
+import train.common.tile.tileSwitch.TileBR_3_Aspect_Signal;
 
 public class ModelBR_3_Aspect_Signal extends ModelConverter //Same as Filename
 {
@@ -162,5 +164,6 @@ public class ModelBR_3_Aspect_Signal extends ModelConverter //Same as Filename
 				bodyModel[i].render(f5);
 			}
 		}
+
 	}
 }

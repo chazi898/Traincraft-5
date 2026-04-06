@@ -82,7 +82,6 @@ public class RenderBR_UK_SpeedSign extends TileEntitySpecialRenderer {
 				GL11.glTranslated(-0.45, 0f, 0);
 				//GL11.glTranslated(0.5, 0f, 0.5);
 				//System.out.println("S");
-
 				//GL11.glTranslated(0.1875, -1, 0.125);
 				break;
 			}
@@ -91,7 +90,6 @@ public class RenderBR_UK_SpeedSign extends TileEntitySpecialRenderer {
 				GL11.glRotated(180, 0, 1, 0);
 				GL11.glTranslated(-0.1, 0f, 0.4);
 				//System.out.println("E");
-
 				//GL11.glTranslated(0.1875, -1, 0.125);
 				break;
 			}
