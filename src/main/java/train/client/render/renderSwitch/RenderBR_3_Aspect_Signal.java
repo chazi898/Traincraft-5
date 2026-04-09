@@ -36,7 +36,6 @@ public class RenderBR_3_Aspect_Signal extends TileEntitySpecialRenderer {
 				GL11.glRotated(90, 0, 1, 0);
 				GL11.glTranslated(0.3, 0f, 0);
 				//System.out.println("N");
-
 				break;
 			}
 			case 4: {
@@ -95,7 +94,7 @@ public class RenderBR_3_Aspect_Signal extends TileEntitySpecialRenderer {
 
 
 		if (!skipRender) {
-			modelBR_3_Aspect_Signal.render(null, 0, 0, 0, 0, 0, 0.0625f);
+			modelBR_3_Aspect_Signal.render(0.0625f);
 		}
 		GL11.glPopMatrix();
 	}

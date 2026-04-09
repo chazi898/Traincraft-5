@@ -412,6 +412,14 @@ public class LinkHandler {
 			double springX = limitForce(0.24D * stretch * vecX * -1);
 			double springZ = limitForce(0.24D * stretch * vecZ * -1);
 
+			if (cart1 instanceof Locomotive && cart2 instanceof Locomotive) {
+				springX = limitForce(0.24D * stretch * vecX * -1);
+				springZ = limitForce(0.24D * stretch * vecZ * -1);
+			} else {
+				springX = limitForce(0.38D * stretch * vecX * -1);
+				springZ = limitForce(0.38D * stretch * vecZ * -1);
+			}
+
 			if (adj1) {
 				cart1.motionX += springX;
 				cart1.motionZ += springZ;

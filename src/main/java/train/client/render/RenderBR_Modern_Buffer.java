@@ -8,6 +8,7 @@
 package train.client.render;
 
 import fexcraft.tmt.slim.Tessellator;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.tileentity.TileEntity;
@@ -30,7 +31,6 @@ public class RenderBR_Modern_Buffer extends TileEntitySpecialRenderer {
     }
 
     public void render(TileEntity var1, double x, double y, double z) {
-
     }
 
     private void modelBR_Modern_Buffer(float v, Entity facing) {
@@ -122,12 +122,13 @@ public class RenderBR_Modern_Buffer extends TileEntitySpecialRenderer {
                 GL11.glTranslatef(-0.05f, -0.62f, -0.0f);
                 GL11.glRotatef(90, 0, 1, 0);
             }
+            Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
             fexcraft.tmt.slim.Tessellator
                     .bindTexture(new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "track_normal.png"));
             GL11.glColor4f(1, 1, 1, 1);
             track.renderAll();
-
         }
+        Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
         GL11.glPopMatrix();
 
     }

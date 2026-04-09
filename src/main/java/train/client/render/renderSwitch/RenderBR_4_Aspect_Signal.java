@@ -112,10 +112,7 @@ public class RenderBR_4_Aspect_Signal extends TileEntitySpecialRenderer {
 
 			 */
 
-			modelBR_4_Aspect_Signal.render(null, 0, 0, 0, 0, 0, 0.0625f);
-
-
-
+			modelBR_4_Aspect_Signal.render(0.0625f);
 		}
 		GL11.glPopMatrix();
 	}

@@ -131,19 +131,18 @@ public class ModelBR_2_Aspect_Signal extends ModelConverter //Same as Filename
 		bodyModel[23].addShapeBox(0F, 0F, 0F, 1, 5, 3, 0F,0F, 0F, 0F, -0.4F, 0F, -0.3F, -0.4F, 0F, -0.3F, 0F, 0F, 0F, 0F, 0F, 0F, -0.4F, 0F, -0.3F, -0.4F, 0F, -0.3F, 0F, 0F, 0F); // Box 27
 		bodyModel[23].setRotationPoint(1F, -26.5F, -1F);
 	}
-	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
-
+	public void render(float f5) {
 		for (int i = 0; i < 24; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);
-				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
 			} else if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("cull")) {
 				GL11.glDisable(GL11.GL_CULL_FACE);
 				bodyModel[i].render(f5);
 				GL11.glEnable(GL11.GL_CULL_FACE);
 			} else {
 				bodyModel[i].render(f5);
+				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
 			}
 		}
 	}
