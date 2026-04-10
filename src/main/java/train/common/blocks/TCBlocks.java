@@ -133,6 +133,7 @@ public class TCBlocks {
 		BlockIDs.Platform_Slab_End_Left.block = new BlockPlatform_Slab_End_Left().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.Platform_Slab_End_Right.block = new BlockPlatform_Slab_End_Right().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.Platform_Slab_10x10_Outside.block = new BlockPlatform_Slab_10x10_Outside().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.EmbeddedBR_Modern_Buffer.block = new BlockEmbeddedBR_Modern_Buffer().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
 
 		//BlockIDs.FortyFootContainer.block = new BlockFortyFootContainer(Material.rock).setHardness(4.5F).setCreativeTab(Traincraft.tcTab).setStepSound(Block.soundTypeMetal);
 

@@ -106,6 +106,7 @@ public enum ItemIDs {
 	Platform_Slab_End_Left("ItemBlock", "platform_slab", 1),
 	Platform_Slab_End_Right("ItemBlock", "platform_slab", 1),
 	Platform_Slab_10x10_Outside("ItemBlock", "platform_slab", 2),
+	EmbeddedBR_Modern_Buffer("ItemTCRail", "br_modern_buffer", 2),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),
