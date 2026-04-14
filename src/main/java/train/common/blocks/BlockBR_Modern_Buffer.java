@@ -19,6 +19,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import train.common.Traincraft;
+import train.common.library.Info;
 import train.common.tile.TileBR_Modern_Buffer;
 
 import static net.minecraftforge.common.util.ForgeDirection.UP;
@@ -79,4 +80,11 @@ public class BlockBR_Modern_Buffer extends BlockContainer {
 	public TileEntity createNewTileEntity(World world, int meta) {
 		return new TileBR_Modern_Buffer(meta);
 	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerBlockIcons(IIconRegister iconRegister) {
+		texture = iconRegister.registerIcon(Info.modID.toLowerCase() + ":br_modern_buffer");
+	}
+
 }

@@ -13,7 +13,9 @@ import fexcraft.tmt.slim.ModelConverter;
 import fexcraft.tmt.slim.ModelRendererTurbo;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
+import net.minecraft.tileentity.TileEntity;
 import org.lwjgl.opengl.GL11;
+import train.common.tile.tileSwitch.TileBR_3_Aspect_Signal;
 
 public class ModelBR_3_Aspect_Signal extends ModelConverter //Same as Filename
 {
@@ -147,19 +149,18 @@ public class ModelBR_3_Aspect_Signal extends ModelConverter //Same as Filename
 		bodyModel[27].addShapeBox(0F, 0F, 0F, 1, 7, 3, 0F,0F, 0F, 0F, -0.4F, 0F, -0.3F, -0.4F, 0F, -0.3F, 0F, 0F, 0F, 0F, 0F, 0F, -0.4F, 0F, -0.3F, -0.4F, 0F, -0.3F, 0F, 0F, 0F); // Box 27
 		bodyModel[27].setRotationPoint(1F, -28.5F, -1F);
 	}
-	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
-
+	public void render(float f5) {
 		for (int i = 0; i < 28; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);
-				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
 			} else if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("cull")) {
 				GL11.glDisable(GL11.GL_CULL_FACE);
 				bodyModel[i].render(f5);
 				GL11.glEnable(GL11.GL_CULL_FACE);
 			} else {
 				bodyModel[i].render(f5);
+				Minecraft.getMinecraft().entityRenderer.enableLightmap(1D);
 			}
 		}
 	}

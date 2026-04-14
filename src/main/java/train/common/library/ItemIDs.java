@@ -106,6 +106,7 @@ public enum ItemIDs {
 	Platform_Slab_End_Left("ItemBlock", "platform_slab", 1),
 	Platform_Slab_End_Right("ItemBlock", "platform_slab", 1),
 	Platform_Slab_10x10_Outside("ItemBlock", "platform_slab", 2),
+	EmbeddedBR_Modern_Buffer("ItemTCRail", "br_modern_buffer", 2),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),
@@ -801,6 +802,14 @@ public enum ItemIDs {
 	minecartTGVR1R8Coach("ItemRollingStock", "TGV_R1R8_Icon", 2),
 	minecartTGVR23567Coach("ItemRollingStock", "TGV_R23567_Icon", 2),
 	minecartTGVR4BarCar("ItemRollingStock", "TGV_R4BarCar_Icon", 2),
+	minecartAW307("ItemRollingStock","Aw_icon",4),
+	minecartPEPDMSO("ItemRollingStock", "PEP_DMSO", 3),
+	minecartPEPTSO("ItemRollingStock", "PEP_TSO", 1),
+	minecartPEPPTSO("ItemRollingStock", "PEP_PTSO", 1),
+	minecartClass17("ItemRollingStock", "Class_17_Icon", 4),
+	minecartDHP1("ItemRollingStock", "Clayton_DHP1_Icon", 4),
+
+
 
 
 	//signalSpanish("ItemsignalSpanish","signalSpanish", 1),

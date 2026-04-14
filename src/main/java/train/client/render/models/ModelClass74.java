@@ -1952,7 +1952,7 @@ import java.util.ArrayList;
 	public ArrayList<double[]> getSmokePosition() {
 		return new ArrayList<double[]>() {
 			{
-				add(new double[]{2.2D, 1.3D, 0.0D});
+				add(new double[]{2D, 1.3D, 0.0D});
 			}
 		};
 	}

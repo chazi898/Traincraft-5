@@ -7,6 +7,7 @@
 
 package train.client.render;
 
+import fexcraft.tmt.slim.Tessellator;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
@@ -33,6 +34,7 @@ public class ItemRenderBR_Modern_Buffer implements IItemRenderer {
 
     @Override
     public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
+        Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_Modern_Buffer_Red.png"));
         switch (type) {
             case ENTITY: {
                 renderBR_Modern_Buffer(0.0F, 0F, 0.0F, 0.0F);
@@ -51,11 +53,9 @@ public class ItemRenderBR_Modern_Buffer implements IItemRenderer {
                 return;
             }
             case INVENTORY: {
-                GL11.glPushMatrix();
                 GL11.glRotatef(180,3f,0f,0f);
                 GL11.glRotatef(90,0f,-1f,0f);
                 renderBR_Modern_Buffer(1F, 0.65F, 1F, 0.0F);
-                GL11.glPopMatrix();
                 break;
             }
             default:

@@ -2,15 +2,27 @@ package train.common.entity.rollingStock;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import train.common.Traincraft;
+import train.common.api.AbstractWorkCart;
 import train.common.api.EntityRollingStock;
 import train.common.api.IPassenger;
+import train.common.library.GuiIDs;
 
-public class EntityCabooseBRBrakeVan extends EntityRollingStock implements IPassenger {
+public class EntityCabooseBRBrakeVan extends AbstractWorkCart implements IInventory {
 
     public EntityCabooseBRBrakeVan(World world) {
         super(world);
+        initCabooseBRBrakeVan();
+    }
+
+    public void initCabooseBRBrakeVan() {
+        furnaceItemStacks = new ItemStack[3];
+        furnaceBurnTime = 0;
+        currentItemBurnTime = 0;
+        furnaceCookTime = 0;
     }
 
     public EntityCabooseBRBrakeVan(World world, double d, double d1, double d2) {
@@ -37,6 +49,30 @@ public class EntityCabooseBRBrakeVan extends EntityRollingStock implements IPass
     public void setDead() {
         super.setDead();
         isDead = true;
+    }
+
+    @Override
+    public void pressKey(int i) {
+        if(locked && riddenByEntity != null && riddenByEntity instanceof EntityPlayer&& !((EntityPlayer)riddenByEntity).getDisplayName().toLowerCase().equals(this.trainOwner.toLowerCase())){
+            return;
+        }
+        if (i == 7 && riddenByEntity != null && riddenByEntity instanceof EntityPlayer) {
+            ((EntityPlayer) riddenByEntity).openGui(Traincraft.instance, GuiIDs.CRAFTING_CART, worldObj, (int) this.posX, (int) this.posY, (int) this.posZ);
+        }
+        if (i == 9 && riddenByEntity != null && riddenByEntity instanceof EntityPlayer) {
+            ((EntityPlayer) riddenByEntity).openGui(Traincraft.instance, GuiIDs.FURNACE_CART, worldObj, (int) this.posX, (int) this.posY, (int) this.posZ);
+        }
+    }
+
+    @Override
+    public void onUpdate() {
+        super.onUpdate();
+        updateBurning();
+    }
+
+    @Override
+    public String getInventoryName() {
+        return "BR Brake Van";
     }
 
     @Override
@@ -80,6 +116,13 @@ public class EntityCabooseBRBrakeVan extends EntityRollingStock implements IPass
     public float getOptimalDistance(EntityMinecart cart) {
         return 1.85F;
     }
+
+    @Override
+    public boolean isItemValidForSlot(int i, ItemStack itemstack) {
+        return true;
+    }
+
+    public void markDirty(){}
 
     @Override
     public String transportcountry() {

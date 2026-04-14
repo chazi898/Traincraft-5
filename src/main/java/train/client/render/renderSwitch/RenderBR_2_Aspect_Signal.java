@@ -11,7 +11,7 @@ import train.common.tile.tileSwitch.TileBR_2_Aspect_Signal;
 
 public class RenderBR_2_Aspect_Signal extends TileEntitySpecialRenderer {
     static final ModelBR_2_Aspect_Signal modelBR_2_Aspect_Signal = new ModelBR_2_Aspect_Signal();
-    private ResourceLocation[] textures = {new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_3_Aspect_Signal_Yellow.png"), new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_3_Aspect_Signal_Green.png")};
+    private ResourceLocation[] textures = {new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_2_Aspect_Signal_Yellow.png"), new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_2_Aspect_Signal_Green.png")};
 
 
     @Override
@@ -88,10 +88,8 @@ public class RenderBR_2_Aspect_Signal extends TileEntitySpecialRenderer {
         }
 
         if (!skipRender) {
-            modelBR_2_Aspect_Signal.render(null, 0, 0, 0, 0, 0, 0.0625f);
+            modelBR_2_Aspect_Signal.render(0.0625f);
         }
         GL11.glPopMatrix();
     }
-
-
 }

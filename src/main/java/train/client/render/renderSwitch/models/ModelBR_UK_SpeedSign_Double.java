@@ -186,7 +186,7 @@ public class ModelBR_UK_SpeedSign_Double extends ModelConverter //Same as Filena
 		bodyModel[36].setRotationPoint(-0.54F, -7.8F, -4.05F);
 
 		bodyModel[37].addShapeBox(0F, 0F, 0F, 1, 15, 15, 0F,-0.5F, -0.2F, 0F, -0.01F, -0.2F, 0F, -0.01F, -0.2F, -5F, -0.5F, -0.2F, -5F, -0.5F, -5.2F, 0F, -0.01F, -5.2F, 0F, -0.01F, -5.2F, -5F, -0.5F, -5.2F, -5F); // Box 2
-		bodyModel[37].setRotationPoint(-0.99F, -1F, -5F);
+		bodyModel[37].setRotationPoint(-0.98F, -1F, -5F);
 
 		bodyModel[38].addShapeBox(0F, 0F, 0F, 0, 29, 62, 0F,0F, -0.95F, -0.6F, 0F, -0.95F, -0.6F, 0F, -0.95F, -58.6F, 0F, -0.95F, -58.6F, 0F, -26.6F, -0.6F, 0F, -26.6F, -0.6F, 0F, -26.6F, -58.6F, 0F, -26.6F, -58.6F); // Box 9
 		bodyModel[38].setRotationPoint(-0.52F, -0.5F, -2.05F);

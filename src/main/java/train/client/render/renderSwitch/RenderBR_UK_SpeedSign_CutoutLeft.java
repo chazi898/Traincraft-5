@@ -5,12 +5,12 @@ import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
-import train.client.render.renderSwitch.models.ModelBR_UK_SpeedSign_Cutout;
+import train.client.render.renderSwitch.models.ModelBR_UK_SpeedSign_Cutouta;
 import train.common.library.Info;
 import train.common.tile.tileSwitch.TileBR_UK_SpeedSign_CutoutLeft;
 
 public class RenderBR_UK_SpeedSign_CutoutLeft extends TileEntitySpecialRenderer {
-	static final ModelBR_UK_SpeedSign_Cutout modelBR_UK_SpeedSign = new ModelBR_UK_SpeedSign_Cutout();
+	static final ModelBR_UK_SpeedSign_Cutouta modelBR_UK_SpeedSign = new ModelBR_UK_SpeedSign_Cutouta();
 	/*
 	private static final ResourceLocation texture = new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "speedSign.png");
 	private static final ResourceLocation texture2 = new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "speedSign2.png");

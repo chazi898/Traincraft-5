@@ -115,6 +115,7 @@ tile.tc:Platform_Slab_Diagonal_End.name=Platform Slab Diagonal End
 tile.tc:Platform_Slab_End_Left.name=Platform Slab End Left
 tile.tc:Platform_Slab_End_Right.name=Platform Slab End Right
 tile.tc:Platform_Slab_10x10_Outside.name=Platform Slab 10x10 Outside
+tile.tc:EmbeddedBR_Modern_Buffer.name=Embedded BR Modern Buffer
 
 
 <!-- ## Items ## -->
@@ -861,6 +862,12 @@ item.tc:minecartTGVPowerCar.name=TGV Power Car
 item.tc:minecartTGVR1R8Coach.name=TGV R1-R8 Coach
 item.tc:minecartTGVR23567Coach.name=TGV R2-3-5-6-7 Coach
 item.tc:minecartTGVR4BarCar.name=TGV R4 Bar Car
+item.tc:minecartAW307.name=Aw 307
+item.tc:minecartPEPTSO.name=PEP TSO
+item.tc:minecartPEPPTSO.name=PEP TSO Panto
+item.tc:minecartPEPDMSO.name=PEP DMSO Engine
+item.tc:minecartClass17.name=Class 17
+item.tc:minecartDHP1.name=Clayton DHP1
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1580,6 +1587,12 @@ entity.tc.TGVPowerCar.name=TGV Power Car
 entity.tc.TGVR1R8Coach.name=TGV R1-R8 Coach
 entity.tc.TGVR23567Coach.name=TGV R2-3-5-6-7 Coach
 entity.tc.TGVR4BarCar.name=TGV R4 Bar Car
+entity.tc.AW307.name=Aw 307
+entity.tc.PEPTSO.name=PEP TSO
+entity.tc.PEPPTSO.name=PEP TSO Panto
+entity.tc.PEPDMSO.name=PEP DMSO Engine
+entity.tc.Class17.name=Class 17
+entity.tc.DHP1.name=Clayton DHP1
 
 description.villager.profession.tc.station_chief=Station Master
 

@@ -8,7 +8,7 @@ import train.common.api.EntityRollingStock;
 import train.common.api.IPassenger;
 import train.common.api.ISecondBogie;
 
-public class EntityPassengerTGVR4BarCar extends EntityRollingStock implements IPassenger, ISecondBogie {
+public class EntityPassengerTGVR4BarCar extends EntityRollingStock implements IPassenger {
     //public TiltingHandler tiltingHandler = new TiltingHandler(7);
 
     public EntityPassengerTGVR4BarCar(World world) {
@@ -29,7 +29,7 @@ public class EntityPassengerTGVR4BarCar extends EntityRollingStock implements IP
     @Override
     public void updateRiderPosition() {
         if(riddenByEntity!=null) {
-            riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() - 0.25, posZ);
+            riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() - 0.2, posZ);
         }//ew yucky rider position code, good thing its a passenger car so it doesnt matter! Wheeze.png
     }
 
@@ -75,11 +75,11 @@ public class EntityPassengerTGVR4BarCar extends EntityRollingStock implements IP
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return 0.9F;
+        return 2.36F;
     }
 
     @Override
     public String transportcountry() {
-        return "uk";
+        return "fr";
     }
 }

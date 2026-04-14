@@ -36,7 +36,6 @@ public class ItemRenderBR_2_Aspect_Signal implements IItemRenderer {
 
     @Override
     public void renderItem(IItemRenderer.ItemRenderType type, ItemStack item, Object... data) {
-        Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_2_Aspect_Signal_Green.png"));
         switch (type) {
             case ENTITY: {
                 renderSwitch(0f, 0f, 0f, 1f);

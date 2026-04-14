@@ -10,7 +10,9 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import train.common.Traincraft;
 import train.common.api.AbstractTrains;
+import train.common.api.EntityBogie;
 import train.common.api.EntityRollingStock;
+import train.common.api.Locomotive;
 import train.common.core.util.TraincraftUtil;
 
 import java.util.List;
@@ -410,7 +412,13 @@ public class LinkHandler {
 			double springX = limitForce(0.24D * stretch * vecX * -1);
 			double springZ = limitForce(0.24D * stretch * vecZ * -1);
 
-
+			if (cart1 instanceof Locomotive && cart2 instanceof Locomotive) {
+				springX = limitForce(0.24D * stretch * vecX * -1);
+				springZ = limitForce(0.24D * stretch * vecZ * -1);
+			} else {
+				springX = limitForce(0.38D * stretch * vecX * -1);
+				springZ = limitForce(0.38D * stretch * vecZ * -1);
+			}
 
 			if (adj1) {
 				cart1.motionX += springX;

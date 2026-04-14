@@ -1,5 +1,6 @@
 package train.client.render.renderSwitch;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
@@ -10,7 +11,7 @@ import train.common.library.Info;
 import train.common.tile.tileSwitch.TileBR_3_Aspect_Signal;
 
 public class RenderBR_3_Aspect_Signal extends TileEntitySpecialRenderer {
-	static final ModelBR_3_Aspect_Signal modelBR_3_aspect_signal = new ModelBR_3_Aspect_Signal();
+	static final ModelBR_3_Aspect_Signal modelBR_3_Aspect_Signal = new ModelBR_3_Aspect_Signal();
 	/*
 	private static final ResourceLocation texture = new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "speedSign.png");
 	private static final ResourceLocation texture2 = new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "speedSign2.png");
@@ -35,7 +36,6 @@ public class RenderBR_3_Aspect_Signal extends TileEntitySpecialRenderer {
 				GL11.glRotated(90, 0, 1, 0);
 				GL11.glTranslated(0.3, 0f, 0);
 				//System.out.println("N");
-
 				break;
 			}
 			case 4: {
@@ -44,7 +44,6 @@ public class RenderBR_3_Aspect_Signal extends TileEntitySpecialRenderer {
 				GL11.glTranslated(-0.45, 0f, 0);
 				//GL11.glTranslated(0.5, 0f, 0.5);
 				//System.out.println("S");
-
 				//GL11.glTranslated(0.1875, -1, 0.125);
 				break;
 			}
@@ -53,7 +52,6 @@ public class RenderBR_3_Aspect_Signal extends TileEntitySpecialRenderer {
 				GL11.glRotated(180, 0, 1, 0);
 				GL11.glTranslated(-0.1, 0f, 0.4);
 				//System.out.println("E");
-
 				//GL11.glTranslated(0.1875, -1, 0.125);
 				break;
 			}
@@ -96,7 +94,7 @@ public class RenderBR_3_Aspect_Signal extends TileEntitySpecialRenderer {
 
 
 		if (!skipRender) {
-			modelBR_3_aspect_signal.render(null, 0, 0, 0, 0, 0, 0.0625f);
+			modelBR_3_Aspect_Signal.render(0.0625f);
 		}
 		GL11.glPopMatrix();
 	}

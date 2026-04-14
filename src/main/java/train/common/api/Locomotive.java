@@ -25,6 +25,7 @@ import net.minecraft.util.*;
 import net.minecraft.world.World;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import org.lwjgl.input.Keyboard;
+import train.client.gui.GuiMTCInfo;
 import train.common.Traincraft;
 import train.common.adminbook.ServerLogger;
 import train.common.core.HandleMaxAttachedCarts;
@@ -154,6 +155,8 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         dataWatcher.addObject(25, (int) convertSpeed(Math.sqrt(Math.abs(motionX * motionX) + Math.abs(motionZ * motionZ))));//convertSpeed((Math.abs(this.motionX) + Math.abs(this.motionZ))
         dataWatcher.addObject(26, guiDetailsJSON());
         dataWatcher.addObject(28, lightingDetailsJSONString());
+        dataWatcher.addObject(29, castToString(currentAccelSlowDown));
+        dataWatcher.addObject(30, castToString(currentBrakeSlowDown));
 
         //dataWatcher.addObject(32, lineWaypoints);
         setAccel(0);
@@ -486,6 +489,7 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
                 return;
             }
         }
+
         pressKey(i);
 
         if (i == 8 && ConfigHandler.SOUNDS) {
@@ -530,10 +534,6 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         }
 
         if (i == 15) {
-            brakePressed = false;
-        }
-
-        if (Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen() == true) {
             brakePressed = false;
         }
 
@@ -620,48 +620,61 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
     }
 
     public void soundWhistle() {
-    //    worldObj.playSoundAtEntity(this, Info.resourceLocation + ":" + "bell", 0.5F, 1.0F);
-        if(soundBell==null){
-            soundBell=getBell();
+        //    worldObj.playSoundAtEntity(this, Info.resourceLocation + ":" + "bell", 0.5F, 1.0F);
+            if (soundBell == null) {
+                soundBell = getBell();
+            }
+            if (soundBell != null && !soundBell.addr.isEmpty() && whistleDelay == 0) {
+                worldObj.playSoundAtEntity(this, soundBell.addr, soundBell.vol, soundBell.pit);
+                whistleDelay = 2;
+            }
         }
-        if (soundBell != null && !soundBell.addr.isEmpty() && whistleDelay == 0) {
-            worldObj.playSoundAtEntity(this, soundBell.addr, soundBell.vol, soundBell.pit);
-            whistleDelay = 2;
-        }
-    }
+
+
+
 
     @SideOnly(Side.CLIENT)
     public void keyHandling() {
-        if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindForward.getKeyCode())
-                && !forwardPressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(4));
-            forwardPressed = true;
-        } else if (!Keyboard
-                .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindForward.getKeyCode())
-                && forwardPressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(13));
-            forwardPressed = false;
+        if (!Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
+            if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindForward.getKeyCode())
+                    && !forwardPressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(4));
+                forwardPressed = true;
+            } else if (!Keyboard
+                    .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindForward.getKeyCode())
+                    && forwardPressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(13));
+                forwardPressed = false;
+            }
+            if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindBack.getKeyCode())
+                    && !backwardPressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(5));
+                backwardPressed = true;
+            } else if (!Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindBack.getKeyCode())
+                    && backwardPressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(14));
+                backwardPressed = false;
+            }
+            if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
+                    && !brakePressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(12));
+                brakePressed = true;
+            } else if (!Keyboard
+                    .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
+                    && brakePressed) {
+                Traincraft.keyChannel.sendToServer(new PacketKeyPress(15));
+                brakePressed = false;
+            }
+
+
+
+
         }
-        if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindBack.getKeyCode())
-                && !backwardPressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(5));
-            backwardPressed = true;
-        } else if (!Keyboard
-                .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindBack.getKeyCode())
-                && backwardPressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(14));
-            backwardPressed = false;
-        }
-        if (Keyboard.isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
-                && !brakePressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(12));
-            brakePressed = true;
-        } else if (!Keyboard
-                .isKeyDown(FMLClientHandler.instance().getClient().gameSettings.keyBindJump.getKeyCode())
-                && brakePressed) {
-            Traincraft.keyChannel.sendToServer(new PacketKeyPress(15));
-            brakePressed = false;
-        }
+
+
+
+
+
     }
 
     private void cycleBeaconIndex()
@@ -1159,8 +1172,8 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
         gui.addProperty("cartsPulled", currentNumCartsPulled);
         gui.addProperty("massPulled", currentMassPulled);
         gui.addProperty("slowDown", Math.round(currentSpeedSlowDown));
-        gui.addProperty("accelSlowDown", currentAccelSlowDown);
-        gui.addProperty("brakeSlowDown", currentBrakeSlowDown);
+        gui.addProperty("accelSlowDown", (double)Math.round(currentAccelSlowDown*1000)/1000);
+        gui.addProperty("brakeSlowDown", (double)Math.round(currentBrakeSlowDown*1000)/1000);
         gui.addProperty("fuelUseChange", currentFuelConsumptionChange);
         return gui.toString();
     }

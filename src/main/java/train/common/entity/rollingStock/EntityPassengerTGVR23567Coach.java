@@ -8,7 +8,7 @@ import train.common.api.EntityRollingStock;
 import train.common.api.IPassenger;
 import train.common.api.ISecondBogie;
 
-public class EntityPassengerTGVR23567Coach extends EntityRollingStock implements IPassenger, ISecondBogie {
+public class EntityPassengerTGVR23567Coach extends EntityRollingStock implements IPassenger {
     //public TiltingHandler tiltingHandler = new TiltingHandler(7);
 
     public EntityPassengerTGVR23567Coach(World world) {
@@ -29,7 +29,7 @@ public class EntityPassengerTGVR23567Coach extends EntityRollingStock implements
     @Override
     public void updateRiderPosition() {
         if(riddenByEntity!=null) {
-            riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() - 0.25, posZ);
+            riddenByEntity.setPosition(posX, posY + getMountedYOffset() + riddenByEntity.getYOffset() - 0.2, posZ);
         }//ew yucky rider position code, good thing its a passenger car so it doesnt matter! Wheeze.png
     }
 
@@ -74,10 +74,10 @@ public class EntityPassengerTGVR23567Coach extends EntityRollingStock implements
     }
 
     @Override
-    public float getOptimalDistance(EntityMinecart cart) {return 0.92F; }
+    public float getOptimalDistance(EntityMinecart cart) {return 2.36F; }
 
     @Override
     public String transportcountry() {
-        return "uk";
+        return "fr";
     }
 }
