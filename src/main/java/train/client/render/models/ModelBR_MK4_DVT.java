@@ -798,13 +798,13 @@ public class ModelBR_MK4_DVT extends ModelConverter //Same as Filename
 		bodyModel[158].addShapeBox(0F, 0F, 0F, 5, 6, 1, 0F,-4.9F, 0F, 0.5F, 0.3F, 0F, 0.5F, 0.3F, 0F, -0.5F, -4.9F, 0F, -0.5F, -0.2F, 0F, 0.5F, -4.6F, 0F, 0.5F, -4.6F, 0F, -0.5F, -0.2F, 0F, -0.5F); // 18
 		bodyModel[158].setRotationPoint(-45F, -17F, 0F);
 
-		bodyModel[159].addShapeBox(0F, 0F, 0F, 5, 5, 2, 0F,-5F, 0F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, -5F, 0F, 0F, 0.2F, 0F, 0F, -3.8F, 0F, 0F, -3.8F, 0F, 0F, 0.2F, 0F, 0F); // 25
+		bodyModel[159].addShapeBox(0F, 0F, 0F, 5, 5, 2, 0F,-5F, 0F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, -5F, 0F, 0F, 0.25F, 0F, 0F, -3.8F, 0F, 0F, -3.8F, 0F, 0F, 0.25F, 0F, 0F); // 25
 		bodyModel[159].setRotationPoint(-40F, -22F, -1F);
 
-		bodyModel[160].addShapeBox(0F, 0F, 0F, 5, 5, 6, 0F,-5F, -2F, 0F, 0F, -2.1F, 0F, 0F, -0.1F, 0F, -5F, 0F, 0F, 0.2F, 0F, 0F, -3.8F, 0F, 0F, -3.8F, 0F, 0F, 0.2F, 0F, 0F); // 26
+		bodyModel[160].addShapeBox(0F, 0F, 0F, 5, 5, 6, 0F,-5F, -2F, 0F, 0F, -2.1F, 0F, 0F, -0.1F, 0F, -5F, 0F, 0F, 0.2F, 0F, 0F, -3.8F, 0F, 0F, -3.8F, 0F, 0F, 0.25F, 0F, 0F); // 26
 		bodyModel[160].setRotationPoint(-40F, -22F, -7F);
 
-		bodyModel[161].addShapeBox(0F, 0F, 0F, 5, 5, 6, 0F,-5F, 0F, 0F, 0F, -0.1F, 0F, 0F, -2.1F, 0F, -5F, -2F, 0F, 0.2F, 0F, 0F, -3.8F, 0F, 0F, -3.8F, 0F, 0F, 0.2F, 0F, 0F); // 27
+		bodyModel[161].addShapeBox(0F, 0F, 0F, 5, 5, 6, 0F,-5F, 0F, 0F, 0F, -0.1F, 0F, 0F, -2.1F, 0F, -5F, -2F, 0F, 0.25F, 0F, 0F, -3.8F, 0F, 0F, -3.8F, 0F, 0F, 0.2F, 0F, 0F); // 27
 		bodyModel[161].setRotationPoint(-40F, -22F, 1F);
 
 		bodyModel[162].addShapeBox(0F, 0F, 0F, 5, 3, 3, 0F,-5F, -2F, 0F, 0F, -3F, 0.5F, 0F, -0.1F, 0F, -5F, 0F, 0F, 0F, 0F, 0.5F, -3.8F, 0F, 0.5F, -3.8F, 0F, 0F, 0.2F, 0F, 0F); // 28

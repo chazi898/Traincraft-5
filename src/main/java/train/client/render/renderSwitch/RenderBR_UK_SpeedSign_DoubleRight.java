@@ -40,6 +40,7 @@ public class RenderBR_UK_SpeedSign_DoubleRight extends TileEntitySpecialRenderer
 			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_Double_140170.png"),
 			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_Double_160180.png"),
 			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_Double_160200.png"),
+			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_DoubleLeftRight_4595.png"),
 	                                       new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_DoubleLeftRight_6080.png")};
 
 

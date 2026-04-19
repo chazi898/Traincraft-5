@@ -7,16 +7,16 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import train.common.api.blocks.TileRenderFacing;
-import train.common.blocks.blockSwitch.BlockBR_UK_SpeedSign_DoubleLeft;
-import train.common.blocks.blockSwitch.BlockBR_UK_SpeedSign_DoubleRight;
+import train.common.blocks.blockSwitch.BlockBR_UK_SpeedSign;
+import train.common.blocks.blockSwitch.BlockBR_UK_Whistleboard;
 
-public class TileBR_UK_SpeedSign_DoubleRight extends TileRenderFacing {
+public class TileBR_UK_Whistleboard extends TileRenderFacing {
 
 	private int skinstate;
 
-	public TileBR_UK_SpeedSign_DoubleRight(){
+	public TileBR_UK_Whistleboard(){
 	}
-	public TileBR_UK_SpeedSign_DoubleRight(BlockBR_UK_SpeedSign_DoubleRight block){
+	public TileBR_UK_Whistleboard(BlockBR_UK_Whistleboard block){
 		host = block;
 	}
 	public void setSkinstate(int skinstate) {
@@ -30,7 +30,7 @@ public class TileBR_UK_SpeedSign_DoubleRight extends TileRenderFacing {
 	}
 
 	public void increaseSkinState(){
-		if (skinstate >= 22){
+		if (skinstate >= 8){
 			skinstate = 0;
 		} else {
 			skinstate++;

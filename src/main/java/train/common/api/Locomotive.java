@@ -632,7 +632,6 @@ public abstract class Locomotive extends EntityRollingStock implements IInventor
 
 
 
-
     @SideOnly(Side.CLIENT)
     public void keyHandling() {
         if (!Minecraft.getMinecraft().ingameGUI.getChatGUI().getChatOpen()) {
