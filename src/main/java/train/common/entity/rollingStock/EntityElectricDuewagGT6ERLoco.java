@@ -35,7 +35,7 @@ public class EntityElectricDuewagGT6ERLoco extends ElectricTrain {
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
-        double distance = 3.15;
+        double distance = 2.35;
         double yOffset = -0.1;
         float rotationCos1 = (float) Math.cos(Math.toRadians(this.renderYaw + 90));
         float rotationSin1 = (float) Math.sin(Math.toRadians((this.renderYaw + 90)));
@@ -138,7 +138,7 @@ public class EntityElectricDuewagGT6ERLoco extends ElectricTrain {
     }
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return 0.0F;
+        return 0.55F;
     }
 
     @Override
