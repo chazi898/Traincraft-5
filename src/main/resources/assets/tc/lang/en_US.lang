@@ -117,6 +117,7 @@ tile.tc:Platform_Slab_End_Right.name=Platform Slab End Right
 tile.tc:Platform_Slab_10x10_Outside.name=Platform Slab 10x10 Outside
 tile.tc:EmbeddedBR_Modern_Buffer.name=Embedded BR Modern Buffer
 tile.tc:BR_UK_Whistleboard.name=BR UK Whistleboard
+tile.tc:Tram_Platform_Fenced.name=Tram Platform Fenced
 
 
 <!-- ## Items ## -->

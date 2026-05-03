@@ -102,6 +102,7 @@ public enum BlockIDs {
 	Platform_Slab_10x10_Outside(true, ItemPlatform_Slab_10x10_Outside.class),
 	EmbeddedBR_Modern_Buffer(true, ItemEmbeddedBR_Modern_Buffer.class),
 	BR_UK_Whistleboard(true, ItemBR_UK_Whistleboard.class),
+	Tram_Platform_Fenced(true, ItemTram_Platform_Fenced.class),
 
 
 

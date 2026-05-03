@@ -108,6 +108,7 @@ public enum ItemIDs {
 	Platform_Slab_10x10_Outside("ItemBlock", "platform_slab", 2),
 	EmbeddedBR_Modern_Buffer("ItemTCRail", "br_modern_buffer", 2),
 	BR_UK_Whistleboard("ItemTCRail", "br_uk_whistleboard", 2),
+	Tram_Platform_Fenced("ItemBlock", "tram_platform_fenced", 1),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),

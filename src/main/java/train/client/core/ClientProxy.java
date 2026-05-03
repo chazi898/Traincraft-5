@@ -312,6 +312,9 @@ public class ClientProxy extends CommonProxy {
         ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_Whistleboard.class, new RenderBR_UK_Whistleboard());
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_Whistleboard.block), new ItemRenderBR_UK_Whistleboard());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileTram_Platform_Fenced.class, new RenderTram_Platform_Fenced());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Tram_Platform_Fenced.block), new ItemRenderTram_Platform_Fenced());
+
         //seats
         RenderingRegistry.registerEntityRenderingHandler(EntitySeat.class, nullRender);
 
