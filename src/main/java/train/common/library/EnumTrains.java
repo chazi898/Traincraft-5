@@ -635,7 +635,10 @@ public class EnumTrains {
 				TrainRecord.makeEntry("Class17", "Class17", EntityLocoDieselClass17.class, ItemIDs.minecartClass17.item, "diesel",900, 97, 0, 10, 0, 100, 0.6, 0.65, 23000, new String[]{"Black", "Blue", "LightBlue", "Green", "Grey", "LightGrey", "Lime", "Yellow"}, 18, -3, "Pack: B.I.P."),
 				TrainRecord.makeEntry("DHP1", "DHP1", EntityLocoDieselDHP1.class, ItemIDs.minecartDHP1.item, "diesel", 1200, 145, 0, 10, 0, 100, 0.75, 0.7, 27000, null, 18, -3, "Pack: B.I.P."),
 				TrainRecord.makeEntry("BRBogieTanker", "BRBogieTanker", EntityTankerBRBogieTanker.class, ItemIDs.minecartBRBogieTanker.item, "tank", 0, 0, 2.4, 0, 0, 0, 0, 0, 76000, new String[]{"Grey", "Yellow", "Green", "Black", "Brown"}, 18, 0, "Pack: B.I.P."),
-				
+				TrainRecord.makeEntry("LMS_P3_Coach", "LMS_P3_Coach", EntityPassengerLMS_P3_Coach.class, ItemIDs.minecartLMS_P3_Coach.item, "passenger", 0, 0, 3.1, 0, 0, 0, 0, 0, 0, new String[]{"Red", "Magenta", "Orange", "Purple", "Pink", "Yellow", "White", "Grey", "Brown", "Black", "Blue"}, 0, 0, "Pack: B.I.P."),
+				TrainRecord.makeEntry("LMS_P3_BTK", "LMS_P3_BTK", EntityPassengerLMS_P3_BTK.class, ItemIDs.minecartLMS_P3_BTK.item, "passenger", 0, 0, 3.0, 0, 0, 0, 0, 0, 0, new String[]{"Red", "Magenta", "Purple", "Pink", "White", "Grey", "Brown", "Yellow", "Blue"}, 0, 0, "Pack: B.I.P."),
+				TrainRecord.makeEntry("LMS_P3_RK", "LMS_P3_RK", EntityPassengerLMS_P3_RK.class, ItemIDs.minecartLMS_P3_RK.item, "passenger", 0, 0, 2.9, 0, 0, 0, 0, 0, 0, new String[]{"Red", "Pink", "White", "Brown"}, 0, 0, "Pack: B.I.P."),
+
 		};
 	}
 

@@ -397,12 +397,12 @@ public enum ItemIDs {
 	minecartBR_MK2C_Coach("ItemRollingStock", "Mk2c_Coach_Icon", 3),
 	minecartBR_MK2F_Coach("ItemRollingStock", "Mk2f_Coach_Icon", 3),
 	minecartBR_Mk2f_BSO("ItemRollingStock", "Mk2f_BSO_Icon", 3),
-	minecartBR_MK3_DVT("ItemRollingStock", "br_mk3_dvt", 3),
+	minecartBR_MK3_DVT("ItemRollingStock", "br_mk3_dvt", 4),
 	minecartBR_MK3_Buffet("ItemRollingStock", "br_mk3_buffet", 3),
 	minecartBR_MK3_Coach("ItemRollingStock", "br_mk3_coach", 3),
 	minecartBR_MK3a_Coach("ItemRollingStock", "Mk3a_Coach_Icon", 3),
 	minecartBR_MK3_Pantograph("ItemRollingStock", "Mk3_Pantograph", 3),
-	minecartBR_MK4_DVT("ItemRollingStock","br_mk4_dvt",5),
+	minecartBR_MK4_DVT("ItemRollingStock","br_mk4_dvt",4),
 	minecartBR_MK4_Coach("ItemRollingStock","br_mk4_coach",3),
 	minecartBR_MK4_Buffet("ItemRollingStock", "br_mk4_buffet", 3),
 	minecartClass43("ItemRollingStock", "class43",5),
@@ -812,6 +812,9 @@ public enum ItemIDs {
 	minecartClass17("ItemRollingStock", "Class_17_Icon", 4),
 	minecartDHP1("ItemRollingStock", "Clayton_DHP1_Icon", 4),
 	minecartBRBogieTanker("ItemRollingStock", "BR_Bogie_Tanker_Icon", 2),
+	minecartLMS_P3_Coach("ItemRollingStock", "LMS_P3_Coach_Icon", 3),
+	minecartLMS_P3_BTK("ItemRollingStock", "LMS_P3_BTK_Icon", 3),
+	minecartLMS_P3_RK("ItemRollingStock", "LMS_P3_RK_Icon", 3),
 
 
 

@@ -1549,6 +1549,9 @@ public enum RenderEnum implements TrainRenderRecord {
     DHP1(EntityLocoDieselDHP1.class, new ModelClayton(), "Clayton_DHP1", false, new float[]{-1.5F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
     }, "", null, 0, false),     //sorry chaz
     BRBogieTanker(EntityTankerBRBogieTanker.class, new ModelBR_Bogie_Tanker(), "BR_Bogie_Tanker_", true, new float[]{0.0F, 0.05F, 0.0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    LMS_P3_Coach(EntityPassengerLMS_P3_Coach.class, new ModelLMS_P3_Coach(), "LMS_P3_TO_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
+    LMS_P3_BTK(EntityPassengerLMS_P3_BTK.class, new ModelLMS_P3_BTK(), "LMS_P3_BTK_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
+    LMS_P3_RK(EntityPassengerLMS_P3_RK.class, new ModelLMS_P3_RK(), "LMS_P3_RK_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
 
 
 

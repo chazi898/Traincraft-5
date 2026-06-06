@@ -871,6 +871,9 @@ item.tc:minecartPEPDMSO.name=PEP DMSO Engine
 item.tc:minecartClass17.name=Class 17
 item.tc:minecartDHP1.name=Clayton DHP1
 item.tc:minecartBRBogieTanker.name=BR Bogie Tanker
+item.tc:minecartLMS_P3_Coach.name=LMS P3 Coach
+item.tc:minecartLMS_P3_BTK.name=LMS P3 BTK
+item.tc:minecartLMS_P3_RK.name=LMS P3 RK Kitchen
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1597,6 +1600,9 @@ entity.tc.PEPDMSO.name=PEP DMSO Engine
 entity.tc.Class17.name=Class 17
 entity.tc.DHP1.name=Clayton DHP1
 entity.tc.BRBogieTanker.name=BR Bogie Tanker
+entity.tc.LMS_P3_Coach.name=LMS P3 Coach
+entity.tc.LMS_P3_BTK.name=LMS P3 BTK
+entity.tc.LMS_P3_RK.name=LMS P3 RK Kitchen
 
 description.villager.profession.tc.station_chief=Station Master
 
