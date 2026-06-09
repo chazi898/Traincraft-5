@@ -9,6 +9,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.Constants;
 import train.common.Traincraft;
 import train.common.api.ElectricTrain;
+import train.common.api.TrainSound;
 import train.common.library.GuiIDs;
 
 public class EntityElectricLUengine extends ElectricTrain {
@@ -60,6 +61,11 @@ public class EntityElectricLUengine extends ElectricTrain {
         if (pitchRads > -1.01 && pitchRads < 1.01) {
             riddenByEntity.setPosition(bogieX1, pitch, bogieZ1);
         }
+    }
+
+    @Override
+    public float getPlayerScale(){
+        return 0.8f;
     }
 
     @Override
@@ -132,6 +138,10 @@ public class EntityElectricLUengine extends ElectricTrain {
         }
         return true;
     }
+
+    @Override
+    public TrainSound getBell(){return new TrainSound("tc:ButtonDoorClosing",0.4f,1,1);}
+
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return 0.91F;

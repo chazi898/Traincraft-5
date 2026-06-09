@@ -136,6 +136,7 @@ public class TCBlocks {
 		BlockIDs.EmbeddedBR_Modern_Buffer.block = new BlockEmbeddedBR_Modern_Buffer().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
 		BlockIDs.BR_UK_Whistleboard.block = new BlockBR_UK_Whistleboard().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.Tram_Platform_Fenced.block = new BlockTram_Platform_Fenced().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.TVM430Sign.block = new BlockTVM430Sign().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 
 		//BlockIDs.FortyFootContainer.block = new BlockFortyFootContainer(Material.rock).setHardness(4.5F).setCreativeTab(Traincraft.tcTab).setStepSound(Block.soundTypeMetal);
 

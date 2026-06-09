@@ -63,6 +63,11 @@ public class EntityLocoElectricHighSpeedZeroED extends ElectricTrain {
 	}
 
 	@Override
+	public float getPlayerScale(){
+		return 0.85f;
+	}
+
+	@Override
 	public void setDead() {
 		super.setDead();
 		isDead = true;

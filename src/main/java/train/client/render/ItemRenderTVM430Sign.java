@@ -1,4 +1,4 @@
-package train.client.render.renderSwitch;
+package train.client.render;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -9,17 +9,18 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
-import train.client.render.renderSwitch.models.ModelBR_UK_SpeedSign;
+import train.client.render.models.blocks.ModelPlatform_Slab_Diagonal_End;
+import train.client.render.models.blocks.ModelTVM430Sign;
 import train.common.library.Info;
 
-public class ItemRenderBR_UK_SpeedSign implements IItemRenderer {
-    private static final ModelBR_UK_SpeedSign modelSwitch = new ModelBR_UK_SpeedSign();
-    private static final ResourceLocation texture = new ResourceLocation(Info.resourceLocation,Info.modelTexPrefix + "BR_UK_SpeedSign_125.png");
+public class ItemRenderTVM430Sign implements IItemRenderer {
+    private static final ModelTVM430Sign modelSwitch = new ModelTVM430Sign();
+    private static final ResourceLocation texture = new ResourceLocation(Info.resourceLocation,Info.modelTexPrefix + "TVM430Sign_Blue.png");
     private Object IIconRegister;
     private Object IItemRenderer;
     private IIcon itemIcon;
 
-    public ItemRenderBR_UK_SpeedSign() {
+    public ItemRenderTVM430Sign() {
     }
 
 
@@ -36,6 +37,7 @@ public class ItemRenderBR_UK_SpeedSign implements IItemRenderer {
 
     @Override
     public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
+        Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "TVM430Sign_Blue.png"));
         switch (type) {
             case ENTITY: {
                 renderSwitch(0f, 0f, 0f, 1f);
@@ -43,9 +45,9 @@ public class ItemRenderBR_UK_SpeedSign implements IItemRenderer {
             }
             case EQUIPPED: {
                 GL11.glPushMatrix();
-                GL11.glRotatef(-45,1f,0f,0f);
-                GL11.glRotatef(90,0f,1f,0f);
-                renderSwitch(-1f, 1f, 0.7f, 1.5f);
+                GL11.glRotatef(0,1f,0f,0f);
+                GL11.glRotatef(180,0f,1f,0f);
+                renderSwitch(-0.7f, 0.5f, -1.5f, 1.2f);
                 GL11.glPopMatrix();
                 return;
             }
@@ -53,7 +55,7 @@ public class ItemRenderBR_UK_SpeedSign implements IItemRenderer {
                 GL11.glPushMatrix();
                 GL11.glRotatef(-105,0.5f,2f,0f);
                 GL11.glRotatef(105,0f,2.5f,0f);
-                renderSwitch(0.2f, 1.2f, 0.8f, 1.3f);
+                renderSwitch(-0.2f, 1.0f, 0.4f, 1.0f);
                 GL11.glPopMatrix();
                 return;
             }
@@ -61,7 +63,7 @@ public class ItemRenderBR_UK_SpeedSign implements IItemRenderer {
                 GL11.glPushMatrix();
                 GL11.glRotatef(90,0f,1f,0f);
                 GL11.glRotatef(90,0f,1f,0f);
-                renderSwitch(0f, 0f, 0f, 1.5f);
+                renderSwitch(0.1f, 0f, -0.2f, 0.8f);
                 GL11.glPopMatrix();
 
                 return;
@@ -74,7 +76,7 @@ public class ItemRenderBR_UK_SpeedSign implements IItemRenderer {
 
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister) {
-        this.itemIcon = iconRegister.registerIcon(Info.modID.toLowerCase() + ":br_uk_speedsign");
+        this.itemIcon = iconRegister.registerIcon(Info.modID.toLowerCase() + ":tvm430_sign");
     }
 
     /*

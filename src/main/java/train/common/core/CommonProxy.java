@@ -122,6 +122,7 @@ public class CommonProxy implements IGuiHandler {
         GameRegistry.registerTileEntity(TileEmbeddedBR_Modern_Buffer.class, "TileEmbeddedBR_Modern_Buffer");
         GameRegistry.registerTileEntity(TileBR_UK_Whistleboard.class, "TileBR_UK_Whistleboard");
         GameRegistry.registerTileEntity(TileTram_Platform_Fenced.class, "TileTram_Platform_Fenced");
+        GameRegistry.registerTileEntity(TileTVM430Sign.class, "TileTVM430Sign");
 
         //switches -hariesh
         GameRegistry.registerTileEntity(TileowoSwitchStand.class, "tileowoswitchstand");

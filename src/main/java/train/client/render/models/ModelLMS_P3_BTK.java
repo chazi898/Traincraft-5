@@ -22,7 +22,7 @@ public class ModelLMS_P3_BTK extends ModelConverter //Same as Filename
 
 	public ModelLMS_P3_BTK() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[491];
+		bodyModel = new ModelRendererTurbo[492];
 
 		initbodyModel_1();
 
@@ -525,6 +525,7 @@ public class ModelLMS_P3_BTK extends ModelConverter //Same as Filename
 		bodyModel[488] = new ModelRendererTurbo(this, 379, 107, textureX, textureY); // Box 198
 		bodyModel[489] = new ModelRendererTurbo(this, 379, 107, textureX, textureY); // Box 198
 		bodyModel[490] = new ModelRendererTurbo(this, 128, 197, textureX, textureY); // Box 139
+		bodyModel[491] = new ModelRendererTurbo(this, 177, 101, textureX, textureY); // Box 7
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 7, 7, 0, 0F,0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, -2F, -2F, 0F, -2F, -2F, 0F, 0F, -2F, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-35F, 2F, -6F);
@@ -1469,7 +1470,7 @@ public class ModelLMS_P3_BTK extends ModelConverter //Same as Filename
 		bodyModel[313].setRotationPoint(40.05F, -14F, -1.5F);
 
 		bodyModel[314].addShapeBox(0F, 0F, 0F, 6, 1, 1, 0F,0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F); // Box 7
-		bodyModel[314].setRotationPoint(5.5F, 0.2F, -11F);
+		bodyModel[314].setRotationPoint(4.5F, 0.2F, -11F);
 
 		bodyModel[315].addShapeBox(0F, 0F, 0F, 3, 4, 1, 0F,0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 168
 		bodyModel[315].setRotationPoint(35F, -12F, -12F);
@@ -1726,8 +1727,8 @@ public class ModelLMS_P3_BTK extends ModelConverter //Same as Filename
 		bodyModel[399].addShapeBox(0F, 0F, 0F, 1, 1, 15, 0F,0F, 0F, -0.2F, -0.8F, 0F, -0.2F, -0.8F, 0F, -0.9F, 0F, 0F, -0.9F, 0F, 0F, -0.2F, -0.8F, 0F, -0.2F, -0.8F, 0F, -0.1F, 0F, 0F, -0.1F); // Box 139
 		bodyModel[399].setRotationPoint(12.3F, -18F, -4F);
 
-		bodyModel[400].addShapeBox(0F, 0F, 0F, 6, 1, 1, 0F,0F, -0.1F, 0F, 0.3F, -0.1F, 0F, 0.3F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.7F, 0F, 0.3F, -0.7F, 0F, 0.3F, -0.7F, 0F, 0F, -0.7F, 0F); // Box 7
-		bodyModel[400].setRotationPoint(18.5F, 0.2F, -11F);
+		bodyModel[400].addShapeBox(0F, 0F, 0F, 6, 1, 1, 0F,0F, -0.1F, 0F, 0.8F, -0.1F, 0F, 0.8F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.7F, 0F, 0.8F, -0.7F, 0F, 0.8F, -0.7F, 0F, 0F, -0.7F, 0F); // Box 7
+		bodyModel[400].setRotationPoint(18F, 0.2F, -11F);
 
 		bodyModel[401].addShapeBox(0F, 0F, 0F, 1, 13, 15, 0F,0F, 0F, -0.2F, -0.8F, 0F, -0.2F, -0.8F, 0F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.2F, -0.8F, 0F, -0.2F, -0.8F, 0F, -0.1F, 0F, 0F, -0.1F); // Box 139
 		bodyModel[401].setRotationPoint(-32.2F, -17F, -4F);
@@ -1998,10 +1999,13 @@ public class ModelLMS_P3_BTK extends ModelConverter //Same as Filename
 
 		bodyModel[490].addShapeBox(0F, 0F, 0F, 80, 21, 1, 0F,-0.2F, 0.1F, 0F, -43.4F, 0.1F, 0F, -43.4F, 0.1F, -0.8F, -0.2F, 0.1F, -0.8F, -0.2F, 0F, 0F, -43.4F, 0F, 0F, -43.4F, 0F, -0.8F, -0.2F, 0F, -0.8F); // Box 139
 		bodyModel[490].setRotationPoint(-32.4F, -21F, -4F);
+
+		bodyModel[491].addShapeBox(0F, 0F, 0F, 6, 1, 1, 0F,0F, -0.1F, 0F, 0.8F, -0.1F, 0F, 0.8F, -0.1F, 0F, 0F, -0.1F, 0F, 0F, -0.7F, 0F, 0.8F, -0.7F, 0F, 0.8F, -0.7F, 0F, 0F, -0.7F, 0F); // Box 7
+		bodyModel[491].setRotationPoint(18F, 0.2F, 10F);
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 491; i++) {
+		for (int i = 0; i < 492; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);
