@@ -491,6 +491,7 @@ item.tc:minecartASTFAutorack.name=ASTF ft-41 Auto Rack
 
 item.tc:paintbrushThing.name=Paintbrush
 item.tc:whistle.name=Whistle
+item.tc:signalConnector.name=Signal Connector
 
 item.tc:minecart4000GallonTender.name=4000 Gallon Tender
 item.tc:minecartLocoHallClass.name=Hall Class

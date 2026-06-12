@@ -34,6 +34,9 @@ import train.common.inventory.*;
 import train.common.library.GuiIDs;
 import train.common.mtc.*;
 import train.common.tile.*;
+import train.common.tile.signals.TileBR_2_Aspect_Signal;
+import train.common.tile.signals.TileBR_3_Aspect_Signal;
+import train.common.tile.signals.TileBR_4_Aspect_Signal;
 import train.common.tile.tileSwitch.*;
 
 import java.lang.reflect.InvocationTargetException;

@@ -1,4 +1,4 @@
-package train.common.tile.tileSwitch;
+package train.common.tile.signals;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -6,65 +6,25 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.util.AxisAlignedBB;
-import train.common.api.blocks.TileRenderFacing;
-import train.common.blocks.blockSwitch.BlockBR_3_Aspect_Signal;
+import train.common.api.blocks.signals.TileHomeSignal;
+import train.common.blocks.signals.BlockBR_3_Aspect_Signal;
 
-public class TileBR_3_Aspect_Signal extends TileRenderFacing {
-
-	private int skinstate;
+public class TileBR_3_Aspect_Signal extends TileHomeSignal {
 
 	public TileBR_3_Aspect_Signal(){
 	}
 	public TileBR_3_Aspect_Signal(BlockBR_3_Aspect_Signal block){
 		host = block;
 	}
-	public void setSkinstate(int skinstate) {
-		this.skinstate = skinstate;
-		worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
-
-	}
-
-	public int getSkinstate() {
-		return skinstate;
-	}
-
-	public void increaseSkinState(){
-		if (skinstate >= 2){
-			skinstate = 0;
-		} else {
-			skinstate++;
-		}
-		worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
-	}
-
-	public TileRenderFacing setDiagonalFacing(int dir){
-		facing = dir;
-		this.markDirty();
-		return this;
-	}
-
-	public int getDiagonalfacing(){
-		return facing;
-	}
 
 	public void readFromNBT(NBTTagCompound nbtTag) {
 		super.readFromNBT(nbtTag);
-		if(nbtTag.hasKey("skinstate")){
-			skinstate = nbtTag.getInteger("skinstate");
-		}
-
-		else {
-			System.out.println("No Skins");
-		}
 
 	}
-
 	@Override
 	public void writeToNBT(NBTTagCompound nbtTag) {
 		super.writeToNBT(nbtTag);
-		nbtTag.setInteger("skinstate", this.skinstate);
 	}
-
 	public S35PacketUpdateTileEntity getDescriptionPacket() {
 
 		NBTTagCompound nbt = new NBTTagCompound();
@@ -72,12 +32,12 @@ public class TileBR_3_Aspect_Signal extends TileRenderFacing {
 
 		return new S35PacketUpdateTileEntity(this.xCoord, this.yCoord, this.zCoord, 1, nbt);
 	}
-
 	@Override
-	public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt){
+	public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt) {
 		this.readFromNBT(pkt.func_148857_g());
 		super.onDataPacket(net, pkt);
 	}
+
 
 	@SideOnly(Side.CLIENT)
 	@Override

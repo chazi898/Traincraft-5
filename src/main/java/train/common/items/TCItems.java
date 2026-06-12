@@ -44,6 +44,7 @@ public class TCItems {
 		ItemIDs.recipeBook.item = new ItemRecipeBook();
 		ItemIDs.adminBook.item = new ItemAdminBook();
 		ItemIDs.trackDebugger.item = new ItemTrackDebugger();
+		ItemIDs.signalConnector.item = new ItemSignalConnector();
 		
 		ItemIDs.stake.item = new ItemStacked(200);
 		ItemIDs.airship.item = new ItemZeppelins(0);

@@ -68,6 +68,7 @@ public enum ItemIDs {
 	trackDebugger("ItemTrackDebugger", "item_composite_wrench", 0),
 	wirelessTransmitter("ItemWirelessTransmitter", "wireless_transmitter", 3),
 	paintbrushThing("ItemPaintbrushThing","paintbrushThing",1),
+	signalConnector("ItemSignalConnector", "item_signal_connector", 1),
 	whistle("ItemWhistle","whistle", 1),
 	bolt("ItemBolt", "bolt", 1),
 	hat_ticketMan_paintable("ItemTCArmor", "armor_ticket_man_hat", 1),

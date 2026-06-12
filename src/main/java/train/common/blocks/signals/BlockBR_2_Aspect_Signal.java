@@ -1,7 +1,5 @@
-package train.common.blocks.blockSwitch;
+package train.common.blocks.signals;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
@@ -13,20 +11,20 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
-import net.minecraftforge.common.util.ForgeDirection;
-import train.common.api.blocks.BlockDynamic;
-import train.common.tile.tileSwitch.TileBR_2_Aspect_Signal;
+import train.common.api.blocks.BlockSignal;
+import train.common.api.blocks.signals.TileSignal;
+import train.common.items.ItemSignalConnector;
+import train.common.tile.signals.TileBR_2_Aspect_Signal;
 
 import java.util.List;
-import java.util.Random;
 
-public class BlockBR_2_Aspect_Signal extends BlockDynamic {
+public class BlockBR_2_Aspect_Signal extends BlockSignal {
     private IIcon texture;
 
     public BlockBR_2_Aspect_Signal() {
         super(Material.iron, 0);
         this.setTickRandomly(true);
-        setBlockBounds(0.2F,0.0F,0.2F,0.8F,1F,0.8F);
+        setBlockBounds(0.3F,0.0F,0.3F,0.7F,1F,0.7F);
     }
 
     @Override
@@ -56,7 +54,9 @@ public class BlockBR_2_Aspect_Signal extends BlockDynamic {
         if (te != null) {
             int dir = MathHelper.floor_double((entityliving.rotationYaw * 8f) / 360.0F + 0.5D ) & 7;
             te.setDiagonalFacing(dir);
-            te.setSkinstate(0);
+            te.setAspect(TileSignal.SignalStates.OFF);
+            te.setAllowFlashing(true);
+            te.setAllowRollingStockDetection(false);
             world.markBlockForUpdate(i, j, k);
 
 
@@ -64,13 +64,20 @@ public class BlockBR_2_Aspect_Signal extends BlockDynamic {
     }
 
     @Override
-    public boolean onBlockActivated(World p_149727_1_, int p_149727_2_, int p_149727_3_, int p_149727_4_, EntityPlayer p_149727_5_, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_) {
-        TileBR_2_Aspect_Signal te = (TileBR_2_Aspect_Signal) p_149727_1_.getTileEntity(p_149727_2_, p_149727_3_, p_149727_4_);
-        te.increaseSkinState();
-        p_149727_1_.markBlockForUpdate(p_149727_2_, p_149727_3_, p_149727_4_);
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_) {
+        if (!world.isRemote) {
+            TileBR_2_Aspect_Signal te = (TileBR_2_Aspect_Signal) world.getTileEntity(x, y, z);
+            if (player.getHeldItem() != null && (player.getHeldItem().getItem() instanceof ItemSignalConnector)) {
+                return super.onBlockActivated(world, x, y, z, player, p_149727_6_, p_149727_7_, p_149727_8_, p_149727_9_);
+
+            } else {
+                te.cycleAspects();
+                world.markBlockForUpdate(x, y, z);
+            }
+        }
 
 
-        return super.onBlockActivated(p_149727_1_, p_149727_2_, p_149727_3_, p_149727_4_, p_149727_5_, p_149727_6_, p_149727_7_, p_149727_8_, p_149727_9_);
+        return super.onBlockActivated(world, x, y, z, player, p_149727_6_, p_149727_7_, p_149727_8_, p_149727_9_);
     }
 
     @Override
@@ -97,5 +104,6 @@ public class BlockBR_2_Aspect_Signal extends BlockDynamic {
     public IIcon getIcon(int i, int j) {
         return texture;
     }
+
 }
 
