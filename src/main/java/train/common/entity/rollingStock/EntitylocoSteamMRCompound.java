@@ -10,6 +10,7 @@ import net.minecraftforge.common.util.Constants;
 import train.common.Traincraft;
 import train.common.api.LiquidManager;
 import train.common.api.SteamTrain;
+import train.common.api.TrainSound;
 import train.common.library.EnumTrains;
 import train.common.library.GuiIDs;
 
@@ -124,6 +125,10 @@ public class EntitylocoSteamMRCompound extends SteamTrain {
             }
         }
     }
+    @Override
+    public float getPlayerScale(){
+        return 0.9f;
+    }
 
     @Override
     public int getSizeInventory() {
@@ -150,10 +155,12 @@ public class EntitylocoSteamMRCompound extends SteamTrain {
     }
 
     @Override
+    public TrainSound getBell(){return new TrainSound("tc:Weeeeeeesh1",1f,1,1);}
+
+    @Override
     public float getOptimalDistance(EntityMinecart cart) {
         return 0.6F;
     }
-
 
     @Override
     public boolean canBeAdjusted(EntityMinecart cart) { return canBeAdjusted; }

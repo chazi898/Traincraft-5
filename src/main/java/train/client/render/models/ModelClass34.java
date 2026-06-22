@@ -1277,4 +1277,11 @@ public class ModelClass34 extends ModelConverter //Same as Filename
 		bodyModel[309].addShapeBox(0F, 0F, 0F, 1, 2, 18, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F); // Box 92
 		bodyModel[309].setRotationPoint(28.5F, 3.5F, -9.5F);
 	}
+	public ArrayList<double[]> getSmokePosition() {
+		return new ArrayList<double[]>() {
+			{
+				add(new double[]{1D, 1.3D, 0.0D});
+			}
+		};
+	}
 }

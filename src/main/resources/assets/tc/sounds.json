@@ -207,5 +207,8 @@
   "Class442Horn": {"category": "master", "sounds" :  [{"name": "Class442Horn", "stream": true}]},
   "PEPHorn": {"category": "master", "sounds" :  [{"name": "PEPHorn", "stream": true}]},
   "Class17Horn": {"category": "master", "sounds" :  [{"name": "Class17Horn", "stream": true}]},
-  "Class17Thrash": {"category": "master", "sounds" :  [{"name": "Class17Thrash", "stream": true}]}
+  "Class17Thrash": {"category": "master", "sounds" :  [{"name": "Class17Thrash", "stream": true}]},
+  "Weeeeeeesh1": {"category": "master", "sounds" :  [{"name": "Weeeeeeesh1", "stream": true}]},
+  "A4ActuallyWhistling2": {"category": "master", "sounds" :  [{"name": "A4ActuallyWhistling2", "stream": true}]},
+  "A4Whistle2": {"category": "master", "sounds" :  [{"name": "A4Whistle2", "stream": true}]}
 }

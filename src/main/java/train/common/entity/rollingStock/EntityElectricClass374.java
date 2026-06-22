@@ -114,6 +114,11 @@ public class EntityElectricClass374 extends ElectricTrain {
     }
 
     @Override
+    public float getPlayerScale(){
+        return 0.9f;
+    }
+
+    @Override
     public int getSizeInventory() {
         return inventorySize;
     }
