@@ -1542,9 +1542,7 @@ public enum RenderEnum implements TrainRenderRecord {
     PEPPTSO(EntityPassengerPEPPTSO.class, new ModelPEPPTSO(), "PEP_", true, new float[]{0F, 0.18F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     //TCCE-MLP-3
     Class17(EntityLocoDieselClass17.class, new ModelClayton(), "Class_17_", true, new float[]{-1.5F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
-        {
-            add(new double[]{2.2D, 1.1D, 0.0D}); add(new double[]{0.8D, 1.1D, 0.0D});
-        }
+        { add(new double[]{2.2D, 1.1D, 0.0D}); add(new double[]{0.8D, 1.1D, 0.0D}); }
     }, "", null, 0, false),
     DHP1(EntityLocoDieselDHP1.class, new ModelClayton(), "Clayton_DHP1", false, new float[]{-1.5F, 0.15F, 0F}, new float[]{0F, 180F, 180F}, null, "smoke", 2, new ArrayList<double[]>() {
     }, "", null, 0, false),     //sorry chaz
@@ -1552,7 +1550,7 @@ public enum RenderEnum implements TrainRenderRecord {
     LMS_P3_Coach(EntityPassengerLMS_P3_Coach.class, new ModelLMS_P3_Coach(), "LMS_P3_TO_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
     LMS_P3_BTK(EntityPassengerLMS_P3_BTK.class, new ModelLMS_P3_BTK(), "LMS_P3_BTK_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
     LMS_P3_RK(EntityPassengerLMS_P3_RK.class, new ModelLMS_P3_RK(), "LMS_P3_RK_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
-
+    BR_Mk_1_TPO_SortingVan(EntityPassengerBR_Mk1_TPO_SortingVan.class, new ModelBR_Mk1_TPO_SortingVan(), "BR_Mk1_TPOSorting_", true, new float[]{0F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
 
 
     ;

@@ -111,6 +111,7 @@ public enum ItemIDs {
 	BR_UK_Whistleboard("ItemTCRail", "br_uk_whistleboard", 2),
 	Tram_Platform_Fenced("ItemBlock", "tram_platform_fenced", 1),
 	TVM430Sign("ItemBlock", "tvm430_sign", 2),
+	BR_UK_SpeedSign_Warning("ItemTCRail", "br_uk_speedsign", 2),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),
@@ -817,6 +818,7 @@ public enum ItemIDs {
 	minecartLMS_P3_Coach("ItemRollingStock", "LMS_P3_Coach_Icon", 3),
 	minecartLMS_P3_BTK("ItemRollingStock", "LMS_P3_BTK_Icon", 3),
 	minecartLMS_P3_RK("ItemRollingStock", "LMS_P3_RK_Icon", 3),
+	minecartBR_Mk1_TPO_SortingVan("ItemRollingStock", "Mk1_TPO_SortingVan_Icon", 3),
 
 
 

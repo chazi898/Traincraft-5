@@ -321,6 +321,9 @@ public class ClientProxy extends CommonProxy {
         ClientRegistry.bindTileEntitySpecialRenderer(TileTVM430Sign.class, new RenderTVM430Sign());
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.TVM430Sign.block), new ItemRenderTVM430Sign());
 
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_UK_SpeedSign_Warning.class, new RenderBR_UK_SpeedSign_Warning());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_UK_SpeedSign_Warning.block), new ItemRenderBR_UK_SpeedSign_Warning());
+
         //seats
         RenderingRegistry.registerEntityRenderingHandler(EntitySeat.class, nullRender);
 

@@ -5,10 +5,8 @@ import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
-import train.client.render.renderSwitch.models.ModelBR_UK_SpeedSign;
 import train.client.render.renderSwitch.models.ModelBR_UK_Whistleboard;
 import train.common.library.Info;
-import train.common.tile.tileSwitch.TileBR_UK_SpeedSign;
 import train.common.tile.tileSwitch.TileBR_UK_Whistleboard;
 
 public class RenderBR_UK_Whistleboard extends TileEntitySpecialRenderer {
@@ -29,7 +27,10 @@ public class RenderBR_UK_Whistleboard extends TileEntitySpecialRenderer {
 			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_Whistleboard_WWhiteboard.png"),
 			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_Whistleboard_WhistleWhiteboard.png"),
 			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_Whistleboard_SWBlackboard.png"),
-	                                       new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_Whistleboard_WhistleBlackboard.png")};
+										   new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_Whistleboard_WhistleBlackboard.png"),
+										   new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_Whistleboard_WCircle.png"),
+	                                       new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_Whistleboard_LimitOfShunt.png")};
+
 
 
 	@Override

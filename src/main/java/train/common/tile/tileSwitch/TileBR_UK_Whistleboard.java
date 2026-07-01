@@ -30,7 +30,7 @@ public class TileBR_UK_Whistleboard extends TileRenderFacing {
 	}
 
 	public void increaseSkinState(){
-		if (skinstate >= 8){
+		if (skinstate >= 10){
 			skinstate = 0;
 		} else {
 			skinstate++;

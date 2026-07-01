@@ -507,7 +507,6 @@ public class EntityRollingStock extends AbstractTrains implements ILinkableCart 
     public void pressKey(int i) {
     }
 
-
     public float getPlayerScale() {
         return 1f;
     }

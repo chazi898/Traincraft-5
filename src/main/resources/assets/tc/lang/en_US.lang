@@ -119,6 +119,7 @@ tile.tc:EmbeddedBR_Modern_Buffer.name=Embedded BR Modern Buffer
 tile.tc:BR_UK_Whistleboard.name=BR UK Whistleboard
 tile.tc:Tram_Platform_Fenced.name=Tram Platform Fenced
 tile.tc:TVM430Sign.name=TVM430 Sign
+tile.tc:BR_UK_SpeedSign_Warning.name=BR UK Speed Sign Warning
 
 
 <!-- ## Items ## -->
@@ -876,6 +877,7 @@ item.tc:minecartBRBogieTanker.name=BR Bogie Tanker
 item.tc:minecartLMS_P3_Coach.name=LMS P3 Coach
 item.tc:minecartLMS_P3_BTK.name=LMS P3 BTK
 item.tc:minecartLMS_P3_RK.name=LMS P3 RK Kitchen
+item.tc:minecartBR_Mk1_TPO_SortingVan.name=BR Mk1 TPO Sorting Van
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1605,6 +1607,7 @@ entity.tc.BRBogieTanker.name=BR Bogie Tanker
 entity.tc.LMS_P3_Coach.name=LMS P3 Coach
 entity.tc.LMS_P3_BTK.name=LMS P3 BTK
 entity.tc.LMS_P3_RK.name=LMS P3 RK Kitchen
+entity.tc.BR_Mk1_TPO_SortingVan.name=BR Mk1 TPO Sorting Van
 
 description.villager.profession.tc.station_chief=Station Master
 

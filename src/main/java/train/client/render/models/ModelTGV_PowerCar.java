@@ -22,7 +22,7 @@ public class ModelTGV_PowerCar extends ModelConverter //Same as Filename
 
 	public ModelTGV_PowerCar() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[252];
+		bodyModel = new ModelRendererTurbo[253];
 
 		initbodyModel_1();
 
@@ -286,6 +286,7 @@ public class ModelTGV_PowerCar extends ModelConverter //Same as Filename
 		bodyModel[249] = new ModelRendererTurbo(this, 56, 135, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[250] = new ModelRendererTurbo(this, 46, 135, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[251] = new ModelRendererTurbo(this, 32, 135, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[252] = new ModelRendererTurbo(this, 224, 123, textureX, textureY); // Box 25
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 60, 2, 20, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-9F, 1F, -10F);
@@ -323,7 +324,7 @@ public class ModelTGV_PowerCar extends ModelConverter //Same as Filename
 		bodyModel[11].addShapeBox(0F, 0F, 0F, 5, 2, 7, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 4F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 2F, 0F, 0F); // Box 24
 		bodyModel[11].setRotationPoint(-14F, -18F, 1F);
 
-		bodyModel[12].addShapeBox(0F, 0F, 0F, 5, 2, 7, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 4F, 0F, 0F); // Box 25
+		bodyModel[12].addShapeBox(0F, 0F, 0F, 5, 2, 7, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 25
 		bodyModel[12].setRotationPoint(-14F, -18F, -8F);
 
 		bodyModel[13].addShapeBox(0F, 0F, 0F, 4, 5, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, -1F, 0F, 0F, -1F); // Box 26
@@ -1042,10 +1043,13 @@ public class ModelTGV_PowerCar extends ModelConverter //Same as Filename
 
 		bodyModel[251].addShapeBox(0F, 0F, 0F, 2, 1, 2, 0F,0F, -2.5F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -2.5F, 0F, 0F, 2.5F, 0F, 0F, 1F, 0F, 0F, 1F, 0F, 0F, 2.5F, 0F); // Lamp
 		bodyModel[251].setRotationPoint(-8F, -21.26F, -1F);
+
+		bodyModel[252].addShapeBox(0F, 0F, 0F, 4, 2, 7, 0F,-2F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 25
+		bodyModel[252].setRotationPoint(-18F, -18F, -8F);
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 252; i++) {
+		for (int i = 0; i < 253; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);

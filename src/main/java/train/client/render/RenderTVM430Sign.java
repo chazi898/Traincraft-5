@@ -6,10 +6,8 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import train.client.render.models.blocks.ModelTVM430Sign;
-import train.client.render.renderSwitch.models.ModelBR_UK_Whistleboard;
 import train.common.library.Info;
 import train.common.tile.TileTVM430Sign;
-import train.common.tile.tileSwitch.TileBR_UK_Whistleboard;
 
 public class RenderTVM430Sign extends TileEntitySpecialRenderer {
 	static final ModelTVM430Sign modelTVM430Sign = new ModelTVM430Sign();
