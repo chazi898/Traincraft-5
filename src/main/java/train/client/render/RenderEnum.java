@@ -1551,6 +1551,10 @@ public enum RenderEnum implements TrainRenderRecord {
     LMS_P3_BTK(EntityPassengerLMS_P3_BTK.class, new ModelLMS_P3_BTK(), "LMS_P3_BTK_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
     LMS_P3_RK(EntityPassengerLMS_P3_RK.class, new ModelLMS_P3_RK(), "LMS_P3_RK_", true, new float[]{0, 0, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
     BR_Mk_1_TPO_SortingVan(EntityPassengerBR_Mk1_TPO_SortingVan.class, new ModelBR_Mk1_TPO_SortingVan(), "BR_Mk1_TPOSorting_", true, new float[]{0F, 0F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    Class400Front(EntityElectricClass400.class, new ModelClass400Front(), "Class_400_Front_", true, new float[]{-2.9F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    Class400FirstClass(EntityPassengerClass400FirstClass.class, new ModelClass400FirstClass(), "Class_400_First_", true, new float[]{0F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    Class400StandardClass(EntityPassengerClass400StandardClass.class, new ModelClass400StandardClass(), "Class_400_Standard_Class_", true, new float[]{0F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+    Class400BarCar(EntityPassengerClass400BarCar.class, new ModelClass400BarCar(), "Class_400_Bar_", true, new float[]{0F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
 
 
     ;

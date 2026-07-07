@@ -878,6 +878,10 @@ item.tc:minecartLMS_P3_Coach.name=LMS P3 Coach
 item.tc:minecartLMS_P3_BTK.name=LMS P3 BTK
 item.tc:minecartLMS_P3_RK.name=LMS P3 RK Kitchen
 item.tc:minecartBR_Mk1_TPO_SortingVan.name=BR Mk1 TPO Sorting Van
+item.tc:minecartClass400Front.name=Class 400 Front
+item.tc:minecartClass400FirstClass.name=Class 400 First Class Coach
+item.tc:minecartClass400StandardClass.name=Class 400 Standard Class Coach
+item.tc:minecartClass400BarCar.name=Class 400 Bar Car
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1608,6 +1612,10 @@ entity.tc.LMS_P3_Coach.name=LMS P3 Coach
 entity.tc.LMS_P3_BTK.name=LMS P3 BTK
 entity.tc.LMS_P3_RK.name=LMS P3 RK Kitchen
 entity.tc.BR_Mk1_TPO_SortingVan.name=BR Mk1 TPO Sorting Van
+entity.tc.Class400Front.name=Class 400 Front
+entity.tc.Class400FirstClass.name=Class 400 First Class Coach
+entity.tc.Class400StandardClass.name=Class 400 Standard Class Coach
+entity.tc.Class400BarCar.name=Class 400 Bar Car
 
 description.villager.profession.tc.station_chief=Station Master
 

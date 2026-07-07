@@ -639,6 +639,10 @@ public class EnumTrains {
 				TrainRecord.makeEntry("LMS_P3_BTK", "LMS_P3_BTK", EntityPassengerLMS_P3_BTK.class, ItemIDs.minecartLMS_P3_BTK.item, "passenger", 0, 0, 3.0, 0, 0, 0, 0, 0, 0, new String[]{"Red", "Magenta", "Purple", "Pink", "White", "Grey", "Brown", "Yellow", "Blue"}, 0, 0, "Pack: B.I.P."),
 				TrainRecord.makeEntry("LMS_P3_RK", "LMS_P3_RK", EntityPassengerLMS_P3_RK.class, ItemIDs.minecartLMS_P3_RK.item, "passenger", 0, 0, 2.9, 0, 0, 0, 0, 0, 0, new String[]{"Red", "Pink", "White", "Brown"}, 0, 0, "Pack: B.I.P."),
 				TrainRecord.makeEntry("BR_Mk1_TPO_SortingVan", "BR_Mk1_TPO_SortingVan", EntityPassengerBR_Mk1_TPO_SortingVan.class, ItemIDs.minecartBR_Mk1_TPO_SortingVan.item, "passenger", 0, 0, 3.5, 0, 0, 0, 0, 0, 0, new String[]{"Red", "Pink", "Orange", "Brown"}, 0, 0, "Pack: B.I.P."),
+				TrainRecord.makeEntry("Class400Front", "Class400Front", EntityElectricClass400.class, ItemIDs.minecartClass400Front.item, "electric", 7250, 392, 0, 60, 0, 100, 0.7, 0.78, 1000, new String[]{"White", "Black", "Blue", "Brown", "Green", "Magenta", "Red", "Lime", "Yellow"}, 18, -4.9, "Pack: B.I.P."),
+				TrainRecord.makeEntry("Class400FirstClass", "Class400FirstClass", EntityPassengerClass400FirstClass.class, ItemIDs.minecartClass400FirstClass.item, "passenger", 0, 0, 4, 0, 0, 0, 0, 0, 0, new String[]{"White", "Black", "Blue", "Green", "Magenta", "Red", "Yellow"}, 0, 0, "Pack: B.I.P."),
+				TrainRecord.makeEntry("Class400StandardClass", "Class400StandardClass", EntityPassengerClass400StandardClass.class, ItemIDs.minecartClass400StandardClass.item, "passenger", 0, 0, 4, 0, 0, 0, 0, 0, 0, new String[]{"White", "Black", "Blue", "Brown", "Cyan", "Green", "Grey", "LightGrey", "Lime", "Magenta", "Orange", "Purple", "Red", "Yellow"}, 0, 0, "Pack: B.I.P."),
+				TrainRecord.makeEntry("Class400BarCar", "Class400BarCar", EntityPassengerClass400BarCar.class, ItemIDs.minecartClass400BarCar.item, "passenger", 0, 0, 4, 0, 0, 0, 0, 0, 0, new String[]{"White", "Black", "Blue", "Green", "Magenta", "Red", "Yellow"}, 0, 0, "Pack: B.I.P."),
 
 		};
 	}

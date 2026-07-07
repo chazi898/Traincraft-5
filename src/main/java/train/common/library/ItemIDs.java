@@ -819,7 +819,10 @@ public enum ItemIDs {
 	minecartLMS_P3_BTK("ItemRollingStock", "LMS_P3_BTK_Icon", 3),
 	minecartLMS_P3_RK("ItemRollingStock", "LMS_P3_RK_Icon", 3),
 	minecartBR_Mk1_TPO_SortingVan("ItemRollingStock", "Mk1_TPO_SortingVan_Icon", 3),
-
+	minecartClass400Front("ItemRollingStock", "Class_400_Front_Icon", 5),
+	minecartClass400FirstClass("ItemRollingStock", "Class_400_FirstClass_Icon", 2),
+	minecartClass400StandardClass("ItemRollingStock", "Class_400_StandardClass_Icon", 2),
+	minecartClass400BarCar("ItemRollingStock", "Class_400_BarCar_Icon", 2),
 
 
 
