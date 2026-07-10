@@ -387,6 +387,16 @@ public enum RenderEnum implements TrainRenderRecord {
         }
     }, 2, true),
 
+    locoNERHClass(EntityLocoSteamNERHClass.class, new ModelNERHClass(), "Y7_", true, new float[]{-0.5f, 0.15f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
+        {
+            add(new double[]{1.3D, 1.3D, 0D});
+        }
+    }, "explode", new ArrayList<double[]>() {
+        {
+            add(new double[]{1.3D, -0.3D, 0.5D});
+        }
+    }, 2, true),
+
 
     locoGWR_42xx(EntityLocoSteamGWR42xx.class, new ModelGWR4252xx(), "GWR_425272_", true, new float[]{-1.26f, 0.17f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
         {
@@ -1555,6 +1565,7 @@ public enum RenderEnum implements TrainRenderRecord {
     Class400FirstClass(EntityPassengerClass400FirstClass.class, new ModelClass400FirstClass(), "Class_400_First_", true, new float[]{0F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     Class400StandardClass(EntityPassengerClass400StandardClass.class, new ModelClass400StandardClass(), "Class_400_Standard_Class_", true, new float[]{0F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     Class400BarCar(EntityPassengerClass400BarCar.class, new ModelClass400BarCar(), "Class_400_Bar_", true, new float[]{0F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
+
 
 
     ;

@@ -823,6 +823,7 @@ public enum ItemIDs {
 	minecartClass400FirstClass("ItemRollingStock", "Class_400_FirstClass_Icon", 2),
 	minecartClass400StandardClass("ItemRollingStock", "Class_400_StandardClass_Icon", 2),
 	minecartClass400BarCar("ItemRollingStock", "Class_400_BarCar_Icon", 2),
+	minecartNERHClass("ItemRollingStock", "Y7_Icon", 3),
 
 
 
