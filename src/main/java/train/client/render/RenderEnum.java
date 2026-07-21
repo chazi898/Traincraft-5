@@ -418,6 +418,16 @@ public enum RenderEnum implements TrainRenderRecord {
         }
     }, 2, true),
 
+    loco(EntityLocoSteamV1V3.class, new ModelV1V3(), "V1V3_", true, new float[]{-1.26f, 0.17f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
+        {
+            add(new double[]{2.7D, 1.3D, 0D});
+        }
+    }, "explode", new ArrayList<double[]>() {
+        {
+            add(new double[]{3D, -0.5D, 0.65D});
+        }
+    }, 2, true),
+
     locoWWCP_Class_062T(EntityLocoSteamWWCPClass062T.class, new ModelWWCPClass062T(), "WWCP_Standard_0-6-2T_", true, new float[]{-2.5f, 0.17f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
         {
             add(new double[]{4.3D, 1.6D, 0D});
@@ -1565,7 +1575,10 @@ public enum RenderEnum implements TrainRenderRecord {
     Class400FirstClass(EntityPassengerClass400FirstClass.class, new ModelClass400FirstClass(), "Class_400_First_", true, new float[]{0F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     Class400StandardClass(EntityPassengerClass400StandardClass.class, new ModelClass400StandardClass(), "Class_400_Standard_Class_", true, new float[]{0F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
     Class400BarCar(EntityPassengerClass400BarCar.class, new ModelClass400BarCar(), "Class_400_Bar_", true, new float[]{0F, 0.12F, 0F}, new float[]{0F, 180F, 180F}, null, "", 0, null, "", null, 0, false),
-
+    TeakBCK(EntityPassengerTeakBCK.class, new ModelTeakBCK(), "Teak_BCK_", true, new float[]{0, 0.15F, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
+    TeakTTO(EntityPassengerTeakTTO.class, new ModelTeakTTO(), "Teak_TTO_", true, new float[]{0, 0.15F, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
+    TeakSTK(EntityPassengerTeakSTK.class, new ModelTeakSTK(), "Teak_STK_", true, new float[]{0, 0.15F, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
+    TeakCK(EntityPassengerTeakCK.class, new ModelTeakCK(), "Teak_CK_", true, new float[]{0, 0.15F, 0,}, new float[]{0, 180, 180}, null, "", 0, null, "", null, 0, false),
 
 
     ;

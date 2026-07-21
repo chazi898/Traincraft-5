@@ -824,6 +824,13 @@ public enum ItemIDs {
 	minecartClass400StandardClass("ItemRollingStock", "Class_400_StandardClass_Icon", 2),
 	minecartClass400BarCar("ItemRollingStock", "Class_400_BarCar_Icon", 2),
 	minecartNERHClass("ItemRollingStock", "Y7_Icon", 3),
+	minecartV1V3("ItemRollingStock", "V1V3_Icon", 4),
+	minecartTeakBCK("ItemRollingStock", "Teak_BCK_Icon", 2),
+	minecartTeakTTO("ItemRollingStock", "Teak_TTO_Icon", 2),
+	minecartTeakSTK("ItemRollingStock", "Teak_STK_Icon", 2),
+	minecartTeakCK("ItemRollingStock", "Teak_CK_Icon", 2),
+
+
 
 
 

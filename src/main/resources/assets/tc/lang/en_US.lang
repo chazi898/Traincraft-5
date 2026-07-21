@@ -883,6 +883,11 @@ item.tc:minecartClass400FirstClass.name=Class 400 First Class Coach
 item.tc:minecartClass400StandardClass.name=Class 400 Standard Class Coach
 item.tc:minecartClass400BarCar.name=Class 400 Bar Car
 item.tc:minecartNERHClass.name=NER H Class
+item.tc:minecartV1V3.name=LNER V1/V3
+item.tc:minecartTeakBCK.name=Teak BCK
+item.tc:minecartTeakTTO.name=Teak TTO
+item.tc:minecartTeakSTK.name=Teak STK
+item.tc:minecartTeakCK.name=Teak CK
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1618,6 +1623,11 @@ entity.tc.Class400FirstClass.name=Class 400 First Class Coach
 entity.tc.Class400StandardClass.name=Class 400 Standard Class Coach
 entity.tc.Class400BarCar.name=Class 400 Bar Car
 entity.tc.NERHClass.name=NER H Class
+entity.tc.V1V3.name=LNER V1/V3
+entity.tc.TeakBCK=Teak BCK
+entity.tc.TeakTTO=Teak TTO
+entity.tc.TeakSTK=Teak STK
+entity.tc.TeakCK=Teak CK
 
 description.villager.profession.tc.station_chief=Station Master
 

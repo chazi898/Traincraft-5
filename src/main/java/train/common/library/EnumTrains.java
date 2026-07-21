@@ -644,6 +644,12 @@ public class EnumTrains {
 				TrainRecord.makeEntry("Class400StandardClass", "Class400StandardClass", EntityPassengerClass400StandardClass.class, ItemIDs.minecartClass400StandardClass.item, "passenger", 0, 0, 4, 0, 0, 0, 0, 0, 0, new String[]{"White", "Black", "Blue", "Brown", "Cyan", "Green", "Grey", "LightGrey", "Lime", "Magenta", "Orange", "Purple", "Red", "Yellow"}, 0, 0, "Pack: B.I.P."),
 				TrainRecord.makeEntry("Class400BarCar", "Class400BarCar", EntityPassengerClass400BarCar.class, ItemIDs.minecartClass400BarCar.item, "passenger", 0, 0, 4, 0, 0, 0, 0, 0, 0, new String[]{"White", "Black", "Blue", "Green", "Magenta", "Red", "Yellow"}, 0, 0, "Pack: B.I.P."),
 				TrainRecord.makeEntry("NERHClass", "NERHClass", EntityLocoSteamNERHClass.class, ItemIDs.minecartNERHClass.item, "steam", 550, 50, 0, 10, 8, 60, 1, 0.6, 5000, new String[]{"Black", "Blue", "Green", "Grey", "Lightblue", "Lightgrey", "Lime", "Orange", "Pink", "Red"}, 18, -1f, "Pack: B.I.P."),
+				TrainRecord.makeEntry("V1V3", "V1V3", EntityLocoSteamV1V3.class, ItemIDs.minecartV1V3.item, "steam", 2300, 121, 0, 10, 10, 40, 0.8, 0.75, 20000, new String[]{"Green", "Grey", "Black", "Red", "Cyan", "Blue", "Magenta", "Pink", "Purple"}, 18,-2.5, "Pack: B.I.P."),
+				TrainRecord.makeEntry("TeakBCK", "TeakBCK", EntityPassengerTeakBCK.class, ItemIDs.minecartTeakBCK.item, "passenger", 3.5, new String[]{"Brown"}, 18, 0, "Pack:B.I.P."),
+				TrainRecord.makeEntry("TeakTTO", "TeakTTO", EntityPassengerTeakTTO.class, ItemIDs.minecartTeakTTO.item, "passenger", 3.5, new String[]{"Brown"}, 18, 0, "Pack:B.I.P."),
+				TrainRecord.makeEntry("TeakSTK", "TeakSTK", EntityPassengerTeakSTK.class, ItemIDs.minecartTeakSTK.item, "passenger", 3.5, new String[]{"Brown"}, 18, 0, "Pack:B.I.P."),
+				TrainRecord.makeEntry("TeakCK", "TeakCK", EntityPassengerTeakCK.class, ItemIDs.minecartTeakCK.item, "passenger", 3.5, new String[]{"Brown"}, 18, 0, "Pack:B.I.P."),
+
 
 		};
 	}
