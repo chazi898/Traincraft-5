@@ -31,7 +31,7 @@ public class EntityLocoElectricBNLRV_A extends ElectricTrain {
     public void updateRiderPosition() {
         if (riddenByEntity == null) {return;}
         double pitchRads = this.anglePitchClient * Math.PI / 180.0D;
-        double distance = 4.1;
+        double distance = 3.2;
         double yOffset = -0.2;
         float rotationCos1 = (float) Math.cos(Math.toRadians(this.renderYaw + 90));
         float rotationSin1 = (float) Math.sin(Math.toRadians((this.renderYaw + 90)));
@@ -134,7 +134,7 @@ public class EntityLocoElectricBNLRV_A extends ElectricTrain {
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return (0F);
+        return (1.0F);
     }
     @Override
     public boolean canBeAdjusted(EntityMinecart cart) {
