@@ -829,6 +829,9 @@ public enum ItemIDs {
 	minecartTeakTTO("ItemRollingStock", "Teak_TTO_Icon", 2),
 	minecartTeakSTK("ItemRollingStock", "Teak_STK_Icon", 2),
 	minecartTeakCK("ItemRollingStock", "Teak_CK_Icon", 2),
+	minecartLMS_Duchess_Class("ItemRollingStock", "LMS_Duchess_Icon",6),
+	minecartLMS_Streamlined_Coronation("ItemRollingStock", "LMS_Streamlined_Coronation_Icon",6),
+	minecartLMS_10Ton_Tender("ItemRollingStock", "LMS_10Ton_Tender_Icon",2),
 
 
 

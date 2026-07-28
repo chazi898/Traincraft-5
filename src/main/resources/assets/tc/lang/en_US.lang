@@ -888,6 +888,9 @@ item.tc:minecartTeakBCK.name=Teak BCK
 item.tc:minecartTeakTTO.name=Teak TTO
 item.tc:minecartTeakSTK.name=Teak STK
 item.tc:minecartTeakCK.name=Teak CK
+item.tc:minecartLMS_Duchess_Class.name=LMS Duchess Class
+item.tc:minecartLMS_Streamlined_Coronation.name=LMS Streamlined Coronation
+item.tc:minecartLMS_10Ton_Tender.name=LMS 10Ton Tender
 
 <!-- ## Achievements ## -->
 achievement.tc:engineer=Engineers clothes
@@ -1628,6 +1631,9 @@ entity.tc.TeakBCK=Teak BCK
 entity.tc.TeakTTO=Teak TTO
 entity.tc.TeakSTK=Teak STK
 entity.tc.TeakCK=Teak CK
+entity.tc.LMS_Duchess_Class.name=LMS Duchess Class
+entity.tc.LMS_Streamlined_Coronation.name=LMS Streamlined Coronation
+entity.tc.LMS_10Ton_Tender.name=LMS 10Ton Tender
 
 description.villager.profession.tc.station_chief=Station Master
 

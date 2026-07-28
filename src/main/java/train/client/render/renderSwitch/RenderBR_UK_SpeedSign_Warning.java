@@ -34,6 +34,8 @@ public class RenderBR_UK_SpeedSign_Warning extends TileEntitySpecialRenderer {
 										   new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_Warning_90.png"),
 										   new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_Warning_100.png"),
 										   new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_Warning_120.png"),
+										   new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_Warning_140.png"),
+									       new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_Warning_160.png"),
 			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "BR_UK_SpeedSign_Warning_140180.png")};
 
 

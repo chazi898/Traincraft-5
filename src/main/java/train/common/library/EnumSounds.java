@@ -199,6 +199,8 @@ public enum EnumSounds implements TrainSoundRecord {
     Class400Front(EntityElectricClass400.class, "BB15000Horn", 1.1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     NERHClass(EntityLocoSteamNERHClass.class, "adler_whistle", 1.1F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
     V1V3(EntityLocoSteamV1V3.class,"a4_whistle", 1.1F, "BritanniaMediumChuff", 0.4F, 27, "steam_run", 0.4F, 20, true),
+    LMS_Duchess_Class(EntityLocoSteamLMS_Duchess_Class.class, "StanierHooter", 1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
+    LMS_Streamlined_Coronation(EntityLocoSteamLMS_Streamlined_Coronation.class, "StanierHooter", 1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),

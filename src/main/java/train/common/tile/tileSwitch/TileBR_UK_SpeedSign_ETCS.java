@@ -30,7 +30,7 @@ public class TileBR_UK_SpeedSign_ETCS extends TileRenderFacing {
 	}
 
 	public void increaseSkinState(){
-		if (skinstate >= 32){
+		if (skinstate >= 33){
 			skinstate = 0;
 		} else {
 			skinstate++;
