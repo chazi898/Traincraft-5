@@ -2565,19 +2565,19 @@ public class ModelLMS_Streamlined_Coronation extends ModelConverter //Same as Fi
 		bodyModel[616].addShapeBox(0F, 0F, 0F, 5, 1, 1, 0F,0F, 0F, 0.7F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -1.2F, 0F, 0F, -0.5F, 0F, 0F, -1F, 0F, 0F, 0.5F, 0F, 0F, 0F); // Box 43
 		bodyModel[616].setRotationPoint(-39F, -8.5F, 9F);
 
-		bodyModel[617].addShapeBox(0F, 0F, 0F, 3, 1, 1, 0F,-0.7F, 0F, -1.3F, 0F, 0F, -0.2F, 0F, 0F, -0.3F, -1F, 0F, 0.7F, -0.2F, 0F, -0.5F, 0F, 0F, 1F, 0F, 0F, -1.5F, -0.7F, 0F, -0.3F); // Box 43
+		bodyModel[617].addShapeBox(0F, 0F, 0F, 3, 1, 1, 0F,-0.7F, 0F, -1.4F, 0F, 0F, -0.2F, 0F, 0F, -0.3F, -1F, 0F, 0.7F, -0.2F, 0F, -0.5F, 0F, 0F, 1F, 0F, 0F, -1.5F, -0.7F, 0F, -0.3F); // Box 43
 		bodyModel[617].setRotationPoint(-42F, -8.5F, -9F);
 
-		bodyModel[618].addShapeBox(0F, 0F, 0F, 3, 1, 1, 0F,-1F, 0F, 0.7F, 0F, 0F, -0.3F, 0F, 0F, -0.2F, -0.7F, 0F, -1.3F, -0.7F, 0F, -0.3F, 0F, 0F, -1.5F, 0F, 0F, 1F, -0.2F, 0F, -0.5F); // Box 43
+		bodyModel[618].addShapeBox(0F, 0F, 0F, 3, 1, 1, 0F,-1F, 0F, 0.7F, 0F, 0F, -0.3F, 0F, 0F, -0.2F, -0.7F, 0F, -1.4F, -0.7F, 0F, -0.3F, 0F, 0F, -1.5F, 0F, 0F, 1F, -0.2F, 0F, -0.5F); // Box 43
 		bodyModel[618].setRotationPoint(-42F, -8.5F, 8F);
 
 		bodyModel[619].addShapeBox(0F, 0F, 0F, 1, 10, 9, 0F,-1.8F, 0F, 0F, 1.3F, 0F, 0F, 1.3F, 0F, -5F, -1.8F, 0F, -5F, 0F, -5F, 0F, -0.5F, -5F, 0F, -0.5F, -5F, -5F, 0F, -5F, -5F); // Box 43
 		bodyModel[619].setRotationPoint(-44F, -13.5F, -2F);
 
-		bodyModel[620].addShapeBox(0F, 0F, 0F, 1, 2, 6, 0F,-1.7F, 0F, -1.3F, 1F, 0F, -1.7F, -0.2F, 0F, -3F, -0.3F, 0F, -3F, -1.2F, -1F, -0.5F, 0.7F, -1F, -0.8F, -0.8F, -1F, -3F, 0.3F, -1F, -3F); // Box 43
+		bodyModel[620].addShapeBox(0F, 0F, 0F, 1, 2, 6, 0F,-1.7F, 0F, -1.4F, 1F, 0F, -1.7F, -0.2F, 0F, -3F, -0.3F, 0F, -3F, -1.2F, -1F, -0.5F, 0.7F, -1F, -0.8F, -0.8F, -1F, -3F, 0.3F, -1F, -3F); // Box 43
 		bodyModel[620].setRotationPoint(-43F, -8.5F, -9F);
 
-		bodyModel[621].addShapeBox(0F, 0F, 0F, 1, 2, 6, 0F,-0.3F, 0F, -3F, -0.2F, 0F, -3F, 1F, 0F, -1.7F, -1.7F, 0F, -1.3F, 0.3F, -1F, -3F, -0.8F, -1F, -3F, 0.7F, -1F, -0.8F, -1.2F, -1F, -0.5F); // Box 43
+		bodyModel[621].addShapeBox(0F, 0F, 0F, 1, 2, 6, 0F,-0.3F, 0F, -3F, -0.2F, 0F, -3F, 1F, 0F, -1.7F, -1.7F, 0F, -1.4F, 0.3F, -1F, -3F, -0.8F, -1F, -3F, 0.7F, -1F, -0.8F, -1.2F, -1F, -0.5F); // Box 43
 		bodyModel[621].setRotationPoint(-43F, -8.5F, 3F);
 
 		bodyModel[622].addShapeBox(0F, 0F, 0F, 1, 2, 6, 0F,-0.3F, 0F, 0F, -0.2F, 0F, 0F, -1.5F, 0F, -2F, 1F, 0F, -2F, 0.3F, -1F, 0F, -0.8F, -1F, 0F, -1.5F, -1F, -3F, 1F, -1F, -3F); // Box 43
@@ -2604,13 +2604,13 @@ public class ModelLMS_Streamlined_Coronation extends ModelConverter //Same as Fi
 		bodyModel[629].addShapeBox(0F, 0F, 0F, 5, 5, 1, 0F,-3.7F, 0F, -1.4F, 0F, 0F, -0.9F, 0F, 0F, 0.4F, -3.7F, 0F, 0.9F, -0.5F, 0.1F, -0.3F, 0F, 0F, 0.2F, 0F, 0F, -0.7F, -0.5F, 0.1F, -0.2F); // Box 43
 		bodyModel[629].setRotationPoint(-39F, -19.5F, -8F);
 
-		bodyModel[630].addShapeBox(0F, 0F, 0F, 6, 12, 1, 0F,-1.3F, -0.5F, -2F, -2.5F, -0.1F, -0.3F, -2.5F, -0.1F, -0.2F, -1.7F, -0.5F, 1.3F, -0.7F, -6F, -0.3F, -3F, -6F, 0.8F, -3F, -6F, -1.3F, -1F, -6F, -0.3F); // Box 43
+		bodyModel[630].addShapeBox(0F, 0F, 0F, 6, 12, 1, 0F,-1.3F, -0.5F, -2F, -2.5F, -0.1F, -0.3F, -2.5F, -0.1F, -0.2F, -1.7F, -0.5F, 1.3F, -0.7F, -6F, -0.4F, -3F, -6F, 0.8F, -3F, -6F, -1.3F, -1F, -6F, -0.3F); // Box 43
 		bodyModel[630].setRotationPoint(-42F, -14.5F, -8F);
 
 		bodyModel[631].addShapeBox(0F, 0F, 0F, 1, 12, 8, 0F,-1.3F, -0.5F, 0F, 0.7F, -0.5F, -0.3F, -0.7F, -1F, -4F, 0.2F, -1F, -4F, 0.7F, -6F, 0F, -1.2F, -6F, 0F, -2.5F, -6F, -4F, 2F, -6F, -4F); // Box 43
 		bodyModel[631].setRotationPoint(-42F, -14.5F, -6F);
 
-		bodyModel[632].addShapeBox(0F, 0F, 0F, 1, 12, 4, 0F,-0.3F, -0.5F, -1F, -0.3F, -0.5F, -1.3F, -0.3F, -0.5F, -2.7F, -0.3F, -0.5F, -3F, 0.3F, -6F, 0.7F, -1F, -6F, 0.3F, -2.2F, -6F, -3F, 1.7F, -6F, -3F); // Box 43
+		bodyModel[632].addShapeBox(0F, 0F, 0F, 1, 12, 4, 0F,-0.3F, -0.5F, -1F, -0.3F, -0.5F, -1.3F, -0.3F, -0.5F, -2.7F, -0.3F, -0.5F, -3F, 0.3F, -6F, 0.6F, -1F, -6F, 0.3F, -2.2F, -6F, -3F, 1.7F, -6F, -3F); // Box 43
 		bodyModel[632].setRotationPoint(-41F, -14.5F, -7F);
 
 		bodyModel[633].addShapeBox(0F, 0F, 0F, 3, 7, 1, 0F,-4.2F, 0F, -1.9F, 2.7F, 0F, -0.4F, 2.7F, 0F, -0.1F, -4.5F, 0F, 1.2F, -0.3F, -1.5F, -1F, -0.5F, -1.9F, 0.7F, -0.5F, -1.9F, -1.2F, -0.7F, -1.5F, 0.3F); // Box 43
@@ -2652,10 +2652,10 @@ public class ModelLMS_Streamlined_Coronation extends ModelConverter //Same as Fi
 		bodyModel[645].addShapeBox(0F, 0F, 0F, 5, 5, 1, 0F,-3.7F, 0F, 0.9F, 0F, 0F, 0.4F, 0F, 0F, -0.9F, -3.7F, 0F, -1.4F, -0.5F, 0.1F, -0.2F, 0F, 0F, -0.7F, 0F, 0F, 0.2F, -0.5F, 0.1F, -0.3F); // Box 43
 		bodyModel[645].setRotationPoint(-39F, -19.5F, 7F);
 
-		bodyModel[646].addShapeBox(0F, 0F, 0F, 6, 12, 1, 0F,-1.7F, -0.5F, 1.3F, -2.5F, -0.1F, -0.2F, -2.5F, -0.1F, -0.3F, -1.3F, -0.5F, -2F, -1F, -6F, -0.3F, -3F, -6F, -1.3F, -3F, -6F, 0.8F, -0.7F, -6F, -0.3F); // Box 43
+		bodyModel[646].addShapeBox(0F, 0F, 0F, 6, 12, 1, 0F,-1.7F, -0.5F, 1.3F, -2.5F, -0.1F, -0.2F, -2.5F, -0.1F, -0.3F, -1.3F, -0.5F, -2F, -1F, -6F, -0.3F, -3F, -6F, -1.3F, -3F, -6F, 0.8F, -0.7F, -6F, -0.4F); // Box 43
 		bodyModel[646].setRotationPoint(-42F, -14.5F, 7F);
 
-		bodyModel[647].addShapeBox(0F, 0F, 0F, 1, 12, 4, 0F,-0.3F, -0.5F, -3F, -0.3F, -0.5F, -2.7F, -0.3F, -0.5F, -1.3F, -0.3F, -0.5F, -1F, 1.7F, -6F, -3F, -2.2F, -6F, -3F, -1F, -6F, 0.3F, 0.3F, -6F, 0.7F); // Box 43
+		bodyModel[647].addShapeBox(0F, 0F, 0F, 1, 12, 4, 0F,-0.3F, -0.5F, -3F, -0.3F, -0.5F, -2.7F, -0.3F, -0.5F, -1.3F, -0.3F, -0.5F, -1F, 1.7F, -6F, -3F, -2.2F, -6F, -3F, -1F, -6F, 0.3F, 0.3F, -6F, 0.6F); // Box 43
 		bodyModel[647].setRotationPoint(-41F, -14.5F, 3F);
 
 		bodyModel[648].addShapeBox(0F, 0F, 0F, 1, 12, 8, 0F,0.2F, -1F, -4F, -0.7F, -1F, -4F, 0.7F, -0.5F, -0.3F, -1.3F, -0.5F, 0F, 2F, -6F, -4F, -2.5F, -6F, -4F, -1.2F, -6F, 0F, 0.7F, -6F, 0F); // Box 43
@@ -2692,7 +2692,7 @@ public class ModelLMS_Streamlined_Coronation extends ModelConverter //Same as Fi
 		bodyModel[658].setRotationPoint(-44.2F, -3.8F, -1F);
 
 		bodyModel[659].addShapeBox(0F, 0F, 0F, 1, 15, 3, 0F,0F, 0F, 0F, -0.9F, 0F, -0.05F, -3.3F, 0F, 0F, 2.38F, 0F, 0F, 0F, -10.15F, 0F, -0.9F, -10.15F, -0.05F, -3.3F, -10.15F, 0F, 2.4F, -10.15F, 0F); // Box 195
-		bodyModel[659].setRotationPoint(39.28F, -13.9F, -10.5F);
+		bodyModel[659].setRotationPoint(39.47F, -13.9F, -10.5F);
 
 		bodyModel[660].addShapeBox(0F, 0F, 0F, 1, 15, 3, 0F,2.38F, 0F, 0F, -3.3F, 0F, 0F, -0.9F, 0F, -0.05F, 0F, 0F, 0F, 2.4F, -10.15F, 0F, -3.3F, -10.15F, 0F, -0.9F, -10.15F, -0.05F, 0F, -10.15F, 0F); // Box 195
 		bodyModel[660].setRotationPoint(39.47F, -13.9F, 7.5F);
@@ -2718,13 +2718,13 @@ public class ModelLMS_Streamlined_Coronation extends ModelConverter //Same as Fi
 		bodyModel[667].addShapeBox(0F, 0F, 0F, 1, 1, 11, 0F,0F, -0.5F, 0.5F, -0.8F, -0.5F, 0.5F, -0.8F, -0.5F, -6.5F, 0F, -0.5F, -6.5F, 0F, 0F, 0.5F, -0.8F, 0F, 0.5F, -0.8F, 0F, -6.5F, 0F, 0F, -6.5F); // Box 43
 		bodyModel[667].setRotationPoint(-44.02F, -8.5F, -2F);
 
-		bodyModel[668].addShapeBox(0F, 0F, 0F, 3, 6, 1, 0F,-1.14F, -1.6F, -2.45F, 0.3F, -1.6F, -0.9F, 0.3F, -1.6F, 0.1F, -1.15F, -1.6F, 1.6F, -0.94F, -2.75F, -1.95F, 0.2F, -2.75F, -0.55F, 0.2F, -2.75F, -0.3F, -0.95F, -2.75F, 1.05F); // Box 195
+		bodyModel[668].addShapeBox(0F, 0F, 0F, 3, 6, 1, 0F,-1.14F, -1.6F, -2.49F, 0.3F, -1.6F, -0.9F, 0.3F, -1.6F, 0.1F, -1.15F, -1.6F, 1.65F, -0.94F, -2.75F, -2F, 0.2F, -2.75F, -0.55F, 0.2F, -2.75F, -0.3F, -0.95F, -2.75F, 1.1F); // Box 195
 		bodyModel[668].setRotationPoint(-42F, -13.9F, -9F);
 
-		bodyModel[669].addShapeBox(0F, 0F, 0F, 3, 6, 1, 0F,-1.1F, -1.6F, 1.6F, 0.3F, -1.6F, 0.1F, 0.3F, -1.6F, -0.85F, -1.1F, -1.6F, -2.05F, -0.95F, -2.75F, 1.05F, 0.2F, -2.75F, -0.3F, 0.2F, -2.75F, -0.5F, -0.95F, -2.75F, -1.7F); // Box 195
+		bodyModel[669].addShapeBox(0F, 0F, 0F, 3, 6, 1, 0F,-1.1F, -1.6F, 1.6F, 0.3F, -1.6F, 0.1F, 0.3F, -1.6F, -0.85F, -1.1F, -1.6F, -2.05F, -0.95F, -2.75F, 1.05F, 0.2F, -2.75F, -0.3F, 0.2F, -2.75F, -0.5F, -0.95F, -2.75F, -1.8F); // Box 195
 		bodyModel[669].setRotationPoint(-42F, -13.9F, 8F);
 
-		bodyModel[670].addShapeBox(0F, 0F, 0F, 3, 6, 1, 0F,-1.1F, -1.6F, 1.6F, 0.3F, -1.6F, 0.1F, 0.3F, -1.6F, -0.6F, -1.1F, -1.6F, -2.45F, -0.95F, -2.75F, 1.05F, 0.2F, -2.75F, -0.3F, 0.2F, -2.75F, -0.15F, -0.95F, -2.75F, -1.9F); // Box 195
+		bodyModel[670].addShapeBox(0F, 0F, 0F, 3, 6, 1, 0F,-1.1F, -1.6F, 1.6F, 0.3F, -1.6F, 0.1F, 0.3F, -1.6F, -0.65F, -1.1F, -1.6F, -2.5F, -0.95F, -2.75F, 1.1F, 0.2F, -2.75F, -0.3F, 0.2F, -2.75F, -0.13F, -0.94F, -2.75F, -1.98F); // Box 195
 		bodyModel[670].setRotationPoint(-42F, -13.9F, 8F);
 
 		bodyModel[671].addShapeBox(0F, 0F, 0F, 1, 1, 9, 0F,0F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, -5F, 0F, 0F, -5F, 0F, -0.5F, 0F, -0.8F, -0.5F, 0F, -0.8F, -0.5F, -5F, 0F, -0.5F, -5F); // Box 43

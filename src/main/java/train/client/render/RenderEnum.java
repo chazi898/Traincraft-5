@@ -450,21 +450,21 @@ public enum RenderEnum implements TrainRenderRecord {
 
     locoLMS_Duchess_Class(EntityLocoSteamLMS_Duchess_Class.class, new ModelLMS_Duchess_Class(), "LMS_Duchess_", true, new float[]{-2.3f, -0.05f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
         {
-            add(new double[]{3.74D, 1.4D, 0D});
+            add(new double[]{3.94D, 1.4D, 0D});
         }
     }, "explode", new ArrayList<double[]>() {
         {
-            add(new double[]{4.1D, 0.05D, 0.65D});
+            add(new double[]{4.3D, 0.05D, 0.65D});
         }
     }, 2, true),
 
     locoLMS_Streamlined_Coronation(EntityLocoSteamLMS_Streamlined_Coronation.class, new ModelLMS_Streamlined_Coronation(), "LMS_Streamlined_Coronation_", true, new float[]{-2.3f, -0.05f, 0}, new float[]{0, 180, 180}, null, "largesmoke", 3, new ArrayList<double[]>() {
         {
-            add(new double[]{3.74D, 1.4D, 0D});
+            add(new double[]{3.94D, 1.4D, 0D});
         }
     }, "explode", new ArrayList<double[]>() {
         {
-            add(new double[]{4.1D, 0.05D, 0.65D});
+            add(new double[]{4.3D, 0.05D, 0.65D});
         }
     }, 2, true),
 

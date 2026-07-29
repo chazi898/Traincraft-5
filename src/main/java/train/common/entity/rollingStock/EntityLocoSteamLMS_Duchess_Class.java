@@ -154,7 +154,7 @@ public class EntityLocoSteamLMS_Duchess_Class extends SteamTrain {
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) {
-        return 0.4F;
+        return 0.6F;
     }
 
     @Override

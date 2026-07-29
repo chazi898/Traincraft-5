@@ -650,8 +650,8 @@ public class EnumTrains {
 				TrainRecord.makeEntry("TeakTTO", "TeakTTO", EntityPassengerTeakTTO.class, ItemIDs.minecartTeakTTO.item, "passenger", 3.5, new String[]{"Brown"}, 18, 0, "Pack:B.I.P."),
 				TrainRecord.makeEntry("TeakSTK", "TeakSTK", EntityPassengerTeakSTK.class, ItemIDs.minecartTeakSTK.item, "passenger", 3.5, new String[]{"Brown"}, 18, 0, "Pack:B.I.P."),
 				TrainRecord.makeEntry("TeakCK", "TeakCK", EntityPassengerTeakCK.class, ItemIDs.minecartTeakCK.item, "passenger", 3.5, new String[]{"Brown"}, 18, 0, "Pack:B.I.P."),
-				TrainRecord.makeEntry("LMS_Duchess_Class", "LMS_Duchess_Class", EntityLocoSteamLMS_Duchess_Class.class, ItemIDs.minecartLMS_Duchess_Class.item, "steam", 2511, 184, 0, 10, 10, 100, 0.7, 0.75, 10000, new String[]{"Red", "Pink", "Black", "LightBlue", "Purple", "Blue", "Green", "Magenta", "Yellow", "Orange"}, 18, -4.5f, "Pack: B.I.P."),
-				TrainRecord.makeEntry("LMS_Streamlined_Coronation", "LMS_Streamlined_Coronation", EntityLocoSteamLMS_Streamlined_Coronation.class, ItemIDs.minecartLMS_Streamlined_Coronation.item, "steam", 2511, 185, 0, 10, 10, 100, 0.7, 0.75, 10000, new String[]{"Red", "Magenta", "Blue", "White", "Black", "Grey"}, 18, -4.5f, "Pack: B.I.P."),
+				TrainRecord.makeEntry("LMS_Duchess_Class", "LMS_Duchess_Class", EntityLocoSteamLMS_Duchess_Class.class, ItemIDs.minecartLMS_Duchess_Class.item, "steam", 2511, 184, 0, 10, 10, 100, 0.7, 0.75, 10000, new String[]{"Red", "Pink", "Black", "LightBlue", "Purple", "Blue", "Green", "Magenta", "Yellow", "Orange"}, 18, -4.55f, "Pack: B.I.P."),
+				TrainRecord.makeEntry("LMS_Streamlined_Coronation", "LMS_Streamlined_Coronation", EntityLocoSteamLMS_Streamlined_Coronation.class, ItemIDs.minecartLMS_Streamlined_Coronation.item, "steam", 2511, 185, 0, 10, 10, 100, 0.7, 0.75, 10000, new String[]{"Red", "Magenta", "Blue", "White", "Black", "Grey"}, 18, -4.55f, "Pack: B.I.P."),
 
 
 		};

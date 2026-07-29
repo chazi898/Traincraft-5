@@ -1097,7 +1097,7 @@ public class ModelLMS_Duchess_Class extends ModelConverter //Same as Filename
 		bodyModel[186].addShapeBox(0F, 0F, 0F, 5, 3, 14, 0F,0F, -0.3F, 0.5F, 0F, -0.3F, 0.8F, 0F, -0.3F, 0.8F, 0F, -0.3F, 0.5F, 0F, 0F, -1.5F, 0F, 0F, -1.5F, 0F, 0F, -1.5F, 0F, 0F, -1.5F); // Box 115
 		bodyModel[186].setRotationPoint(16F, -12.1F, -7F);
 
-		bodyModel[187].addShapeBox(0F, 0F, 0F, 11, 3, 16, 0F,0F, 0F, 1F, -0.5F, 0F, 0.88F, -0.5F, 0F, 0.8F, 0F, 0F, 1F, 0F, -0.7F, 1.1F, -0.5F, -3F, 0.88F, -0.5F, -3F, 0.88F, 0F, -0.7F, 1.1F); // Box 115
+		bodyModel[187].addShapeBox(0F, 0F, 0F, 11, 3, 16, 0F,0F, 0F, 1F, -0.5F, 0F, 0.88F, -0.5F, 0F, 0.88F, 0F, 0F, 1F, 0F, -0.7F, 1.1F, -0.5F, -3F, 0.88F, -0.5F, -3F, 0.88F, 0F, -0.7F, 1.1F); // Box 115
 		bodyModel[187].setRotationPoint(24F, -2.8F, -8F);
 
 		bodyModel[188].addShapeBox(0F, 0F, 0F, 1, 2, 8, 0F,0F, 0.7F, -0.8F, -0.5F, 0F, 0.1F, -0.5F, 0F, 0.1F, 0F, 0.7F, -0.8F, 0F, -1.7F, -2.5F, -0.5F, -0.5F, -2.5F, -0.5F, -0.5F, -2.5F, 0F, -1.7F, -2.5F); // Box 115
