@@ -15,8 +15,8 @@ public enum EnumSounds implements TrainSoundRecord {
     locoSteamEr_USSR(EntityLocoSteamEr_Ussr.class, "steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamPannier(EntityLocoSteamPannier.class, "GWRPannierWhistle", 1.3F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamC41(EntityLocoSteamC41.class, "american_steam_horn", 0.6F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
-    locoSteamBR_Black_5(EntityLocoSteamBR_Black_5.class, "StanierHooter", 1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
-    locoSteamBR_Britannia_Class(EntityLocoSteamBR_Britannia_Class.class, "BritanniaWhistle", 1F, "BritanniaMediumChuff", 0.31F, 27, "steam_run", 0.4F, 20, true),
+    locoSteamBR_Black_5(EntityLocoSteamBR_Black_5.class, "StanierHooter", 1.1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
+    locoSteamBR_Britannia_Class(EntityLocoSteamBR_Britannia_Class.class, "BritanniaWhistle", 1.1F, "BritanniaMediumChuff", 0.31F, 27, "steam_run", 0.4F, 20, true),
     locoSteamRWType3(EntityLocoSteamRWType3.class, "RW_type_3", 1.2F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamRWType2(EntityLocoSteamRWType2.class, "type_2", 1.4F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
     locoSteamGWR42xx(EntityLocoSteamGWR42xx.class, "GWRStandardWhistle", 1.4F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
@@ -198,9 +198,9 @@ public enum EnumSounds implements TrainSoundRecord {
     DHP1(EntityLocoDieselDHP1.class, "Class17Horn", 1F, "Maybach_MD870_16_Notch8", 0.8F, 40, "Maybach_MD870_16_Idle", 0.5F, 60, false),
     Class400Front(EntityElectricClass400.class, "BB15000Horn", 1.1F, "vl10_idle", 0.8F, 10, "vl10_idle", 0.6F, 50, false),
     NERHClass(EntityLocoSteamNERHClass.class, "adler_whistle", 1.1F, "steam_run", 0.4F, 20, "steam_run", 0.3F, 20, true),
-    V1V3(EntityLocoSteamV1V3.class,"a4_whistle", 1.1F, "BritanniaMediumChuff", 0.4F, 27, "steam_run", 0.4F, 20, true),
-    LMS_Duchess_Class(EntityLocoSteamLMS_Duchess_Class.class, "StanierHooter", 1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
-    LMS_Streamlined_Coronation(EntityLocoSteamLMS_Streamlined_Coronation.class, "StanierHooter", 1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
+    V1V3(EntityLocoSteamV1V3.class,"ThompsonWhistle", 1.2F, "BritanniaMediumChuff", 0.4F, 27, "steam_run", 0.4F, 20, true),
+    LMS_Duchess_Class(EntityLocoSteamLMS_Duchess_Class.class, "StanierHooter", 1.1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
+    LMS_Streamlined_Coronation(EntityLocoSteamLMS_Streamlined_Coronation.class, "StanierHooter", 1.1F, "steam_run", 0.4F, 20, "steam_run", 0.4F, 20, true),
 
     //American Stuff
     Diesel3GS21B(EntityLocoDieselBapNRE3gs21b.class, "nathan_k3ha", 2.5F, "QSK19C_Notch8", 0.65F, 40, "QSK19C_Idle", 0.65F, 50, true),

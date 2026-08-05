@@ -15,14 +15,14 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import org.lwjgl.opengl.GL11;
 
-public class ModelTGV_PowerCar extends ModelConverter //Same as Filename
+public class ModelTGV_PowerCara extends ModelConverter //Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public ModelTGV_PowerCar() //Same as Filename
+	public ModelTGV_PowerCara() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[255];
+		bodyModel = new ModelRendererTurbo[254];
 
 		initbodyModel_1();
 
@@ -288,7 +288,6 @@ public class ModelTGV_PowerCar extends ModelConverter //Same as Filename
 		bodyModel[251] = new ModelRendererTurbo(this, 32, 135, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[252] = new ModelRendererTurbo(this, 224, 123, textureX, textureY); // Box 25
 		bodyModel[253] = new ModelRendererTurbo(this, 389, 123, textureX, textureY); // Box 113
-		bodyModel[254] = new ModelRendererTurbo(this, 241, 65, textureX, textureY); // Box 93
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 60, 2, 20, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 0
 		bodyModel[0].setRotationPoint(-9F, 1F, -10F);
@@ -494,7 +493,7 @@ public class ModelTGV_PowerCar extends ModelConverter //Same as Filename
 		bodyModel[67].addShapeBox(0F, 0F, 0F, 56, 3, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 92
 		bodyModel[67].setRotationPoint(-5F, -21F, 7F);
 
-		bodyModel[68].addShapeBox(0F, 0F, 0F, 4, 3, 1, 0F,0F, -3F, 0F, 0F, -3F, 0F, 0F, 0F, 0F, 0F, -3F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -1F); // Box 93
+		bodyModel[68].addShapeBox(0F, 0F, 0F, 4, 3, 1, 0F,0F, -3F, 0F, 0F, -3F, 0F, 0F, 0F, 0F, 0F, -3F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 93
 		bodyModel[68].setRotationPoint(-9F, -21F, -8F);
 
 		bodyModel[69].addShapeBox(0F, 0F, 0F, 4, 3, 1, 0F,0F, -3F, 0F, 0F, 0F, 0F, 0F, -3F, 0F, 0F, -3F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 95
@@ -1051,13 +1050,10 @@ public class ModelTGV_PowerCar extends ModelConverter //Same as Filename
 
 		bodyModel[253].addShapeBox(0F, 0F, 0F, 7, 1, 6, 0F,0F, -1F, 0F, 0F, 0F, -1F, 0F, 0F, -5F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -6F, 0F, 0F, 0F); // Box 113
 		bodyModel[253].setRotationPoint(12F, -22F, -7F);
-
-		bodyModel[254].addShapeBox(0F, 0F, 0F, 4, 3, 1, 0F,0F, -3F, 0F, 0F, -3F, 0F, 0F, 0F, 0F, 0F, -3F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -3F, 0F, 0F, 0F, 0F); // Box 93
-		bodyModel[254].setRotationPoint(-9F, -21F, -8F);
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 255; i++) {
+		for (int i = 0; i < 254; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);

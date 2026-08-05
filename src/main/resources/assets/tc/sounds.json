@@ -212,5 +212,6 @@
   "A4ActuallyWhistling2": {"category": "master", "sounds" :  [{"name": "A4ActuallyWhistling2", "stream": true}]},
   "A4Whistle2": {"category": "master", "sounds" :  [{"name": "A4Whistle2", "stream": true}]},
   "Class400DoorClosing": {"category": "master", "sounds" :  [{"name": "Class400DoorClosing", "stream": true}]},
-  "bnlrv_horn": {"category": "master", "sounds" :  [{"name": "bnlrv_horn", "stream": true}]}
+  "bnlrv_horn": {"category": "master", "sounds" :  [{"name": "bnlrv_horn", "stream": true}]},
+  "Mk3SlamDoorClosing": {"category": "master", "sounds" :  [{"name": "Mk3SlamDoorClosing", "stream": true}]}
 }
