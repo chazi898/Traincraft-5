@@ -416,8 +416,8 @@ public class LinkHandler {
 				springX = limitForce(0.24D * stretch * vecX * -1);
 				springZ = limitForce(0.24D * stretch * vecZ * -1);
 			} else {
-				springX = limitForce(0.38D * stretch * vecX * -1);
-				springZ = limitForce(0.38D * stretch * vecZ * -1);
+				springX = limitForce(0.36D * stretch * vecX * -1);
+				springZ = limitForce(0.36D * stretch * vecZ * -1);
 			}
 
 			if (adj1) {

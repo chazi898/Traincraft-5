@@ -814,10 +814,10 @@ public class ModelLMS_10Ton_Tender extends ModelConverter //Same as Filename
 		bodyModel[187].addShapeBox(0F, 0F, 0F, 3, 1, 6, 0F,0F, -0.44F, -2F, -3F, -0.44F, -2F, 0F, -1.9F, -0.1F, 0F, -1.9F, -0.1F, 0F, -0.3F, -2F, -3F, -0.3F, -2F, -0.2F, 0.9F, -0.6F, 0F, 0.9F, -0.6F); // Box 38
 		bodyModel[187].setRotationPoint(-10F, -22.5F, 2F);
 
-		bodyModel[188].addShapeBox(0F, 0F, 0F, 1, 18, 1, 0F,-0.2F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, -0.8F, -0.2F, 0F, -0.8F, -0.2F, 0.2F, 0F, -0.7F, 0.2F, 0F, -0.7F, 0.2F, -0.8F, -0.2F, 0.2F, -0.8F); // Box 72
+		bodyModel[188].addShapeBox(0F, 0F, 0F, 1, 18, 1, 0F,-0.2F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, -0.8F, -0.2F, 0F, -0.8F, -0.2F, 0.4F, 0F, -0.7F, 0.4F, 0F, -0.7F, 0.4F, -0.8F, -0.2F, 0.4F, -0.8F); // Box 72
 		bodyModel[188].setRotationPoint(22.2F, -14.5F, -6F);
 
-		bodyModel[189].addShapeBox(0F, 0F, 0F, 1, 18, 1, 0F,-0.2F, 0F, -0.8F, -0.7F, 0F, -0.8F, -0.7F, 0F, 0F, -0.2F, 0F, 0F, -0.2F, 0.2F, -0.8F, -0.7F, 0.2F, -0.8F, -0.7F, 0.2F, 0F, -0.2F, 0.2F, 0F); // Box 72
+		bodyModel[189].addShapeBox(0F, 0F, 0F, 1, 18, 1, 0F,-0.2F, 0F, -0.8F, -0.7F, 0F, -0.8F, -0.7F, 0F, 0F, -0.2F, 0F, 0F, -0.2F, 0.4F, -0.8F, -0.7F, 0.4F, -0.8F, -0.7F, 0.4F, 0F, -0.2F, 0.4F, 0F); // Box 72
 		bodyModel[189].setRotationPoint(22.2F, -14.5F, -5F);
 
 		bodyModel[190].addShapeBox(0F, 0F, 0F, 1, 1, 2, 0F,-0.2F, 0F, 0F, -0.7F, 0F, 0F, -0.7F, 0F, 0F, -0.2F, 0F, 0F, -0.2F, -0.8F, 0F, -0.7F, -0.8F, 0F, -0.7F, -0.8F, 0F, -0.2F, -0.8F, 0F); // Box 72
