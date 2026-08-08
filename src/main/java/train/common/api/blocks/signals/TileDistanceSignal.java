@@ -44,7 +44,7 @@ public class TileDistanceSignal extends TileSignal {
             super.updateEntity();
             /**Update signal based on ahead signal*/
             {
-                signalTicks++;
+                /*signalTicks++;
                 if (signalTicks > 20) {
                     if (getAheadSignal() != null) {
                         if (aheadSignal.getAspect() == SignalStates.OFF) setAspect(SignalStates.GREEN);
@@ -55,7 +55,7 @@ public class TileDistanceSignal extends TileSignal {
                     }
                     signalTicks = 0;
 
-                }
+                }*/
             }
 
         }

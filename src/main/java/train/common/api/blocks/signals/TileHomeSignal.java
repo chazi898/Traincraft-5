@@ -37,23 +37,13 @@ public class TileHomeSignal extends TileSignal{
         if (!worldObj.isRemote) {
             super.updateEntity();
             /**Update signal based on ahead signal*/
-            {
+            /*{
                 signalTicks++;
                 if (signalTicks > 20) {
                     if (getAheadSignal() != null) {
 
                     if (getStockPresent()) {
                         setAspect(SignalStates.RED);
-
-
-                        if (aheadSignal.getSignalPassed()) {
-                            aheadSignal.setStockPresent(true);
-                            this.setSignalPassed(false);
-                            this.setStockPresent(false);
-                        }
-
-
-
                         return;
 
 
@@ -82,7 +72,7 @@ public class TileHomeSignal extends TileSignal{
                             setSignalPassed(false);
                             worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
                             return;
-                        }*/
+                        }
                     }
 
 
@@ -95,7 +85,7 @@ public class TileHomeSignal extends TileSignal{
                     signalTicks = 0;
 
                 }
-            }
+            }*/
 
         }
     }

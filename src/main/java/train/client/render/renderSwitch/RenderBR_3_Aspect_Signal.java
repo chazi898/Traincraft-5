@@ -23,12 +23,8 @@ public class RenderBR_3_Aspect_Signal extends TileEntitySpecialRenderer {
 
 	@Override
 	public void renderTileEntityAt(TileEntity tileEntity, double x, double y, double z, float tick) {
-		if (((TileBR_3_Aspect_Signal) tileEntity).getConnectingMode() && ((TileBR_3_Aspect_Signal) tileEntity).getAllowFlashing()) {
-			Tessellator.bindTexture(textures[((TileBR_3_Aspect_Signal) tileEntity).getIsActive() ? 3 : 0]);
-		}
-		else {
-			Tessellator.bindTexture(textures[((TileBR_3_Aspect_Signal) tileEntity).getAspect().ordinal()]);
-		}
+		Tessellator.bindTexture(textures[((TileBR_3_Aspect_Signal) tileEntity).getAspect().ordinal()]);
+
 		GL11.glPushMatrix();
 		GL11.glTranslated(x +0.5 , y+0.625, z +0.125);
 		GL11.glRotated(180, 0, 1, 0);

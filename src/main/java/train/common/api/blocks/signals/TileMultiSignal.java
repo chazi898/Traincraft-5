@@ -38,9 +38,12 @@ public class TileMultiSignal extends TileSignal{
             super.updateEntity();
             /**Update signal based on ahead signal*/
             {
-                signalTicks++;
+                /*signalTicks++;
                 if (signalTicks > 20) {
                     if (getAheadSignal() != null) {
+
+
+
                         if (signalPassed && !aheadSignal.signalPassed){
                             setAspect(SignalStates.RED);
                             worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
@@ -56,7 +59,7 @@ public class TileMultiSignal extends TileSignal{
                     }
                     signalTicks = 0;
 
-                }
+                }*/
             }
 
         }

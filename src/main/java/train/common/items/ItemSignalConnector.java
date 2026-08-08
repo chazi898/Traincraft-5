@@ -51,7 +51,7 @@ public class ItemSignalConnector extends Item {
             if (block instanceof BlockSignal && player.isSneaking()){
                 if (!(signal1 == null)) {
                     signal1.setConnectingMode(false);
-                    signal1.setIsConnected(false);
+                    signal1.setAheadSignal(null);
                 }
                 signal1 = null;
                 signal2 = null;
@@ -68,7 +68,7 @@ public class ItemSignalConnector extends Item {
                     signal2 = null;
                     //Store the first block in the item data.
                     signal1 = (TileSignal) world.getTileEntity(x, y, z);
-                    if (signal1.getIsConnected()){
+                    if (signal1.getAheadSignal() != null) {
                         return false;
                     }
                     signal1.setConnectingMode(true);
@@ -88,9 +88,10 @@ public class ItemSignalConnector extends Item {
                         }
                     signal2 = (TileSignal) world.getTileEntity(x, y, z);
 
-                    signal1.setAheadSignal(signal2.xCoord, signal2.yCoord, signal2.zCoord);
+                    signal1.setAheadSignalPosition(new int[]{signal2.xCoord, signal2.yCoord, signal2.zCoord} );
                     signal1.setConnectingMode(false);
-                    signal1.setIsConnected(true);
+                    signal1.setAheadSignal(signal2);
+                    signal2.setConnectingMode(false);
                     signal1 = null;
                     signal2 = null;
                     isConnecting = false;
