@@ -38,22 +38,22 @@ public class ModelTVM430Sign extends ModelConverter //Same as Filename
 		bodyModel[4] = new ModelRendererTurbo(this, 0, 29, textureX, textureY); // Box 8
 		bodyModel[5] = new ModelRendererTurbo(this, 0, 29, textureX, textureY); // Box 9
 
-		bodyModel[0].addShapeBox(0F, 0F, 0F, 1, 31, 1, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 0
+		bodyModel[0].addShapeBox(0F, 0F, 0F, 1, 31, 1, 0F,0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, -1F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 0
 		bodyModel[0].setRotationPoint(0F, -21F, 0F);
 
 		bodyModel[1].addShapeBox(0F, 0F, 0F, 1, 12, 12, 0F,-0.5F, 0F, -4F, 0F, 0F, -4F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, -4F, -4F, 0F, -4F, -4F, 0F, -4F, 0F, -0.5F, -4F, 0F); // Box 1
-		bodyModel[1].setRotationPoint(-1F, -20F, -11F);
+		bodyModel[1].setRotationPoint(-1F, -19F, -11F);
 
 		bodyModel[2].addShapeBox(0F, 0F, 0F, 3, 1, 3, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 1F, 0F, 1F, 1F, 0F, 1F, 1F, 0F, 1F, 1F, 0F, 1F); // Box 2
 		bodyModel[2].setRotationPoint(-1F, 9F, -1F);
 
 		bodyModel[3].addShapeBox(0F, 0F, 0F, 1, 12, 12, 0F,-0.49F, -3.5F, -4F, 0.01F, -3.5F, -4F, 0.01F, 0F, 0F, -0.49F, 0F, 0F, -0.49F, -8F, -4F, 0.01F, -8F, -4F, 0.01F, -4F, 0F, -0.49F, -4F, 0F); // Box 7
-		bodyModel[3].setRotationPoint(-1.02F, -20F, -11F);
+		bodyModel[3].setRotationPoint(-1.02F, -19F, -11F);
 
 		bodyModel[4].addShapeBox(0F, 0F, 0F, 0, 1, 12, 0F,0F, -1.5F, -4F, 0F, -1.5F, -4F, 0F, -5.5F, 0F, 0F, -5.5F, 0F, 0F, 1F, -4F, 0F, 1F, -4F, 0F, 5F, 0F, 0F, 5F, 0F); // Box 8
-		bodyModel[4].setRotationPoint(-0.54F, -18F, -11F);
+		bodyModel[4].setRotationPoint(-0.54F, -17F, -11F);
 
 		bodyModel[5].addShapeBox(0F, 0F, 0F, 0, 1, 12, 0F,0F, 2F, -4F, 0F, 2F, -4F, 0F, 5.5F, 0F, 0F, 5.5F, 0F, 0F, -2.5F, -4F, 0F, -2.5F, -4F, 0F, -6F, 0F, 0F, -6F, 0F); // Box 9
-		bodyModel[5].setRotationPoint(-0.54F, -14.5F, -11F);
+		bodyModel[5].setRotationPoint(-0.54F, -13.5F, -11F);
 	}
 }

@@ -105,6 +105,7 @@ public enum BlockIDs {
 	Tram_Platform_Fenced(true, ItemTram_Platform_Fenced.class),
 	TVM430Sign(true, ItemTVM430Sign.class),
 	BR_UK_SpeedSign_Warning(true, ItemBR_UK_SpeedSign_Warning.class),
+	Platform_Slab_3Quarter(true, ItemPlatform_Slab_3Quarter.class),
 
 
 

@@ -10,6 +10,7 @@ package train.common.blocks;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
@@ -17,6 +18,7 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import train.common.Traincraft;
 import train.common.tile.TilePlatform_Slab_Diagonal_Left;
+import train.common.tile.tileSwitch.TileTram_Platform_Fenced;
 
 import static net.minecraftforge.common.util.ForgeDirection.UP;
 

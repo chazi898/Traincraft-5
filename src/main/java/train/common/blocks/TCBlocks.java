@@ -141,6 +141,7 @@ public class TCBlocks {
 		BlockIDs.Tram_Platform_Fenced.block = new BlockTram_Platform_Fenced().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.TVM430Sign.block = new BlockTVM430Sign().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.BR_UK_SpeedSign_Warning.block = new BlockBR_UK_SpeedSign_Warning().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.Platform_Slab_3Quarter.block = new BlockPlatform_Slab_3Quarter().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 
 		//BlockIDs.FortyFootContainer.block = new BlockFortyFootContainer(Material.rock).setHardness(4.5F).setCreativeTab(Traincraft.tcTab).setStepSound(Block.soundTypeMetal);
 

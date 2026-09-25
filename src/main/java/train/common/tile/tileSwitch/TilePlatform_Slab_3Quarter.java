@@ -7,18 +7,15 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import train.common.api.blocks.TileRenderFacing;
-import train.common.blocks.blockSwitch.BlockBR_UK_SpeedSign_EPS;
-import train.common.blocks.blockSwitch.BlockBR_UK_SpeedSign_Warning;
+import train.common.blocks.blockSwitch.BlockPlatform_Slab_3Quarter;
 
-public class TileBR_UK_SpeedSign_Warning extends TileRenderFacing {
+public class TilePlatform_Slab_3Quarter extends TileRenderFacing {
 
 	private int skinstate;
 
-	public TileBR_UK_SpeedSign_Warning(){
+	public TilePlatform_Slab_3Quarter(){
 	}
-	public TileBR_UK_SpeedSign_Warning(BlockBR_UK_SpeedSign_Warning block){
-		host = block;
-	}
+
 	public void setSkinstate(int skinstate) {
 		this.skinstate = skinstate;
 		worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
@@ -30,7 +27,7 @@ public class TileBR_UK_SpeedSign_Warning extends TileRenderFacing {
 	}
 
 	public void increaseSkinState(){
-		if (skinstate >= 16){
+		if (skinstate >= 1){
 			skinstate = 0;
 		} else {
 			skinstate++;
@@ -38,13 +35,13 @@ public class TileBR_UK_SpeedSign_Warning extends TileRenderFacing {
 		worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
 	}
 
-	public TileRenderFacing setDiagonalFacing(int dir){
+	public TileRenderFacing setFacing(int dir){
 		facing = dir;
 		this.markDirty();
 		return this;
 	}
 
-	public int getDiagonalfacing(){
+	public int getfacing(){
 		return facing;
 	}
 

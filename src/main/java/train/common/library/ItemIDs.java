@@ -112,6 +112,7 @@ public enum ItemIDs {
 	Tram_Platform_Fenced("ItemBlock", "tram_platform_fenced", 1),
 	TVM430Sign("ItemBlock", "tvm430_sign", 2),
 	BR_UK_SpeedSign_Warning("ItemTCRail", "br_uk_speedsign", 2),
+	Platform_Slab_3Quarter("ItemBlock", "platform_slab", 1),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),

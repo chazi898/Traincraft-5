@@ -120,6 +120,7 @@ tile.tc:BR_UK_Whistleboard.name=BR UK Whistleboard
 tile.tc:Tram_Platform_Fenced.name=Tram Platform Fenced
 tile.tc:TVM430Sign.name=TVM430 Sign
 tile.tc:BR_UK_SpeedSign_Warning.name=BR UK Speed Sign Warning
+tile.tc:Platform_Slab_3Quarter.name=Platform Slab 3 Quarter
 
 
 <!-- ## Items ## -->
@@ -1506,7 +1507,7 @@ entity.tc.MA100_Tail.name=MA100 Tail
 entity.tc.WWCPClass062T.name=Mule Class 0-6-2T
 entity.tc.RefrigeratedVan.name=Refrigerated Van
 entity.tc.BRBritanniaClass.name=BR Britannia Class
-entity.tc.BR1Tender.name=BR1 Tender
+entity.tc.Tender_BR1.name=BR1 Tender
 entity.tc.Class390Front.name=Class 390 Front
 entity.tc.Class390Coach.name=Class 390 Coach
 entity.tc.Class390Panto.name=Class 390 Panto
@@ -1633,7 +1634,7 @@ entity.tc.TeakSTK=Teak STK
 entity.tc.TeakCK=Teak CK
 entity.tc.LMS_Duchess_Class.name=LMS Duchess Class
 entity.tc.LMS_Streamlined_Coronation.name=LMS Streamlined Coronation
-entity.tc.LMS_10Ton_Tender.name=LMS 10Ton Tender
+entity.tc.Tender_LMS_10Ton.name=LMS 10Ton Tender
 
 description.villager.profession.tc.station_chief=Station Master
 

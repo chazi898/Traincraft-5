@@ -1,4 +1,4 @@
-package train.client.render;
+package train.client.render.renderSwitch;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -9,17 +9,18 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
-import train.client.render.models.blocks.ModelTVM430Sign;
+import train.client.render.models.blocks.ModelPlatform_Slab_3Quarter;
+import train.client.render.renderSwitch.models.ModelTramPlatformFenced;
 import train.common.library.Info;
 
-public class ItemRenderTVM430Sign implements IItemRenderer {
-    private static final ModelTVM430Sign modelSwitch = new ModelTVM430Sign();
-    private static final ResourceLocation texture = new ResourceLocation(Info.resourceLocation,Info.modelTexPrefix + "TVM430Sign_Blue.png");
+public class ItemRenderPlatform_Slab_3Quarter implements IItemRenderer {
+    private static final ModelPlatform_Slab_3Quarter modelSwitch = new ModelPlatform_Slab_3Quarter();
+    private static final ResourceLocation texture = new ResourceLocation(Info.resourceLocation,Info.modelTexPrefix + "Platform_Slab_3Quarter.png");
     private Object IIconRegister;
     private Object IItemRenderer;
     private IIcon itemIcon;
 
-    public ItemRenderTVM430Sign() {
+    public ItemRenderPlatform_Slab_3Quarter() {
     }
 
 
@@ -36,7 +37,7 @@ public class ItemRenderTVM430Sign implements IItemRenderer {
 
     @Override
     public void renderItem(ItemRenderType type, ItemStack item, Object... data) {
-        Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "TVM430Sign_Blue.png"));
+        Tessellator.bindTexture(new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "Platform_Slab_3Quarter.png"));
         switch (type) {
             case ENTITY: {
                 renderSwitch(0f, 0f, 0f, 1f);
@@ -44,9 +45,9 @@ public class ItemRenderTVM430Sign implements IItemRenderer {
             }
             case EQUIPPED: {
                 GL11.glPushMatrix();
-                GL11.glRotatef(0,1f,0f,0f);
-                GL11.glRotatef(180,0f,1f,0f);
-                renderSwitch(-0.7f, 0.5f, -1.5f, 1.2f);
+                GL11.glRotatef(-45,1f,0f,0f);
+                GL11.glRotatef(90,0f,1f,0f);
+                renderSwitch(-1f, 1f, 0.7f, 1f);
                 GL11.glPopMatrix();
                 return;
             }
@@ -54,7 +55,7 @@ public class ItemRenderTVM430Sign implements IItemRenderer {
                 GL11.glPushMatrix();
                 GL11.glRotatef(-105,0.5f,2f,0f);
                 GL11.glRotatef(105,0f,2.5f,0f);
-                renderSwitch(-0.2f, 1.0f, 0.4f, 1.0f);
+                renderSwitch(0.2f, 1.2f, 0.8f, 1f);
                 GL11.glPopMatrix();
                 return;
             }
@@ -62,7 +63,7 @@ public class ItemRenderTVM430Sign implements IItemRenderer {
                 GL11.glPushMatrix();
                 GL11.glRotatef(90,0f,1f,0f);
                 GL11.glRotatef(90,0f,1f,0f);
-                renderSwitch(0.1f, 0f, -0.2f, 0.8f);
+                renderSwitch(0f, 0f, 0f, 1f);
                 GL11.glPopMatrix();
 
                 return;
@@ -75,7 +76,7 @@ public class ItemRenderTVM430Sign implements IItemRenderer {
 
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister) {
-        this.itemIcon = iconRegister.registerIcon(Info.modID.toLowerCase() + ":tvm430_sign");
+        this.itemIcon = iconRegister.registerIcon(Info.modID.toLowerCase() + ":platform_slab.png");
     }
 
     /*
