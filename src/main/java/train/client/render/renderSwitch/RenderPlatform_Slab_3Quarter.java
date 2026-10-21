@@ -15,7 +15,9 @@ public class RenderPlatform_Slab_3Quarter extends TileEntitySpecialRenderer {
 	static final ModelPlatform_Slab_3Quarter modelPlatform_Slab_3Quarter = new ModelPlatform_Slab_3Quarter();
 
 	private ResourceLocation[] textures = {new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "Platform_Slab_3Quarter.png"),
-			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "Platform_Slab_3Quarter_Stripe.png")};
+										   new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "Platform_Slab_3Quarter_Stripe.png"),
+										   new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "Platform_Slab_3Quarter_StripeTactile.png"),
+			                               new ResourceLocation(Info.resourceLocation, Info.modelTexPrefix + "Platform_Slab_3Quarter_WhiteStripe.png")};
 
 
 	@Override

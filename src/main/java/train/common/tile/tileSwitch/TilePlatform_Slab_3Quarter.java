@@ -27,7 +27,7 @@ public class TilePlatform_Slab_3Quarter extends TileRenderFacing {
 	}
 
 	public void increaseSkinState(){
-		if (skinstate >= 1){
+		if (skinstate >= 3){
 			skinstate = 0;
 		} else {
 			skinstate++;
