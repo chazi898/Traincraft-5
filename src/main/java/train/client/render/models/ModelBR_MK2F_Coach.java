@@ -1,5 +1,5 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2025 Minecraft-SMP.de
+// Copyright (C) 2026 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: 
@@ -22,7 +22,7 @@ public class ModelBR_MK2F_Coach extends ModelConverter //Same as Filename
 
 	public ModelBR_MK2F_Coach() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[295];
+		bodyModel = new ModelRendererTurbo[297];
 
 		initbodyModel_1();
 
@@ -329,6 +329,8 @@ public class ModelBR_MK2F_Coach extends ModelConverter //Same as Filename
 		bodyModel[292] = new ModelRendererTurbo(this, 465, 49, textureX, textureY); // Box 75
 		bodyModel[293] = new ModelRendererTurbo(this, 283, 162, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[294] = new ModelRendererTurbo(this, 283, 168, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[295] = new ModelRendererTurbo(this, 76, 109, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[296] = new ModelRendererTurbo(this, 85, 109, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 81, 1, 20, 0F,0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F); // Box 0
 		bodyModel[0].setRotationPoint(-48F, 0F, -10F);
@@ -1274,10 +1276,18 @@ public class ModelBR_MK2F_Coach extends ModelConverter //Same as Filename
 
 		bodyModel[294].addShapeBox(0F, 0F, 0F, 69, 1, 2, 0F,0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, -0.8F, 0.05F, 0F, -0.8F, 0.05F, 0F, -0.8F, -0.05F, 0F, -0.8F, -0.05F); // Lamp
 		bodyModel[294].setRotationPoint(-42F, -20.1F, 3F);
+
+		bodyModel[295].addShapeBox(0F, 0F, 0F, 1, 5, 2, 0F,0F, 0F, 0F, -0.9F, 0F, 0F, -0.9F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.9F, 0F, 0F, -0.9F, 0F, 0F, 0F, 0F, 0F); // Lamp
+		bodyModel[295].setRotationPoint(26.98F, -15F, 1F);
+		bodyModel[295].rotateAngleY = -3.14159265F;
+
+		bodyModel[296].addShapeBox(0F, 0F, 0F, 1, 5, 2, 0F,-0.9F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.9F, 0F, 0F, -0.9F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.9F, 0F, 0F); // Lamp
+		bodyModel[296].setRotationPoint(-40.98F, -15F, 1F);
+		bodyModel[296].rotateAngleY = -3.14159265F;
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 295; i++) {
+		for (int i = 0; i < 297; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);

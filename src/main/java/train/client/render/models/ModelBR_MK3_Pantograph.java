@@ -22,7 +22,7 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 
 	public ModelBR_MK3_Pantograph() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[327];
+		bodyModel = new ModelRendererTurbo[329];
 
 		initbodyModel_1();
 
@@ -361,6 +361,8 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 		bodyModel[324] = new ModelRendererTurbo(this, 8, 240, textureX, textureY); // 217
 		bodyModel[325] = new ModelRendererTurbo(this, 51, 241, textureX, textureY); // 218
 		bodyModel[326] = new ModelRendererTurbo(this, 363, 195, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[327] = new ModelRendererTurbo(this, 495, 140, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[328] = new ModelRendererTurbo(this, 479, 140, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 92, 1, 20, 0F,0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.5F, 0.4F, 0F, -0.5F, 0.4F, 0F, -0.5F, 0.4F, 0F, -0.5F, 0.4F); // 01
 		bodyModel[0].setRotationPoint(-48F, 0F, -10F);
@@ -1213,7 +1215,7 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 		bodyModel[270].addShapeBox(0F, 0F, 0F, 1, 2, 6, 0F,-0.8F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -3.1F, -0.8F, 0F, -3.1F, -0.8F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.1F, -0.8F, 0F, -0.1F); // Box 170
 		bodyModel[270].setRotationPoint(37F, -20F, 4F);
 
-		bodyModel[271].addShapeBox(0F, 0F, 0F, 26, 1, 20, 0F,0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F); // 189
+		bodyModel[271].addShapeBox(0F, 0F, 0F, 26, 1, 20, 0F,0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, -0.5F, 0.05F, 0F, -0.5F, 0.05F, 0F, -0.5F, 0.05F, 0F, -0.5F, 0.05F); // 189
 		bodyModel[271].setRotationPoint(12F, -18F, -10F);
 
 		bodyModel[272].addShapeBox(0F, 0F, 0F, 1, 2, 1, 0F,-0.2F, 0.5F, -0.7F, -0.2F, 0.5F, -0.7F, -0.2F, 0.5F, 0.3F, -0.2F, 0.5F, 0.3F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F); // 197
@@ -1281,7 +1283,7 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 		bodyModel[291].setRotationPoint(32F, -21.6F, 6F);
 		bodyModel[291].rotateAngleY = -3.14159265F;
 
-		bodyModel[292].addShapeBox(0F, 0F, 0F, 6, 7, 1, 0F,0F, -0.2F, -0.9F, -0.4F, -6.4F, -0.9F, -0.4F, -6.4F, 0.1F, 0F, -0.2F, 0.1F, 0F, -6.6F, -0.9F, -0.4F, 0F, -0.9F, -0.4F, 0F, 0.1F, 0F, -6.6F, 0.1F); // 217
+		bodyModel[292].addShapeBox(0F, 0F, 0F, 6, 7, 1, 0F,0F, -0.2F, -0.9F, -0.4F, -5.8F, -0.9F, -0.4F, -5.8F, 0.1F, 0F, -0.2F, 0.1F, 0F, -6.6F, -0.9F, -0.4F, -0.7F, -0.9F, -0.4F, -0.7F, 0.1F, 0F, -6.6F, 0.1F); // 217
 		bodyModel[292].setRotationPoint(24F, -21F, -1F);
 		bodyModel[292].rotateAngleZ = 0.41887902F;
 
@@ -1383,7 +1385,7 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 		bodyModel[323].setRotationPoint(32F, -29F, 6F);
 		bodyModel[323].rotateAngleY = -3.14159265F;
 
-		bodyModel[324].addShapeBox(0F, 0F, 0F, 6, 7, 1, 0F,0F, -0.2F, -0.9F, -0.4F, -6.4F, -0.9F, -0.4F, -6.4F, 0.1F, 0F, -0.2F, 0.1F, 0F, -6.6F, -0.9F, -0.4F, 0F, -0.9F, -0.4F, 0F, 0.1F, 0F, -6.6F, 0.1F); // 217
+		bodyModel[324].addShapeBox(0F, 0F, 0F, 6, 7, 1, 0F,0F, -0.2F, -0.9F, -0.4F, -6F, -0.9F, -0.4F, -6F, 0.1F, 0F, -0.2F, 0.1F, 0.05F, -6.6F, -0.9F, -0.4F, -0.5F, -0.9F, -0.4F, -0.5F, 0.1F, 0.05F, -6.6F, 0.1F); // 217
 		bodyModel[324].setRotationPoint(26F, -24F, -1F);
 
 		bodyModel[325].addShapeBox(0F, 0F, 0F, 8, 5, 1, 0F,0F, -0.5F, -0.9F, -0.4F, -5.4F, -0.9F, -0.4F, -5.4F, 0.1F, 0F, -0.5F, 0.1F, 0.4F, -4.5F, -0.9F, -0.2F, 0.8F, -0.9F, -0.2F, 0.8F, 0.1F, 0.4F, -4.5F, 0.1F); // 218
@@ -1391,10 +1393,16 @@ public class ModelBR_MK3_Pantograph extends ModelConverter //Same as Filename
 
 		bodyModel[326].addShapeBox(0F, 0F, 0F, 54, 1, 8, 0F,0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F); // Lamp
 		bodyModel[326].setRotationPoint(-42F, -21.03F, -4F);
+
+		bodyModel[327].addShapeBox(0F, 0F, 0F, 1, 17, 6, 0F,0F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, 0F, 0F, 0F); // Lamp
+		bodyModel[327].setRotationPoint(-41.98F, -17F, -3F);
+
+		bodyModel[328].addShapeBox(0F, 0F, 0F, 1, 17, 6, 0F,-0.8F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.8F, 0F, 0F, -0.8F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.8F, 0F, 0F); // Lamp
+		bodyModel[328].setRotationPoint(36.98F, -17F, -3F);
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 327; i++) {
+		for (int i = 0; i < 329; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);

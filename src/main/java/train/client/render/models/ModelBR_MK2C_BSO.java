@@ -22,7 +22,7 @@ public class ModelBR_MK2C_BSO extends ModelConverter //Same as Filename
 
 	public ModelBR_MK2C_BSO() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[285];
+		bodyModel = new ModelRendererTurbo[287];
 
 		initbodyModel_1();
 
@@ -319,6 +319,8 @@ public class ModelBR_MK2C_BSO extends ModelConverter //Same as Filename
 		bodyModel[282] = new ModelRendererTurbo(this, 280, 156, textureX, textureY); // Box 1
 		bodyModel[283] = new ModelRendererTurbo(this, 283, 162, textureX, textureY, "Lamp"); // Lamp
 		bodyModel[284] = new ModelRendererTurbo(this, 283, 168, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[285] = new ModelRendererTurbo(this, 76, 109, textureX, textureY, "Lamp"); // Lamp
+		bodyModel[286] = new ModelRendererTurbo(this, 85, 109, textureX, textureY, "Lamp"); // Lamp
 
 		bodyModel[0].addShapeBox(0F, 0F, 0F, 81, 1, 20, 0F,0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, 0F, 0.5F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F, 0F, -0.4F, 0.4F); // Box 0
 		bodyModel[0].setRotationPoint(-48F, 0F, -10F);
@@ -1236,10 +1238,18 @@ public class ModelBR_MK2C_BSO extends ModelConverter //Same as Filename
 
 		bodyModel[284].addShapeBox(0F, 0F, 0F, 69, 1, 2, 0F,0F, 0F, 0.05F, 0F, 0F, 0.05F, 0F, 0F, -0.05F, 0F, 0F, -0.05F, 0F, -0.8F, 0.05F, 0F, -0.8F, 0.05F, 0F, -0.8F, -0.05F, 0F, -0.8F, -0.05F); // Lamp
 		bodyModel[284].setRotationPoint(-42F, -20.1F, 3F);
+
+		bodyModel[285].addShapeBox(0F, 0F, 0F, 1, 5, 2, 0F,0.04F, 0F, 0F, -0.9F, 0F, 0F, -0.9F, 0F, 0F, 0.04F, 0F, 0F, 0.04F, 0F, 0F, -0.9F, 0F, 0F, -0.9F, 0F, 0F, 0.04F, 0F, 0F); // Lamp
+		bodyModel[285].setRotationPoint(2.98F, -15F, 1F);
+		bodyModel[285].rotateAngleY = -3.14159265F;
+
+		bodyModel[286].addShapeBox(0F, 0F, 0F, 1, 5, 2, 0F,-0.9F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.9F, 0F, 0F, -0.9F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.9F, 0F, 0F); // Lamp
+		bodyModel[286].setRotationPoint(-40.98F, -15F, 1F);
+		bodyModel[286].rotateAngleY = -3.14159265F;
 	}
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 
-		for (int i = 0; i < 285; i++) {
+		for (int i = 0; i < 287; i++) {
 			if (bodyModel[i].boxName != null && bodyModel[i].boxName.contains("Lamp")) {
 				Minecraft.getMinecraft().entityRenderer.disableLightmap(1D);
 				bodyModel[i].render(f5);
