@@ -13,9 +13,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import train.common.Traincraft;
-import train.common.blocks.signals.BlockBR_2_Aspect_Signal;
-import train.common.blocks.signals.BlockBR_3_Aspect_Signal;
-import train.common.blocks.signals.BlockBR_4_Aspect_Signal;
+import train.common.blocks.signals.*;
 import train.common.blocks.blockSwitch.*;
 import train.common.blocks.slabs.*;
 import train.common.blocks.stairs.*;
@@ -142,6 +140,10 @@ public class TCBlocks {
 		BlockIDs.TVM430Sign.block = new BlockTVM430Sign().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.BR_UK_SpeedSign_Warning.block = new BlockBR_UK_SpeedSign_Warning().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
 		BlockIDs.Platform_Slab_3Quarter.block = new BlockPlatform_Slab_3Quarter().setHardness(1F).setResistance(10F).setCreativeTab(Traincraft.BIPInfrastructureTab).setStepSound(Block.soundTypeMetal);
+		BlockIDs.BR_Semaphore_Home_Upper_Signal.block = new BlockBR_Semaphore_Home_Upper_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
+		BlockIDs.BR_Semaphore_Home_Lower_Signal.block = new BlockBR_Semaphore_Home_Lower_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
+		BlockIDs.BR_Semaphore_Distant_Upper_Signal.block = new BlockBR_Semaphore_Distant_Upper_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
+		BlockIDs.BR_Semaphore_Distant_Lower_Signal.block = new BlockBR_Semaphore_Distant_Lower_Signal().setHardness(1.7F).setStepSound(Block.soundTypeMetal).setCreativeTab(Traincraft.BIPInfrastructureTab);
 
 		//BlockIDs.FortyFootContainer.block = new BlockFortyFootContainer(Material.rock).setHardness(4.5F).setCreativeTab(Traincraft.tcTab).setStepSound(Block.soundTypeMetal);
 

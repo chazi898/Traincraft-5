@@ -113,6 +113,10 @@ public enum ItemIDs {
 	TVM430Sign("ItemBlock", "tvm430_sign", 2),
 	BR_UK_SpeedSign_Warning("ItemTCRail", "br_uk_speedsign", 2),
 	Platform_Slab_3Quarter("ItemBlock", "platform_slab", 1),
+	BR_Semaphore_Home_Upper_Signal("ItemTCRail", "br_semaphore_red", 2),
+	BR_Semaphore_Home_Lower_Signal("ItemTCRail", "br_semaphore_red", 2),
+	BR_Semaphore_Distant_Upper_Signal("ItemTCRail", "br_semaphore_yellow", 2),
+	BR_Semaphore_Distant_Lower_Signal("ItemTCRail", "br_semaphore_yellow", 2),
 
 	/**Normal Tracks*/
 	tcRailSmallStraight("ItemTCRail", "item_rail_straight_small", 5),

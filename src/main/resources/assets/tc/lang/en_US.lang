@@ -121,6 +121,10 @@ tile.tc:Tram_Platform_Fenced.name=Tram Platform Fenced
 tile.tc:TVM430Sign.name=TVM430 Sign
 tile.tc:BR_UK_SpeedSign_Warning.name=BR UK Speed Sign Warning
 tile.tc:Platform_Slab_3Quarter.name=Platform Slab 3 Quarter
+tile.tc:BR_Semaphore_Home_Upper_Signal.name=BR Semaphore Home Upper-Quadrant Signal
+tile.tc:BR_Semaphore_Home_Lower_Signal.name=BR Semaphore Home Lower-Quadrant Signal
+tile.tc:BR_Semaphore_Distant_Upper_Signal.name=BR Semaphore Distant Upper-Quadrant Signal
+tile.tc:BR_Semaphore_Distant_Lower_Signal.name=BR Semaphore Distant Lower-Quadrant Signal
 
 
 <!-- ## Items ## -->

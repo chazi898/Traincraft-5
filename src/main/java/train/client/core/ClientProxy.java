@@ -51,9 +51,7 @@ import train.common.library.BlockIDs;
 import train.common.library.GuiIDs;
 import train.common.library.Info;
 import train.common.tile.*;
-import train.common.tile.signals.TileBR_2_Aspect_Signal;
-import train.common.tile.signals.TileBR_3_Aspect_Signal;
-import train.common.tile.signals.TileBR_4_Aspect_Signal;
+import train.common.tile.signals.*;
 import train.common.tile.tileSwitch.*;
 import train.common.wellcar.GuiFortyFootContainer;
 import train.common.wellcar.TileFortyFootContainer;
@@ -326,6 +324,18 @@ public class ClientProxy extends CommonProxy {
 
         ClientRegistry.bindTileEntitySpecialRenderer(TilePlatform_Slab_3Quarter.class, new RenderPlatform_Slab_3Quarter());
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.Platform_Slab_3Quarter.block), new ItemRenderPlatform_Slab_3Quarter());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_Semaphore_Home_Upper_Signal.class, new RenderBR_Semaphore_Home_Upper_Signal());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_Semaphore_Home_Upper_Signal.block), new ItemRenderBR_Semaphore_Home_Upper_Signal());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_Semaphore_Home_Lower_Signal.class, new RenderBR_Semaphore_Home_Lower_Signal());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_Semaphore_Home_Lower_Signal.block), new ItemRenderBR_Semaphore_Home_Lower_Signal());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_Semaphore_Distant_Upper_Signal.class, new RenderBR_Semaphore_Distant_Upper_Signal());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_Semaphore_Distant_Upper_Signal.block), new ItemRenderBR_Semaphore_Distant_Upper_Signal());
+
+        ClientRegistry.bindTileEntitySpecialRenderer(TileBR_Semaphore_Distant_Lower_Signal.class, new RenderBR_Semaphore_Distant_Lower_Signal());
+        MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockIDs.BR_Semaphore_Distant_Lower_Signal.block), new ItemRenderBR_Semaphore_Distant_Lower_Signal());
 
         //seats
         RenderingRegistry.registerEntityRenderingHandler(EntitySeat.class, nullRender);

@@ -106,6 +106,10 @@ public enum BlockIDs {
 	TVM430Sign(true, ItemTVM430Sign.class),
 	BR_UK_SpeedSign_Warning(true, ItemBR_UK_SpeedSign_Warning.class),
 	Platform_Slab_3Quarter(true, ItemPlatform_Slab_3Quarter.class),
+	BR_Semaphore_Home_Upper_Signal(true, ItemBR_Semaphore_Home_Upper_Signal.class),
+	BR_Semaphore_Home_Lower_Signal(true, ItemBR_Semaphore_Home_Lower_Signal.class),
+	BR_Semaphore_Distant_Upper_Signal(true, ItemBR_Semaphore_Distant_Upper_Signal.class),
+	BR_Semaphore_Distant_Lower_Signal(true, ItemBR_Semaphore_Distant_Lower_Signal.class),
 
 
 
